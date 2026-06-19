@@ -1,26 +1,26 @@
-name: Generate Snake
+name: Generate Snake Animation
 
 on:
   schedule:
-    # هر 6 ساعت اجرا می‌شود
-    - cron: "0 */6 * * *"
+    # هر 12 ساعت اجرا می‌شود (برای جلوگیری از مصرف بیش از حد اکشن‌های رایگان گیت‌هاب)
+    - cron: "0 */12 * * *"
+  # اجازه اجرای دستی
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk@v3
+      - name: Generate Snake Game
+        uses: Platane/snk@v3
         with:
-          # نام کاربری گیت‌هاب شما
           github_user_name: Mahdi-mortazavi
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: crazy-max/ghaction-github-pages@v2.1.3
+            
+      - name: Push to Output Branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
