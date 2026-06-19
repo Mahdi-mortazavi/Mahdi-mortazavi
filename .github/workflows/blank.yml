@@ -1,26 +1,44 @@
-name: Generate Snake Animation
+# ═══════════════════════════════════════════════════════════════
+# 🐍 Contribution Snake Generator
+# Generates animated snake SVG from your GitHub contribution grid
+# Output pushed to 'output' branch for use in README
+# ═══════════════════════════════════════════════════════════════
+name: 🐍 Generate Contribution Snake
 
 on:
   schedule:
-    # هر 12 ساعت اجرا می‌شود (برای جلوگیری از مصرف بیش از حد اکشن‌های رایگان گیت‌هاب)
-    - cron: "0 */12 * * *"
-  # اجازه اجرای دستی
+    # هر 6 ساعت اجرا می‌شود
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
+# جلوگیری از اجرای موازی
+concurrency:
+  group: snake-animation
+  cancel-in-progress: true
+
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
     steps:
-      - name: Generate Snake Game
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Generate Snake SVGs (Light & Dark)
         uses: Platane/snk@v3
         with:
           github_user_name: Mahdi-mortazavi
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            
-      - name: Push to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🚀 Deploy to Output Branch
+        uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
           target_branch: output
           build_dir: dist
