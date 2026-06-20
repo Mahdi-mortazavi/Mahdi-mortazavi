@@ -37,7 +37,10 @@ jobs:
 
       - name: 🚀 Deploy to Output Branch
         run: |
-          cd dist
+          # پوشه‌ی موقت تمیز بساز
+          mkdir -p deploy_output
+          cp -r dist/* deploy_output/
+          cd deploy_output
           git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
