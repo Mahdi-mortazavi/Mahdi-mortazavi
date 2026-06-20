@@ -7,11 +7,9 @@ name: 🐍 Generate Contribution Snake
 
 on:
   schedule:
-    # هر 6 ساعت اجرا می‌شود
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
-# جلوگیری از اجرای موازی
 concurrency:
   group: snake-animation
   cancel-in-progress: true
@@ -33,14 +31,18 @@ jobs:
           github_user_name: Mahdi-mortazavi
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-congregation-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🚀 Deploy to Output Branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "🐍 Update snake animation — $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push --force \
+            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" \
+            HEAD:output
