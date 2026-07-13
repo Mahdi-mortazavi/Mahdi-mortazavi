@@ -33,7 +33,7 @@
 <br/><br/>
 
 <!-- Personal Hub (Liquid-Glass landing page) -->
-<a href="https://mahdi-mortazavi.github.io/Mahdi-mortazavi/"><img src="https://img.shields.io/badge/🔗_Personal_Hub-mahdi--mortazavi.github.io-0A84FF?style=for-the-badge&labelColor=0D1117" alt="Mahdi Mortazavi — Personal Hub" height="34" /></a>
+<a href="https://mahdi-mortazavi.github.io"><img src="https://img.shields.io/badge/🔗_Personal_Hub-mahdi--mortazavi.github.io-0A84FF?style=for-the-badge&labelColor=0D1117" alt="Mahdi Mortazavi — Personal Hub" height="34" /></a>
 
 </div>
 
