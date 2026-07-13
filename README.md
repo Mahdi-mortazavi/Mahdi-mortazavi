@@ -14,8 +14,10 @@
 
 <div align="center">
 
-<!-- ─────────────────────────  HEADER  ───────────────────────── -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,55:1C1C1E,100:0A84FF&height=200&section=header&text=Mahdi%20Mortazavi&fontSize=52&fontAlignY=40&fontColor=F5F5F7&desc=I%20solve%20hard%20problems%20and%20turn%20them%20into%20products&descSize=17&descAlignY=62&descColor=A1A1A6&animation=fadeIn" width="100%" alt="Mahdi Mortazavi — problem solver, Flutter developer and product designer" />
+<!-- ─────────────────────────  HEADER (custom banner)  ───────────────────────── -->
+<a href="https://github.com/Mahdi-mortazavi">
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/banner.png" width="100%" alt="Mahdi Mortazavi — Problem Solver, Flutter Developer and Product Designer" />
+</a>
 
 <!-- ────────────────────  TYPING TAGLINE  ──────────────────── -->
 <a href="https://github.com/Mahdi-mortazavi">
