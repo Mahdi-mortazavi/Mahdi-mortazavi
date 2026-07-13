@@ -233,14 +233,21 @@ Have a hard problem worth solving? My inbox is one message away.
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
+
+<sub><b>Mahdi Mortazavi</b> &nbsp;·&nbsp; <b>مهدی مرتضوی</b></sub>
+
+<sub>Problem Solver &nbsp;·&nbsp; Flutter Developer &nbsp;·&nbsp; Product Designer &nbsp;·&nbsp; Iran 🇮🇷</sub>
+
+<sub><i>Turning hard problems into shipped products.</i></sub>
+
 <sub>
-
-**Mahdi Mortazavi** · **مهدی مرتضوی** — Problem Solver, Flutter Developer & Product Designer from Iran.
-Turning hard problems into shipped products with Flutter, Dart, Rust, Kotlin, TypeScript & Python.
-Open-source projects: Nava, Flow (تک‌نقطه), purify, relay, Mova.
-Mahdi Mortazavi GitHub · Mahdi Mortazavi Flutter developer · Mahdi Mortazavi portfolio · مهدی مرتضوی برنامه‌نویس · مهدی مرتضوی توسعه‌دهنده فلاتر · مهدی مرتضوی طراح محصول.
-
+  <a href="https://github.com/Mahdi-mortazavi/app">Nava</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Mahdi-mortazavi/flow">Flow — تک‌نقطه</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Mahdi-mortazavi/purify">purify</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Mahdi-mortazavi/relay">relay</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Mahdi-mortazavi/Mova">Mova</a>
 </sub>
+
 </div>
 
 <div align="center">
