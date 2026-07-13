@@ -30,6 +30,11 @@
 <img src="https://komarev.com/ghpvc/?username=Mahdi-mortazavi&label=Profile%20views&color=0A84FF&style=flat-square&labelColor=0D1117" alt="Profile views" />
 <a href="https://github.com/Mahdi-mortazavi?tab=repositories"><img src="https://img.shields.io/badge/Open_Source-Projects-0A84FF?style=flat-square&logo=git&logoColor=white&labelColor=0D1117" alt="Open source projects" /></a>
 
+<br/><br/>
+
+<!-- Personal Hub (Liquid-Glass landing page) -->
+<a href="https://mahdi-mortazavi.github.io/Mahdi-mortazavi/"><img src="https://img.shields.io/badge/🔗_Personal_Hub-mahdi--mortazavi.github.io-0A84FF?style=for-the-badge&labelColor=0D1117" alt="Mahdi Mortazavi — Personal Hub" height="34" /></a>
+
 </div>
 
 <br/>
