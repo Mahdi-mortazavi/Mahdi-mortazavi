@@ -105,14 +105,17 @@ async function collect() {
     if (activity.length >= 5) break;
   }
 
-  // Star timestamps across every starred repo → the growth curve.
+  // Star timestamps would be ideal, but the repo-scoped GITHUB_TOKEN is
+  // refused (403) on cross-repo /stargazers. Try anyway — it backfills real
+  // history when it works — and otherwise fall back to daily snapshots.
   const starEvents = [];
   for (const r of repos.filter(x => x.stargazers_count > 0)) {
     const pages = Math.min(3, Math.ceil(r.stargazers_count / 100));
     for (let p = 1; p <= pages; p++) {
       const rows = await gh(`/repos/${USER}/${r.name}/stargazers?per_page=100&page=${p}`,
         'application/vnd.github.star+json');
-      for (const s of rows ?? []) if (s?.starred_at) starEvents.push(s.starred_at);
+      if (!Array.isArray(rows)) { p = pages; continue; }
+      for (const s of rows) if (s?.starred_at) starEvents.push(s.starred_at);
     }
   }
   starEvents.sort();
@@ -124,7 +127,17 @@ async function collect() {
   const role = (user?.bio ?? '').split('\n')[0].trim().replace(/\s*[×·|]\s*/g, ' · ')
     || 'Problem Solver · Full-Stack Developer · Product Builder';
 
-  return { user, repos, stars, forks, langs, featured, activity, issues, role, starEvents };
+  // Daily snapshot history — always available, accumulates a real curve.
+  const today = new Date().toISOString().slice(0, 10);
+  let history = [];
+  try { history = JSON.parse(await readFile(`${OUT}/history.json`, 'utf8')); } catch {}
+  history = history.filter(h => h.d !== today);
+  history.push({ d: today, stars, followers: user?.followers ?? 0, repos: repos.length });
+  history.sort((a, b) => a.d.localeCompare(b.d));
+  await mkdir(OUT, { recursive: true });
+  await writeFile(`${OUT}/history.json`, JSON.stringify(history, null, 2));
+
+  return { user, repos, stars, forks, langs, featured, activity, issues, role, starEvents, history };
 }
 
 /* ────────────────────────────── SVG cards ────────────────────────────── */
@@ -233,8 +246,13 @@ function growth(d, t) {
   const PL = 72, PR = 72, PT = 78, PB = 46;
   const cw = W - PL - PR, ch = H - PT - PB;
   const ev = d.starEvents ?? [];
+  const hist = d.history ?? [];
+  // Real timestamps when available; otherwise the snapshot history.
+  const series = ev.length >= 2
+    ? null
+    : hist.map(h => ({ t: new Date(h.d).getTime(), v: h.stars }));
 
-  if (ev.length < 2) {
+  if (ev.length < 2 && (series?.length ?? 0) < 2) {
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
   aria-label="Star growth for Mahdi Mortazavi — collecting data"><title>Star growth — collecting data</title>
   ${defs(m)}<rect width="${W}" height="${H}" rx="20" fill="url(#bg)"/>
@@ -242,15 +260,20 @@ function growth(d, t) {
   <text x="${W/2}" y="${H/2}" text-anchor="middle" font-family="${FONT}" font-size="17" fill="${C.dim}">Collecting star history…</text></svg>`;
   }
 
-  const first = new Date(ev[0]).getTime();
   const now = Date.now();
+  const first = series ? series[0].t : new Date(ev[0]).getTime();
   const span = Math.max(now - first, 86400000);
-  // Cumulative series, sampled to a fixed number of points.
   const N = 72, pts = [];
   for (let i = 0; i <= N; i++) {
     const at = first + (span * i) / N;
-    let c = 0;
-    while (c < ev.length && new Date(ev[c]).getTime() <= at) c++;
+    let c;
+    if (series) {
+      c = series[0].v;
+      for (const p of series) if (p.t <= at) c = p.v;
+    } else {
+      c = 0;
+      while (c < ev.length && new Date(ev[c]).getTime() <= at) c++;
+    }
     pts.push({ x: PL + (cw * i) / N, y: c });
   }
   const max = Math.max(...pts.map(p => p.y), 1);
@@ -260,7 +283,10 @@ function growth(d, t) {
 
   // Stars added in the trailing 30 days.
   const cut = now - 30 * 86400000;
-  const last30 = ev.filter(e => new Date(e).getTime() >= cut).length;
+  const last30 = ev.length
+    ? ev.filter(e => new Date(e).getTime() >= cut).length
+    : (() => { const w = (hist ?? []).filter(h => new Date(h.d).getTime() >= cut);
+               return w.length > 1 ? d.stars - w[0].stars : 0; })();
 
   const fmt = ts => new Intl.DateTimeFormat('en-GB', { month: 'short', year: '2-digit' }).format(new Date(ts));
   const ticks = [0, .5, 1].map(f => {
@@ -285,7 +311,7 @@ function growth(d, t) {
   <g filter="url(#soft)" opacity=".65"><ellipse cx="1150" cy="30" rx="280" ry="170" fill="url(#aura1)"/></g>
   <rect width="${W}" height="${H}" rx="20" fill="url(#grid)"/>
   <text x="${PL}" y="40" font-family="${FONT}" font-size="16" font-weight="700" letter-spacing="3" fill="${m.a}">GROWTH · STARS OVER TIME</text>
-  <text x="${PL}" y="66" font-family="${FONT}" font-size="15" font-weight="500" fill="${C.dim}">${max} total <tspan fill="#30D158" font-weight="700">▲ +${last30}</tspan> in the last 30 days</text>
+  <text x="${PL}" y="66" font-family="${FONT}" font-size="15" font-weight="500" fill="${C.dim}">${max} total ${last30 > 0 ? `<tspan fill="#30D158" font-weight="700">▲ +${last30}</tspan> in the last 30 days` : "tracking growth from here"}</text>
   ${grid}
   <path d="${area}" fill="url(#gfill)"/>
   <path d="${line}" fill="none" stroke="${m.a}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
