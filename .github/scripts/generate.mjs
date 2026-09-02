@@ -31,8 +31,9 @@ const headers = {
   ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
 };
 
-async function gh(path) {
-  const r = await fetch(`${API}${path}`, { headers });
+async function gh(path, accept) {
+  const h = accept ? { ...headers, Accept: accept } : headers;
+  const r = await fetch(`${API}${path}`, { headers: h });
   if (!r.ok) { console.warn(`  ! ${r.status} ${path}`); return null; }
   return r.json();
 }
@@ -104,6 +105,18 @@ async function collect() {
     if (activity.length >= 5) break;
   }
 
+  // Star timestamps across every starred repo → the growth curve.
+  const starEvents = [];
+  for (const r of repos.filter(x => x.stargazers_count > 0)) {
+    const pages = Math.min(3, Math.ceil(r.stargazers_count / 100));
+    for (let p = 1; p <= pages; p++) {
+      const rows = await gh(`/repos/${USER}/${r.name}/stargazers?per_page=100&page=${p}`,
+        'application/vnd.github.star+json');
+      for (const s of rows ?? []) if (s?.starred_at) starEvents.push(s.starred_at);
+    }
+  }
+  starEvents.sort();
+
   // Open issues on the profile repo power the public Q&A ("Ask me anything").
   const issues = ((await gh(`/repos/${USER}/${USER}/issues?state=open&per_page=10`)) ?? [])
     .filter(i => !i.pull_request);
@@ -111,14 +124,35 @@ async function collect() {
   const role = (user?.bio ?? '').split('\n')[0].trim().replace(/\s*[×·|]\s*/g, ' · ')
     || 'Problem Solver · Full-Stack Developer · Product Builder';
 
-  return { user, repos, stars, forks, langs, featured, activity, issues, role };
+  return { user, repos, stars, forks, langs, featured, activity, issues, role, starEvents };
 }
 
 /* ────────────────────────────── SVG cards ────────────────────────────── */
 function hero(d, t) {
   const m = t.mood, W = 1280, H = 340;
-  const rings = [88, 62, 38].map((r, i) =>
-    `<circle cx="1096" cy="170" r="${r}" fill="none" stroke="#FFFFFF" stroke-opacity="${[.16,.3,.55][i]}" stroke-width="2.5"/>`).join('');
+  // Orbit mark: a luminous core with bodies circling it. Round, alive, and a
+  // literal picture of the process — ideas pulled into orbit around a centre.
+  const CX = 1096, CY = 170;
+  const orbitRing = (r, o) =>
+    `<ellipse cx="${CX}" cy="${CY}" rx="${r}" ry="${(r * 0.62).toFixed(1)}" fill="none" stroke="#FFFFFF" stroke-opacity="${o}" stroke-width="1.6"/>`;
+  // Bodies ride the exact ellipse of their ring, so nothing drifts off-orbit.
+  const body = (rx, size, dur, delay, op) => {
+    const ry = (rx * 0.62).toFixed(1);
+    const path = `M${CX - rx},${CY} a${rx},${ry} 0 1,0 ${rx * 2},0 a${rx},${ry} 0 1,0 ${-rx * 2},0`;
+    return `<g><circle r="${size}" fill="#FFFFFF" fill-opacity="${op}"/>
+      <animateMotion dur="${dur}s" repeatCount="indefinite" begin="-${delay}s" path="${path}"/></g>`;
+  };
+  const orbit = `<g>
+    ${orbitRing(96, .13)}${orbitRing(70, .2)}${orbitRing(44, .3)}
+    <circle cx="${CX}" cy="${CY}" r="30" fill="url(#mark)" filter="url(#coreglow)"/>
+    <circle cx="${CX}" cy="${CY}" r="26" fill="url(#mark)"/>
+    <circle cx="${CX}" cy="${CY}" r="26" fill="none" stroke="#FFFFFF" stroke-opacity=".5"/>
+    <circle cx="${CX}" cy="${CY}" r="26" fill="none" stroke="#FFFFFF" stroke-opacity=".35">
+      <animate attributeName="r" values="26;40;26" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".35;0;.35" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    ${body(96, 6.5, 18, 0, 1)}${body(70, 5, 12, 4.6, .85)}${body(44, 4, 8, 5.8, .7)}
+  </g>`;
   const pill = (x, label, value) => `
     ${glass(x, 258, 176, 46, 15)}
     <text x="${x + 20}" y="287" font-family="${FONT}" font-size="16" font-weight="600" fill="${C.muted}">${esc(label)}</text>
@@ -148,12 +182,7 @@ function hero(d, t) {
   ${pill(456, 'Repos',      nf(d.repos.length))}
   ${pill(648, 'Forks',      nf(d.forks))}
 
-  <g>
-    <rect x="1001" y="75" width="190" height="190" rx="52" fill="url(#mark)"/>
-    <rect x="1001" y="75" width="190" height="190" rx="52" fill="none" stroke="#FFFFFF" stroke-opacity=".35"/>
-    ${rings}
-    <circle cx="1096" cy="170" r="11" fill="#FFFFFF"/>
-  </g>
+  ${orbit}
   <text x="${W - 72}" y="300" text-anchor="end" font-family="${FONT}" font-size="13" font-weight="500" fill="${C.dim}">
     auto-updated ${esc(t.date)} · ${esc(t.time)} Tehran
   </text>
@@ -191,6 +220,84 @@ function stack(d, t) {
   <g clip-path="url(#barclip)">${bar}</g>
   <rect x="${BX}" y="${BY}" width="${BW}" height="${BH}" rx="13" fill="none" stroke="${C.stroke}"/>
   ${legend}
+</svg>`;
+}
+
+
+/**
+ * Growth card — cumulative stars over time, drawn from real starred_at
+ * timestamps. Animates its own line on load.
+ */
+function growth(d, t) {
+  const m = t.mood, W = 1280, H = 250;
+  const PL = 72, PR = 72, PT = 78, PB = 46;
+  const cw = W - PL - PR, ch = H - PT - PB;
+  const ev = d.starEvents ?? [];
+
+  if (ev.length < 2) {
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
+  aria-label="Star growth for Mahdi Mortazavi — collecting data"><title>Star growth — collecting data</title>
+  ${defs(m)}<rect width="${W}" height="${H}" rx="20" fill="url(#bg)"/>
+  <rect width="${W}" height="${H}" rx="20" fill="url(#grid)"/>
+  <text x="${W/2}" y="${H/2}" text-anchor="middle" font-family="${FONT}" font-size="17" fill="${C.dim}">Collecting star history…</text></svg>`;
+  }
+
+  const first = new Date(ev[0]).getTime();
+  const now = Date.now();
+  const span = Math.max(now - first, 86400000);
+  // Cumulative series, sampled to a fixed number of points.
+  const N = 72, pts = [];
+  for (let i = 0; i <= N; i++) {
+    const at = first + (span * i) / N;
+    let c = 0;
+    while (c < ev.length && new Date(ev[c]).getTime() <= at) c++;
+    pts.push({ x: PL + (cw * i) / N, y: c });
+  }
+  const max = Math.max(...pts.map(p => p.y), 1);
+  const Y = v => PT + ch - (v / max) * ch;
+  const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p.x.toFixed(1)},${Y(p.y).toFixed(1)}`).join('');
+  const area = `${line}L${(PL + cw).toFixed(1)},${PT + ch}L${PL},${PT + ch}Z`;
+
+  // Stars added in the trailing 30 days.
+  const cut = now - 30 * 86400000;
+  const last30 = ev.filter(e => new Date(e).getTime() >= cut).length;
+
+  const fmt = ts => new Intl.DateTimeFormat('en-GB', { month: 'short', year: '2-digit' }).format(new Date(ts));
+  const ticks = [0, .5, 1].map(f => {
+    const x = PL + cw * f;
+    return `<text x="${x.toFixed(1)}" y="${H - 16}" text-anchor="${f === 0 ? 'start' : f === 1 ? 'end' : 'middle'}"
+      font-family="${FONT}" font-size="13" fill="${C.dim}">${fmt(first + span * f)}</text>`;
+  }).join('');
+  const grid = [0, .5, 1].map(f =>
+    `<line x1="${PL}" y1="${Y(max * f).toFixed(1)}" x2="${PL + cw}" y2="${Y(max * f).toFixed(1)}"
+      stroke="#FFFFFF" stroke-opacity=".07"/>`).join('');
+  const end = pts[pts.length - 1];
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
+  aria-label="Star growth across Mahdi Mortazavi's open-source repositories">
+  <title>Cumulative GitHub stars — ${max} total, ${last30} in the last 30 days</title>
+  ${defs(m)}
+  <linearGradient id="gfill" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="${m.a}" stop-opacity=".55"/>
+    <stop offset="100%" stop-color="${m.a}" stop-opacity="0"/>
+  </linearGradient>
+  <rect width="${W}" height="${H}" rx="20" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".65"><ellipse cx="1150" cy="30" rx="280" ry="170" fill="url(#aura1)"/></g>
+  <rect width="${W}" height="${H}" rx="20" fill="url(#grid)"/>
+  <text x="${PL}" y="40" font-family="${FONT}" font-size="16" font-weight="700" letter-spacing="3" fill="${m.a}">GROWTH · STARS OVER TIME</text>
+  <text x="${PL}" y="66" font-family="${FONT}" font-size="15" font-weight="500" fill="${C.dim}">${max} total <tspan fill="#30D158" font-weight="700">▲ +${last30}</tspan> in the last 30 days</text>
+  ${grid}
+  <path d="${area}" fill="url(#gfill)"/>
+  <path d="${line}" fill="none" stroke="${m.a}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+    stroke-dasharray="4000" stroke-dashoffset="4000">
+    <animate attributeName="stroke-dashoffset" from="4000" to="0" dur="2.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+  </path>
+  <circle cx="${end.x.toFixed(1)}" cy="${Y(end.y).toFixed(1)}" r="6" fill="#FFFFFF"/>
+  <circle cx="${end.x.toFixed(1)}" cy="${Y(end.y).toFixed(1)}" r="6" fill="none" stroke="#FFFFFF" stroke-opacity=".7">
+    <animate attributeName="r" values="6;17;6" dur="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".7;0;.7" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  ${ticks}
 </svg>`;
 }
 
@@ -253,6 +360,7 @@ console.log(`data: ${d.repos.length} repos · ${d.stars}★ · ${d.featured.leng
 await mkdir(OUT, { recursive: true });
 await writeFile(`${OUT}/hero.svg`, hero(d, t));
 await writeFile(`${OUT}/stack.svg`, stack(d, t));
+await writeFile(`${OUT}/growth.svg`, growth(d, t));
 
 let md = await readFile('README.md', 'utf8');
 md = replaceSection(md, 'PROJECTS', projectsMd(d));
@@ -261,4 +369,4 @@ md = replaceSection(md, 'AMA', amaMd(d));
 md = replaceSection(md, 'UPDATED',
   `<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>${t.date}, ${t.time}</b> Tehran time</sub>`);
 await writeFile('README.md', md);
-console.log('✓ wrote hero.svg, stack.svg, README.md');
+console.log('✓ wrote hero.svg, stack.svg, growth.svg, README.md');

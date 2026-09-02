@@ -68,6 +68,9 @@ export function defs(mood) {
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
     </filter>
+    <filter id="coreglow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
     <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
       <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
     </pattern>
