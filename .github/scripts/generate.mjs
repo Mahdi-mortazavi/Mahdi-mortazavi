@@ -31,6 +31,9 @@ const MAX_FEATURED = 6;
 // growth curve still works — it just builds from daily snapshots instead of
 // backfilled star timestamps.
 const TOKEN = process.env.STARS_TOKEN || process.env.GITHUB_TOKEN;
+// Which credential is in play? Length only — never the value.
+console.log('auth:', process.env.STARS_TOKEN ? `STARS_TOKEN (${process.env.STARS_TOKEN.length} chars)`
+  : process.env.GITHUB_TOKEN ? 'GITHUB_TOKEN (STARS_TOKEN not set)' : 'anonymous (no token)');
 const headers = {
   'Accept': 'application/vnd.github+json',
   'User-Agent': 'mahdi-living-profile',
@@ -43,12 +46,19 @@ async function gh(path, accept) {
   // GITHUB_TOKEN is refused (403) on cross-repo /stargazers. An anonymous
   // retry is worth one attempt but GitHub answers 401 from Actions runners,
   // so this only succeeds when a STARS_TOKEN is absent for another reason.
+  const authStatus = r.status;
+  let retried = false;
   if (r.status === 403 && h.Authorization) {
     const { Authorization, ...anon } = h;
     r = await fetch(`${API}${path}`, { headers: anon });
-    if (r.ok) console.log(`  ↩ anonymous retry succeeded: ${path}`);
+    retried = true;
   }
-  if (!r.ok) { console.warn(`  ! ${r.status} ${path}`); return null; }
+  if (!r.ok) {
+    // 401 = credential rejected, 403 = credential accepted but not permitted.
+    console.warn(`  ! ${path} — authed:${authStatus}${retried ? ` anon:${r.status}` : ''}`);
+    return null;
+  }
+  if (retried) console.log(`  ↩ anonymous retry succeeded: ${path}`);
   return r.json();
 }
 
