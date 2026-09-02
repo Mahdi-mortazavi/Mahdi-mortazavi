@@ -241,7 +241,7 @@ Mova  in motion, not in perfection
 
 
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
 
 ---
 
@@ -326,7 +326,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>02 Sept 2026, 21:07</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>03 Sept 2026, 00:28</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>

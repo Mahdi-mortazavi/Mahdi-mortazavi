@@ -48,7 +48,7 @@
   <rect x="0" y="0" width="1280" height="3" fill="url(#hair)"/>
 
   <text x="72" y="66" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="#5E5CE6">
-    🌙 Good night — شب بخیر  ·  Tehran 21:07
+    🌙 Good night — شب بخیر  ·  Tehran 00:28
   </text>
   <text x="72" y="142" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="-1.6" fill="#F5F5F7">Mahdi Mortazavi</text>
   <text x="72" y="182" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="700" fill="#A1A1A6">مهدی مرتضوی</text>
@@ -102,6 +102,6 @@
       <animateMotion dur="8s" repeatCount="indefinite" begin="-5.8s" path="M1052,170 a44,27.3 0 1,0 88,0 a44,27.3 0 1,0 -88,0"/></g>
   </g>
   <text x="1208" y="300" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#8A93A3">
-    auto-updated 02 Sept 2026 · 21:07 Tehran
+    auto-updated 03 Sept 2026 · 00:28 Tehran
   </text>
 </svg>
