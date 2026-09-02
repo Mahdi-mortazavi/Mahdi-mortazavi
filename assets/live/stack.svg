@@ -44,7 +44,7 @@
   <rect width="1280" height="178" rx="20" fill="url(#grid)"/>
   <text x="72" y="48" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#5E5CE6">LANGUAGES ACROSS PUBLIC REPOS</text>
   <clipPath id="barclip"><rect x="72" y="74" width="1136" height="26" rx="13"/></clipPath>
-  <g clip-path="url(#barclip)"><rect x="72.0" y="74" width="296.8" height="26" fill="#0A84FF"/><rect x="368.8" y="74" width="270.2" height="26" fill="#5E5CE6"/><rect x="638.9" y="74" width="179.4" height="26" fill="#30D158"/><rect x="818.3" y="74" width="155.3" height="26" fill="#FF9F0A"/><rect x="973.6" y="74" width="131.8" height="26" fill="#FF375F"/><rect x="1105.3" y="74" width="102.7" height="26" fill="#30D1D0"/></g>
+  <g clip-path="url(#barclip)"><rect x="72.0" y="74" width="297.0" height="26" fill="#0A84FF"/><rect x="369.0" y="74" width="270.1" height="26" fill="#5E5CE6"/><rect x="639.1" y="74" width="179.3" height="26" fill="#30D158"/><rect x="818.4" y="74" width="155.2" height="26" fill="#FF9F0A"/><rect x="973.6" y="74" width="131.7" height="26" fill="#FF375F"/><rect x="1105.3" y="74" width="102.7" height="26" fill="#30D1D0"/></g>
   <rect x="72" y="74" width="1136" height="26" rx="13" fill="none" stroke="rgba(255,255,255,.14)"/>
   <circle cx="79" cy="142" r="6" fill="#0A84FF"/>
       <text x="93" y="147" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#A1A1A6">JavaScript 26.1%</text><circle cx="268.2" cy="142" r="6" fill="#5E5CE6"/>
