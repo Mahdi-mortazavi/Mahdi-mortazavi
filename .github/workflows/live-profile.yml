@@ -51,4 +51,11 @@ jobs:
             exit 0
           fi
           git commit -m "🫀 Living profile — $(TZ=Asia/Tehran date +'%Y-%m-%d %H:%M') Tehran"
-          git push
+          # Schedule, push and issue triggers can overlap; rebase onto
+          # whatever landed first rather than failing on a stale ref.
+          for attempt in 1 2 3; do
+            if git push; then echo "pushed on attempt $attempt"; exit 0; fi
+            echo "push rejected — rebasing and retrying"
+            git pull --rebase --autostash origin main || exit 1
+          done
+          echo "::error::could not push after 3 attempts"; exit 1
