@@ -25,15 +25,29 @@ const META = {
 const HIDE = new Set(['mahdi-mortazavi', 'mahdi-mortazavi.github.io']);
 const MAX_FEATURED = 6;
 
+// STARS_TOKEN (optional) is a personal token with public-repo read. It is the
+// only credential GitHub accepts for cross-repo /stargazers: the built-in
+// GITHUB_TOKEN gets 403 there and an anonymous retry gets 401. Without it the
+// growth curve still works — it just builds from daily snapshots instead of
+// backfilled star timestamps.
+const TOKEN = process.env.STARS_TOKEN || process.env.GITHUB_TOKEN;
 const headers = {
   'Accept': 'application/vnd.github+json',
   'User-Agent': 'mahdi-living-profile',
-  ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
+  ...(TOKEN ? { Authorization: `Bearer ${TOKEN}` } : {}),
 };
 
 async function gh(path, accept) {
-  const h = accept ? { ...headers, Accept: accept } : headers;
-  const r = await fetch(`${API}${path}`, { headers: h });
+  const h = accept ? { ...headers, Accept: accept } : { ...headers };
+  let r = await fetch(`${API}${path}`, { headers: h });
+  // GITHUB_TOKEN is refused (403) on cross-repo /stargazers. An anonymous
+  // retry is worth one attempt but GitHub answers 401 from Actions runners,
+  // so this only succeeds when a STARS_TOKEN is absent for another reason.
+  if (r.status === 403 && h.Authorization) {
+    const { Authorization, ...anon } = h;
+    r = await fetch(`${API}${path}`, { headers: anon });
+    if (r.ok) console.log(`  ↩ anonymous retry succeeded: ${path}`);
+  }
   if (!r.ok) { console.warn(`  ! ${r.status} ${path}`); return null; }
   return r.json();
 }
@@ -253,11 +267,28 @@ function growth(d, t) {
     : hist.map(h => ({ t: new Date(h.d).getTime(), v: h.stars }));
 
   if (ev.length < 2 && (series?.length ?? 0) < 2) {
+    // Day one: no curve to draw yet. Lead with the real total instead of an
+    // empty frame, and say plainly that the line starts filling from here.
+    const bx = PL, bw = cw, by = 170;
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
-  aria-label="Star growth for Mahdi Mortazavi — collecting data"><title>Star growth — collecting data</title>
-  ${defs(m)}<rect width="${W}" height="${H}" rx="20" fill="url(#bg)"/>
+  aria-label="Mahdi Mortazavi has ${d.stars} GitHub stars; the growth curve starts tracking today">
+  <title>${d.stars} stars across all repositories — growth tracking starts today</title>
+  ${defs(m)}
+  <rect width="${W}" height="${H}" rx="20" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".65"><ellipse cx="1150" cy="30" rx="280" ry="170" fill="url(#aura1)"/></g>
   <rect width="${W}" height="${H}" rx="20" fill="url(#grid)"/>
-  <text x="${W/2}" y="${H/2}" text-anchor="middle" font-family="${FONT}" font-size="17" fill="${C.dim}">Collecting star history…</text></svg>`;
+  <text x="${PL}" y="40" font-family="${FONT}" font-size="16" font-weight="700" letter-spacing="3" fill="${m.a}">GROWTH · STARS OVER TIME</text>
+  <text x="${PL}" y="112" font-family="${FONT}" font-size="58" font-weight="800" letter-spacing="-2" fill="${C.txt}">${d.stars}<tspan dx="16" font-size="20" font-weight="600" letter-spacing="0" fill="${C.muted}">total stars</tspan></text>
+  <text x="${PL}" y="142" font-family="${FONT}" font-size="15" font-weight="500" fill="${C.dim}">across ${d.repos.length} public repositories · the curve starts filling in from today</text>
+  <line x1="${bx}" y1="${by}" x2="${bx + bw}" y2="${by}" stroke="${m.a}" stroke-opacity=".35" stroke-width="2.5" stroke-dasharray="6 8" stroke-linecap="round"/>
+  <circle cx="${bx + bw}" cy="${by}" r="6" fill="#FFFFFF"/>
+  <circle cx="${bx + bw}" cy="${by}" r="6" fill="none" stroke="#FFFFFF" stroke-opacity=".7">
+    <animate attributeName="r" values="6;17;6" dur="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".7;0;.7" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="${PL}" y="${by + 40}" font-family="${FONT}" font-size="13" fill="${C.dim}">today</text>
+  <text x="${bx + bw}" y="${by + 40}" text-anchor="end" font-family="${FONT}" font-size="13" fill="${C.dim}">next snapshot in 6h</text>
+</svg>`;
   }
 
   const now = Date.now();

@@ -120,7 +120,7 @@ JavaScript and Python** — and most of it is **open source**.
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🚀 **[purify](https://github.com/Mahdi-mortazavi/purify)** — Released v0.1.4 <sub>· 6d ago</sub>
+<sub>No public activity in the last few days.</sub>
 <!-- /LIVE:ACTIVITY -->
 
 <br/>
@@ -164,7 +164,7 @@ JavaScript and Python** — and most of it is **open source**.
 📱 Share your phone's internet with your PC — Android → Windows reverse tethering over an encrypted WireGuard tunnel. No root, no server, no account.
 <br/><span dir="rtl">ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز</span>
 
-`android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.7.1**
+`android` `connection-sharing` `dotnet` `golang`
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated today</sub>
 
@@ -179,7 +179,7 @@ JavaScript and Python** — and most of it is **open source**.
 🪨 One decision a day. ⏱ Focus. 🌱 Habits. 🔒 100% offline.
 <br/><span dir="rtl">تک‌نقطه — تمرکز، عادت و کارِ عمیق، مبتنی بر علم رفتار</span>
 
-`adhd` `android` `behavioral-science` `bilingual` &nbsp;·&nbsp; 🏷️ **v0.6.1**
+`adhd` `android` `behavioral-science` `bilingual`
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/flow/releases/latest)** &nbsp;·&nbsp; <sub>updated 12d ago</sub>
 
@@ -194,7 +194,7 @@ JavaScript and Python** — and most of it is **open source**.
 💎 Sooda — Liquid-glass profit, price &amp; discount calculator. Offline-first PWA, bilingual (EN/FA), zero dependencies on servers.
 <br/><span dir="rtl">null</span>
 
- &nbsp;·&nbsp; 🏷️ **v1.2.0**
+
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Download](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
 
@@ -209,7 +209,7 @@ JavaScript and Python** — and most of it is **open source**.
 🍎 Nava: The Art of Reduction. A Jony Ive inspired productivity app with Squircle design, Haptic feedback &amp; Breathing animations. | نوا: مینیمالیسم محض؛ هنرِ حذف اضافات.
 <br/><span dir="rtl">نوا — اپ بهره‌وری مینیمال با الهام از طراحی اپل</span>
 
-`dart` `flutter` `haptic-feedback` `ios-design` &nbsp;·&nbsp; 🏷️ **v3.1.0**
+`dart` `flutter` `haptic-feedback` `ios-design`
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/app/releases/latest)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
 
@@ -224,7 +224,7 @@ JavaScript and Python** — and most of it is **open source**.
 🧹 Clean your Windows disk with confidence. Fast, private, reversible cleanup built with Rust and Tauri.
 <br/><span dir="rtl">پیوریفای — پاک‌سازی هوشمند و فوق‌سریع دیسک ویندوز</span>
 
-`desktop-app` `disk-analyzer` `disk-cleaner` `disk-cleanup` &nbsp;·&nbsp; 🏷️ **v0.1.4**
+`desktop-app` `disk-analyzer` `disk-cleaner` `disk-cleanup`
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 6d ago</sub>
 
@@ -326,7 +326,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>02 Sept 2026, 19:23</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>02 Sept 2026, 20:30</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
