@@ -48,7 +48,7 @@
   <rect x="0" y="0" width="1280" height="3" fill="url(#hair)"/>
 
   <text x="72" y="66" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="#5E5CE6">
-    🌇 Good evening — عصر بخیر  ·  Tehran 20:30
+    🌇 Good evening — عصر بخیر  ·  Tehran 20:36
   </text>
   <text x="72" y="142" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="-1.6" fill="#F5F5F7">Mahdi Mortazavi</text>
   <text x="72" y="182" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="700" fill="#A1A1A6">مهدی مرتضوی</text>
@@ -69,7 +69,7 @@
     <path d="M 279 258.75 H 425" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
     <text x="284" y="287" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#A1A1A6">Followers</text>
-    <text x="420" y="287" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="800" fill="#F5F5F7">42</text>
+    <text x="420" y="287" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="800" fill="#F5F5F7">43</text>
   
     <g>
     <rect x="456" y="258" width="176" height="46" rx="15" fill="url(#glass)"/>
@@ -102,6 +102,6 @@
       <animateMotion dur="8s" repeatCount="indefinite" begin="-5.8s" path="M1052,170 a44,27.3 0 1,0 88,0 a44,27.3 0 1,0 -88,0"/></g>
   </g>
   <text x="1208" y="300" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#8A93A3">
-    auto-updated 02 Sept 2026 · 20:30 Tehran
+    auto-updated 02 Sept 2026 · 20:36 Tehran
   </text>
 </svg>
