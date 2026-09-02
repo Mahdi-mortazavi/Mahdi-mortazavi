@@ -1,25 +1,27 @@
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
 <!--  Mahdi Mortazavi · مهدی مرتضوی — GitHub Profile README                   -->
-<!--  Problem Solver · Flutter Developer · Product Designer · Iran           -->
 <!--                                                                         -->
-<!--  DESIGN NOTES (please keep):                                            -->
-<!--  • Apple-style minimalism: whitespace, restraint, one accent (#0A84FF). -->
-<!--  • Single-column layout so it renders cleanly on MOBILE (no wide tables)-->
-<!--  • SEO: real crawlable text with the name in EN + FA so the profile     -->
-<!--    ranks for "Mahdi Mortazavi" / "مهدی مرتضوی". Images are NOT crawled,  -->
-<!--    so keep the plain-text headings & paragraphs.                        -->
-<!--  • Only reliable image services are used (github-readme-stats and the   -->
-<!--    trophy service were REMOVED because their public hosts are down).    -->
+<!--  ⚠️  PARTS OF THIS FILE ARE GENERATED.                                   -->
+<!--  Everything between <!-- LIVE:X --> and <!-- /LIVE:X --> is rewritten    -->
+<!--  every 6 hours by .github/workflows/live-profile.yml. Edit the           -->
+<!--  generator (.github/scripts/generate.mjs), not the generated text.       -->
+<!--                                                                         -->
+<!--  DESIGN NOTES:                                                          -->
+<!--  • Liquid Glass / Apple aesthetic, one accent (#0A84FF).                -->
+<!--  • Single-column layout so it renders cleanly on MOBILE.                -->
+<!--  • SEO: real crawlable text with the name in EN + FA. Images are NOT     -->
+<!--    crawled — keep the plain-text headings & paragraphs.                  -->
+<!--  • Cards are SELF-HOSTED SVGs. Third-party card services have gone       -->
+<!--    down twice before; the generator removes that dependency.             -->
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
-<!-- ─────────────────────────  HEADER (custom banner)  ───────────────────────── -->
-<a href="https://github.com/Mahdi-mortazavi">
-  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/banner.png" width="100%" alt="Mahdi Mortazavi — Problem Solver, Flutter Developer and Product Designer" />
+<!-- ── LIVE HERO: regenerates every 6h with real stats + Tehran-time theme ── -->
+<a href="https://mahdi-mortazavi.github.io">
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/hero.svg" width="100%" alt="Mahdi Mortazavi — Problem Solver, Flutter Developer and Product Designer" />
 </a>
 
-<!-- ────────────────────  TYPING TAGLINE  ──────────────────── -->
 <a href="https://github.com/Mahdi-mortazavi">
   <img src="https://readme-typing-svg.demolab.com/?font=SF+Pro+Display&weight=600&size=22&duration=2600&pause=1100&color=0A84FF&center=true&vCenter=true&width=760&lines=Hi%2C+I'm+Mahdi+Mortazavi+%F0%9F%91%8B;I+solve+hard+problems+from+first+principles;I+turn+solutions+into+shipped+products;Flutter+Developer+%26+Product+Designer;Open-source+builder+from+Iran+%F0%9F%87%AE%F0%9F%87%B7" alt="Mahdi Mortazavi solves hard problems and turns solutions into shipped products" />
 </a>
@@ -32,16 +34,13 @@
 
 <br/><br/>
 
-<!-- Personal Hub (Liquid-Glass landing page) -->
 <a href="https://mahdi-mortazavi.github.io"><img src="https://img.shields.io/badge/🔗_Personal_Hub-mahdi--mortazavi.github.io-0A84FF?style=for-the-badge&labelColor=0D1117" alt="Mahdi Mortazavi — Personal Hub" height="34" /></a>
 
 </div>
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!--  CRAWLABLE INTRO — the SEO heart. Real text, name in EN + FA.           -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════ CRAWLABLE INTRO — the SEO heart. Name in EN + FA. ═══════════ -->
 
 # 👋 Mahdi Mortazavi — مهدی مرتضوی
 
@@ -60,10 +59,6 @@ most of my work is **open source**.
 </p>
 
 <br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!--  CORE STRENGTHS — the personal-branding core (single column = mobile ok)-->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
@@ -85,105 +80,150 @@ most of my work is **open source**.
 
 <br/>
 
+---
+
 <div align="center">
+
+## ⚡ Now Building &nbsp;·&nbsp; <sub>الان روی چه کار می‌کنم</sub>
+
+<sub>Pulled live from my public activity — never hand-written.</sub>
+
+</div>
+
+<!-- LIVE:ACTIVITY -->
+<sub>Waiting for the next scheduled run…</sub>
+<!-- /LIVE:ACTIVITY -->
+
+<br/>
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!--  TECH STACK                                                             -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<div align="center">
 
 ## 🛠️ Tech Stack &nbsp;·&nbsp; <sub>جعبه‌ابزار</sub>
 
-<img src="https://img.shields.io/badge/Flutter-0D1117?style=flat-square&logo=flutter&logoColor=02569B" alt="Flutter" />
-<img src="https://img.shields.io/badge/Dart-0D1117?style=flat-square&logo=dart&logoColor=0175C2" alt="Dart" />
-<img src="https://img.shields.io/badge/Kotlin-0D1117?style=flat-square&logo=kotlin&logoColor=7F52FF" alt="Kotlin" />
-<img src="https://img.shields.io/badge/Rust-0D1117?style=flat-square&logo=rust&logoColor=FFFFFF" alt="Rust" />
-<img src="https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript" />
-<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=3776AB" alt="Python" />
+<sub>The bar below is computed from my <b>actual public repositories</b>, not hand-written.</sub>
+
+<img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/stack.svg" width="100%" alt="Language distribution across Mahdi Mortazavi's public repositories" />
+
 <br/>
-<img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+
+<img src="https://img.shields.io/badge/Flutter-0D1117?style=flat-square&logo=flutter&logoColor=02569B" alt="Flutter" />
 <img src="https://img.shields.io/badge/Tauri-0D1117?style=flat-square&logo=tauri&logoColor=24C8DB" alt="Tauri" />
+<img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
 <img src="https://img.shields.io/badge/Riverpod-0D1117?style=flat-square&logo=flutter&logoColor=0553B1" alt="Riverpod" />
 <img src="https://img.shields.io/badge/Figma-0D1117?style=flat-square&logo=figma&logoColor=F24E1E" alt="Figma" />
 <img src="https://img.shields.io/badge/Gemini-0D1117?style=flat-square&logo=google-gemini&logoColor=8E75B2" alt="Gemini" />
 <img src="https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=F05032" alt="Git" />
 
-<br/>
-
 ---
 
 ## 🚀 Open-Source Projects &nbsp;·&nbsp; <sub>پروژه‌های متن‌باز</sub>
 
-<sub>Real, shipped products — open for everyone. ⭐ one if it helps you.</sub>
+<sub>Auto-generated from the GitHub API — stars, releases and dates are always current.</sub>
 
 </div>
 
 <br/>
 
-### 🍎 [Nava](https://github.com/Mahdi-mortazavi/app) — The Art of Reduction
-
-<a href="https://github.com/Mahdi-mortazavi/app/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/app?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="Nava stars" /></a>
-<img src="https://img.shields.io/badge/Flutter-0D1117?style=flat-square&logo=flutter&logoColor=02569B" alt="Flutter" />
-<img src="https://img.shields.io/badge/iOS_Design-0D1117?style=flat-square&logo=apple&logoColor=white" alt="iOS design" />
-
-A Jony Ive–inspired minimalist productivity app — **Squircle design**, **haptic feedback**, and calm breathing animations. Pure, intentional, distraction-free.
-<br/><span dir="rtl">نوا: اپ بهره‌وریِ مینیمال با الهام از طراحی اپل — طراحی اسکوئرکل، بازخورد لمسی و انیمیشن‌های آرام.</span>
-
-**[→ View Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/app/releases/latest)**
-
----
-
-### ◉ [Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow) — Focus, Habits & Deep Work
-
-<a href="https://github.com/Mahdi-mortazavi/flow/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/flow?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="Flow stars" /></a>
-<img src="https://img.shields.io/badge/Flutter-0D1117?style=flat-square&logo=flutter&logoColor=02569B" alt="Flutter" />
-<img src="https://img.shields.io/badge/Persian_RTL-0D1117?style=flat-square&logo=googletranslate&logoColor=white" alt="Persian RTL" />
-
-An offline-first **Persian / RTL** focus app built on **behavioral science**: one daily boulder, a crash-proof focus timer, habits that recover after failure, and a judgment-free stats mirror.
-<br/><span dir="rtl">تک‌نقطه: اپ فارسیِ مدیریت تمرکز، عادت و زمان — مبتنی بر علم رفتار و کاملاً آفلاین.</span>
-
-**[→ View Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/flow/releases/latest)**
-
----
-
-### 🧹 [purify](https://github.com/Mahdi-mortazavi/purify) — Intelligent Disk Cleanup
-
-<a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="purify stars" /></a>
-<img src="https://img.shields.io/badge/Rust-0D1117?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
-<img src="https://img.shields.io/badge/Tauri-0D1117?style=flat-square&logo=tauri&logoColor=24C8DB" alt="Tauri" />
-<img src="https://img.shields.io/badge/License-MIT-0D1117?style=flat-square&color=0A84FF" alt="MIT" />
-
-An ultra-fast, intelligent disk-cleanup utility for **Windows**, built with **Rust + Tauri**. Safely reclaim storage with zero cognitive friction — native and blazing fast.
-<br/><span dir="rtl">پیوریفای: ابزار فوق‌سریع و هوشمند پاک‌سازی دیسک برای ویندوز، ساخته‌شده با راست و توری.</span>
-
-**[→ View Repo](https://github.com/Mahdi-mortazavi/purify)**
-
----
-
-### 📡 [relay](https://github.com/Mahdi-mortazavi/relay) — Share Your Connection, Instantly
+<!-- LIVE:PROJECTS -->
+### 📡 [relay](https://github.com/Mahdi-mortazavi/relay)
 
 <a href="https://github.com/Mahdi-mortazavi/relay/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/relay?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="relay stars" /></a>
-<img src="https://img.shields.io/badge/Kotlin-0D1117?style=flat-square&logo=kotlin&logoColor=7F52FF" alt="Kotlin" />
-<img src="https://img.shields.io/badge/Android-0D1117?style=flat-square&logo=android&logoColor=3DDC84" alt="Android" />
-<img src="https://img.shields.io/badge/License-Apache_2.0-0D1117?style=flat-square&color=0A84FF" alt="Apache 2.0" />
+<img src="https://img.shields.io/badge/Language-C%23-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
+<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/relay?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
 
-Local-only hotspot connection sharing between **Android and Windows** — private by design, no cloud, no accounts.
-<br/><span dir="rtl">ریلی: اشتراک‌گذاری آنی و محلیِ اینترنت بین اندروید و ویندوز، بدون سرور و بدون حساب کاربری.</span>
+📱 Share your phone's internet with your PC — Android → Windows reverse tethering over an encrypted WireGuard tunnel. No root, no server, no account.
+<br/><span dir="rtl">ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز</span>
 
-**[→ View Repo](https://github.com/Mahdi-mortazavi/relay)**
+`android` `connection-sharing` `dotnet` `golang`
+
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated today</sub>
 
 ---
 
+### ◉ [Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)
+
+<a href="https://github.com/Mahdi-mortazavi/flow/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/flow?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="flow stars" /></a>
+<img src="https://img.shields.io/badge/Language-Dart-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
+<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/flow?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+
+🪨 One decision a day. ⏱ Focus. 🌱 Habits. 🔒 100% offline.
+<br/><span dir="rtl">تک‌نقطه — تمرکز، عادت و کارِ عمیق، مبتنی بر علم رفتار</span>
+
+`adhd` `android` `behavioral-science` `bilingual`
+
+**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/flow/releases/latest)** &nbsp;·&nbsp; <sub>updated 12d ago</sub>
+
+---
+
+### ◆ [sooda](https://github.com/Mahdi-mortazavi/sooda)
+
+<a href="https://github.com/Mahdi-mortazavi/sooda/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/sooda?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="sooda stars" /></a>
+<img src="https://img.shields.io/badge/Language-TypeScript-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
+<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/sooda?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+
+💎 Sooda — Liquid-glass profit, price &amp; discount calculator. Offline-first PWA, bilingual (EN/FA), zero dependencies on servers.
+<br/><span dir="rtl">null</span>
+
+
+
+**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Download](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+
+---
+
+### 🍎 [Nava](https://github.com/Mahdi-mortazavi/app)
+
+<a href="https://github.com/Mahdi-mortazavi/app/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/app?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="app stars" /></a>
+<img src="https://img.shields.io/badge/Language-Dart-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
+<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/app?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+
+🍎 Nava: The Art of Reduction. A Jony Ive inspired productivity app with Squircle design, Haptic feedback &amp; Breathing animations. | نوا: مینیمالیسم محض؛ هنرِ حذف اضافات.
+<br/><span dir="rtl">نوا — اپ بهره‌وری مینیمال با الهام از طراحی اپل</span>
+
+`dart` `flutter` `haptic-feedback` `ios-design`
+
+**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/app/releases/latest)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+
+---
+
+### 🧹 [purify](https://github.com/Mahdi-mortazavi/purify)
+
+<a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="purify stars" /></a>
+<img src="https://img.shields.io/badge/Language-Rust-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
+<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/purify?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+
+🧹 Clean your Windows disk with confidence. Fast, private, reversible cleanup built with Rust and Tauri.
+<br/><span dir="rtl">پیوریفای — پاک‌سازی هوشمند و فوق‌سریع دیسک ویندوز</span>
+
+`desktop-app` `disk-analyzer` `disk-cleaner` `disk-cleanup`
+
+**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 6d ago</sub>
+
+---
+
+### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
+
+<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="Mova stars" /></a>
+<img src="https://img.shields.io/badge/Language-TypeScript-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
+<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/Mova?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+
+Mova  in motion, not in perfection
+<br/><span dir="rtl">موا — در حرکت، نه در کمال</span>
+
+
+
+**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+
+---
+
+<!-- /LIVE:PROJECTS -->
+
 <div align="center">
-<sub>Also exploring &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/Mova">Mova</a> — <i>in motion, not in perfection</i> &nbsp;|&nbsp; <a href="https://github.com/Mahdi-mortazavi?tab=repositories">→ See all repositories</a></sub>
+<sub><a href="https://github.com/Mahdi-mortazavi?tab=repositories">→ See all repositories</a></sub>
 </div>
 
 <br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!--  ACTIVITY — only reliable services + theme-aware snake                  -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
@@ -191,7 +231,6 @@ Local-only hotspot connection sharing between **Android and Windows** — privat
 
 ## 📈 Activity &nbsp;·&nbsp; <sub>فعالیت</sub>
 
-<!-- Theme-aware contribution snake (adapts to light/dark) -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/output/github-contribution-grid-snake.svg" />
@@ -210,9 +249,24 @@ Local-only hotspot connection sharing between **Android and Windows** — privat
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!--  CONNECT / NETWORKING                                                   -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+## 💬 Ask Me Anything &nbsp;·&nbsp; <sub>از من بپرسید</sub>
+
+<sub>Open a question as an issue — it appears here automatically, and I answer it in public.
+<br/><span dir="rtl">سوال‌تان را به‌صورت Issue بپرسید؛ خودکار همین‌جا نمایش داده می‌شود و عمومی جواب می‌دهم.</span></sub>
+
+</div>
+
+<!-- LIVE:AMA -->
+<sub>No open questions yet — be the first. &nbsp;·&nbsp; <span dir="rtl">هنوز سوالی پرسیده نشده؛ اولین نفر باشید.</span></sub>
+
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/issues/new?title=Question%3A%20&body=Ask%20me%20anything%20%E2%80%94%20%D9%87%D8%B1%20%D8%B3%D9%88%D8%A7%D9%84%DB%8C%20%D8%AF%D8%A7%D8%B1%DB%8C%D8%AF%20%D8%A8%D9%BE%D8%B1%D8%B3%DB%8C%D8%AF"><img src="https://img.shields.io/badge/%F0%9F%92%AC%20Ask%20me%20anything-open%20a%20question-0A84FF?style=flat-square&labelColor=0D1117" height="28" alt="Ask me anything" /></a>
+<!-- /LIVE:AMA -->
+
+<br/>
+
+<div align="center">
+
+---
 
 ## 🤝 Let's Connect &nbsp;·&nbsp; <sub>بیایید در ارتباط باشیم</sub>
 
@@ -229,13 +283,15 @@ Have a hard problem worth solving? My inbox is one message away.
 &nbsp;
 <a href="https://t.me/Startup_legend"><img src="https://img.shields.io/badge/Community-Startup_Legend-0A84FF?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0D1117" height="40" alt="Join the Startup Legend community" /></a>
 
+<br/><br/>
+
+<!-- LIVE:UPDATED -->
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>02 Sept 2026, 18:34</b> Tehran time</sub>
+<!-- /LIVE:UPDATED -->
+
 </div>
 
 <br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!--  SEO FOOTER — natural, crawlable text to rank the name in EN + FA.      -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 

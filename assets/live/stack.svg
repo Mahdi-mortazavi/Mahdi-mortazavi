@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="178" viewBox="0 0 1280 178" role="img"
+  aria-label="Language distribution across Mahdi Mortazavi's public repositories">
+  <title>Real language distribution across all public repositories</title>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="55%" stop-color="#0F1420"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5E5CE6"/>
+      <stop offset="100%" stop-color="#FF375F"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5E5CE6"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="178" rx="20" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".7"><ellipse cx="1120" cy="20" rx="260" ry="150" fill="url(#aura1)"/></g>
+  <rect width="1280" height="178" rx="20" fill="url(#grid)"/>
+  <text x="72" y="48" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#5E5CE6">LANGUAGES ACROSS PUBLIC REPOS</text>
+  <clipPath id="barclip"><rect x="72" y="74" width="1136" height="26" rx="13"/></clipPath>
+  <g clip-path="url(#barclip)"><rect x="72.0" y="74" width="384.8" height="26" fill="#0A84FF"/><rect x="456.8" y="74" width="344.7" height="26" fill="#5E5CE6"/><rect x="801.6" y="74" width="199.5" height="26" fill="#30D158"/><rect x="1001.0" y="74" width="147.9" height="26" fill="#FF9F0A"/><rect x="1149.0" y="74" width="48.2" height="26" fill="#FF375F"/><rect x="1197.2" y="74" width="10.8" height="26" fill="#30D1D0"/></g>
+  <rect x="72" y="74" width="1136" height="26" rx="13" fill="none" stroke="rgba(255,255,255,.14)"/>
+  <circle cx="79" cy="142" r="6" fill="#0A84FF"/>
+      <text x="93" y="147" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#A1A1A6">TypeScript 33.9%</text><circle cx="244.2" cy="142" r="6" fill="#5E5CE6"/>
+      <text x="258.2" y="147" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#A1A1A6">Dart 30.3%</text><circle cx="360.2" cy="142" r="6" fill="#30D158"/>
+      <text x="374.2" y="147" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#A1A1A6">C# 17.6%</text><circle cx="459.79999999999995" cy="142" r="6" fill="#FF9F0A"/>
+      <text x="473.79999999999995" y="147" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#A1A1A6">JavaScript 13.0%</text><circle cx="625" cy="142" r="6" fill="#FF375F"/>
+      <text x="639" y="147" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#A1A1A6">HTML 4.2%</text><circle cx="732.8" cy="142" r="6" fill="#30D1D0"/>
+      <text x="746.8" y="147" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#A1A1A6">Rust 1.0%</text>
+</svg>
