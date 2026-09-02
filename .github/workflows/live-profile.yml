@@ -39,6 +39,9 @@ jobs:
       - name: 🎨 Generate live cards + README sections
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: a personal token with public-repo read unlocks real star
+          # history. Without it the growth curve builds from daily snapshots.
+          STARS_TOKEN: ${{ secrets.STARS_TOKEN }}
         run: node .github/scripts/generate.mjs
 
       - name: 🚀 Commit if anything actually changed

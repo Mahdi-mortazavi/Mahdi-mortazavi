@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="250" viewBox="0 0 1280 250" role="img"
-  aria-label="Star growth for Mahdi Mortazavi — collecting data"><title>Star growth — collecting data</title>
+  aria-label="Mahdi Mortazavi has 294 GitHub stars; the growth curve starts tracking today">
+  <title>294 stars across all repositories — growth tracking starts today</title>
   
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -37,6 +38,19 @@
     <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
       <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
     </pattern>
-  </defs><rect width="1280" height="250" rx="20" fill="url(#bg)"/>
+  </defs>
+  <rect width="1280" height="250" rx="20" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".65"><ellipse cx="1150" cy="30" rx="280" ry="170" fill="url(#aura1)"/></g>
   <rect width="1280" height="250" rx="20" fill="url(#grid)"/>
-  <text x="640" y="125" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" fill="#8A93A3">Collecting star history…</text></svg>
+  <text x="72" y="40" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#5E5CE6">GROWTH · STARS OVER TIME</text>
+  <text x="72" y="112" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-2" fill="#F5F5F7">294<tspan dx="16" font-size="20" font-weight="600" letter-spacing="0" fill="#A1A1A6">total stars</tspan></text>
+  <text x="72" y="142" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="500" fill="#8A93A3">across 10 public repositories · the curve starts filling in from today</text>
+  <line x1="72" y1="170" x2="1208" y2="170" stroke="#5E5CE6" stroke-opacity=".35" stroke-width="2.5" stroke-dasharray="6 8" stroke-linecap="round"/>
+  <circle cx="1208" cy="170" r="6" fill="#FFFFFF"/>
+  <circle cx="1208" cy="170" r="6" fill="none" stroke="#FFFFFF" stroke-opacity=".7">
+    <animate attributeName="r" values="6;17;6" dur="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".7;0;.7" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="72" y="210" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" fill="#8A93A3">today</text>
+  <text x="1208" y="210" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" fill="#8A93A3">next snapshot in 6h</text>
+</svg>
