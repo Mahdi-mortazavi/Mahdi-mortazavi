@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="250" viewBox="0 0 1280 250" role="img"
-  aria-label="Mahdi Mortazavi has 294 GitHub stars; the growth curve starts tracking today">
-  <title>294 stars across all repositories — growth tracking starts today</title>
+  aria-label="Star growth across Mahdi Mortazavi's open-source repositories">
+  <title>Cumulative GitHub stars — 295 total, 1 in the last 30 days</title>
   
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -9,25 +9,25 @@
       <stop offset="100%" stop-color="#161B22"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF9F0A" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#FF9F0A" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#0A84FF"/>
+      <stop offset="0%" stop-color="#FF9F0A"/>
+      <stop offset="100%" stop-color="#FF375F"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF9F0A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF9F0A"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -39,18 +39,31 @@
       <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
     </pattern>
   </defs>
+  <linearGradient id="gfill" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FF9F0A" stop-opacity=".55"/>
+    <stop offset="100%" stop-color="#FF9F0A" stop-opacity="0"/>
+  </linearGradient>
   <rect width="1280" height="250" rx="20" fill="url(#bg)"/>
   <g filter="url(#soft)" opacity=".65"><ellipse cx="1150" cy="30" rx="280" ry="170" fill="url(#aura1)"/></g>
   <rect width="1280" height="250" rx="20" fill="url(#grid)"/>
-  <text x="72" y="40" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#5E5CE6">GROWTH · STARS OVER TIME</text>
-  <text x="72" y="112" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-2" fill="#F5F5F7">294<tspan dx="16" font-size="20" font-weight="600" letter-spacing="0" fill="#A1A1A6">total stars</tspan></text>
-  <text x="72" y="142" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="500" fill="#8A93A3">across 10 public repositories · the curve starts filling in from today</text>
-  <line x1="72" y1="170" x2="1208" y2="170" stroke="#5E5CE6" stroke-opacity=".35" stroke-width="2.5" stroke-dasharray="6 8" stroke-linecap="round"/>
-  <circle cx="1208" cy="170" r="6" fill="#FFFFFF"/>
-  <circle cx="1208" cy="170" r="6" fill="none" stroke="#FFFFFF" stroke-opacity=".7">
+  <text x="72" y="40" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#FF9F0A">GROWTH · STARS OVER TIME</text>
+  <text x="72" y="66" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="500" fill="#8A93A3">295 total <tspan fill="#30D158" font-weight="700">▲ +1</tspan> in the last 30 days</text>
+  <line x1="72" y1="204.0" x2="1208" y2="204.0"
+      stroke="#FFFFFF" stroke-opacity=".07"/><line x1="72" y1="141.0" x2="1208" y2="141.0"
+      stroke="#FFFFFF" stroke-opacity=".07"/><line x1="72" y1="78.0" x2="1208" y2="78.0"
+      stroke="#FFFFFF" stroke-opacity=".07"/>
+  <path d="M72.0,78.4L87.8,78.4L103.6,78.4L119.3,78.4L135.1,78.4L150.9,78.4L166.7,78.4L182.4,78.4L198.2,78.4L214.0,78.4L229.8,78.4L245.6,78.4L261.3,78.4L277.1,78.4L292.9,78.4L308.7,78.4L324.4,78.4L340.2,78.4L356.0,78.4L371.8,78.4L387.6,78.4L403.3,78.4L419.1,78.4L434.9,78.4L450.7,78.4L466.4,78.4L482.2,78.4L498.0,78.4L513.8,78.4L529.6,78.4L545.3,78.4L561.1,78.4L576.9,78.4L592.7,78.4L608.4,78.4L624.2,78.4L640.0,78.4L655.8,78.4L671.6,78.4L687.3,78.4L703.1,78.4L718.9,78.4L734.7,78.4L750.4,78.4L766.2,78.4L782.0,78.4L797.8,78.4L813.6,78.4L829.3,78.4L845.1,78.4L860.9,78.4L876.7,78.4L892.4,78.4L908.2,78.4L924.0,78.4L939.8,78.4L955.6,78.4L971.3,78.4L987.1,78.4L1002.9,78.4L1018.7,78.4L1034.4,78.4L1050.2,78.0L1066.0,78.0L1081.8,78.0L1097.6,78.0L1113.3,78.0L1129.1,78.0L1144.9,78.0L1160.7,78.0L1176.4,78.0L1192.2,78.0L1208.0,78.0L1208.0,204L72,204Z" fill="url(#gfill)"/>
+  <path d="M72.0,78.4L87.8,78.4L103.6,78.4L119.3,78.4L135.1,78.4L150.9,78.4L166.7,78.4L182.4,78.4L198.2,78.4L214.0,78.4L229.8,78.4L245.6,78.4L261.3,78.4L277.1,78.4L292.9,78.4L308.7,78.4L324.4,78.4L340.2,78.4L356.0,78.4L371.8,78.4L387.6,78.4L403.3,78.4L419.1,78.4L434.9,78.4L450.7,78.4L466.4,78.4L482.2,78.4L498.0,78.4L513.8,78.4L529.6,78.4L545.3,78.4L561.1,78.4L576.9,78.4L592.7,78.4L608.4,78.4L624.2,78.4L640.0,78.4L655.8,78.4L671.6,78.4L687.3,78.4L703.1,78.4L718.9,78.4L734.7,78.4L750.4,78.4L766.2,78.4L782.0,78.4L797.8,78.4L813.6,78.4L829.3,78.4L845.1,78.4L860.9,78.4L876.7,78.4L892.4,78.4L908.2,78.4L924.0,78.4L939.8,78.4L955.6,78.4L971.3,78.4L987.1,78.4L1002.9,78.4L1018.7,78.4L1034.4,78.4L1050.2,78.0L1066.0,78.0L1081.8,78.0L1097.6,78.0L1113.3,78.0L1129.1,78.0L1144.9,78.0L1160.7,78.0L1176.4,78.0L1192.2,78.0L1208.0,78.0" fill="none" stroke="#FF9F0A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+    stroke-dasharray="4000" stroke-dashoffset="4000">
+    <animate attributeName="stroke-dashoffset" from="4000" to="0" dur="2.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+  </path>
+  <circle cx="1208.0" cy="78.0" r="6" fill="#FFFFFF"/>
+  <circle cx="1208.0" cy="78.0" r="6" fill="none" stroke="#FFFFFF" stroke-opacity=".7">
     <animate attributeName="r" values="6;17;6" dur="2.6s" repeatCount="indefinite"/>
     <animate attributeName="stroke-opacity" values=".7;0;.7" dur="2.6s" repeatCount="indefinite"/>
   </circle>
-  <text x="72" y="210" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" fill="#8A93A3">today</text>
-  <text x="1208" y="210" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" fill="#8A93A3">next snapshot in 6h</text>
+  <text x="72.0" y="234" text-anchor="start"
+      font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" fill="#8A93A3">Sept 26</text><text x="640.0" y="234" text-anchor="middle"
+      font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" fill="#8A93A3">Sept 26</text><text x="1208.0" y="234" text-anchor="end"
+      font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" fill="#8A93A3">Sept 26</text>
 </svg>
