@@ -9,25 +9,25 @@
       <stop offset="100%" stop-color="#161B22"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0A84FF"/>
-      <stop offset="100%" stop-color="#30D1D0"/>
+      <stop offset="0%" stop-color="#5E5CE6"/>
+      <stop offset="100%" stop-color="#FF375F"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#0A84FF"/>
-      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5E5CE6"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -47,12 +47,12 @@
   <rect width="1280" height="340" rx="20" fill="url(#grid)"/>
   <rect x="0" y="0" width="1280" height="3" fill="url(#hair)"/>
 
-  <text x="72" y="66" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="#0A84FF">
-    ☀️ Good afternoon — روز بخیر  ·  Tehran 14:36
+  <text x="72" y="66" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="#5E5CE6">
+    🌇 Good evening — عصر بخیر  ·  Tehran 19:51
   </text>
   <text x="72" y="142" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="-1.6" fill="#F5F5F7">Mahdi Mortazavi</text>
   <text x="72" y="182" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="700" fill="#A1A1A6">مهدی مرتضوی</text>
-  <text x="72" y="220" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="500" fill="#8A93A3">Full-Stack Developer · Product Builder · Problem Solver <tspan fill="#0A84FF">·</tspan> Iran</text>
+  <text x="72" y="220" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="500" fill="#8A93A3">Full-Stack Developer · Product Builder · Problem Solver <tspan fill="#5E5CE6">·</tspan> Iran</text>
 
   
     <g>
@@ -102,6 +102,6 @@
       <animateMotion dur="8s" repeatCount="indefinite" begin="-5.8s" path="M1052,170 a44,27.3 0 1,0 88,0 a44,27.3 0 1,0 -88,0"/></g>
   </g>
   <text x="1208" y="300" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#8A93A3">
-    auto-updated 03 Sept 2026 · 14:36 Tehran
+    auto-updated 03 Sept 2026 · 19:51 Tehran
   </text>
 </svg>

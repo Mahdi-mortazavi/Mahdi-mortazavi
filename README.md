@@ -120,7 +120,7 @@ JavaScript and Python** — and most of it is **open source**.
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🚀 **[purify](https://github.com/Mahdi-mortazavi/purify)** — Released v0.1.4 <sub>· 6d ago</sub>
+- 🚀 **[purify](https://github.com/Mahdi-mortazavi/purify)** — Released v0.1.4 <sub>· 7d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
 <br/>
@@ -166,7 +166,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 `android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.7.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated today</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated yesterday</sub>
 
 ---
 
@@ -226,7 +226,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 `desktop-app` `disk-analyzer` `disk-cleaner` `disk-cleanup` &nbsp;·&nbsp; 🏷️ **v0.1.4**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 6d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 7d ago</sub>
 
 ---
 
@@ -326,7 +326,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>03 Sept 2026, 14:36</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>03 Sept 2026, 19:51</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
