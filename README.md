@@ -215,21 +215,6 @@ JavaScript and Python** — and most of it is **open source**.
 
 ---
 
-### 🧹 [purify](https://github.com/Mahdi-mortazavi/purify)
-
-<a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="purify stars" /></a>
-<img src="https://img.shields.io/badge/Language-Rust-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
-<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/purify?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
-
-🧹 Clean your Windows disk with confidence. Fast, private, reversible cleanup built with Rust and Tauri.
-<br/><span dir="rtl">پیوریفای — پاک‌سازی هوشمند و فوق‌سریع دیسک ویندوز</span>
-
-`desktop-app` `disk-analyzer` `disk-cleaner` `disk-cleanup` &nbsp;·&nbsp; 🏷️ **v0.1.4**
-
-**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 8d ago</sub>
-
----
-
 ### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
 
 <a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="Mova stars" /></a>
@@ -242,6 +227,21 @@ Mova  in motion, not in perfection
 
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
+
+---
+
+### 🧹 [purify](https://github.com/Mahdi-mortazavi/purify)
+
+<a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="purify stars" /></a>
+<img src="https://img.shields.io/badge/Language-Rust-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
+<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/purify?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+
+🧹 Clean your Windows disk with confidence. Fast, private, reversible cleanup built with Rust and Tauri.
+<br/><span dir="rtl">پیوریفای — پاک‌سازی هوشمند و فوق‌سریع دیسک ویندوز</span>
+
+`desktop-app` `disk-analyzer` `disk-cleaner` `disk-cleanup` &nbsp;·&nbsp; 🏷️ **v0.1.4**
+
+**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 8d ago</sub>
 
 ---
 
@@ -326,7 +326,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>05 Sept 2026, 07:46</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>05 Sept 2026, 13:59</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
