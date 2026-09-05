@@ -241,7 +241,7 @@ Mova  in motion, not in perfection
 
 `desktop-app` `disk-analyzer` `disk-cleaner` `disk-cleanup` &nbsp;·&nbsp; 🏷️ **v0.1.4**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 8d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 9d ago</sub>
 
 ---
 
@@ -326,7 +326,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>05 Sept 2026, 13:59</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>05 Sept 2026, 18:35</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
