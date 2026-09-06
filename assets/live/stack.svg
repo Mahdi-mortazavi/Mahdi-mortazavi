@@ -9,25 +9,25 @@
       <stop offset="100%" stop-color="#161B22"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0A84FF"/>
-      <stop offset="100%" stop-color="#30D1D0"/>
+      <stop offset="0%" stop-color="#5E5CE6"/>
+      <stop offset="100%" stop-color="#FF375F"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#0A84FF"/>
-      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5E5CE6"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -42,7 +42,7 @@
   <rect width="1280" height="178" rx="20" fill="url(#bg)"/>
   <g filter="url(#soft)" opacity=".7"><ellipse cx="1120" cy="20" rx="260" ry="150" fill="url(#aura1)"/></g>
   <rect width="1280" height="178" rx="20" fill="url(#grid)"/>
-  <text x="72" y="48" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#0A84FF">LANGUAGES ACROSS PUBLIC REPOS</text>
+  <text x="72" y="48" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#5E5CE6">LANGUAGES ACROSS PUBLIC REPOS</text>
   <clipPath id="barclip"><rect x="72" y="74" width="1136" height="26" rx="13"/></clipPath>
   <g clip-path="url(#barclip)"><rect x="72.0" y="74" width="292.2" height="26" fill="#0A84FF"/><rect x="364.2" y="74" width="261.3" height="26" fill="#5E5CE6"/><rect x="625.5" y="74" width="173.5" height="26" fill="#30D158"/><rect x="799.0" y="74" width="150.2" height="26" fill="#FF9F0A"/><rect x="949.1" y="74" width="131.4" height="26" fill="#FF375F"/><rect x="1080.6" y="74" width="127.4" height="26" fill="#30D1D0"/></g>
   <rect x="72" y="74" width="1136" height="26" rx="13" fill="none" stroke="rgba(255,255,255,.14)"/>
