@@ -272,7 +272,11 @@ export function growth(d, t) {
     pts.push({ x: PAD + (IW * i) / N, y: c });
   }
   const max = Math.max(...pts.map(p => p.y), 1);
-  const Y = v => PT + ch - (v / max) * ch;
+  const min = Math.min(...pts.map(p => p.y));
+  // A zero baseline flattens a 294->301 series into a straight line. Track the
+  // data range instead, and label the baseline so the axis is not misleading.
+  const lo = max === min ? Math.max(0, min - 1) : min - (max - min) * 0.25;
+  const Y = v => PT + ch - ((v - lo) / (max - lo || 1)) * ch;
   const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p.x.toFixed(1)},${Y(p.y).toFixed(1)}`).join('');
   const area = `${line}L${(PAD + IW).toFixed(1)},${PT + ch}L${PAD},${PT + ch}Z`;
 
@@ -282,14 +286,19 @@ export function growth(d, t) {
     : (() => { const w = (hist ?? []).filter(h => new Date(h.d).getTime() >= cut);
                return w.length > 1 ? d.stars - w[0].stars : 0; })();
 
-  const fmt = ts => new Intl.DateTimeFormat('en-GB', { month: 'short', year: '2-digit' }).format(new Date(ts));
+  // Short spans need day precision; long ones read better as month + year.
+  const fmt = span < 75 * 86400000
+    ? ts => new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short' }).format(new Date(ts))
+    : ts => new Intl.DateTimeFormat('en-GB', { month: 'short', year: '2-digit' }).format(new Date(ts));
   const ticks = [0, .5, 1].map(f => {
     const x = PAD + IW * f;
-    return `<text x="${x.toFixed(1)}" y="${H - 18}" text-anchor="${f === 0 ? 'start' : f === 1 ? 'end' : 'middle'}"
+    return `<text x="${x.toFixed(1)}" y="${H - 13}" text-anchor="${f === 0 ? 'start' : f === 1 ? 'end' : 'middle'}"
       font-family="${FONT}" font-size="${T.micro}" fill="${C.dim}">${fmt(first + span * f)}</text>`;
   }).join('');
   const grid = [0, .5, 1].map(f =>
-    `<line x1="${PAD}" y1="${Y(max * f).toFixed(1)}" x2="${PAD + IW}" y2="${Y(max * f).toFixed(1)}" stroke="#FFFFFF" stroke-opacity=".07"/>`).join('');
+    `<line x1="${PAD}" y1="${Y(lo + (max - lo) * f).toFixed(1)}" x2="${PAD + IW}" y2="${Y(lo + (max - lo) * f).toFixed(1)}" stroke="#FFFFFF" stroke-opacity=".07"/>`).join('');
+  // Baseline value, so a non-zero axis is stated rather than implied.
+  const axis = `<text x="${PAD}" y="${(PT + ch + 19).toFixed(1)}" font-family="${FONT}" font-size="${T.micro}" fill="${C.dim}">from ${Math.round(lo)}</text>`;
   const end = pts[pts.length - 1];
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
@@ -313,6 +322,6 @@ export function growth(d, t) {
     <animate attributeName="r" values="6;17;6" dur="2.6s" repeatCount="indefinite"/>
     <animate attributeName="stroke-opacity" values=".7;0;.7" dur="2.6s" repeatCount="indefinite"/>
   </circle>
-  ${ticks}
+  ${ticks}${axis}
 </svg>`;
 }
