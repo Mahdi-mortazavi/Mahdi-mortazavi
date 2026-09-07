@@ -2,14 +2,14 @@
 <!--  Mahdi Mortazavi · مهدی مرتضوی — GitHub Profile README                   -->
 <!--                                                                         -->
 <!--  ⚠️  PARTS OF THIS FILE ARE GENERATED.                                   -->
-<!--  Everything between <!-- LIVE:X --> and <!-- /LIVE:X --> is rewritten    -->
+<!--  Everything between the LIVE:X marker pairs is rewritten              -->
 <!--  by .github/workflows/live-profile.yml. Edit the generator               -->
 <!--  (.github/scripts/generate.mjs), not the generated text.                 -->
 <!--                                                                         -->
 <!--  DESIGN NOTES:                                                          -->
 <!--  • Liquid Glass / Apple aesthetic, one accent (#0A84FF).                -->
 <!--  • Contact sits ABOVE the fold — reaching me should take one tap.       -->
-<!--  • Long sections use <details> so mobile stays short and scannable.     -->
+<!--  • Long sections use disclosure blocks so mobile stays short.          -->
 <!--  • SEO: real crawlable text with the name in EN + FA. Images are NOT     -->
 <!--    crawled — keep the plain-text headings & paragraphs.                  -->
 <!--  • Cards are SELF-HOSTED animated SVGs; no third-party card service.     -->
@@ -26,7 +26,7 @@
 </a>
 
 <a href="https://github.com/Mahdi-mortazavi">
-  <img src="https://readme-typing-svg.demolab.com/?font=SF+Pro+Display&weight=600&size=21&duration=2600&pause=1100&color=0A84FF&center=true&vCenter=true&width=780&lines=Full-Stack+Developer+%C3%97+Product+Builder;%F0%9F%A7%A9+First+principles+thinking;%F0%9F%92%A1+Designing+solutions;%F0%9F%9A%80+Building+real+products;Open-source+builder+from+Iran+%F0%9F%87%AE%F0%9F%87%B7" alt="First principles thinking, designing solutions, building real products" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/headline.svg" width="100%" alt="Full-Stack Developer and Product Builder — first principles thinking, designing solutions, building real products" />
 </a>
 
 <br/>
@@ -43,11 +43,9 @@
 
 <sub>🟢 <b>Available for collaborations</b> &nbsp;·&nbsp; <span dir="rtl">آماده‌ی همکاری، پروژه‌ی فریلنس و هم‌بنیان‌گذاری</span></sub>
 
-<br/>
-
 <a href="https://mahdi-mortazavi.github.io"><img src="https://img.shields.io/badge/🔗_Personal_Hub-mahdi--mortazavi.github.io-0A84FF?style=for-the-badge&labelColor=0D1117" alt="Mahdi Mortazavi — Personal Hub" height="34" /></a>
 
-<br/><br/>
+<br/>
 
 <a href="https://github.com/Mahdi-mortazavi?tab=followers"><img src="https://img.shields.io/github/followers/Mahdi-mortazavi?style=flat-square&logo=github&logoColor=white&label=Followers&labelColor=0D1117&color=0A84FF" alt="Followers" /></a>
 <img src="https://komarev.com/ghpvc/?username=Mahdi-mortazavi&label=Profile%20views&color=0A84FF&style=flat-square&labelColor=0D1117" alt="Profile views" />
@@ -273,7 +271,7 @@ Mova  in motion, not in perfection
 </div>
 
 <details align="center">
-<summary><b>🐍 Contribution snake &amp; streak</b> &nbsp;·&nbsp; <sub>آمار بیشتر</sub></summary>
+<summary><b>🐍 Contribution snake</b> &nbsp;·&nbsp; <sub>آمار بیشتر</sub></summary>
 
 <br/>
 
@@ -286,9 +284,6 @@ Mova  in motion, not in perfection
 </picture>
 
 <br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=Mahdi-mortazavi&theme=tokyonight&hide_border=true&background=0D1117&ring=0A84FF&fire=0A84FF&currStreakLabel=0A84FF&date_format=M%20j%5B%2C%20Y%5D" width="80%" alt="Mahdi Mortazavi's contribution streak" />
-
 </div>
 
 </details>
@@ -365,5 +360,5 @@ and good technical conversations** — and I reply fast.
 </div>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A84FF,45:1C1C1E,100:0D1117&height=110&section=footer" width="100%" alt="footer" />
+<img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/footer.svg" width="100%" alt="" />
 </div>
