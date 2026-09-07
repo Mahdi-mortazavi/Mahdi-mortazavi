@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="110" viewBox="0 0 700 110" role="img"
+  aria-label="Decorative footer">
+  <title>Mahdi Mortazavi · مهدی مرتضوی</title>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="55%" stop-color="#0F1420"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF9F0A" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#FF9F0A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9F0A"/>
+      <stop offset="100%" stop-color="#FF375F"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF9F0A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF9F0A"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="coreglow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+  </defs>
+  <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FF9F0A"/><stop offset="100%" stop-color="#FF375F"/>
+  </linearGradient>
+  <rect width="700" height="110" fill="#0D1117"/>
+  <path fill="url(#wave)" fill-opacity="0.16" d="M-350,46 C -175,20 0,72 175,46 C 350,20 525,72 700,46 C 875,20 1050,72 1050,46 L1050,110 L-350,110 Z">
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0;-350 0" dur="19s" repeatCount="indefinite"/>
+    </path><path fill="url(#wave)" fill-opacity="0.26" d="M-350,62 C -175,43 0,81 175,62 C 350,43 525,81 700,62 C 875,43 1050,81 1050,62 L1050,110 L-350,110 Z">
+      <animateTransform attributeName="transform" type="translate"
+        values="120 0;-230 0" dur="13s" repeatCount="indefinite"/>
+    </path><path fill="url(#wave)" fill-opacity="0.46" d="M-350,78 C -175,65 0,91 175,78 C 350,65 525,91 700,78 C 875,65 1050,91 1050,78 L1050,110 L-350,110 Z">
+      <animateTransform attributeName="transform" type="translate"
+        values="240 0;-110 0" dur="9s" repeatCount="indefinite"/>
+    </path>
+  <rect x="0" y="0" width="700" height="2.5" fill="url(#hair)"/>
+</svg>

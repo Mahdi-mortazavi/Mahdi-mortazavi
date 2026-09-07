@@ -7,7 +7,7 @@
  */
 import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import { C, FONT, defs, glass, esc, tehran, nf } from './lib-theme.mjs';
-import { hero, stack, growth, heat } from './lib-cards.mjs';
+import { hero, stack, growth, heat, headline, footer } from './lib-cards.mjs';
 
 const USER = 'Mahdi-mortazavi';
 const OUT = 'assets/live';
@@ -290,6 +290,8 @@ await mkdir(OUT, { recursive: true });
 await writeFile(`${OUT}/hero.svg`, hero(d, t));
 await writeFile(`${OUT}/stack.svg`, stack(d, t));
 await writeFile(`${OUT}/growth.svg`, growth(d, t));
+await writeFile(`${OUT}/headline.svg`, headline(t));
+await writeFile(`${OUT}/footer.svg`, footer(t));
 const cal = await contributions();
 if (cal) await writeFile(`${OUT}/heat.svg`, heat(cal, t));
 else {
@@ -305,4 +307,4 @@ md = replaceSection(md, 'AMA', amaMd(d));
 md = replaceSection(md, 'UPDATED',
   `<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>${t.date}, ${t.time}</b> Tehran time</sub>`);
 await writeFile('README.md', md);
-console.log('✓ wrote hero.svg, stack.svg, growth.svg, heat.svg, README.md');
+console.log('✓ wrote hero, stack, growth, heat, headline, footer + README.md');

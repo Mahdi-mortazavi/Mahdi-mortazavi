@@ -205,6 +205,20 @@ export function heat(cal, t) {
     }
   }
 
+  // Streaks, computed from the same calendar — no second service needed.
+  // "Today" is the last day the calendar carries, so a timezone gap at the
+  // edge of the year cannot silently zero a live streak.
+  const active = d => (cal.levelsOnly ? (d.level ?? 0) : (d.contributionCount ?? 0)) > 0;
+  let best = 0, run = 0;
+  for (const d of days) { run = active(d) ? run + 1 : 0; if (run > best) best = run; }
+  let current = 0;
+  for (let i = days.length - 1; i >= 0; i--) {
+    if (active(days[i])) current++;
+    else if (i === days.length - 1) continue;   // today may simply not have started
+    else break;
+  }
+  const bestDay = cal.levelsOnly ? 0 : Math.max(...counts, 0);
+
   const LGY = GY + 7 * STEP2 + 24;
   const legend = LV.map((c, i) =>
     `<rect x="${PAD + 46 + i * 16}" y="${LGY - 10}" width="11" height="11" rx="2.4" fill="${c}"/>`).join('');
@@ -217,10 +231,13 @@ export function heat(cal, t) {
   ${defs(m)}${card(H, m)}
   <text x="${PAD}" y="48" font-family="${FONT}" font-size="${T.kicker}" font-weight="700" letter-spacing="2" fill="${m.a}">CONTRIBUTIONS · فعالیت</text>
   <text x="${PAD}" y="84" font-family="${FONT}" font-size="${T.body}" font-weight="700" fill="${C.txt}">${totalLine}</text>
+  <text x="${W - PAD}" y="84" text-anchor="end" font-family="${FONT}" font-size="${T.small}" font-weight="700" fill="${m.a}">${current > 0 ? `🔥 ${current}-day streak` : `longest streak ${best}d`}</text>
   ${months}${cells}
   <text x="${PAD}" y="${LGY}" font-family="${FONT}" font-size="${T.micro}" fill="${C.dim}">less</text>
   ${legend}
   <text x="${PAD + 134}" y="${LGY}" font-family="${FONT}" font-size="${T.micro}" fill="${C.dim}">more</text>
+  <text x="${W - PAD}" y="${LGY}" text-anchor="end" font-family="${FONT}" font-size="${T.micro}" fill="${C.dim}">${
+    bestDay ? `longest ${best}d · best day ${bestDay}` : `longest streak ${best}d`}</text>
 </svg>`;
 }
 
@@ -323,5 +340,78 @@ export function growth(d, t) {
     <animate attributeName="stroke-opacity" values=".7;0;.7" dur="2.6s" repeatCount="indefinite"/>
   </circle>
   ${ticks}${axis}
+</svg>`;
+}
+
+/**
+ * Animated headline strip. Replaces readme-typing-svg.demolab.com so the
+ * wordmark line is on-brand (same glass, same Tehran-time accent) and cannot
+ * be taken down by a third party.
+ */
+export function headline(t) {
+  const m = t.mood, H = 92;
+  const LINES = [
+    'Full-Stack Developer × Product Builder',
+    '🧩  First principles thinking',
+    '💡  Designing solutions',
+    '🚀  Building real products',
+    'Open-source builder from Iran',
+  ];
+  const N = LINES.length, total = (N * 2.6).toFixed(1), fade = 0.022;
+  // One full-cycle timeline per line. SMIL requires keyTimes to span 0..1, so
+  // each line carries the whole cycle and is simply transparent outside its
+  // own window — a sub-range timeline renders nothing at all.
+  const items = LINES.map((line, i) => {
+    const a = i / N, b = (i + 1) / N;
+    const kt = [0, a, Math.min(a + fade, b), Math.max(b - fade, a), b, 1]
+      .map(v => v.toFixed(4)).join(';');
+    return `<text x="${W / 2}" y="${H / 2 + 9}" text-anchor="middle" font-family="${FONT}"
+      font-size="26" font-weight="700" fill="${C.txt}" opacity="0">${esc(line)}
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="${kt}"
+        dur="${total}s" repeatCount="indefinite"/>
+    </text>`;
+  }).join('');
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
+  aria-label="${esc(LINES.join(' · '))}">
+  <title>${esc(LINES.join(' · '))}</title>
+  ${defs(m)}
+  <rect width="${W}" height="${H}" rx="22" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".7"><ellipse cx="${W / 2}" cy="${H / 2}" rx="300" ry="80" fill="url(#aura1)"/></g>
+  <rect width="${W}" height="${H}" rx="22" fill="url(#grid)"/>
+  <rect x="0" y="0" width="${W}" height="3" fill="url(#hair)"/>
+  ${items}
+</svg>`;
+}
+
+/**
+ * Footer wave. Replaces capsule-render.vercel.app, which has started
+ * answering 403 intermittently.
+ */
+export function footer(t) {
+  const m = t.mood, H = 110;
+  // Three layers, each a full period wider than the canvas and drifting
+  // sideways, so the crests never sit still or line up.
+  const layer = (y, op, dur, amp, shift) => {
+    const w = W * 1.5;
+    const d = `M${-W / 2},${y} ` +
+      `C ${-W / 4},${y - amp} ${0},${y + amp} ${W / 4},${y} ` +
+      `C ${W / 2},${y - amp} ${(W * 3) / 4},${y + amp} ${W},${y} ` +
+      `C ${(W * 5) / 4},${y - amp} ${(W * 3) / 2},${y + amp} ${w},${y} ` +
+      `L${w},${H} L${-W / 2},${H} Z`;
+    return `<path fill="url(#wave)" fill-opacity="${op}" d="${d}">
+      <animateTransform attributeName="transform" type="translate"
+        values="${shift} 0;${shift - W / 2} 0" dur="${dur}s" repeatCount="indefinite"/>
+    </path>`;
+  };
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
+  aria-label="Decorative footer">
+  <title>Mahdi Mortazavi · مهدی مرتضوی</title>
+  ${defs(m)}
+  <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="${m.a}"/><stop offset="100%" stop-color="${m.b}"/>
+  </linearGradient>
+  <rect width="${W}" height="${H}" fill="${C.bg}"/>
+  ${layer(46, .16, 19, 26, 0)}${layer(62, .26, 13, 19, 120)}${layer(78, .46, 9, 13, 240)}
+  <rect x="0" y="0" width="${W}" height="2.5" fill="url(#hair)"/>
 </svg>`;
 }
