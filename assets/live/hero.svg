@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="476" viewBox="0 0 700 476" role="img"
   aria-label="Mahdi Mortazavi — live profile banner">
-  <title>Mahdi Mortazavi · مهدی مرتضوی — Problem Solver, Flutter Developer &amp; Product Designer</title>
+  <title>Mahdi Mortazavi · مهدی مرتضوی — Full-Stack Developer, Product Builder and Problem Solver</title>
   
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -9,8 +9,8 @@
       <stop offset="100%" stop-color="#161B22"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF9F0A" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#FF9F0A" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
@@ -21,12 +21,12 @@
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#5E5CE6"/>
+      <stop offset="0%" stop-color="#FF9F0A"/>
       <stop offset="100%" stop-color="#FF375F"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#5E5CE6"/>
+      <stop offset="0%" stop-color="#FF9F0A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF9F0A"/>
       <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
@@ -39,69 +39,48 @@
       <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
     </pattern>
   </defs>
-  <rect width="1280" height="340" rx="20" fill="url(#bg)"/>
-  <g filter="url(#soft)" opacity=".9">
-    <ellipse cx="1090" cy="70" rx="300" ry="210" fill="url(#aura1)"/>
-    <ellipse cx="150" cy="360" rx="320" ry="200" fill="url(#aura2)"/>
+  <rect width="700" height="476" rx="22" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".85">
+    <ellipse cx="640" cy="40" rx="200" ry="150" fill="url(#aura1)"/>
+    <ellipse cx="60" cy="496" rx="220" ry="150" fill="url(#aura2)"/>
   </g>
-  <rect width="1280" height="340" rx="20" fill="url(#grid)"/>
-  <rect x="0" y="0" width="1280" height="3" fill="url(#hair)"/>
-
-  <text x="72" y="66" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="#5E5CE6">
-    🌇 Good evening — عصر بخیر  ·  Tehran 20:55
-  </text>
-  <text x="72" y="142" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="-1.6" fill="#F5F5F7">Mahdi Mortazavi</text>
-  <text x="72" y="182" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="700" fill="#A1A1A6">مهدی مرتضوی</text>
-  <text x="72" y="220" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="500" fill="#8A93A3">Full-Stack Developer · Product Builder · Problem Solver <tspan fill="#5E5CE6">·</tspan> Iran</text>
-
-  
-    <g>
-    <rect x="72" y="258" width="176" height="46" rx="15" fill="url(#glass)"/>
-    <rect x="72" y="258" width="176" height="46" rx="15" fill="none" stroke="rgba(255,255,255,.14)"/>
-    <path d="M 87 258.75 H 233" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-  </g>
-    <text x="92" y="287" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#A1A1A6">★ Stars</text>
-    <text x="228" y="287" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="800" fill="#F5F5F7">294</text>
-  
-    <g>
-    <rect x="264" y="258" width="176" height="46" rx="15" fill="url(#glass)"/>
-    <rect x="264" y="258" width="176" height="46" rx="15" fill="none" stroke="rgba(255,255,255,.14)"/>
-    <path d="M 279 258.75 H 425" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-  </g>
-    <text x="284" y="287" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#A1A1A6">Followers</text>
-    <text x="420" y="287" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="800" fill="#F5F5F7">43</text>
-  
-    <g>
-    <rect x="456" y="258" width="176" height="46" rx="15" fill="url(#glass)"/>
-    <rect x="456" y="258" width="176" height="46" rx="15" fill="none" stroke="rgba(255,255,255,.14)"/>
-    <path d="M 471 258.75 H 617" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-  </g>
-    <text x="476" y="287" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#A1A1A6">Repos</text>
-    <text x="612" y="287" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="800" fill="#F5F5F7">10</text>
-  
-    <g>
-    <rect x="648" y="258" width="176" height="46" rx="15" fill="url(#glass)"/>
-    <rect x="648" y="258" width="176" height="46" rx="15" fill="none" stroke="rgba(255,255,255,.14)"/>
-    <path d="M 663 258.75 H 809" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-  </g>
-    <text x="668" y="287" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#A1A1A6">Forks</text>
-    <text x="804" y="287" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="800" fill="#F5F5F7">25</text>
-
-  <g>
-    <ellipse cx="1096" cy="170" rx="96" ry="59.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="1.6"/><ellipse cx="1096" cy="170" rx="70" ry="43.4" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.6"/><ellipse cx="1096" cy="170" rx="44" ry="27.3" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.6"/>
-    <circle cx="1096" cy="170" r="30" fill="url(#mark)" filter="url(#coreglow)"/>
-    <circle cx="1096" cy="170" r="26" fill="url(#mark)"/>
-    <circle cx="1096" cy="170" r="26" fill="none" stroke="#FFFFFF" stroke-opacity=".5"/>
-    <circle cx="1096" cy="170" r="26" fill="none" stroke="#FFFFFF" stroke-opacity=".35">
-      <animate attributeName="r" values="26;40;26" dur="4s" repeatCount="indefinite"/>
+  <rect width="700" height="476" rx="22" fill="url(#grid)"/>
+  <rect x="0" y="0" width="700" height="3" fill="url(#hair)"/><g>
+    <ellipse cx="615" cy="112" rx="48" ry="29.8" fill="none" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="1.6"/><ellipse cx="615" cy="112" rx="35" ry="21.7" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.6"/><ellipse cx="615" cy="112" rx="22" ry="13.6" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.6"/>
+    <circle cx="615" cy="112" r="18" fill="url(#mark)" filter="url(#coreglow)"/>
+    <circle cx="615" cy="112" r="15" fill="url(#mark)"/>
+    <circle cx="615" cy="112" r="15" fill="none" stroke="#FFFFFF" stroke-opacity=".5"/>
+    <circle cx="615" cy="112" r="15" fill="none" stroke="#FFFFFF" stroke-opacity=".35">
+      <animate attributeName="r" values="15;26;15" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="stroke-opacity" values=".35;0;.35" dur="4s" repeatCount="indefinite"/>
     </circle>
-    <g><circle r="6.5" fill="#FFFFFF" fill-opacity="1"/>
-      <animateMotion dur="18s" repeatCount="indefinite" begin="-0s" path="M1000,170 a96,59.5 0 1,0 192,0 a96,59.5 0 1,0 -192,0"/></g><g><circle r="5" fill="#FFFFFF" fill-opacity="0.85"/>
-      <animateMotion dur="12s" repeatCount="indefinite" begin="-4.6s" path="M1026,170 a70,43.4 0 1,0 140,0 a70,43.4 0 1,0 -140,0"/></g><g><circle r="4" fill="#FFFFFF" fill-opacity="0.7"/>
-      <animateMotion dur="8s" repeatCount="indefinite" begin="-5.8s" path="M1052,170 a44,27.3 0 1,0 88,0 a44,27.3 0 1,0 -88,0"/></g>
+    <g><circle r="4.6" fill="#FFFFFF" fill-opacity="1"/>
+      <animateMotion dur="18s" repeatCount="indefinite" begin="-0s" path="M567,112 a48,29.8 0 1,0 96,0 a48,29.8 0 1,0 -96,0"/></g><g><circle r="3.9" fill="#FFFFFF" fill-opacity="0.85"/>
+      <animateMotion dur="12s" repeatCount="indefinite" begin="-4.6s" path="M580,112 a35,21.7 0 1,0 70,0 a35,21.7 0 1,0 -70,0"/></g><g><circle r="3.2" fill="#FFFFFF" fill-opacity="0.7"/>
+      <animateMotion dur="8s" repeatCount="indefinite" begin="-5.8s" path="M593,112 a22,13.6 0 1,0 44,0 a22,13.6 0 1,0 -44,0"/></g>
+  </g><text x="40" y="54" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="700" letter-spacing=".6" fill="#FF9F0A">🌅 Good morning · Tehran 06:26</text><text x="40" y="126" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="52" font-weight="800" letter-spacing="-1.2" fill="#F5F5F7">Mahdi Mortazavi</text><text x="40" y="170" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="700" fill="#A1A1A6">مهدی مرتضوی</text><text x="40" y="208" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="500" fill="#8A93A3">Full-Stack Developer · Product Builder ·</text><text x="40" y="238" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="500" fill="#8A93A3">Problem Solver · Iran</text><g>
+    <rect x="40" y="276" width="296" height="66" rx="18" fill="url(#glass)"/>
+    <rect x="40" y="276" width="296" height="66" rx="18" fill="none" stroke="rgba(255,255,255,.14)"/>
+    <path d="M 58 276.75 H 318" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
-  <text x="1208" y="300" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#8A93A3">
-    auto-updated 02 Sept 2026 · 20:55 Tehran
-  </text>
+      <text x="60" y="318" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="600" fill="#A1A1A6">★ Stars</text>
+      <text x="316" y="318" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="800" fill="#F5F5F7">294</text><g>
+    <rect x="364" y="276" width="296" height="66" rx="18" fill="url(#glass)"/>
+    <rect x="364" y="276" width="296" height="66" rx="18" fill="none" stroke="rgba(255,255,255,.14)"/>
+    <path d="M 382 276.75 H 642" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+      <text x="384" y="318" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="600" fill="#A1A1A6">Followers</text>
+      <text x="640" y="318" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="800" fill="#F5F5F7">43</text><g>
+    <rect x="40" y="358" width="296" height="66" rx="18" fill="url(#glass)"/>
+    <rect x="40" y="358" width="296" height="66" rx="18" fill="none" stroke="rgba(255,255,255,.14)"/>
+    <path d="M 58 358.75 H 318" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+      <text x="60" y="400" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="600" fill="#A1A1A6">Repos</text>
+      <text x="316" y="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="800" fill="#F5F5F7">10</text><g>
+    <rect x="364" y="358" width="296" height="66" rx="18" fill="url(#glass)"/>
+    <rect x="364" y="358" width="296" height="66" rx="18" fill="none" stroke="rgba(255,255,255,.14)"/>
+    <path d="M 382 358.75 H 642" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+      <text x="384" y="400" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="600" fill="#A1A1A6">Forks</text>
+      <text x="640" y="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="800" fill="#F5F5F7">25</text><text x="660" y="454" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="500" fill="#8A93A3">auto-updated 07 Sept 2026 · Tehran</text>
 </svg>

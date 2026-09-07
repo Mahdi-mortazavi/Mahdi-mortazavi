@@ -13,6 +13,9 @@
 <!--  • SEO: real crawlable text with the name in EN + FA. Images are NOT     -->
 <!--    crawled — keep the plain-text headings & paragraphs.                  -->
 <!--  • Cards are SELF-HOSTED animated SVGs; no third-party card service.     -->
+<!--  • MOBILE FIRST: GitHub renders this in a ~355px column on a phone and    -->
+<!--    the cards are width:100%, so the SVG canvas is 700 wide with a         -->
+<!--    minimum type size of 21. Never widen the canvas without re-checking.   -->
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
@@ -95,6 +98,11 @@ JavaScript and Python** — and most of it is **open source**.
 
 </div>
 
+<details open>
+<summary><b>The three steps I run on every problem</b> &nbsp;·&nbsp; <sub>سه گامی که روی هر مسئله اجرا می‌کنم</sub></summary>
+
+<br/>
+
 > ### 🧩 First-Principles Thinking &nbsp;·&nbsp; <sub>تفکر بر پایه‌ی اصول</sub>
 > I break a problem down to fundamentals instead of copying assumptions — that's where the real answer hides.
 > <br/><span dir="rtl">مسئله را تا مبانی پایه تجزیه می‌کنم، نه اینکه فرض‌های دیگران را تکرار کنم؛ پاسخ واقعی همان‌جاست.</span>
@@ -106,6 +114,8 @@ JavaScript and Python** — and most of it is **open source**.
 > ### 🚀 Building Real Products &nbsp;·&nbsp; <sub>ساختِ محصول واقعی</sub>
 > Nothing counts until it ships. I take it all the way to something people can download and use.
 > <br/><span dir="rtl">تا وقتی منتشر نشده، به حساب نمی‌آید. کار را تا محصولی که قابل دانلود و استفاده باشد می‌برم.</span>
+
+</details>
 
 <br/>
 
@@ -158,8 +168,7 @@ JavaScript and Python** — and most of it is **open source**.
 ### 📡 [relay](https://github.com/Mahdi-mortazavi/relay)
 
 <a href="https://github.com/Mahdi-mortazavi/relay/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/relay?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="relay stars" /></a>
-<img src="https://img.shields.io/badge/Language-C%23-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
-<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/relay?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+&nbsp;<sub>**C#**</sub>
 
 📱 Share your phone's internet with your PC — Android → Windows reverse tethering over an encrypted WireGuard tunnel. No root, no server, no account.
 <br/><span dir="rtl">ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز</span>
@@ -173,8 +182,7 @@ JavaScript and Python** — and most of it is **open source**.
 ### ◉ [Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)
 
 <a href="https://github.com/Mahdi-mortazavi/flow/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/flow?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="flow stars" /></a>
-<img src="https://img.shields.io/badge/Language-Dart-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
-<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/flow?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+&nbsp;<sub>**Dart**</sub>
 
 🪨 One decision a day. ⏱ Focus. 🌱 Habits. 🔒 100% offline.
 <br/><span dir="rtl">تک‌نقطه — تمرکز، عادت و کارِ عمیق، مبتنی بر علم رفتار</span>
@@ -188,8 +196,7 @@ JavaScript and Python** — and most of it is **open source**.
 ### ◆ [sooda](https://github.com/Mahdi-mortazavi/sooda)
 
 <a href="https://github.com/Mahdi-mortazavi/sooda/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/sooda?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="sooda stars" /></a>
-<img src="https://img.shields.io/badge/Language-TypeScript-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
-<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/sooda?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+&nbsp;<sub>**TypeScript**</sub>
 
 💎 Sooda — Liquid-glass profit, price &amp; discount calculator. Offline-first PWA, bilingual (EN/FA), zero dependencies on servers.
 <br/><span dir="rtl">null</span>
@@ -200,11 +207,15 @@ JavaScript and Python** — and most of it is **open source**.
 
 ---
 
+<details>
+<summary><b>📦 3 more projects</b> &nbsp;·&nbsp; <sub>Nava · purify · Mova</sub></summary>
+
+<br/>
+
 ### 🍎 [Nava](https://github.com/Mahdi-mortazavi/app)
 
 <a href="https://github.com/Mahdi-mortazavi/app/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/app?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="app stars" /></a>
-<img src="https://img.shields.io/badge/Language-Dart-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
-<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/app?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+&nbsp;<sub>**Dart**</sub>
 
 🍎 Nava: The Art of Reduction. A Jony Ive inspired productivity app with Squircle design, Haptic feedback &amp; Breathing animations. | نوا: مینیمالیسم محض؛ هنرِ حذف اضافات.
 <br/><span dir="rtl">نوا — اپ بهره‌وری مینیمال با الهام از طراحی اپل</span>
@@ -218,8 +229,7 @@ JavaScript and Python** — and most of it is **open source**.
 ### 🧹 [purify](https://github.com/Mahdi-mortazavi/purify)
 
 <a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="purify stars" /></a>
-<img src="https://img.shields.io/badge/Language-Rust-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
-<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/purify?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+&nbsp;<sub>**Rust**</sub>
 
 🧹 Clean your Windows disk with confidence. Fast, private, reversible cleanup built with Rust and Tauri.
 <br/><span dir="rtl">پیوریفای — پاک‌سازی هوشمند و فوق‌سریع دیسک ویندوز</span>
@@ -233,8 +243,7 @@ JavaScript and Python** — and most of it is **open source**.
 ### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
 
 <a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="Mova stars" /></a>
-<img src="https://img.shields.io/badge/Language-TypeScript-0D1117?style=flat-square&labelColor=0D1117" alt="language" />
-<img src="https://img.shields.io/github/last-commit/Mahdi-mortazavi/Mova?style=flat-square&labelColor=0D1117&color=8A93A3" alt="last commit" />
+&nbsp;<sub>**TypeScript**</sub>
 
 Mova  in motion, not in perfection
 <br/><span dir="rtl">موا — در حرکت، نه در کمال</span>
@@ -245,6 +254,8 @@ Mova  in motion, not in perfection
 
 ---
 
+
+</details>
 <!-- /LIVE:PROJECTS -->
 
 <div align="center">
@@ -256,26 +267,28 @@ Mova  in motion, not in perfection
 
 ## 📊 Activity &nbsp;·&nbsp; <sub>فعالیت</sub>
 
+<sub>A full year of real contributions — drawn here, from my own data.</sub>
+
+<img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/heat.svg" width="100%" alt="Mahdi Mortazavi's GitHub contribution heatmap for the last year" />
+
+</div>
+
+<details align="center">
+<summary><b>🐍 Contribution snake &amp; streak</b> &nbsp;·&nbsp; <sub>آمار بیشتر</sub></summary>
+
+<br/>
+
+<div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/output/github-contribution-grid-snake.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/output/github-contribution-grid-snake-dark.svg" width="95%" alt="Mahdi Mortazavi's contribution snake animation" />
 </picture>
 
-</div>
-
-<details align="center">
-<summary><b>📉 More stats — streak &amp; contribution graph</b> &nbsp;·&nbsp; <sub>آمار بیشتر</sub></summary>
-
-<br/>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=Mahdi-mortazavi&theme=tokyonight&hide_border=true&background=0D1117&ring=0A84FF&fire=0A84FF&currStreakLabel=0A84FF&date_format=M%20j%5B%2C%20Y%5D" width="70%" alt="Mahdi Mortazavi's contribution streak" />
-
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mahdi-mortazavi&bg_color=0D1117&color=F5F5F7&line=0A84FF&point=FFFFFF&area=true&area_color=0A84FF&hide_border=true&custom_title=Contribution%20Graph" width="95%" alt="Mahdi Mortazavi's contribution graph" />
+<img src="https://streak-stats.demolab.com?user=Mahdi-mortazavi&theme=tokyonight&hide_border=true&background=0D1117&ring=0A84FF&fire=0A84FF&currStreakLabel=0A84FF&date_format=M%20j%5B%2C%20Y%5D" width="80%" alt="Mahdi Mortazavi's contribution streak" />
 
 </div>
 

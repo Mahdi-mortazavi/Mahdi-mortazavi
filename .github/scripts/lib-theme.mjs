@@ -33,6 +33,8 @@ export const esc = s => String(s ?? '')
   .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
   .replace(/"/g,'&quot;').replace(/'/g,'&apos;');
 
+export const nf = n => Intl.NumberFormat('en-US').format(n ?? 0);
+
 export const FONT = "system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif";
 
 // Shared <defs>: ambient light field, glass gradients, glow + grid pattern.
