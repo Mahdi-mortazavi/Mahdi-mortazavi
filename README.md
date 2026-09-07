@@ -175,7 +175,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 `android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.7.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated 4d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated today</sub>
 
 ---
 
@@ -189,11 +189,11 @@ JavaScript and Python** — and most of it is **open source**.
 
 `adhd` `android` `behavioral-science` `bilingual` &nbsp;·&nbsp; 🏷️ **v0.6.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/flow/releases/latest)** &nbsp;·&nbsp; <sub>updated 16d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://github.com/Mahdi-mortazavi/flow/releases/latest)** &nbsp;·&nbsp; <sub>updated 17d ago</sub>
 
 ---
 
-### ◆ [sooda](https://github.com/Mahdi-mortazavi/sooda)
+### 💎 [sooda](https://github.com/Mahdi-mortazavi/sooda)
 
 <a href="https://github.com/Mahdi-mortazavi/sooda/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/sooda?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="sooda stars" /></a>
 &nbsp;<sub>**TypeScript**</sub>
@@ -201,14 +201,14 @@ JavaScript and Python** — and most of it is **open source**.
 💎 Sooda — Liquid-glass profit, price &amp; discount calculator. Offline-first PWA, bilingual (EN/FA), zero dependencies on servers.
 <br/><span dir="rtl">سودا — ماشین‌حساب سود، قیمت فروش و تخفیف، آفلاین و دوزبانه</span>
 
- &nbsp;·&nbsp; 🏷️ **v1.2.0**
+🏷️ **v1.2.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Download](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
 
 ---
 
 <details>
-<summary><b>📦 3 more projects</b> &nbsp;·&nbsp; <sub>Nava · purify · Mova</sub></summary>
+<summary><b>📦 3 more projects</b> &nbsp;·&nbsp; <sub>Nava · Mova · purify</sub></summary>
 
 <br/>
 
@@ -222,7 +222,19 @@ JavaScript and Python** — and most of it is **open source**.
 
 `dart` `flutter` `haptic-feedback` `ios-design` &nbsp;·&nbsp; 🏷️ **v3.1.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/app/releases/latest)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Try it](https://github.com/Mahdi-mortazavi/app/releases/latest)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+
+---
+
+### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
+
+<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="Mova stars" /></a>
+&nbsp;<sub>**TypeScript**</sub>
+
+Mova  in motion, not in perfection
+<br/><span dir="rtl">موا — در حرکت، نه در کمال</span>
+
+**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
 
 ---
 
@@ -236,26 +248,13 @@ JavaScript and Python** — and most of it is **open source**.
 
 `desktop-app` `disk-analyzer` `disk-cleaner` `disk-cleanup` &nbsp;·&nbsp; 🏷️ **v0.1.4**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 10d ago</sub>
-
----
-
-### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
-
-<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="Mova stars" /></a>
-&nbsp;<sub>**TypeScript**</sub>
-
-Mova  in motion, not in perfection
-<br/><span dir="rtl">موا — در حرکت، نه در کمال</span>
-
-
-
-**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Try it](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 10d ago</sub>
 
 ---
 
 
 </details>
+
 <!-- /LIVE:PROJECTS -->
 
 <div align="center">
@@ -339,7 +338,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>06 Sept 2026, 23:50</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>07 Sept 2026, 06:35</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
