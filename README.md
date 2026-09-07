@@ -130,7 +130,7 @@ JavaScript and Python** — and most of it is **open source**.
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🚀 **[purify](https://github.com/Mahdi-mortazavi/purify)** — Released v0.1.4 <sub>· 6d ago</sub>
+<sub>No public activity in the last few days.</sub>
 <!-- /LIVE:ACTIVITY -->
 
 <br/>
@@ -175,7 +175,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 `android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.7.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated today</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated 4d ago</sub>
 
 ---
 
@@ -189,7 +189,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 `adhd` `android` `behavioral-science` `bilingual` &nbsp;·&nbsp; 🏷️ **v0.6.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/flow/releases/latest)** &nbsp;·&nbsp; <sub>updated 12d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/flow/releases/latest)** &nbsp;·&nbsp; <sub>updated 16d ago</sub>
 
 ---
 
@@ -199,7 +199,7 @@ JavaScript and Python** — and most of it is **open source**.
 &nbsp;<sub>**TypeScript**</sub>
 
 💎 Sooda — Liquid-glass profit, price &amp; discount calculator. Offline-first PWA, bilingual (EN/FA), zero dependencies on servers.
-<br/><span dir="rtl">null</span>
+<br/><span dir="rtl">سودا — ماشین‌حساب سود، قیمت فروش و تخفیف، آفلاین و دوزبانه</span>
 
  &nbsp;·&nbsp; 🏷️ **v1.2.0**
 
@@ -236,7 +236,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 `desktop-app` `disk-analyzer` `disk-cleaner` `disk-cleanup` &nbsp;·&nbsp; 🏷️ **v0.1.4**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 6d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Download](https://github.com/Mahdi-mortazavi/purify/releases/latest)** &nbsp;·&nbsp; <sub>updated 10d ago</sub>
 
 ---
 
@@ -250,7 +250,7 @@ Mova  in motion, not in perfection
 
 
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
 
 ---
 
@@ -339,7 +339,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>02 Sept 2026, 20:55</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>06 Sept 2026, 23:50</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
