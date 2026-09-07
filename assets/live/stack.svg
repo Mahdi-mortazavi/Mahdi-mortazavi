@@ -9,25 +9,25 @@
       <stop offset="100%" stop-color="#161B22"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FF9F0A" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#FF9F0A" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FF9F0A"/>
-      <stop offset="100%" stop-color="#FF375F"/>
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#FF9F0A" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#FF9F0A"/>
-      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -46,15 +46,15 @@
   </g>
   <rect width="700" height="300" rx="22" fill="url(#grid)"/>
   <rect x="0" y="0" width="700" height="3" fill="url(#hair)"/>
-  <text x="40" y="48" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="2" fill="#FF9F0A">LANGUAGES · جعبه‌ابزار</text>
+  <text x="40" y="48" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="2" fill="#0A84FF">LANGUAGES · جعبه‌ابزار</text>
   <clipPath id="barclip"><rect x="40" y="78" width="620" height="32" rx="16"/></clipPath>
-  <g clip-path="url(#barclip)"><rect x="40.0" y="78" width="161.8" height="32" fill="#0A84FF"/><rect x="201.8" y="78" width="147.6" height="32" fill="#5E5CE6"/><rect x="349.4" y="78" width="98.0" height="32" fill="#30D158"/><rect x="447.3" y="78" width="84.9" height="32" fill="#FF9F0A"/><rect x="532.3" y="78" width="71.9" height="32" fill="#FF375F"/><rect x="604.2" y="78" width="55.8" height="32" fill="#30D1D0"/></g>
+  <g clip-path="url(#barclip)"><rect x="40.0" y="78" width="155.3" height="32" fill="#0A84FF"/><rect x="195.3" y="78" width="138.9" height="32" fill="#5E5CE6"/><rect x="334.2" y="78" width="92.2" height="32" fill="#30D158"/><rect x="426.4" y="78" width="84.6" height="32" fill="#FF9F0A"/><rect x="511.1" y="78" width="79.1" height="32" fill="#FF375F"/><rect x="590.1" y="78" width="69.9" height="32" fill="#30D1D0"/></g>
   <rect x="40" y="78" width="620" height="32" rx="16" fill="none" stroke="rgba(255,255,255,.14)"/>
   <circle cx="47" cy="149" r="6.5" fill="#0A84FF"/>
-      <text x="62" y="156" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">JavaScript 26.1%</text><circle cx="357" cy="149" r="6.5" fill="#5E5CE6"/>
-      <text x="372" y="156" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">Dart 23.8%</text><circle cx="47" cy="191" r="6.5" fill="#30D158"/>
-      <text x="62" y="198" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">TypeScript 15.8%</text><circle cx="357" cy="191" r="6.5" fill="#FF9F0A"/>
+      <text x="62" y="156" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">JavaScript 25.1%</text><circle cx="357" cy="149" r="6.5" fill="#5E5CE6"/>
+      <text x="372" y="156" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">Dart 22.4%</text><circle cx="47" cy="191" r="6.5" fill="#30D158"/>
+      <text x="62" y="198" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">TypeScript 14.9%</text><circle cx="357" cy="191" r="6.5" fill="#FF9F0A"/>
       <text x="372" y="198" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">C# 13.7%</text><circle cx="47" cy="233" r="6.5" fill="#FF375F"/>
-      <text x="62" y="240" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">Kotlin 11.6%</text><circle cx="357" cy="233" r="6.5" fill="#30D1D0"/>
-      <text x="372" y="240" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">HTML 9.0%</text>
+      <text x="62" y="240" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">Kotlin 12.8%</text><circle cx="357" cy="233" r="6.5" fill="#30D1D0"/>
+      <text x="372" y="240" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="600" fill="#A1A1A6">HTML 11.3%</text>
 </svg>
