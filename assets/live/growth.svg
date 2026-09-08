@@ -9,25 +9,25 @@
       <stop offset="100%" stop-color="#161B22"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FF9F0A" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#FF9F0A" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FF9F0A"/>
-      <stop offset="100%" stop-color="#FF375F"/>
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#FF9F0A" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#FF9F0A"/>
-      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -40,8 +40,8 @@
     </pattern>
   </defs>
   <linearGradient id="gfill" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#FF9F0A" stop-opacity=".55"/>
-    <stop offset="100%" stop-color="#FF9F0A" stop-opacity="0"/>
+    <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
+    <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
   </linearGradient>
   
   <rect width="700" height="310" rx="22" fill="url(#bg)"/>
@@ -52,12 +52,12 @@
   <rect width="700" height="310" rx="22" fill="url(#grid)"/>
   <rect x="0" y="0" width="700" height="3" fill="url(#hair)"/>
   
-  <text x="40" y="48" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="2" fill="#FF9F0A">GROWTH · رشد</text>
+  <text x="40" y="48" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="2" fill="#0A84FF">GROWTH · رشد</text>
   <text x="40" y="126" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="74" font-weight="800" letter-spacing="-2" fill="#F5F5F7">303<tspan dx="14" font-size="25" font-weight="600" letter-spacing="0" fill="#A1A1A6">total stars</tspan></text>
   <text x="40" y="158" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="500" fill="#8A93A3"><tspan fill="#30D158" font-weight="700">▲ +9</tspan> in the last 30 days</text>
   <line x1="40" y1="256.0" x2="660" y2="256.0" stroke="#FFFFFF" stroke-opacity=".07"/><line x1="40" y1="216.0" x2="660" y2="216.0" stroke="#FFFFFF" stroke-opacity=".07"/><line x1="40" y1="176.0" x2="660" y2="176.0" stroke="#FFFFFF" stroke-opacity=".07"/>
-  <path d="M40.0,240.0L48.6,240.0L57.2,240.0L65.8,240.0L74.4,240.0L83.1,240.0L91.7,240.0L100.3,240.0L108.9,240.0L117.5,240.0L126.1,240.0L134.7,240.0L143.3,218.7L151.9,218.7L160.6,218.7L169.2,218.7L177.8,218.7L186.4,218.7L195.0,218.7L203.6,218.7L212.2,218.7L220.8,218.7L229.4,218.7L238.1,218.7L246.7,190.2L255.3,190.2L263.9,190.2L272.5,190.2L281.1,190.2L289.7,190.2L298.3,190.2L306.9,190.2L315.6,190.2L324.2,190.2L332.8,190.2L341.4,197.3L350.0,197.3L358.6,197.3L367.2,197.3L375.8,197.3L384.4,197.3L393.1,197.3L401.7,197.3L410.3,197.3L418.9,197.3L427.5,197.3L436.1,197.3L444.7,190.2L453.3,190.2L461.9,190.2L470.6,190.2L479.2,190.2L487.8,190.2L496.4,190.2L505.0,190.2L513.6,190.2L522.2,190.2L530.8,190.2L539.4,190.2L548.1,176.0L556.7,176.0L565.3,176.0L573.9,176.0L582.5,176.0L591.1,176.0L599.7,176.0L608.3,176.0L616.9,176.0L625.6,176.0L634.2,176.0L642.8,176.0L651.4,176.0L660.0,176.0L660.0,256L40,256Z" fill="url(#gfill)"/>
-  <path d="M40.0,240.0L48.6,240.0L57.2,240.0L65.8,240.0L74.4,240.0L83.1,240.0L91.7,240.0L100.3,240.0L108.9,240.0L117.5,240.0L126.1,240.0L134.7,240.0L143.3,218.7L151.9,218.7L160.6,218.7L169.2,218.7L177.8,218.7L186.4,218.7L195.0,218.7L203.6,218.7L212.2,218.7L220.8,218.7L229.4,218.7L238.1,218.7L246.7,190.2L255.3,190.2L263.9,190.2L272.5,190.2L281.1,190.2L289.7,190.2L298.3,190.2L306.9,190.2L315.6,190.2L324.2,190.2L332.8,190.2L341.4,197.3L350.0,197.3L358.6,197.3L367.2,197.3L375.8,197.3L384.4,197.3L393.1,197.3L401.7,197.3L410.3,197.3L418.9,197.3L427.5,197.3L436.1,197.3L444.7,190.2L453.3,190.2L461.9,190.2L470.6,190.2L479.2,190.2L487.8,190.2L496.4,190.2L505.0,190.2L513.6,190.2L522.2,190.2L530.8,190.2L539.4,190.2L548.1,176.0L556.7,176.0L565.3,176.0L573.9,176.0L582.5,176.0L591.1,176.0L599.7,176.0L608.3,176.0L616.9,176.0L625.6,176.0L634.2,176.0L642.8,176.0L651.4,176.0L660.0,176.0" fill="none" stroke="#FF9F0A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+  <path d="M40.0,240.0L48.6,240.0L57.2,240.0L65.8,240.0L74.4,240.0L83.1,240.0L91.7,240.0L100.3,240.0L108.9,240.0L117.5,240.0L126.1,240.0L134.7,240.0L143.3,218.7L151.9,218.7L160.6,218.7L169.2,218.7L177.8,218.7L186.4,218.7L195.0,218.7L203.6,218.7L212.2,218.7L220.8,218.7L229.4,218.7L238.1,190.2L246.7,190.2L255.3,190.2L263.9,190.2L272.5,190.2L281.1,190.2L289.7,190.2L298.3,190.2L306.9,190.2L315.6,190.2L324.2,190.2L332.8,197.3L341.4,197.3L350.0,197.3L358.6,197.3L367.2,197.3L375.8,197.3L384.4,197.3L393.1,197.3L401.7,197.3L410.3,197.3L418.9,197.3L427.5,190.2L436.1,190.2L444.7,190.2L453.3,190.2L461.9,190.2L470.6,190.2L479.2,190.2L487.8,190.2L496.4,190.2L505.0,190.2L513.6,190.2L522.2,176.0L530.8,176.0L539.4,176.0L548.1,176.0L556.7,176.0L565.3,176.0L573.9,176.0L582.5,176.0L591.1,176.0L599.7,176.0L608.3,176.0L616.9,176.0L625.6,176.0L634.2,176.0L642.8,176.0L651.4,176.0L660.0,176.0L660.0,256L40,256Z" fill="url(#gfill)"/>
+  <path d="M40.0,240.0L48.6,240.0L57.2,240.0L65.8,240.0L74.4,240.0L83.1,240.0L91.7,240.0L100.3,240.0L108.9,240.0L117.5,240.0L126.1,240.0L134.7,240.0L143.3,218.7L151.9,218.7L160.6,218.7L169.2,218.7L177.8,218.7L186.4,218.7L195.0,218.7L203.6,218.7L212.2,218.7L220.8,218.7L229.4,218.7L238.1,190.2L246.7,190.2L255.3,190.2L263.9,190.2L272.5,190.2L281.1,190.2L289.7,190.2L298.3,190.2L306.9,190.2L315.6,190.2L324.2,190.2L332.8,197.3L341.4,197.3L350.0,197.3L358.6,197.3L367.2,197.3L375.8,197.3L384.4,197.3L393.1,197.3L401.7,197.3L410.3,197.3L418.9,197.3L427.5,190.2L436.1,190.2L444.7,190.2L453.3,190.2L461.9,190.2L470.6,190.2L479.2,190.2L487.8,190.2L496.4,190.2L505.0,190.2L513.6,190.2L522.2,176.0L530.8,176.0L539.4,176.0L548.1,176.0L556.7,176.0L565.3,176.0L573.9,176.0L582.5,176.0L591.1,176.0L599.7,176.0L608.3,176.0L616.9,176.0L625.6,176.0L634.2,176.0L642.8,176.0L651.4,176.0L660.0,176.0" fill="none" stroke="#0A84FF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
     stroke-dasharray="4000" stroke-dashoffset="4000">
     <animate attributeName="stroke-dashoffset" from="4000" to="0" dur="2.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
   </path>
