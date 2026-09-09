@@ -126,7 +126,9 @@ JavaScript and Python** — and most of it is **open source**.
 </div>
 
 <!-- LIVE:ACTIVITY -->
-<sub>No public activity in the last few days.</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** — v2.8.0 <sub>· updated yesterday</sub>
+- 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** — v0.1.4 <sub>· updated 12d ago</sub>
+- 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** — v0.6.1 <sub>· updated 19d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
 <br/>
@@ -155,8 +157,7 @@ JavaScript and Python** — and most of it is **open source**.
 <!-- LIVE:PROJECTS -->
 ### 📡 [relay](https://github.com/Mahdi-mortazavi/relay)
 
-<a href="https://github.com/Mahdi-mortazavi/relay/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/relay?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="relay stars" /></a>
- `C#`
+<a href="https://github.com/Mahdi-mortazavi/relay/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/relay?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="relay stars" /></a> `C#`
 
 📱 Share your phone's internet with your PC — Android → Windows reverse tethering over an encrypted WireGuard tunnel. No root, no server, no account.
 <br/><span dir="rtl">ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز</span>
@@ -169,22 +170,20 @@ JavaScript and Python** — and most of it is **open source**.
 
 ### ◉ [Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)
 
-<a href="https://github.com/Mahdi-mortazavi/flow/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/flow?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="flow stars" /></a>
- `Dart`
+<a href="https://github.com/Mahdi-mortazavi/flow/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/flow?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="flow stars" /></a> `Dart`
 
 🪨 One decision a day. ⏱ Focus. 🌱 Habits. 🔒 100% offline.
 <br/><span dir="rtl">تک‌نقطه — تمرکز، عادت و کارِ عمیق، مبتنی بر علم رفتار</span>
 
 `adhd` `android` `behavioral-science` `bilingual` &nbsp;·&nbsp; 🏷️ **v0.6.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://github.com/Mahdi-mortazavi/flow/releases/latest)** &nbsp;·&nbsp; <sub>updated 18d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://github.com/Mahdi-mortazavi/flow/releases/latest)** &nbsp;·&nbsp; <sub>updated 19d ago</sub>
 
 ---
 
 ### 💎 [sooda](https://github.com/Mahdi-mortazavi/sooda)
 
-<a href="https://github.com/Mahdi-mortazavi/sooda/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/sooda?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="sooda stars" /></a>
- `TypeScript`
+<a href="https://github.com/Mahdi-mortazavi/sooda/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/sooda?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="sooda stars" /></a> `TypeScript`
 
 💎 Sooda — Liquid-glass profit, price &amp; discount calculator. Offline-first PWA, bilingual (EN/FA), zero dependencies on servers.
 <br/><span dir="rtl">سودا — ماشین‌حساب سود، قیمت فروش و تخفیف، آفلاین و دوزبانه</span>
@@ -202,8 +201,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 ### 🍎 [Nava](https://github.com/Mahdi-mortazavi/app)
 
-<a href="https://github.com/Mahdi-mortazavi/app/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/app?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="app stars" /></a>
- `Dart`
+<a href="https://github.com/Mahdi-mortazavi/app/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/app?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="app stars" /></a> `Dart`
 
 🍎 Nava: The Art of Reduction. A Jony Ive inspired productivity app with Squircle design, Haptic feedback &amp; Breathing animations. | نوا: مینیمالیسم محض؛ هنرِ حذف اضافات.
 <br/><span dir="rtl">نوا — اپ بهره‌وری مینیمال با الهام از طراحی اپل</span>
@@ -216,8 +214,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 ### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
 
-<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="Mova stars" /></a>
- `TypeScript`
+<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="Mova stars" /></a> `TypeScript`
 
 Mova  in motion, not in perfection
 <br/><span dir="rtl">موا — در حرکت، نه در کمال</span>
@@ -228,8 +225,7 @@ Mova  in motion, not in perfection
 
 ### 🧹 [purify](https://github.com/Mahdi-mortazavi/purify)
 
-<a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="purify stars" /></a>
- `Rust`
+<a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="purify stars" /></a> `Rust`
 
 🧹 Clean your Windows disk with confidence. Fast, private, reversible cleanup built with Rust and Tauri.
 <br/><span dir="rtl">پیوریفای — پاک‌سازی هوشمند و فوق‌سریع دیسک ویندوز</span>
@@ -323,7 +319,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>09 Sept 2026, 00:34</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>09 Sept 2026, 03:59</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
