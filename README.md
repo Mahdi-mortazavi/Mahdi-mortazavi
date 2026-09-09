@@ -22,11 +22,17 @@
 
 <!-- ── LIVE HERO: real stats, Tehran-time palette, animated orbit mark ── -->
 <a href="https://mahdi-mortazavi.github.io">
-  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/hero.svg" width="100%" alt="Mahdi Mortazavi — Full-Stack Developer, Product Builder and Problem Solver" />
+  <picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/hero.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/hero-w.svg" width="100%" alt="Mahdi Mortazavi — Full-Stack Developer, Product Builder and Problem Solver" />
+</picture>
 </a>
 
 <a href="https://github.com/Mahdi-mortazavi">
-  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/headline.svg" width="100%" alt="Full-Stack Developer and Product Builder — first principles thinking, designing solutions, building real products" />
+  <picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/headline.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/headline-w.svg" width="100%" alt="Full-Stack Developer and Product Builder — first principles thinking, designing solutions, building real products" />
+</picture>
 </a>
 
 <br/>
@@ -80,7 +86,10 @@ JavaScript and Python** — and most of it is **open source**.
 
 <sub>Real star history across every repository — redrawn automatically.</sub>
 
-<img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/growth.svg" width="100%" alt="Cumulative GitHub star growth across Mahdi Mortazavi's open-source repositories" />
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/growth.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/growth-w.svg" width="100%" alt="Cumulative GitHub star growth across Mahdi Mortazavi's open-source repositories" />
+</picture>
 
 </div>
 
@@ -141,7 +150,10 @@ JavaScript and Python** — and most of it is **open source**.
 
 <sub>Computed from my <b>actual public repositories</b>, not hand-written.</sub>
 
-<img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/stack.svg" width="100%" alt="Language distribution across Mahdi Mortazavi's public repositories" />
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/stack.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/stack-w.svg" width="100%" alt="Language distribution across Mahdi Mortazavi's public repositories" />
+</picture>
 
 
 ---
@@ -252,7 +264,10 @@ Mova  in motion, not in perfection
 
 <sub>A full year of real contributions — drawn here, from my own data.</sub>
 
-<img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/heat.svg" width="100%" alt="Mahdi Mortazavi's GitHub contribution heatmap for the last year" />
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/heat.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/heat-w.svg" width="100%" alt="Mahdi Mortazavi's GitHub contribution heatmap for the last year" />
+</picture>
 
 </div>
 
@@ -346,5 +361,8 @@ and good technical conversations** — and I reply fast.
 </div>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/footer.svg" width="100%" alt="" />
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/footer.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/footer-w.svg" width="100%" alt="" />
+</picture>
 </div>

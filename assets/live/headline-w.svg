@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="118" viewBox="0 0 900 118" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="112" viewBox="0 0 1600 112" role="img"
   aria-label="Full-Stack Developer × Product Builder · 🧩  First principles thinking · 💡  Designing solutions · 🚀  Building real products · Open-source builder from Iran">
   <title>Full-Stack Developer × Product Builder · 🧩  First principles thinking · 💡  Designing solutions · 🚀  Building real products · Open-source builder from Iran</title>
   
@@ -39,28 +39,28 @@
       <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
     </pattern>
   </defs>
-  <rect width="900" height="118" rx="22" fill="url(#bg)"/>
-  <g filter="url(#soft)" opacity=".7"><ellipse cx="450" cy="59" rx="300" ry="80" fill="url(#aura1)"/></g>
-  <rect width="900" height="118" rx="22" fill="url(#grid)"/>
-  <rect x="0" y="0" width="900" height="3" fill="url(#hair)"/>
-  <text x="450" y="71" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
-      font-size="34" font-weight="700" fill="#F5F5F7" opacity="0">Full-Stack Developer × Product Builder
+  <rect width="1600" height="112" rx="22" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".7"><ellipse cx="800" cy="56" rx="300" ry="80" fill="url(#aura1)"/></g>
+  <rect width="1600" height="112" rx="22" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1600" height="3" fill="url(#hair)"/>
+  <text x="800" y="68" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
+      font-size="38" font-weight="700" fill="#F5F5F7" opacity="0">Full-Stack Developer × Product Builder
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0000;0.0220;0.1780;0.2000;1.0000"
         dur="13.0s" repeatCount="indefinite"/>
-    </text><text x="450" y="71" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
-      font-size="34" font-weight="700" fill="#F5F5F7" opacity="0">🧩  First principles thinking
+    </text><text x="800" y="68" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
+      font-size="38" font-weight="700" fill="#F5F5F7" opacity="0">🧩  First principles thinking
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2000;0.2220;0.3780;0.4000;1.0000"
         dur="13.0s" repeatCount="indefinite"/>
-    </text><text x="450" y="71" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
-      font-size="34" font-weight="700" fill="#F5F5F7" opacity="0">💡  Designing solutions
+    </text><text x="800" y="68" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
+      font-size="38" font-weight="700" fill="#F5F5F7" opacity="0">💡  Designing solutions
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4000;0.4220;0.5780;0.6000;1.0000"
         dur="13.0s" repeatCount="indefinite"/>
-    </text><text x="450" y="71" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
-      font-size="34" font-weight="700" fill="#F5F5F7" opacity="0">🚀  Building real products
+    </text><text x="800" y="68" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
+      font-size="38" font-weight="700" fill="#F5F5F7" opacity="0">🚀  Building real products
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6000;0.6220;0.7780;0.8000;1.0000"
         dur="13.0s" repeatCount="indefinite"/>
-    </text><text x="450" y="71" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
-      font-size="34" font-weight="700" fill="#F5F5F7" opacity="0">Open-source builder from Iran
+    </text><text x="800" y="68" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
+      font-size="38" font-weight="700" fill="#F5F5F7" opacity="0">Open-source builder from Iran
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.8000;0.8220;0.9780;1.0000;1.0000"
         dur="13.0s" repeatCount="indefinite"/>
     </text>

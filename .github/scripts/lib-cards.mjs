@@ -16,10 +16,24 @@ import { C, esc, FONT, defs, glass, nf } from './lib-theme.mjs';
 // but blew the cards up to 1.2x on a desktop, where the hero alone ran over
 // 560px tall. 900 splits the difference: 0.39x on a phone, 0.92x on a desktop.
 // The floor is the smallest size that still reads at 0.39x — 30 lands near 12px.
-const W = 900;          // canvas width for every card
-const PAD = 52;         // side padding
-const IW = W - PAD * 2; // inner width
-const T = { micro: 27, small: 30, label: 31, body: 32, kicker: 31, name: 68, huge: 86 };
+// Two canvases, because one cannot serve both frames. GitHub renders a README
+// in a ~355px column on a phone and ~830px on a desktop.
+//   'm'  900 wide — 0.39x on a phone. Portrait-ish, stats stacked 2x2.
+//   'w' 1600 wide — 0.52x on a desktop. A banner: short, wide, one row of
+//       stats, legends in three columns. A phone would render its 26px floor
+//       at 9px, which is why it is desktop-only and served behind a media
+//       query with the 900 card as the fallback.
+const GEO = {
+  m: { W: 900,  PAD: 52, T: { micro: 27, small: 30, label: 31, body: 32, kicker: 31, name: 68,  huge: 86  } },
+  w: { W: 1600, PAD: 64, T: { micro: 26, small: 30, label: 32, body: 34, kicker: 30, name: 104, huge: 104 } },
+};
+const geo = (mode = 'm') => {
+  const g = GEO[mode] ?? GEO.m;
+  return { ...g, IW: g.W - g.PAD * 2, wide: mode === 'w' };
+};
+// Module-level defaults keep the helpers below readable; every card shadows
+// them with its own geometry.
+const { W, PAD, IW, T } = geo('m');
 
 // Rough advance width, good enough to keep text inside the canvas.
 const textW = (s, size, ls = 0) => String(s).length * size * 0.58 + String(s).length * ls;
@@ -38,18 +52,24 @@ function wrap(text, size, max, maxLines = 2) {
   return lines.length ? lines : [''];
 }
 
-const card = (h, m, aura = true) => `
-  <rect width="${W}" height="${h}" rx="22" fill="url(#bg)"/>
+// Takes its width from the caller: reading the module-level default here drew
+// a 900-wide background on the 1600 canvas, leaving a hard edge at 56%.
+// The aura radii scale too, or the blur's filter region clips into a seam.
+const card = (h, m, cw = W, aura = true) => `
+  <rect width="${cw}" height="${h}" rx="22" fill="url(#bg)"/>
   ${aura ? `<g filter="url(#soft)" opacity=".85">
-    <ellipse cx="${W - 60}" cy="40" rx="200" ry="150" fill="url(#aura1)"/>
-    <ellipse cx="60" cy="${h + 20}" rx="220" ry="150" fill="url(#aura2)"/>
+    <ellipse cx="${cw - 60}" cy="40" rx="${(cw * 0.24).toFixed(0)}" ry="${Math.max(150, h * 0.5).toFixed(0)}" fill="url(#aura1)"/>
+    <ellipse cx="60" cy="${h + 20}" rx="${(cw * 0.26).toFixed(0)}" ry="${Math.max(150, h * 0.5).toFixed(0)}" fill="url(#aura2)"/>
   </g>` : ''}
-  <rect width="${W}" height="${h}" rx="22" fill="url(#grid)"/>
-  <rect x="0" y="0" width="${W}" height="3" fill="url(#hair)"/>`;
+  <rect width="${cw}" height="${h}" rx="22" fill="url(#grid)"/>
+  <rect x="0" y="0" width="${cw}" height="3" fill="url(#hair)"/>`;
 
-export function hero(d, t) {
+export function hero(d, t, mode = 'm') {
+  const { W, PAD, IW, T, wide } = geo(mode);
   const m = t.mood;
-  const CX = 790, CY = 144;
+  const CX = wide ? 1400 : 790, CY = wide ? 168 : 144;
+  const RING = wide ? [92, 67, 42] : [62, 45, 28];
+  const CORE = wide ? 34 : 23;
   const orbitRing = (r, o) =>
     `<ellipse cx="${CX}" cy="${CY}" rx="${r}" ry="${(r * 0.62).toFixed(1)}" fill="none" stroke="#FFFFFF" stroke-opacity="${o}" stroke-width="1.6"/>`;
   const body = (rx, size, dur, delay, op) => {
@@ -59,45 +79,46 @@ export function hero(d, t) {
       <animateMotion dur="${dur}s" repeatCount="indefinite" begin="-${delay}s" path="${path}"/></g>`;
   };
   const orbit = `<g>
-    ${orbitRing(62, .13)}${orbitRing(45, .2)}${orbitRing(28, .3)}
-    <circle cx="${CX}" cy="${CY}" r="23" fill="url(#mark)" filter="url(#coreglow)"/>
-    <circle cx="${CX}" cy="${CY}" r="19" fill="url(#mark)"/>
-    <circle cx="${CX}" cy="${CY}" r="19" fill="none" stroke="#FFFFFF" stroke-opacity=".5"/>
-    <circle cx="${CX}" cy="${CY}" r="19" fill="none" stroke="#FFFFFF" stroke-opacity=".35">
-      <animate attributeName="r" values="19;33;19" dur="4s" repeatCount="indefinite"/>
+    ${orbitRing(RING[0], .13)}${orbitRing(RING[1], .2)}${orbitRing(RING[2], .3)}
+    <circle cx="${CX}" cy="${CY}" r="${CORE}" fill="url(#mark)" filter="url(#coreglow)"/>
+    <circle cx="${CX}" cy="${CY}" r="${CORE - 4}" fill="url(#mark)"/>
+    <circle cx="${CX}" cy="${CY}" r="${CORE - 4}" fill="none" stroke="#FFFFFF" stroke-opacity=".5"/>
+    <circle cx="${CX}" cy="${CY}" r="${CORE - 4}" fill="none" stroke="#FFFFFF" stroke-opacity=".35">
+      <animate attributeName="r" values="${CORE - 4};${CORE + 10};${CORE - 4}" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="stroke-opacity" values=".35;0;.35" dur="4s" repeatCount="indefinite"/>
     </circle>
-    ${body(62, 5.9, 18, 0, 1)}${body(45, 5.0, 12, 4.6, .85)}${body(28, 4.1, 8, 5.8, .7)}
+    ${body(RING[0], wide ? 8 : 5.9, 18, 0, 1)}${body(RING[1], wide ? 6.8 : 5.0, 12, 4.6, .85)}${body(RING[2], wide ? 5.4 : 4.1, 8, 5.8, .7)}
   </g>`;
 
   // Vertical cursor, so a long bio never collides with what follows.
-  let y = 70;
+  let y = wide ? 78 : 70;
   const greet = `${m.icon} ${m.en} · Tehran ${t.time}`;
   let s = `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${T.small}" font-weight="700" letter-spacing=".6" fill="${m.a}">${esc(greet)}</text>`;
-  y += 92;
+  y += wide ? 112 : 92;
   s += `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${T.name}" font-weight="800" letter-spacing="-1.6" fill="${C.txt}">Mahdi Mortazavi</text>`;
-  y += 56;
-  s += `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="39" font-weight="700" fill="${C.muted}">مهدی مرتضوی</text>`;
-  y += 48;
+  y += wide ? 62 : 56;
+  s += `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${wide ? 46 : 39}" font-weight="700" fill="${C.muted}">مهدی مرتضوی</text>`;
+  y += wide ? 56 : 48;
   for (const ln of wrap(`${d.role} · Iran`, T.small, IW, 2)) {
     s += `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${T.small}" font-weight="500" fill="${C.dim}">${esc(ln)}</text>`;
-    y += 39;
+    y += wide ? 44 : 39;
   }
 
   // Stats as a 2x2 grid — four pills in one row cannot hold a readable label
   // at phone scale.
-  const PW = 380, PH = 85, GAP = 36;
-  const pill = (col, row, label, value) => {
+  // Four pills in one row need ~350px each; that only fits on the wide canvas.
+  const COLS = wide ? 4 : 2, GAP = wide ? 24 : 36;
+  const PW = (IW - GAP * (COLS - 1)) / COLS, PH = wide ? 92 : 85;
+  const pill = (i, label, value) => {
+    const col = i % COLS, row = (i / COLS) | 0;
     const x = PAD + col * (PW + GAP), py = y + 10 + row * (PH + 20);
     return `${glass(x, py, PW, PH, 22)}
-      <text x="${x + 26}" y="${py + 54}" font-family="${FONT}" font-size="${T.label}" font-weight="600" fill="${C.muted}">${esc(label)}</text>
-      <text x="${x + PW - 26}" y="${py + 54}" text-anchor="end" font-family="${FONT}" font-size="36" font-weight="800" fill="${C.txt}">${esc(value)}</text>`;
+      <text x="${x + 26}" y="${py + PH / 2 + 12}" font-family="${FONT}" font-size="${T.label}" font-weight="600" fill="${C.muted}">${esc(label)}</text>
+      <text x="${x + PW - 26}" y="${py + PH / 2 + 12}" text-anchor="end" font-family="${FONT}" font-size="${wide ? 40 : 36}" font-weight="800" fill="${C.txt}">${esc(value)}</text>`;
   };
-  s += pill(0, 0, '★ Stars', nf(d.stars));
-  s += pill(1, 0, 'Followers', nf(d.user?.followers));
-  s += pill(0, 1, 'Repos', nf(d.repos.length));
-  s += pill(1, 1, 'Forks', nf(d.forks));
-  y += 10 + PH * 2 + 20;
+  [['★ Stars', nf(d.stars)], ['Followers', nf(d.user?.followers)],
+   ['Repos', nf(d.repos.length)], ['Forks', nf(d.forks)]].forEach((p, i) => { s += pill(i, p[0], p[1]); });
+  y += 10 + PH * Math.ceil(4 / COLS) + 20 * (Math.ceil(4 / COLS) - 1);
 
   const H = y + 66;
   s += `<text x="${W - PAD}" y="${y + 38}" text-anchor="end" font-family="${FONT}" font-size="${T.micro}" font-weight="500" fill="${C.dim}">auto-updated ${esc(t.date)} · Tehran</text>`;
@@ -105,16 +126,17 @@ export function hero(d, t) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
   aria-label="Mahdi Mortazavi — live profile banner">
   <title>Mahdi Mortazavi · مهدی مرتضوی — Full-Stack Developer, Product Builder and Problem Solver</title>
-  ${defs(m)}${card(H, m)}${orbit}${s}
+  ${defs(m)}${card(H, m, W)}${orbit}${s}
 </svg>`;
 }
 
-export function stack(d, t) {
+export function stack(d, t, mode = 'm') {
+  const { W, PAD, IW, T, wide } = geo(mode);
   const m = t.mood;
   const top = Object.entries(d.langs).sort((a, b) => b[1] - a[1]).slice(0, 6);
   const total = top.reduce((s, [, v]) => s + v, 0) || 1;
   const COLORS = ['#0A84FF', '#5E5CE6', '#30D158', '#FF9F0A', '#FF375F', '#30D1D0'];
-  const BY = 100, BH = 41;
+  const BY = wide ? 108 : 100, BH = wide ? 46 : 41;
 
   let x = PAD, bar = '';
   top.forEach(([, bytes], i) => {
@@ -125,10 +147,11 @@ export function stack(d, t) {
 
   // Legend on a fixed 3-column grid: free-flowing labels overlap once the
   // card is scaled down to a phone.
-  const COLW = IW / 2;
+  const LCOLS = wide ? 3 : 2;
+  const COLW = IW / LCOLS;
   const legend = top.map(([name, bytes], i) => {
-    const col = i % 2, row = (i / 2) | 0;
-    const lx = PAD + col * COLW, ly = BY + 100 + row * 54;
+    const col = i % LCOLS, row = (i / LCOLS) | 0;
+    const lx = PAD + col * COLW, ly = BY + (wide ? 96 : 100) + row * 54;
     const pct = ((bytes / total) * 100).toFixed(1);
     return `<circle cx="${lx + 9}" cy="${ly - 9}" r="8.5" fill="${COLORS[i]}"/>
       <text x="${lx + 28}" y="${ly}" font-family="${FONT}" font-size="${T.small}" font-weight="600" fill="${C.muted}">${esc(name)} ${pct}%</text>`;
@@ -137,7 +160,7 @@ export function stack(d, t) {
   // Frameworks the languages alone do not reveal, drawn as chips inside the
   // same card rather than as a row of third-party badges beneath it.
   const TOOLS = ['.NET', 'Flutter', 'Tauri', 'React', 'Cloudflare Workers', 'Astro', 'Riverpod', 'Figma'];
-  const chipY = BY + 100 + Math.ceil(top.length / 2) * 54 + 18;
+  const chipY = BY + (wide ? 96 : 100) + Math.ceil(top.length / LCOLS) * 54 + (wide ? 8 : 18);
   let cx = PAD, cy = chipY, chips = '';
   for (const name of TOOLS) {
     const w = Math.round(textW(name, T.micro) + 40);
@@ -150,7 +173,7 @@ export function stack(d, t) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
   aria-label="Language distribution across Mahdi Mortazavi's public repositories">
   <title>Real language distribution across all public repositories</title>
-  ${defs(m)}${card(H, m)}
+  ${defs(m)}${card(H, m, W)}
   <text x="${PAD}" y="62" font-family="${FONT}" font-size="${T.kicker}" font-weight="700" letter-spacing="2.5" fill="${m.a}">LANGUAGES · جعبه‌ابزار</text>
   <clipPath id="barclip"><rect x="${PAD}" y="${BY}" width="${IW}" height="${BH}" rx="20"/></clipPath>
   <g clip-path="url(#barclip)">${bar}</g>
@@ -164,17 +187,19 @@ export function stack(d, t) {
  * the GraphQL contributionCalendar. Self-hosted, so no third-party card
  * service can take it down (the one this replaces started returning 402).
  */
-export function heat(cal, t) {
+export function heat(cal, t, mode = 'm') {
+  const { W, PAD, IW, T, wide } = geo(mode);
   const m = t.mood;
   const LV = ['#161B22', '#0E4429', '#006D32', '#26A641', '#39D353'];
-  const GY = 162, CELL = 12.1, GAP = 2.8, STEP = CELL + GAP;
-  const H = 324;
+  const GY = wide ? 168 : 162, CELL = 12.1, GAP = 2.8, STEP = CELL + GAP;
+  // The grid stretches to the canvas, so the card's height follows it.
+  const H = Math.round(GY + 7 * (IW / 53) + 66);
 
   if (!cal) {
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
   aria-label="Contribution heatmap for Mahdi Mortazavi — waiting for the first sync">
   <title>Contribution heatmap — syncing</title>
-  ${defs(m)}${card(H, m)}
+  ${defs(m)}${card(H, m, W)}
   <text x="${PAD}" y="62" font-family="${FONT}" font-size="${T.kicker}" font-weight="700" letter-spacing="2.5" fill="${m.a}">CONTRIBUTIONS · فعالیت</text>
   <text x="${PAD}" y="84" font-family="${FONT}" font-size="${T.small}" fill="${C.dim}">The heatmap fills in on the next scheduled sync.</text>
   ${Array.from({ length: 53 * 7 }, (_, i) => {
@@ -246,7 +271,7 @@ export function heat(cal, t) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
   aria-label="${total ? `Mahdi Mortazavi made ${total} contributions in the last year` : `A year of GitHub contributions by Mahdi Mortazavi`}">
   <title>${total ? `${total} contributions in the last year` : `A year of contributions`}</title>
-  ${defs(m)}${card(H, m)}
+  ${defs(m)}${card(H, m, W)}
   <text x="${PAD}" y="48" font-family="${FONT}" font-size="${T.kicker}" font-weight="700" letter-spacing="2" fill="${m.a}">CONTRIBUTIONS · فعالیت</text>
   <text x="${PAD}" y="108" font-family="${FONT}" font-size="${T.body}" font-weight="700" fill="${C.txt}">${totalLine}</text>
   <text x="${W - PAD}" y="108" text-anchor="end" font-family="${FONT}" font-size="${T.small}" font-weight="700" fill="${m.a}">${current > 0 ? `🔥 ${current}-day streak` : `longest streak ${best}d`}</text>
@@ -263,9 +288,10 @@ export function heat(cal, t) {
  * Growth card — cumulative stars over time, drawn from real starred_at
  * timestamps. Animates its own line on load.
  */
-export function growth(d, t) {
+export function growth(d, t, mode = 'm') {
+  const { W, PAD, IW, T, wide } = geo(mode);
   const m = t.mood;
-  const H = 398, PT = 226, PB = 70;
+  const H = wide ? 372 : 398, PT = wide ? 212 : 226, PB = 70;
   const ch = H - PT - PB;
   const ev = d.starEvents ?? [];
   const hist = d.history ?? [];
@@ -282,7 +308,7 @@ export function growth(d, t) {
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
   aria-label="Mahdi Mortazavi has ${d.stars} GitHub stars; the growth curve starts tracking today">
   <title>${d.stars} stars across all repositories — growth tracking starts today</title>
-  ${defs(m)}${card(H, m)}
+  ${defs(m)}${card(H, m, W)}
   ${head(null, `across ${d.repos.length} public repositories · the curve fills in from today`)}
   <line x1="${PAD}" y1="${by}" x2="${PAD + IW}" y2="${by}" stroke="${m.a}" stroke-opacity=".35" stroke-width="3.2" stroke-dasharray="8 10" stroke-linecap="round"/>
   <circle cx="${PAD + IW}" cy="${by}" r="8" fill="#FFFFFF"/>
@@ -344,7 +370,7 @@ export function growth(d, t) {
     <stop offset="0%" stop-color="${m.a}" stop-opacity=".55"/>
     <stop offset="100%" stop-color="${m.a}" stop-opacity="0"/>
   </linearGradient>
-  ${card(H, m)}
+  ${card(H, m, W)}
   ${head(last30 > 0 ? `<tspan fill="#30D158" font-weight="700">▲ +${last30}</tspan> in the last 30 days` : 'tracking growth from here')}
   ${grid}
   <path d="${area}" fill="url(#gfill)"/>
@@ -366,8 +392,9 @@ export function growth(d, t) {
  * wordmark line is on-brand (same glass, same Tehran-time accent) and cannot
  * be taken down by a third party.
  */
-export function headline(t) {
-  const m = t.mood, H = 118;
+export function headline(t, mode = 'm') {
+  const { W, T } = geo(mode);
+  const m = t.mood, H = mode === 'w' ? 112 : 118;
   const LINES = [
     'Full-Stack Developer × Product Builder',
     '🧩  First principles thinking',
@@ -384,7 +411,7 @@ export function headline(t) {
     const kt = [0, a, Math.min(a + fade, b), Math.max(b - fade, a), b, 1]
       .map(v => v.toFixed(4)).join(';');
     return `<text x="${W / 2}" y="${H / 2 + 12}" text-anchor="middle" font-family="${FONT}"
-      font-size="34" font-weight="700" fill="${C.txt}" opacity="0">${esc(line)}
+      font-size="${mode === 'w' ? 38 : 34}" font-weight="700" fill="${C.txt}" opacity="0">${esc(line)}
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="${kt}"
         dur="${total}s" repeatCount="indefinite"/>
     </text>`;
@@ -405,8 +432,9 @@ export function headline(t) {
  * Footer wave. Replaces capsule-render.vercel.app, which has started
  * answering 403 intermittently.
  */
-export function footer(t) {
-  const m = t.mood, H = 128;
+export function footer(t, mode = 'm') {
+  const { W } = geo(mode);
+  const m = t.mood, H = mode === 'w' ? 118 : 128;
   // Three layers, each a full period wider than the canvas and drifting
   // sideways, so the crests never sit still or line up.
   const layer = (y, op, dur, amp, shift) => {

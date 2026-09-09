@@ -267,7 +267,7 @@ function activityMd(d) {
       .slice(0, 3);
     if (!recent.length) return '<sub>Between releases right now — the projects below are the current work.</sub>';
     return recent.map(f =>
-      `- 🏷️ **[${f.name}](${f.r.html_url})** — ${f.release} <sub>· updated ${ago(f.r.pushed_at)}</sub>`
+      `- 🏷️ **[${f.name}](${f.r.html_url})** · ${f.release} <sub>· updated ${ago(f.r.pushed_at)}</sub>`
     ).join('\n');
   }
   return d.activity.map(a =>
@@ -298,17 +298,26 @@ const d = await collect();
 console.log(`data: ${d.repos.length} repos · ${d.stars}★ · ${d.featured.length} featured · ${d.activity.length} activity · ${d.issues.length} issues`);
 
 await mkdir(OUT, { recursive: true });
-await writeFile(`${OUT}/hero.svg`, hero(d, t));
-await writeFile(`${OUT}/stack.svg`, stack(d, t));
-await writeFile(`${OUT}/growth.svg`, growth(d, t));
-await writeFile(`${OUT}/headline.svg`, headline(t));
-await writeFile(`${OUT}/footer.svg`, footer(t));
+// Every card is drawn twice: a 900-wide portrait card for phones and a
+// 1600-wide banner for desktops, picked by a media query in the README.
+for (const [mode, sfx] of [['m', ''], ['w', '-w']]) {
+  await writeFile(`${OUT}/hero${sfx}.svg`, hero(d, t, mode));
+  await writeFile(`${OUT}/stack${sfx}.svg`, stack(d, t, mode));
+  await writeFile(`${OUT}/growth${sfx}.svg`, growth(d, t, mode));
+  await writeFile(`${OUT}/headline${sfx}.svg`, headline(t, mode));
+  await writeFile(`${OUT}/footer${sfx}.svg`, footer(t, mode));
+}
 const cal = await contributions();
-if (cal) await writeFile(`${OUT}/heat.svg`, heat(cal, t));
-else {
+if (cal) {
+  await writeFile(`${OUT}/heat.svg`, heat(cal, t, 'm'));
+  await writeFile(`${OUT}/heat-w.svg`, heat(cal, t, 'w'));
+} else {
   // A transient fetch failure must not wipe a heatmap that already works.
   try { await readFile(`${OUT}/heat.svg`, 'utf8'); console.warn('  ! keeping the existing heat.svg'); }
-  catch { await writeFile(`${OUT}/heat.svg`, heat(null, t)); }
+  catch {
+    await writeFile(`${OUT}/heat.svg`, heat(null, t, 'm'));
+    await writeFile(`${OUT}/heat-w.svg`, heat(null, t, 'w'));
+  }
 }
 
 let md = await readFile('README.md', 'utf8');
