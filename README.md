@@ -135,9 +135,9 @@ JavaScript and Python** — and most of it is **open source**.
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** — v2.8.0 <sub>· updated yesterday</sub>
-- 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** — v0.1.4 <sub>· updated 12d ago</sub>
-- 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** — v0.6.1 <sub>· updated 19d ago</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.0 <sub>· updated yesterday</sub>
+- 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 12d ago</sub>
+- 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** · v0.6.1 <sub>· updated 19d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
 <br/>
@@ -334,7 +334,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>09 Sept 2026, 04:15</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>09 Sept 2026, 05:10</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
