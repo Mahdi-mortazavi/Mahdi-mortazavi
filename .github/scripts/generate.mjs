@@ -276,7 +276,7 @@ function activityMd(d) {
 }
 
 function amaMd(d) {
-  const ask = `\n\n<a href="https://github.com/${USER}/${USER}/issues/new?title=Question%3A%20&body=Ask%20me%20anything%20%E2%80%94%20%D9%87%D8%B1%20%D8%B3%D9%88%D8%A7%D9%84%DB%8C%20%D8%AF%D8%A7%D8%B1%DB%8C%D8%AF%20%D8%A8%D9%BE%D8%B1%D8%B3%DB%8C%D8%AF"><img src="${badge('💬 Ask me anything', 'open a question', '0A84FF', '')}" height="28" alt="Ask me anything" /></a>`;
+  const ask = `\n\n<a href="https://github.com/${USER}/${USER}/issues/new?title=Question%3A%20&body=Ask%20me%20anything%20%E2%80%94%20%D9%87%D8%B1%20%D8%B3%D9%88%D8%A7%D9%84%DB%8C%20%D8%AF%D8%A7%D8%B1%DB%8C%D8%AF%20%D8%A8%D9%BE%D8%B1%D8%B3%DB%8C%D8%AF"><img src="${badge('💬 Ask me anything', 'open a question', '161B22', '')}" height="28" alt="Ask me anything" /></a>`;
   if (!d.issues.length) {
     return `<sub>No open questions yet — be the first. &nbsp;·&nbsp; <span dir="rtl">هنوز سوالی پرسیده نشده؛ اولین نفر باشید.</span></sub>${ask}`;
   }
