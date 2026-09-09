@@ -33,23 +33,21 @@
 
 <!-- ═══ CONTACT FIRST — one tap, no scrolling ═══ -->
 
-### 💬 Let's talk &nbsp;·&nbsp; <sub>یک پیام تا شروع همکاری</sub>
+### 💬 Let's talk<br/><sub>یک پیام تا شروع همکاری</sub>
 
-<a href="https://t.me/Mahdi_mortazavi1"><img src="https://img.shields.io/badge/Message_me-Telegram-0A84FF?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0D1117" height="42" alt="Message Mahdi Mortazavi on Telegram" /></a>
+<a href="https://t.me/Mahdi_mortazavi1"><img src="https://img.shields.io/badge/Message_me-Telegram-161B22?style=for-the-badge&logo=telegram&logoColor=2AABEE&labelColor=0D1117" alt="Message Mahdi Mortazavi on Telegram" /></a>
 &nbsp;
-<a href="mailto:mahdimortazavi135@gmail.com"><img src="https://img.shields.io/badge/Email-Reach_out-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" height="42" alt="Email Mahdi Mortazavi" /></a>
+<a href="mailto:mahdimortazavi135@gmail.com"><img src="https://img.shields.io/badge/Email-Reach_out-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0D1117" alt="Email Mahdi Mortazavi" /></a>
 &nbsp;
-<a href="https://t.me/Startup_legend"><img src="https://img.shields.io/badge/Community-Startup_Legend-30D158?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0D1117" height="42" alt="Join the Startup Legend community" /></a>
+<a href="https://t.me/Startup_legend"><img src="https://img.shields.io/badge/Community-Startup_Legend-161B22?style=for-the-badge&logo=telegram&logoColor=30D158&labelColor=0D1117" alt="Join the Startup Legend community" /></a>
 
 <sub>🟢 <b>Available for collaborations</b> &nbsp;·&nbsp; <span dir="rtl">آماده‌ی همکاری، پروژه‌ی فریلنس و هم‌بنیان‌گذاری</span></sub>
 
-<a href="https://mahdi-mortazavi.github.io"><img src="https://img.shields.io/badge/🔗_Personal_Hub-mahdi--mortazavi.github.io-0A84FF?style=for-the-badge&labelColor=0D1117" alt="Mahdi Mortazavi — Personal Hub" height="34" /></a>
+<a href="https://mahdi-mortazavi.github.io"><img src="https://img.shields.io/badge/Personal_hub-mahdi--mortazavi.github.io-161B22?style=for-the-badge&logo=github&logoColor=0A84FF&labelColor=0D1117" alt="Mahdi Mortazavi — Personal Hub" /></a>
 
-<br/>
-
-<a href="https://github.com/Mahdi-mortazavi?tab=followers"><img src="https://img.shields.io/github/followers/Mahdi-mortazavi?style=flat-square&logo=github&logoColor=white&label=Followers&labelColor=0D1117&color=0A84FF" alt="Followers" /></a>
-<img src="https://komarev.com/ghpvc/?username=Mahdi-mortazavi&label=Profile%20views&color=0A84FF&style=flat-square&labelColor=0D1117" alt="Profile views" />
-<a href="https://github.com/Mahdi-mortazavi?tab=repositories"><img src="https://img.shields.io/badge/Open_Source-Projects-0A84FF?style=flat-square&logo=git&logoColor=white&labelColor=0D1117" alt="Open source projects" /></a>
+<a href="https://github.com/Mahdi-mortazavi?tab=followers"><img src="https://img.shields.io/github/followers/Mahdi-mortazavi?style=flat-square&logo=github&logoColor=white&label=Followers&labelColor=0D1117&color=161B22" alt="Followers" /></a>
+<img src="https://komarev.com/ghpvc/?username=Mahdi-mortazavi&label=Profile%20views&color=161B22&style=flat-square&labelColor=0D1117" alt="Profile views" />
+<a href="https://github.com/Mahdi-mortazavi?tab=repositories"><img src="https://img.shields.io/badge/Open_Source-Projects-161B22?style=flat-square&logo=git&logoColor=0A84FF&labelColor=0D1117" alt="Open source projects" /></a>
 
 </div>
 
@@ -57,7 +55,7 @@
 
 <!-- ═══════════ CRAWLABLE INTRO — the SEO heart. Name in EN + FA. ═══════════ -->
 
-# 👋 Mahdi Mortazavi — مهدی مرتضوی
+# 👋 Mahdi Mortazavi<br/>مهدی مرتضوی
 
 **Full-Stack Developer × Product Builder × Problem Solver** — based in Iran 🇮🇷
 
@@ -78,7 +76,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 <div align="center">
 
-## 📈 Growth &nbsp;·&nbsp; <sub>رشد</sub>
+## 📈 Growth<br/><sub>رشد</sub>
 
 <sub>Real star history across every repository — redrawn automatically.</sub>
 
@@ -92,7 +90,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 <div align="center">
 
-## 🎯 How I Work &nbsp;·&nbsp; <sub>روشِ کار من</sub>
+## 🎯 How I Work<br/><sub>روشِ کار من</sub>
 
 </div>
 
@@ -121,7 +119,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 <div align="center">
 
-## ⚡ Now Building &nbsp;·&nbsp; <sub>الان روی چه کار می‌کنم</sub>
+## ⚡ Now Building<br/><sub>الان روی چه کار می‌کنم</sub>
 
 <sub>Pulled live from my public activity — never hand-written.</sub>
 
@@ -137,24 +135,16 @@ JavaScript and Python** — and most of it is **open source**.
 
 <div align="center">
 
-## 🛠️ Tech Stack &nbsp;·&nbsp; <sub>جعبه‌ابزار</sub>
+## 🛠️ Tech Stack<br/><sub>جعبه‌ابزار</sub>
 
 <sub>Computed from my <b>actual public repositories</b>, not hand-written.</sub>
 
 <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/stack.svg" width="100%" alt="Language distribution across Mahdi Mortazavi's public repositories" />
 
-<img src="https://img.shields.io/badge/.NET-0D1117?style=flat-square&logo=dotnet&logoColor=512BD4" alt=".NET" />
-<img src="https://img.shields.io/badge/Flutter-0D1117?style=flat-square&logo=flutter&logoColor=02569B" alt="Flutter" />
-<img src="https://img.shields.io/badge/Tauri-0D1117?style=flat-square&logo=tauri&logoColor=24C8DB" alt="Tauri" />
-<img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-<img src="https://img.shields.io/badge/Cloudflare_Workers-0D1117?style=flat-square&logo=cloudflare&logoColor=F38020" alt="Cloudflare Workers" />
-<img src="https://img.shields.io/badge/Astro-0D1117?style=flat-square&logo=astro&logoColor=BC52EE" alt="Astro" />
-<img src="https://img.shields.io/badge/Figma-0D1117?style=flat-square&logo=figma&logoColor=F24E1E" alt="Figma" />
-<img src="https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=F05032" alt="Git" />
 
 ---
 
-## 🚀 Open-Source Projects &nbsp;·&nbsp; <sub>پروژه‌های متن‌باز</sub>
+## 🚀 Open-Source Projects<br/><sub>پروژه‌های متن‌باز</sub>
 
 <sub>Ranked by stars, straight from the GitHub API — a new project appears here on its own.</sub>
 
@@ -165,8 +155,8 @@ JavaScript and Python** — and most of it is **open source**.
 <!-- LIVE:PROJECTS -->
 ### 📡 [relay](https://github.com/Mahdi-mortazavi/relay)
 
-<a href="https://github.com/Mahdi-mortazavi/relay/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/relay?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="relay stars" /></a>
-&nbsp;<sub>**C#**</sub>
+<a href="https://github.com/Mahdi-mortazavi/relay/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/relay?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="relay stars" /></a>
+ `C#`
 
 📱 Share your phone's internet with your PC — Android → Windows reverse tethering over an encrypted WireGuard tunnel. No root, no server, no account.
 <br/><span dir="rtl">ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز</span>
@@ -179,8 +169,8 @@ JavaScript and Python** — and most of it is **open source**.
 
 ### ◉ [Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)
 
-<a href="https://github.com/Mahdi-mortazavi/flow/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/flow?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="flow stars" /></a>
-&nbsp;<sub>**Dart**</sub>
+<a href="https://github.com/Mahdi-mortazavi/flow/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/flow?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="flow stars" /></a>
+ `Dart`
 
 🪨 One decision a day. ⏱ Focus. 🌱 Habits. 🔒 100% offline.
 <br/><span dir="rtl">تک‌نقطه — تمرکز، عادت و کارِ عمیق، مبتنی بر علم رفتار</span>
@@ -193,8 +183,8 @@ JavaScript and Python** — and most of it is **open source**.
 
 ### 💎 [sooda](https://github.com/Mahdi-mortazavi/sooda)
 
-<a href="https://github.com/Mahdi-mortazavi/sooda/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/sooda?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="sooda stars" /></a>
-&nbsp;<sub>**TypeScript**</sub>
+<a href="https://github.com/Mahdi-mortazavi/sooda/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/sooda?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="sooda stars" /></a>
+ `TypeScript`
 
 💎 Sooda — Liquid-glass profit, price &amp; discount calculator. Offline-first PWA, bilingual (EN/FA), zero dependencies on servers.
 <br/><span dir="rtl">سودا — ماشین‌حساب سود، قیمت فروش و تخفیف، آفلاین و دوزبانه</span>
@@ -212,8 +202,8 @@ JavaScript and Python** — and most of it is **open source**.
 
 ### 🍎 [Nava](https://github.com/Mahdi-mortazavi/app)
 
-<a href="https://github.com/Mahdi-mortazavi/app/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/app?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="app stars" /></a>
-&nbsp;<sub>**Dart**</sub>
+<a href="https://github.com/Mahdi-mortazavi/app/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/app?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="app stars" /></a>
+ `Dart`
 
 🍎 Nava: The Art of Reduction. A Jony Ive inspired productivity app with Squircle design, Haptic feedback &amp; Breathing animations. | نوا: مینیمالیسم محض؛ هنرِ حذف اضافات.
 <br/><span dir="rtl">نوا — اپ بهره‌وری مینیمال با الهام از طراحی اپل</span>
@@ -226,8 +216,8 @@ JavaScript and Python** — and most of it is **open source**.
 
 ### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
 
-<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="Mova stars" /></a>
-&nbsp;<sub>**TypeScript**</sub>
+<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="Mova stars" /></a>
+ `TypeScript`
 
 Mova  in motion, not in perfection
 <br/><span dir="rtl">موا — در حرکت، نه در کمال</span>
@@ -238,8 +228,8 @@ Mova  in motion, not in perfection
 
 ### 🧹 [purify](https://github.com/Mahdi-mortazavi/purify)
 
-<a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="purify stars" /></a>
-&nbsp;<sub>**Rust**</sub>
+<a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="purify stars" /></a>
+ `Rust`
 
 🧹 Clean your Windows disk with confidence. Fast, private, reversible cleanup built with Rust and Tauri.
 <br/><span dir="rtl">پیوریفای — پاک‌سازی هوشمند و فوق‌سریع دیسک ویندوز</span>
@@ -262,7 +252,7 @@ Mova  in motion, not in perfection
 
 ---
 
-## 📊 Activity &nbsp;·&nbsp; <sub>فعالیت</sub>
+## 📊 Activity<br/><sub>فعالیت</sub>
 
 <sub>A full year of real contributions — drawn here, from my own data.</sub>
 
@@ -294,7 +284,7 @@ Mova  in motion, not in perfection
 
 ---
 
-## 💬 Ask Me Anything &nbsp;·&nbsp; <sub>از من بپرسید</sub>
+## 💬 Ask Me Anything<br/><sub>از من بپرسید</sub>
 
 <sub>Open a question as an issue — it appears here automatically, and I answer it in public.
 <br/><span dir="rtl">سوال‌تان را به‌صورت Issue بپرسید؛ خودکار همین‌جا نمایش داده می‌شود و عمومی جواب می‌دهم.</span></sub>
@@ -313,7 +303,7 @@ Mova  in motion, not in perfection
 
 ---
 
-## 🤝 Work With Me &nbsp;·&nbsp; <sub>بیایید با هم کار کنیم</sub>
+## 🤝 Work With Me<br/><sub>بیایید با هم کار کنیم</sub>
 
 Have a hard problem worth solving? I'm open to **collaborations, freelance work, co-founding ideas,
 and good technical conversations** — and I reply fast.
@@ -322,13 +312,13 @@ and good technical conversations** — and I reply fast.
 
 <br/>
 
-<a href="https://t.me/Mahdi_mortazavi1"><img src="https://img.shields.io/badge/💬_Message_me-Telegram-0A84FF?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0D1117" height="44" alt="Message Mahdi Mortazavi on Telegram" /></a>
+<a href="https://t.me/Mahdi_mortazavi1"><img src="https://img.shields.io/badge/Message_me-Telegram-161B22?style=for-the-badge&logo=telegram&logoColor=2AABEE&labelColor=0D1117" alt="Message Mahdi Mortazavi on Telegram" /></a>
 &nbsp;
-<a href="mailto:mahdimortazavi135@gmail.com"><img src="https://img.shields.io/badge/✉️_Email_me-Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" height="44" alt="Email Mahdi Mortazavi" /></a>
+<a href="mailto:mahdimortazavi135@gmail.com"><img src="https://img.shields.io/badge/Email_me-Gmail-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0D1117" alt="Email Mahdi Mortazavi" /></a>
 
 <br/><br/>
 
-<a href="https://t.me/Startup_legend"><img src="https://img.shields.io/badge/🚀_Startup_Legend-Join_the_community-30D158?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0D1117" height="38" alt="Join the Startup Legend community" /></a>
+<a href="https://t.me/Startup_legend"><img src="https://img.shields.io/badge/Startup_Legend-Join_the_community-161B22?style=for-the-badge&logo=telegram&logoColor=30D158&labelColor=0D1117" alt="Join the Startup Legend community" /></a>
 
 <br/><br/>
 
