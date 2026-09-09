@@ -228,8 +228,7 @@ function projectsMd(d) {
     const fa = f.fa ? `\n<br/><span dir="rtl">${f.fa}</span>` : '';
     return `### ${f.icon} [${f.name}](${r.html_url})
 
-<a href="${r.html_url}/stargazers"><img src="https://img.shields.io/github/stars/${USER}/${r.name}?style=flat-square&logo=github&logoColor=white&labelColor=0D1117&color=0A84FF" alt="${r.name} stars" /></a>
-&nbsp;<sub>**${r.language ?? 'Multi-language'}**</sub>
+<a href="${r.html_url}/stargazers"><img src="https://img.shields.io/github/stars/${USER}/${r.name}?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="${r.name} stars" /></a> \`${r.language ?? 'Multi-language'}\`
 
 ${desc}${fa}
 ${meta ? `\n${meta}\n` : ''}
@@ -258,7 +257,19 @@ ${rest.map(one).join('\n')}
 }
 
 function activityMd(d) {
-  if (!d.activity.length) return '<sub>No public activity in the last few days.</sub>';
+  // The events feed only covers a few days, and it is often empty. Falling back
+  // to the newest releases keeps the section meaningful instead of announcing
+  // that there is nothing to see.
+  if (!d.activity.length) {
+    const recent = d.featured
+      .filter(f => f.release)
+      .sort((a, b) => new Date(b.r.pushed_at) - new Date(a.r.pushed_at))
+      .slice(0, 3);
+    if (!recent.length) return '<sub>Between releases right now — the projects below are the current work.</sub>';
+    return recent.map(f =>
+      `- 🏷️ **[${f.name}](${f.r.html_url})** — ${f.release} <sub>· updated ${ago(f.r.pushed_at)}</sub>`
+    ).join('\n');
+  }
   return d.activity.map(a =>
     `- ${a.icon} **[${a.repo}](https://github.com/${USER}/${a.repo})** — ${esc(a.text).slice(0, 90)} <sub>· ${ago(a.at)}</sub>`
   ).join('\n');
