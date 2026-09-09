@@ -135,7 +135,7 @@ JavaScript and Python** — and most of it is **open source**.
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.0 <sub>· updated yesterday</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.0 <sub>· updated 2d ago</sub>
 - 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 12d ago</sub>
 - 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** · v0.6.1 <sub>· updated 19d ago</sub>
 <!-- /LIVE:ACTIVITY -->
@@ -176,7 +176,7 @@ JavaScript and Python** — and most of it is **open source**.
 
 `android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.8.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated yesterday</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://github.com/Mahdi-mortazavi/relay/releases/latest)** &nbsp;·&nbsp; <sub>updated 2d ago</sub>
 
 ---
 
@@ -334,7 +334,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>09 Sept 2026, 08:00</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>09 Sept 2026, 14:43</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
