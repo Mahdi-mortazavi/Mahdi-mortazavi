@@ -71,11 +71,40 @@ I take hard, messy problems, break them down to fundamentals, and ship the answe
 people actually use. I build across the stack with **C#, Dart & Flutter, Rust, TypeScript,
 JavaScript and Python** — and most of it is **open source**.
 
+That turns into software you can actually download and run.
+**[relay](https://github.com/Mahdi-mortazavi/relay)** shares your phone's internet with your PC —
+Android to Windows **reverse tethering** over an encrypted **WireGuard** tunnel, with no root, no
+server and no account.
+**[purify](https://github.com/Mahdi-mortazavi/purify)** is a fast, private, reversible
+**Windows disk cleaner** written in **Rust** and **Tauri**.
+**[Flow](https://github.com/Mahdi-mortazavi/flow)** is an offline **focus and habit tracker** for
+**ADHD** brains, built in **Flutter**.
+**[sooda](https://github.com/Mahdi-mortazavi/sooda)** is an **offline-first PWA** that works out
+**profit, selling price and discount** for small shops.
+**[Nava](https://github.com/Mahdi-mortazavi/app)** is a minimal productivity app in the spirit of
+Apple's industrial design. Every one of them is free, bilingual (English / فارسی) and open source.
+
 <p dir="rtl" align="right">
 <b>سلام، من مهدی مرتضوی هستم</b> — توسعه‌دهنده‌ی فول‌استک، سازنده‌ی محصول و مسئله‌محور از ایران.
 روشِ کارم ساده است: <b>تفکر بر پایه‌ی اصول ← طراحی راه‌حل ← ساختِ محصول واقعی</b>.
 مسئله‌های سخت را تا مبانی پایه تجزیه می‌کنم و پاسخ را به محصولی تبدیل می‌کنم که واقعاً استفاده می‌شود.
 بیشتر کارهایم متن‌باز (اوپن‌سورس) است.
+</p>
+
+<p dir="rtl" align="right">
+حاصلِ این کار، نرم‌افزارهایی است که می‌توانید همین حالا دانلود کنید:
+<b><a href="https://github.com/Mahdi-mortazavi/relay">ریلی</a></b> برای
+<b>اشتراک اینترنت گوشی اندروید با کامپیوتر ویندوز</b> از راه تونل رمزنگاری‌شده‌ی وایرگارد — بدون روت،
+بدون سرور و بدون حساب کاربری؛
+<b><a href="https://github.com/Mahdi-mortazavi/purify">پیوریفای</a></b> برای
+<b>پاک‌سازی فایل‌های اضافی و خالی کردن فضای دیسک ویندوز</b> با زبان راست، سریع و برگشت‌پذیر؛
+<b><a href="https://github.com/Mahdi-mortazavi/flow">تک‌نقطه</a></b>،
+<b>اپلیکیشن تمرکز و ساخت عادت</b> برای ذهن‌های بیش‌فعال، کاملاً آفلاین؛
+<b><a href="https://github.com/Mahdi-mortazavi/sooda">سودا</a></b>،
+<b>ماشین‌حساب سود، قیمت فروش و تخفیف</b> برای کسب‌وکارهای کوچک؛ و
+<b><a href="https://github.com/Mahdi-mortazavi/app">نوا</a></b>،
+اپ بهره‌وری مینیمال با الهام از طراحی اپل.
+همه رایگان، دوزبانه (فارسی / English) و متن‌باز هستند.
 </p>
 
 <br/>
@@ -286,6 +315,154 @@ Mova  in motion, not in perfection
 
 <br/><br/>
 </div>
+
+</details>
+
+<br/>
+
+<div align="center">
+
+---
+
+## ❓ Frequently Asked<br/><sub>پرسش‌های پرتکرار</sub>
+
+<sub>Real questions people arrive with — answered once, in the open.
+<br/><span dir="rtl">سوال‌هایی که واقعاً پرسیده می‌شوند — یک‌بار و برای همیشه، پاسخ داده شده.</span></sub>
+
+</div>
+
+<br/>
+
+<details>
+<summary><b>How can I share my phone's internet with my PC without root?</b><br/><span dir="rtl">چطور اینترنت گوشی را بدون روت با کامپیوتر به اشتراک بگذارم؟</span></summary>
+
+<br/>
+
+Use **[relay](https://github.com/Mahdi-mortazavi/relay)**. It does Android → Windows
+**reverse tethering** over an encrypted **WireGuard** tunnel, so your PC goes online through your
+phone's mobile data or Wi-Fi. There is **no root, no third-party server and no account** — the
+tunnel runs directly between your two devices, so your traffic never passes through anyone else.
+It's written in C# and Go, and the installer is on the
+[releases page](https://github.com/Mahdi-mortazavi/relay/releases/latest).
+
+<p dir="rtl" align="right">
+با <b><a href="https://github.com/Mahdi-mortazavi/relay">ریلی</a></b>.
+اینترنت گوشی اندروید را از راه یک تونل رمزنگاری‌شده‌ی وایرگارد به ویندوز می‌رساند؛
+<b>بدون روت، بدون سرور واسط و بدون حساب کاربری</b>. تونل مستقیم بین همان دو دستگاه برقرار می‌شود،
+پس ترافیک شما از هیچ سرور دیگری عبور نمی‌کند. نصب‌کننده در
+<a href="https://github.com/Mahdi-mortazavi/relay/releases/latest">صفحه‌ی انتشارها</a> است.
+</p>
+
+</details>
+
+<details>
+<summary><b>How do I safely free up disk space on Windows?</b><br/><span dir="rtl">چطور فضای دیسک ویندوز را بدون ریسک خالی کنم؟</span></summary>
+
+<br/>
+
+**[purify](https://github.com/Mahdi-mortazavi/purify)** scans for the junk Windows leaves behind —
+caches, temp files, leftover installers, update remnants — and shows you exactly what it found
+before deleting anything. Every clean is **reversible**, nothing is uploaded, and it's built with
+**Rust** and **Tauri** so it starts instantly and stays out of your way.
+
+<p dir="rtl" align="right">
+<b><a href="https://github.com/Mahdi-mortazavi/purify">پیوریفای</a></b> فایل‌های اضافی ویندوز را
+پیدا می‌کند — کش، فایل‌های موقت، نصب‌کننده‌های باقی‌مانده و ته‌مانده‌ی آپدیت‌ها — و <b>پیش از حذف</b>
+دقیقاً نشان می‌دهد چه چیزی پیدا شده. هر پاک‌سازی <b>برگشت‌پذیر</b> است، چیزی آپلود نمی‌شود، و چون با
+<b>Rust</b> و <b>Tauri</b> ساخته شده، فوری بالا می‌آید.
+</p>
+
+</details>
+
+<details>
+<summary><b>Is there a focus / habit app that works fully offline?</b><br/><span dir="rtl">اپ تمرکز و عادت که کاملاً آفلاین باشد هست؟</span></summary>
+
+<br/>
+
+**[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** is built around one idea:
+**one decision a day**. Focus timer, habit streaks and deep-work sessions, designed with
+**ADHD** brains in mind and grounded in behavioural science. It's **100% offline** — no sign-up,
+no sync, no telemetry — and it's bilingual (English / فارسی). Written in **Dart & Flutter**.
+
+<p dir="rtl" align="right">
+<b><a href="https://github.com/Mahdi-mortazavi/flow">تک‌نقطه</a></b> روی یک ایده ساخته شده:
+<b>روزی یک تصمیم</b>. تایمر تمرکز، زنجیره‌ی عادت و جلسه‌های کار عمیق — طراحی‌شده برای ذهن‌های
+بیش‌فعال و بر پایه‌ی علم رفتار. <b>کاملاً آفلاین</b> است؛ بدون ثبت‌نام، بدون همگام‌سازی و بدون
+جمع‌آوری داده. دوزبانه، نوشته‌شده با دارت و فلاتر.
+</p>
+
+</details>
+
+<details>
+<summary><b>How do I calculate profit, selling price and discount for a small shop?</b><br/><span dir="rtl">سود، قیمت فروش و تخفیف را چطور حساب کنم؟</span></summary>
+
+<br/>
+
+**[sooda](https://github.com/Mahdi-mortazavi/sooda)** does exactly that — cost in, margin or
+selling price out, plus discount and markup in the other direction. It's an **offline-first PWA**,
+so you install it once and it keeps working with no connection and no server.
+Open it in the browser: **[mahdi-mortazavi.github.io/sooda](https://mahdi-mortazavi.github.io/sooda/)**.
+
+<p dir="rtl" align="right">
+<b><a href="https://github.com/Mahdi-mortazavi/sooda">سودا</a></b> دقیقاً همین کار را می‌کند:
+قیمت تمام‌شده را می‌دهید، سود یا قیمت فروش را می‌گیرید — و برعکس، تخفیف و درصد افزایش را هم حساب می‌کند.
+یک <b>وب‌اپ آفلاین‌محور (PWA)</b> است؛ یک‌بار نصب می‌کنید و بعد بدون اینترنت و بدون سرور کار می‌کند.
+<a href="https://mahdi-mortazavi.github.io/sooda/">همین‌جا بازش کنید</a>.
+</p>
+
+</details>
+
+<details>
+<summary><b>Are these apps free? What licence are they under?</b><br/><span dir="rtl">این برنامه‌ها رایگان‌اند؟ با چه مجوزی؟</span></summary>
+
+<br/>
+
+All of them are **free and open source**. The code lives on GitHub, the releases are public, and
+you can read every line before you run it. Each repository carries its own licence file — check the
+repo you're interested in. There is no paid tier, no ads and no account.
+
+<p dir="rtl" align="right">
+همه‌ی آن‌ها <b>رایگان و متن‌باز</b> هستند. کد روی گیت‌هاب است، نسخه‌ها عمومی‌اند و می‌توانید پیش از
+اجرا هر خط را بخوانید. فایل مجوز داخل هر مخزن قرار دارد. نه نسخه‌ی پولی، نه تبلیغات و نه حساب کاربری.
+</p>
+
+</details>
+
+<details>
+<summary><b>Do the apps support Persian and right-to-left layout?</b><br/><span dir="rtl">آیا از فارسی و چیدمان راست‌به‌چپ پشتیبانی می‌کنند؟</span></summary>
+
+<br/>
+
+Yes. They ship **bilingual (English / فارسی)** with proper **RTL** layout, Persian digits where they
+belong, and typography that was chosen for Persian rather than bolted on afterwards. I build in
+Iran, so Persian is a first-class language in everything I ship — not a translation layer.
+
+<p dir="rtl" align="right">
+بله. همه <b>دوزبانه</b> هستند، با چیدمان <b>راست‌به‌چپ</b> درست، ارقام فارسی در جای خودشان و
+تایپوگرافی‌ای که از ابتدا برای فارسی انتخاب شده — نه ترجمه‌ای که بعداً اضافه شده باشد.
+</p>
+
+</details>
+
+<details>
+<summary><b>Are you available for freelance work or co-founding?</b><br/><span dir="rtl">برای همکاری فریلنس یا هم‌بنیان‌گذاری در دسترس هستید؟</span></summary>
+
+<br/>
+
+Yes — I take on **full-stack product work**: desktop apps (**C#, Rust, Tauri**), mobile
+(**Dart & Flutter**), web (**TypeScript, React, Astro, Cloudflare Workers**) and the design that
+goes with them. I'm most useful on problems that are still messy, where the shape of the answer
+isn't decided yet. The fastest way to reach me is
+**[Telegram](https://t.me/Mahdi_mortazavi1)** or
+**[email](mailto:mahdimortazavi135@gmail.com)**.
+
+<p dir="rtl" align="right">
+بله — <b>کارِ محصولِ فول‌استک</b> می‌پذیرم: نرم‌افزار دسکتاپ (سی‌شارپ، راست، Tauri)، موبایل
+(دارت و فلاتر)، وب (تایپ‌اسکریپت، ری‌اکت، Astro، Cloudflare Workers) و طراحیِ همراهش.
+بیشترین فایده را جایی دارم که مسئله هنوز آشفته است و شکلِ پاسخ مشخص نیست.
+سریع‌ترین راه ارتباط: <a href="https://t.me/Mahdi_mortazavi1">تلگرام</a> یا
+<a href="mailto:mahdimortazavi135@gmail.com">ایمیل</a>.
+</p>
 
 </details>
 
