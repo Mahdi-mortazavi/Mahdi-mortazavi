@@ -108,15 +108,15 @@ JavaScript and Python** — and most of it is **open source**.
 
 <br/>
 
-> ### 🧩 First-Principles Thinking &nbsp;·&nbsp; <sub>تفکر بر پایه‌ی اصول</sub>
+> ### 🧩 First-Principles Thinking<br/><sub>تفکر بر پایه‌ی اصول</sub>
 > I break a problem down to fundamentals instead of copying assumptions — that's where the real answer hides.
 > <br/><span dir="rtl">مسئله را تا مبانی پایه تجزیه می‌کنم، نه اینکه فرض‌های دیگران را تکرار کنم؛ پاسخ واقعی همان‌جاست.</span>
 
-> ### 💡 Designing Solutions &nbsp;·&nbsp; <sub>طراحی راه‌حل</sub>
+> ### 💡 Designing Solutions<br/><sub>طراحی راه‌حل</sub>
 > A solution has to be designed, not just coded — clear, fast, and obvious to the person using it.
 > <br/><span dir="rtl">راه‌حل باید طراحی شود، نه فقط کد زده شود — روشن، سریع و بدیهی برای کسی که استفاده می‌کند.</span>
 
-> ### 🚀 Building Real Products &nbsp;·&nbsp; <sub>ساختِ محصول واقعی</sub>
+> ### 🚀 Building Real Products<br/><sub>ساختِ محصول واقعی</sub>
 > Nothing counts until it ships. I take it all the way to something people can download and use.
 > <br/><span dir="rtl">تا وقتی منتشر نشده، به حساب نمی‌آید. کار را تا محصولی که قابل دانلود و استفاده باشد می‌برم.</span>
 
