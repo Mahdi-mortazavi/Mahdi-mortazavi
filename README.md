@@ -164,8 +164,8 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.1 <sub>· updated 2d ago</sub>
-- 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 15d ago</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.1 <sub>· updated today</sub>
+- 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 16d ago</sub>
 - 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** · v0.6.1 <sub>· updated 22d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
@@ -205,7 +205,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.8.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated 2d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated today</sub>
 
 ---
 
@@ -275,7 +275,7 @@ Mova  in motion, not in perfection
 
 `cache-cleaner` `desktop-app` `disk-analyzer` `disk-cleaner` &nbsp;·&nbsp; 🏷️ **v0.1.4**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/purify/)** &nbsp;·&nbsp; <sub>updated 15d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/purify/)** &nbsp;·&nbsp; <sub>updated 16d ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>12 Sept 2026, 14:08</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>12 Sept 2026, 18:57</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
