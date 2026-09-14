@@ -166,7 +166,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 <!-- LIVE:ACTIVITY -->
 - 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.4 <sub>· updated today</sub>
 - 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 17d ago</sub>
-- 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** · v0.6.1 <sub>· updated 23d ago</sub>
+- 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** · v0.6.1 <sub>· updated 24d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
 <br/>
@@ -218,7 +218,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `adhd` `android` `behavioral-science` `bilingual` &nbsp;·&nbsp; 🏷️ **v0.6.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/flow/)** &nbsp;·&nbsp; <sub>updated 23d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/flow/)** &nbsp;·&nbsp; <sub>updated 24d ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>14 Sept 2026, 00:12</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>14 Sept 2026, 08:16</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
