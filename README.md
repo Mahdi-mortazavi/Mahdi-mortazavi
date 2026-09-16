@@ -164,9 +164,9 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.7 <sub>· updated today</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.8 <sub>· updated today</sub>
 - 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated today</sub>
-- 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 19d ago</sub>
+- 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 20d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
 <br/>
@@ -198,12 +198,12 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 <!-- LIVE:PROJECTS -->
 ### 📡 [relay](https://github.com/Mahdi-mortazavi/relay)
 
-<a href="https://github.com/Mahdi-mortazavi/relay/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/relay?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="relay stars" /></a> `C#`
+<a href="https://github.com/Mahdi-mortazavi/relay/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/relay?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="relay stars" /></a> `Kotlin`
 
 📱 Share your phone's internet with your PC — Android → Windows reverse tethering over an encrypted WireGuard tunnel. No root, no server, no account.
 <br/><span dir="rtl">ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز</span>
 
-`android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.8.7**
+`android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.8.8**
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated today</sub>
 
@@ -275,7 +275,7 @@ Mova  in motion, not in perfection
 
 `cache-cleaner` `desktop-app` `disk-analyzer` `disk-cleaner` &nbsp;·&nbsp; 🏷️ **v0.1.4**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/purify/)** &nbsp;·&nbsp; <sub>updated 19d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/purify/)** &nbsp;·&nbsp; <sub>updated 20d ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>16 Sept 2026, 14:54</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>16 Sept 2026, 20:15</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
