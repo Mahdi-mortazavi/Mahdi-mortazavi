@@ -164,8 +164,8 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.4.1 <sub>· updated today</sub>
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.4 <sub>· updated yesterday</sub>
+- 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated today</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.4 <sub>· updated 2d ago</sub>
 - 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 19d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
@@ -205,7 +205,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.8.4**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated yesterday</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated 2d ago</sub>
 
 ---
 
@@ -218,7 +218,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `adhd` `android` `behavioral-science` `bilingual` &nbsp;·&nbsp; 🏷️ **v0.6.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/flow/)** &nbsp;·&nbsp; <sub>updated 25d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/flow/)** &nbsp;·&nbsp; <sub>updated 26d ago</sub>
 
 ---
 
@@ -229,7 +229,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 💎 Sooda — Liquid-glass profit, price &amp; discount calculator. Offline-first PWA, bilingual (EN/FA), zero dependencies on servers.
 <br/><span dir="rtl">سودا — ماشین‌حساب سود، قیمت فروش و تخفیف، آفلاین و دوزبانه</span>
 
-`bilingual` `calculator` `discount-calculator` `farsi` &nbsp;·&nbsp; 🏷️ **v1.4.1**
+`bilingual` `calculator` `discount-calculator` `farsi` &nbsp;·&nbsp; 🏷️ **v1.5.0**
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated today</sub>
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>16 Sept 2026, 00:44</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>16 Sept 2026, 08:11</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
