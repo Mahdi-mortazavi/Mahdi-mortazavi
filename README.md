@@ -164,8 +164,8 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.8 <sub>· updated today</sub>
-- 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated today</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.8.9 <sub>· updated today</sub>
+- 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated yesterday</sub>
 - 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 20d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
@@ -203,7 +203,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 📱 Share your phone's internet with your PC — Android → Windows reverse tethering over an encrypted WireGuard tunnel. No root, no server, no account.
 <br/><span dir="rtl">ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز</span>
 
-`android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.8.8**
+`android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.8.9**
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated today</sub>
 
@@ -231,7 +231,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `bilingual` `calculator` `discount-calculator` `farsi` &nbsp;·&nbsp; 🏷️ **v1.5.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated today</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated yesterday</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>17 Sept 2026, 08:14</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>17 Sept 2026, 15:02</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
