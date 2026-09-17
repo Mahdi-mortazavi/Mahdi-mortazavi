@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="372" viewBox="0 0 1600 372" role="img"
   aria-label="Star growth across Mahdi Mortazavi's open-source repositories">
-  <title>Cumulative GitHub stars — 318 total, 24 in the last 30 days</title>
+  <title>Cumulative GitHub stars — 319 total, 25 in the last 30 days</title>
   
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -9,25 +9,25 @@
       <stop offset="100%" stop-color="#161B22"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF9F0A" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#FF9F0A" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#0A84FF"/>
+      <stop offset="0%" stop-color="#FF9F0A"/>
+      <stop offset="100%" stop-color="#FF375F"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF9F0A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF9F0A"/>
+      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -40,8 +40,8 @@
     </pattern>
   </defs>
   <linearGradient id="gfill" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
-    <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
+    <stop offset="0%" stop-color="#FF9F0A" stop-opacity=".55"/>
+    <stop offset="100%" stop-color="#FF9F0A" stop-opacity="0"/>
   </linearGradient>
   
   <rect width="1600" height="372" rx="22" fill="url(#bg)"/>
@@ -52,12 +52,12 @@
   <rect width="1600" height="372" rx="22" fill="url(#grid)"/>
   <rect x="0" y="0" width="1600" height="3" fill="url(#hair)"/>
   
-  <text x="64" y="62" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="2.5" fill="#5E5CE6">GROWTH · رشد</text>
-  <text x="64" y="162" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="104" font-weight="800" letter-spacing="-2" fill="#F5F5F7">318<tspan dx="18" font-size="34" font-weight="600" letter-spacing="0" fill="#A1A1A6">total stars</tspan></text>
-  <text x="64" y="203" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="500" fill="#8A93A3"><tspan fill="#30D158" font-weight="700">▲ +24</tspan> in the last 30 days</text>
+  <text x="64" y="62" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="2.5" fill="#FF9F0A">GROWTH · رشد</text>
+  <text x="64" y="162" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="104" font-weight="800" letter-spacing="-2" fill="#F5F5F7">319<tspan dx="18" font-size="34" font-weight="600" letter-spacing="0" fill="#A1A1A6">total stars</tspan></text>
+  <text x="64" y="203" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="500" fill="#8A93A3"><tspan fill="#30D158" font-weight="700">▲ +25</tspan> in the last 30 days</text>
   <line x1="64" y1="302.0" x2="1536" y2="302.0" stroke="#FFFFFF" stroke-opacity=".07"/><line x1="64" y1="257.0" x2="1536" y2="257.0" stroke="#FFFFFF" stroke-opacity=".07"/><line x1="64" y1="212.0" x2="1536" y2="212.0" stroke="#FFFFFF" stroke-opacity=".07"/>
-  <path d="M64.0,284.0L84.4,284.0L104.9,284.0L125.3,284.0L145.8,284.0L166.2,275.0L186.7,275.0L207.1,275.0L227.6,275.0L248.0,275.0L268.4,263.0L288.9,263.0L309.3,263.0L329.8,263.0L350.2,263.0L370.7,266.0L391.1,266.0L411.6,266.0L432.0,266.0L452.4,266.0L472.9,263.0L493.3,263.0L513.8,263.0L534.2,263.0L554.7,263.0L575.1,257.0L595.6,257.0L616.0,257.0L636.4,257.0L656.9,257.0L677.3,257.0L697.8,257.0L718.2,257.0L738.7,257.0L759.1,257.0L779.6,257.0L800.0,257.0L820.4,257.0L840.9,257.0L861.3,248.0L881.8,248.0L902.2,248.0L922.7,248.0L943.1,248.0L963.6,236.0L984.0,236.0L1004.4,236.0L1024.9,236.0L1045.3,236.0L1065.8,233.0L1086.2,233.0L1106.7,233.0L1127.1,233.0L1147.6,233.0L1168.0,227.0L1188.4,227.0L1208.9,227.0L1229.3,227.0L1249.8,227.0L1270.2,218.0L1290.7,218.0L1311.1,218.0L1331.6,218.0L1352.0,215.0L1372.4,215.0L1392.9,215.0L1413.3,215.0L1433.8,215.0L1454.2,212.0L1474.7,212.0L1495.1,212.0L1515.6,212.0L1536.0,212.0L1536.0,302L64,302Z" fill="url(#gfill)"/>
-  <path d="M64.0,284.0L84.4,284.0L104.9,284.0L125.3,284.0L145.8,284.0L166.2,275.0L186.7,275.0L207.1,275.0L227.6,275.0L248.0,275.0L268.4,263.0L288.9,263.0L309.3,263.0L329.8,263.0L350.2,263.0L370.7,266.0L391.1,266.0L411.6,266.0L432.0,266.0L452.4,266.0L472.9,263.0L493.3,263.0L513.8,263.0L534.2,263.0L554.7,263.0L575.1,257.0L595.6,257.0L616.0,257.0L636.4,257.0L656.9,257.0L677.3,257.0L697.8,257.0L718.2,257.0L738.7,257.0L759.1,257.0L779.6,257.0L800.0,257.0L820.4,257.0L840.9,257.0L861.3,248.0L881.8,248.0L902.2,248.0L922.7,248.0L943.1,248.0L963.6,236.0L984.0,236.0L1004.4,236.0L1024.9,236.0L1045.3,236.0L1065.8,233.0L1086.2,233.0L1106.7,233.0L1127.1,233.0L1147.6,233.0L1168.0,227.0L1188.4,227.0L1208.9,227.0L1229.3,227.0L1249.8,227.0L1270.2,218.0L1290.7,218.0L1311.1,218.0L1331.6,218.0L1352.0,215.0L1372.4,215.0L1392.9,215.0L1413.3,215.0L1433.8,215.0L1454.2,212.0L1474.7,212.0L1495.1,212.0L1515.6,212.0L1536.0,212.0" fill="none" stroke="#5E5CE6" stroke-width="3.8" stroke-linejoin="round" stroke-linecap="round"
+  <path d="M64.0,284.0L84.4,284.0L104.9,284.0L125.3,284.0L145.8,284.0L166.2,275.4L186.7,275.4L207.1,275.4L227.6,275.4L248.0,275.4L268.4,263.8L288.9,263.8L309.3,263.8L329.8,263.8L350.2,263.8L370.7,266.7L391.1,266.7L411.6,266.7L432.0,266.7L452.4,263.8L472.9,263.8L493.3,263.8L513.8,263.8L534.2,263.8L554.7,258.1L575.1,258.1L595.6,258.1L616.0,258.1L636.4,258.1L656.9,258.1L677.3,258.1L697.8,258.1L718.2,258.1L738.7,258.1L759.1,258.1L779.6,258.1L800.0,258.1L820.4,258.1L840.9,249.4L861.3,249.4L881.8,249.4L902.2,249.4L922.7,249.4L943.1,237.9L963.6,237.9L984.0,237.9L1004.4,237.9L1024.9,237.9L1045.3,235.0L1065.8,235.0L1086.2,235.0L1106.7,235.0L1127.1,235.0L1147.6,229.3L1168.0,229.3L1188.4,229.3L1208.9,229.3L1229.3,220.6L1249.8,220.6L1270.2,220.6L1290.7,220.6L1311.1,220.6L1331.6,217.8L1352.0,217.8L1372.4,217.8L1392.9,217.8L1413.3,217.8L1433.8,214.9L1454.2,214.9L1474.7,214.9L1495.1,214.9L1515.6,214.9L1536.0,212.0L1536.0,302L64,302Z" fill="url(#gfill)"/>
+  <path d="M64.0,284.0L84.4,284.0L104.9,284.0L125.3,284.0L145.8,284.0L166.2,275.4L186.7,275.4L207.1,275.4L227.6,275.4L248.0,275.4L268.4,263.8L288.9,263.8L309.3,263.8L329.8,263.8L350.2,263.8L370.7,266.7L391.1,266.7L411.6,266.7L432.0,266.7L452.4,263.8L472.9,263.8L493.3,263.8L513.8,263.8L534.2,263.8L554.7,258.1L575.1,258.1L595.6,258.1L616.0,258.1L636.4,258.1L656.9,258.1L677.3,258.1L697.8,258.1L718.2,258.1L738.7,258.1L759.1,258.1L779.6,258.1L800.0,258.1L820.4,258.1L840.9,249.4L861.3,249.4L881.8,249.4L902.2,249.4L922.7,249.4L943.1,237.9L963.6,237.9L984.0,237.9L1004.4,237.9L1024.9,237.9L1045.3,235.0L1065.8,235.0L1086.2,235.0L1106.7,235.0L1127.1,235.0L1147.6,229.3L1168.0,229.3L1188.4,229.3L1208.9,229.3L1229.3,220.6L1249.8,220.6L1270.2,220.6L1290.7,220.6L1311.1,220.6L1331.6,217.8L1352.0,217.8L1372.4,217.8L1392.9,217.8L1413.3,217.8L1433.8,214.9L1454.2,214.9L1474.7,214.9L1495.1,214.9L1515.6,214.9L1536.0,212.0" fill="none" stroke="#FF9F0A" stroke-width="3.8" stroke-linejoin="round" stroke-linecap="round"
     stroke-dasharray="4000" stroke-dashoffset="4000">
     <animate attributeName="stroke-dashoffset" from="4000" to="0" dur="2.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
   </path>
@@ -69,5 +69,5 @@
   <text x="64.0" y="355" text-anchor="start"
       font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" fill="#8A93A3">2 Sept</text><text x="800.0" y="355" text-anchor="middle"
       font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" fill="#8A93A3">9 Sept</text><text x="1536.0" y="355" text-anchor="end"
-      font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" fill="#8A93A3">16 Sept</text><text x="64" y="327.0" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" fill="#8A93A3">from 288</text>
+      font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" fill="#8A93A3">17 Sept</text><text x="64" y="327.0" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" fill="#8A93A3">from 288</text>
 </svg>
