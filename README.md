@@ -218,7 +218,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `adhd` `android` `behavioral-science` `bilingual` &nbsp;·&nbsp; 🏷️ **v0.6.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/flow/)** &nbsp;·&nbsp; <sub>updated 27d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/flow/)** &nbsp;·&nbsp; <sub>updated 28d ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>18 Sept 2026, 00:47</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>18 Sept 2026, 08:02</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
