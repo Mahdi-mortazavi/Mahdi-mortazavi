@@ -43,7 +43,7 @@
 
 <a href="https://t.me/Mahdi_mortazavi1"><img src="https://img.shields.io/badge/Message_me-Telegram-161B22?style=for-the-badge&logo=telegram&logoColor=2AABEE&labelColor=0D1117" alt="Message Mahdi Mortazavi on Telegram" /></a>
 &nbsp;
-<a href="mailto:mahdimortazavi135@gmail.com"><img src="https://img.shields.io/badge/Email-Reach_out-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0D1117" alt="Email Mahdi Mortazavi" /></a>
+<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://img.shields.io/badge/Email-Reach_out-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0D1117" alt="Email Mahdi Mortazavi" /></a>
 &nbsp;
 <a href="https://t.me/Startup_legend"><img src="https://img.shields.io/badge/Community-Startup_Legend-161B22?style=for-the-badge&logo=telegram&logoColor=30D158&labelColor=0D1117" alt="Join the Startup Legend community" /></a>
 
@@ -456,14 +456,14 @@ Yes — I take on **full-stack product work**: desktop apps (**C#, Rust, Tauri**
 goes with them. I'm most useful on problems that are still messy, where the shape of the answer
 isn't decided yet. The fastest way to reach me is
 **[Telegram](https://t.me/Mahdi_mortazavi1)** or
-**[email](mailto:mahdimortazavi135@gmail.com)**.
+**[email](mailto:mahdi.mortazavi.135@gmail.com)**.
 
 <p dir="rtl" align="right">
 بله — <b>کارِ محصولِ فول‌استک</b> می‌پذیرم: نرم‌افزار دسکتاپ (سی‌شارپ، راست، Tauri)، موبایل
 (دارت و فلاتر)، وب (تایپ‌اسکریپت، ری‌اکت، Astro، Cloudflare Workers) و طراحیِ همراهش.
 بیشترین فایده را جایی دارم که مسئله هنوز آشفته است و شکلِ پاسخ مشخص نیست.
 سریع‌ترین راه ارتباط: <a href="https://t.me/Mahdi_mortazavi1">تلگرام</a> یا
-<a href="mailto:mahdimortazavi135@gmail.com">ایمیل</a>.
+<a href="mailto:mahdi.mortazavi.135@gmail.com">ایمیل</a>.
 </p>
 
 </details>
@@ -504,7 +504,7 @@ and good technical conversations** — and I reply fast.
 
 <a href="https://t.me/Mahdi_mortazavi1"><img src="https://img.shields.io/badge/Message_me-Telegram-161B22?style=for-the-badge&logo=telegram&logoColor=2AABEE&labelColor=0D1117" alt="Message Mahdi Mortazavi on Telegram" /></a>
 &nbsp;
-<a href="mailto:mahdimortazavi135@gmail.com"><img src="https://img.shields.io/badge/Email_me-Gmail-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0D1117" alt="Email Mahdi Mortazavi" /></a>
+<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://img.shields.io/badge/Email_me-Gmail-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0D1117" alt="Email Mahdi Mortazavi" /></a>
 
 <br/><br/>
 
