@@ -164,8 +164,8 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated today</sub>
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.9.0 <sub>· updated today</sub>
+- 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated yesterday</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.9.0 <sub>· updated yesterday</sub>
 - 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 24d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
@@ -205,7 +205,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.9.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated today</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated yesterday</sub>
 
 ---
 
@@ -231,7 +231,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `bilingual` `calculator` `discount-calculator` `farsi` &nbsp;·&nbsp; 🏷️ **v1.5.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated today</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated yesterday</sub>
 
 ---
 
@@ -249,7 +249,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `android` `animation` `apple-design` `cross-platform` &nbsp;·&nbsp; 🏷️ **v3.1.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/nava/)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/nava/)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>21 Sept 2026, 00:14</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>21 Sept 2026, 08:16</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
