@@ -262,7 +262,7 @@ Mova  in motion, not in perfection
 
 `experiment` `learning-project` `open-source` `side-project`
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/mova/)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/mova/)** &nbsp;·&nbsp; <sub>updated 3mo ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>02 Oct 2026, 15:53</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>03 Oct 2026, 01:37</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
