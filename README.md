@@ -165,7 +165,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 <!-- LIVE:ACTIVITY -->
 - 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.9.0 <sub>· updated 3d ago</sub>
-- 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated 25d ago</sub>
+- 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated 26d ago</sub>
 - 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 1mo ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
@@ -231,12 +231,12 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `bilingual` `calculator` `discount-calculator` `farsi` &nbsp;·&nbsp; 🏷️ **v1.5.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated 25d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated 26d ago</sub>
 
 ---
 
 <details>
-<summary><b>📦 3 more projects</b> &nbsp;·&nbsp; <sub>Nava · Mova · purify</sub></summary>
+<summary><b>📦 3 more projects</b> &nbsp;·&nbsp; <sub>Nava · purify · Mova</sub></summary>
 
 <br/>
 
@@ -253,19 +253,6 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 ---
 
-### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
-
-<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="Mova stars" /></a> `TypeScript`
-
-Mova  in motion, not in perfection
-<br/><span dir="rtl">موا — در حرکت، نه در کمال</span>
-
-`experiment` `learning-project` `open-source` `side-project`
-
-**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/mova/)** &nbsp;·&nbsp; <sub>updated 3mo ago</sub>
-
----
-
 ### 🧹 [purify](https://github.com/Mahdi-mortazavi/purify)
 
 <a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="purify stars" /></a> `Rust`
@@ -276,6 +263,19 @@ Mova  in motion, not in perfection
 `cache-cleaner` `desktop-app` `disk-analyzer` `disk-cleaner` &nbsp;·&nbsp; 🏷️ **v0.1.4**
 
 **[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/purify/)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+
+---
+
+### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
+
+<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="Mova stars" /></a> `TypeScript`
+
+Mova  in motion, not in perfection
+<br/><span dir="rtl">موا — در حرکت، نه در کمال</span>
+
+`experiment` `learning-project` `open-source` `side-project`
+
+**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/mova/)** &nbsp;·&nbsp; <sub>updated 3mo ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>16 Oct 2026, 00:47</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>16 Oct 2026, 07:51</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
