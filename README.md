@@ -164,7 +164,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.9.0 <sub>· updated 8d ago</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.10.0 <sub>· updated today</sub>
 - 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated 1mo ago</sub>
 - 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 1mo ago</sub>
 <!-- /LIVE:ACTIVITY -->
@@ -203,9 +203,9 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 📱 Share your phone's internet with your PC — Android → Windows reverse tethering over an encrypted WireGuard tunnel. No root, no server, no account.
 <br/><span dir="rtl">ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز</span>
 
-`android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.9.0**
+`android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.10.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated 8d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated today</sub>
 
 ---
 
@@ -249,7 +249,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `android` `animation` `apple-design` `cross-platform` &nbsp;·&nbsp; 🏷️ **v3.1.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/nava/)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/nava/)** &nbsp;·&nbsp; <sub>updated 3mo ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>21 Oct 2026, 01:02</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>21 Oct 2026, 08:02</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
