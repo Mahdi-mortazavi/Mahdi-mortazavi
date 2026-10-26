@@ -166,7 +166,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 <!-- LIVE:ACTIVITY -->
 - 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.11.1 <sub>· updated today</sub>
 - 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated 1mo ago</sub>
-- 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 1mo ago</sub>
+- 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 2mo ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
 <br/>
@@ -262,7 +262,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `cache-cleaner` `desktop-app` `disk-analyzer` `disk-cleaner` &nbsp;·&nbsp; 🏷️ **v0.1.4**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/purify/)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/purify/)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>26 Oct 2026, 16:18</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>27 Oct 2026, 02:05</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
