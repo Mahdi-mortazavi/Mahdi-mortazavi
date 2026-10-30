@@ -164,7 +164,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 </div>
 
 <!-- LIVE:ACTIVITY -->
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.11.1 <sub>· updated yesterday</sub>
+- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.11.1 <sub>· updated 2d ago</sub>
 - 🏷️ **[sooda](https://github.com/Mahdi-mortazavi/sooda)** · v1.5.0 <sub>· updated 1mo ago</sub>
 - 🏷️ **[purify](https://github.com/Mahdi-mortazavi/purify)** · v0.1.4 <sub>· updated 2mo ago</sub>
 <!-- /LIVE:ACTIVITY -->
@@ -205,7 +205,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.11.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated yesterday</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated 2d ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>30 Oct 2026, 16:12</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>31 Oct 2026, 01:43</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
