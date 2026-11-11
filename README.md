@@ -165,8 +165,8 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 <!-- LIVE:ACTIVITY -->
 - 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.12.0 <sub>· updated today</sub>
-- 🏷️ **[Nava](https://github.com/Mahdi-mortazavi/app)** · v3.1.0 <sub>· updated 5d ago</sub>
-- 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** · v0.6.1 <sub>· updated 5d ago</sub>
+- 🏷️ **[Nava](https://github.com/Mahdi-mortazavi/app)** · v3.1.0 <sub>· updated 6d ago</sub>
+- 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** · v0.6.1 <sub>· updated 6d ago</sub>
 <!-- /LIVE:ACTIVITY -->
 
 <br/>
@@ -218,7 +218,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `adhd` `android` `behavioral-science` `bilingual` &nbsp;·&nbsp; 🏷️ **v0.6.1**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/flow/)** &nbsp;·&nbsp; <sub>updated 5d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/flow/)** &nbsp;·&nbsp; <sub>updated 6d ago</sub>
 
 ---
 
@@ -249,7 +249,7 @@ Apple's industrial design. Every one of them is free, bilingual (English / فا�
 
 `android` `animation` `apple-design` `cross-platform` &nbsp;·&nbsp; 🏷️ **v3.1.0**
 
-**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/nava/)** &nbsp;·&nbsp; <sub>updated 5d ago</sub>
+**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/nava/)** &nbsp;·&nbsp; <sub>updated 6d ago</sub>
 
 ---
 
@@ -513,7 +513,7 @@ and good technical conversations** — and I reply fast.
 <br/><br/>
 
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>11 Nov 2026, 09:28</b> Tehran time</sub>
+<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>11 Nov 2026, 17:33</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 
 </div>
