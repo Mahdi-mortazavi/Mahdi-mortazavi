@@ -78,6 +78,53 @@ export default {
     },
   ],
 
+  // The tab bar. Each tab is a page in this repository, so GitHub becomes a
+  // small site: overview, case studies, hiring, building, Persian.
+  tabs: [
+    { id: 'home', label: 'Overview', href: 'https://github.com/Mahdi-mortazavi' },
+    { id: 'work', label: 'Case studies', dir: 'work' },
+    { id: 'hire', label: 'Hire me', dir: 'hire' },
+    { id: 'build', label: 'Build with me', dir: 'build' },
+    { id: 'fa', label: 'فارسی', dir: 'fa', rtl: true },
+  ],
+
+  // Architecture diagrams for the case studies in work/README.md.
+  studies: [
+    {
+      id: 'relay', kicker: 'RELAY · DATA PATH', both: true,
+      alt: 'How relay works: the phone runs a WireGuard endpoint, the PC runs a WireGuard client, and every app on the PC goes through the encrypted tunnel',
+      nodes: [
+        { title: 'Android phone', lines: ['WIREGUARD ENDPOINT', 'Kotlin · Compose · Go'] },
+        { title: 'Windows PC', lines: ['WIREGUARD CLIENT', '.NET 8 · WinUI 3 · Go'] },
+        { title: 'Every app', lines: ['WHOLE SYSTEM', 'TCP and UDP, no leaks'] },
+      ],
+      links: ['encrypted tunnel', 'system route'],
+      note: 'No server in the middle. Keys are made at pairing and destroyed when sharing stops.',
+    },
+    {
+      id: 'angaros', kicker: 'ANGAROS · ZERO-KNOWLEDGE RELAY', both: true,
+      alt: 'How Angaros works: the phone seals messages with AES-256-GCM, a self-hosted Cloudflare relay stores only ciphertext, and the computer exposes them to AI agents as MCP tools',
+      nodes: [
+        { title: 'Android phone', lines: ['SMS · CALLS', 'seals everything'] },
+        { title: 'Your relay', lines: ['WORKER + D1', 'ciphertext only'] },
+        { title: 'Your computer', lines: ['SQLITE + FTS', 'MCP · CLI · SDK'] },
+        { title: 'AI agents', lines: ['22 MCP TOOLS', 'any MCP client'] },
+      ],
+      links: ['AES-GCM', 'long-poll', 'MCP'],
+      note: 'Both ends poll out over HTTPS, so there are no inbound connections and nothing to open.',
+    },
+    {
+      id: 'overrun', kicker: 'OVERRUN · ONE SIMULATION, TWO CLOCKS', both: true,
+      alt: 'How Overrun works: the browser predicts the local player at 60 Hz while a Cloudflare Durable Object runs the same simulation at 20 Hz as the authority',
+      nodes: [
+        { title: 'Browser · PWA · APK', lines: ['SIM @ 60 HZ', 'predicts you instantly'] },
+        { title: 'Durable Object', lines: ['SAME SIM @ 20 HZ', 'sole authority per match'] },
+      ],
+      links: ['quantised binary WebSocket'],
+      note: 'Client and server run the same file, so prediction cannot drift from the authority.',
+    },
+  ],
+
   // Career timeline. `{stars:relay}` becomes that repository's live star count.
   journey: [
     { when: '2023', title: 'Senagh', role: 'CTO & Head of Product',

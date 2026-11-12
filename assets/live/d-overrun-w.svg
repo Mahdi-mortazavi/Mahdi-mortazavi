@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="400" viewBox="0 0 1600 400" role="img" aria-label="How Overrun works: the browser predicts the local player at 60 Hz while a Cloudflare Durable Object runs the same simulation at 20 Hz as the authority">
+  <title>How Overrun works: the browser predicts the local player at 60 Hz while a Cloudflare Durable Object runs the same simulation at 20 Hz as the authority</title>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07090E"/>
+      <stop offset="55%" stop-color="#0B0F18"/>
+      <stop offset="100%" stop-color="#10151F"/>
+    </linearGradient>
+    <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="coreglow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="400" rx="22" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".8">
+    <ellipse cx="1540" cy="40" rx="384" ry="200" fill="url(#aura1)"/>
+    <ellipse cx="60" cy="420" rx="416" ry="200" fill="url(#aura2)"/>
+  </g>
+  <rect width="1600" height="400" rx="22" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1600" height="3" fill="url(#hair)"/><text x="64" y="66" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="23" font-weight="700" letter-spacing="2.6" fill="#30D1D0">OVERRUN · ONE SIMULATION, TWO CLOCKS</text><g>
+    <rect x="64" y="112" width="571" height="196" rx="26" fill="url(#glass)"/>
+    <rect x="64" y="112" width="571" height="196" rx="26" fill="none" stroke="rgba(255,255,255,.14)"/>
+    <path d="M 90 112.75 H 609" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+    <text x="94" y="170" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="-.5" fill="#F5F5F7">Browser · PWA · APK</text>
+    <text x="94" y="212" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" fill="#30D1D0">SIM @ 60 HZ</text><text x="94" y="246" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#A9AEBA">predicts you instantly</text><path d="M645 210 H955" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="2" stroke-dasharray="5 8" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="26;0" dur="1.2s" repeatCount="indefinite"/></path>
+          <circle r="5.5" fill="url(#mark)">
+      <animateMotion dur="2.4s" begin="-0.00s" repeatCount="indefinite" path="M645 210 H955" />
+    </circle><circle r="5.5" fill="url(#mark)">
+      <animateMotion dur="2.4s" begin="-0.80s" repeatCount="indefinite" path="M645 210 H955" keyPoints="1;0" keyTimes="0;1" calcMode="linear"/>
+    </circle><circle r="5.5" fill="url(#mark)">
+      <animateMotion dur="2.4s" begin="-1.60s" repeatCount="indefinite" path="M645 210 H955" />
+    </circle>
+          <text x="800" y="188" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="19" font-weight="600" fill="#7F8898">quantised binary WebSocket</text><g>
+    <rect x="965" y="112" width="571" height="196" rx="26" fill="url(#glass)"/>
+    <rect x="965" y="112" width="571" height="196" rx="26" fill="none" stroke="rgba(255,255,255,.14)"/>
+    <path d="M 991 112.75 H 1510" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+    <text x="995" y="170" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="-.5" fill="#F5F5F7">Durable Object</text>
+    <text x="995" y="212" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" fill="#30D1D0">SAME SIM @ 20 HZ</text><text x="995" y="246" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#A9AEBA">sole authority per match</text><text x="64" y="362" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="600" fill="#A9AEBA">Client and server run the same file, so prediction cannot drift from the authority.</text>
+</svg>

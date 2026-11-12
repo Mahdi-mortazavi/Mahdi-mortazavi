@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="936" viewBox="0 0 900 936" role="img"
   aria-label="Career timeline of Mahdi Mortazavi">
-  <title>2023: Senagh — CTO &amp; Head of Product · 2025: Open source — First public release · 2026: relay — 240 stars · NOW: Zista Health — Co-founder &amp; CTO</title>
+  <title>2023: Senagh — CTO &amp; Head of Product · 2025: Open source — First public release · 2026: relay — 239 stars · NOW: Zista Health — Co-founder &amp; CTO</title>
   
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -54,7 +54,7 @@
         <text x="108" y="396" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" letter-spacing="-.6" fill="#F5F5F7">Open source<tspan dx="16" font-size="28" font-weight="650" letter-spacing="0" fill="#30D1D0">First public release</tspan></text>
         <text x="108" y="438" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="500" fill="#7F8898">Started shipping my tools in the open,</text><text x="108" y="476" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="500" fill="#7F8898">bilingual and free.</text><circle cx="64" cy="546" r="10" fill="#07090E" stroke="#30D1D0" stroke-width="3.2"/>
     <text x="108" y="555" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="27" font-weight="700" fill="#A9AEBA">2026</text>
-        <text x="108" y="604" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" letter-spacing="-.6" fill="#F5F5F7">relay<tspan dx="16" font-size="28" font-weight="650" letter-spacing="0" fill="#30D1D0">240 stars</tspan></text>
+        <text x="108" y="604" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" letter-spacing="-.6" fill="#F5F5F7">relay<tspan dx="16" font-size="28" font-weight="650" letter-spacing="0" fill="#30D1D0">239 stars</tspan></text>
         <text x="108" y="646" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="500" fill="#7F8898">Reverse tethering over WireGuard, used on</text><text x="108" y="684" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="500" fill="#7F8898">real devices every day.</text><circle cx="64" cy="754" r="10" fill="#30D158" stroke="#30D158" stroke-width="3.2"/>
     <circle cx="64" cy="754" r="10" fill="none" stroke="#30D158">
       <animate attributeName="r" values="10;26;10" dur="2.4s" repeatCount="indefinite"/>

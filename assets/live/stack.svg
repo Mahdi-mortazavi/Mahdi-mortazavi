@@ -48,7 +48,7 @@
   <rect x="0" y="0" width="900" height="3" fill="url(#hair)"/>
   <text x="52" y="62" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="25" font-weight="700" letter-spacing="2.6" fill="#30D1D0">STACK</text>
   <clipPath id="barclip"><rect x="52" y="100" width="796" height="41" rx="20"/></clipPath>
-  <g clip-path="url(#barclip)"><rect x="52.0" y="100" width="226.2" height="41" fill="#0A84FF"/><rect x="278.2" y="100" width="196.9" height="41" fill="#5E5CE6"/><rect x="475.1" y="100" width="131.7" height="41" fill="#30D158"/><rect x="606.8" y="100" width="98.4" height="41" fill="#FF9F0A"/><rect x="705.2" y="100" width="78.9" height="41" fill="#FF375F"/><rect x="784.0" y="100" width="64.0" height="41" fill="#30D1D0"/></g>
+  <g clip-path="url(#barclip)"><rect x="52.0" y="100" width="226.3" height="41" fill="#0A84FF"/><rect x="278.3" y="100" width="196.8" height="41" fill="#5E5CE6"/><rect x="475.1" y="100" width="131.5" height="41" fill="#30D158"/><rect x="606.6" y="100" width="98.8" height="41" fill="#FF9F0A"/><rect x="705.4" y="100" width="78.9" height="41" fill="#FF375F"/><rect x="784.3" y="100" width="63.7" height="41" fill="#30D1D0"/></g>
   <rect x="52" y="100" width="796" height="41" rx="20" fill="none" stroke="rgba(255,255,255,.14)"/>
   <circle cx="61" cy="191" r="8.5" fill="#0A84FF"/>
       <text x="80" y="200" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="600" fill="#A9AEBA">TypeScript 28.4%</text><circle cx="459" cy="191" r="8.5" fill="#5E5CE6"/>
