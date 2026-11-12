@@ -52,7 +52,7 @@
   </g>
     <circle cx="88" cy="601" r="7" fill="#30D158"/>
     <circle cx="88" cy="601" r="7" fill="none" stroke="#30D158"><animate attributeName="r" values="7;17;7" dur="2.4s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".8;0;.8" dur="2.4s" repeatCount="indefinite"/></circle>
-    <text x="114" y="611" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="600" fill="#A9AEBA"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-weight="700" fill="#30D158" letter-spacing="1.6">THIS WEEK</tspan><tspan dx="18" fill="#F5F5F7" font-weight="800">201</tspan> contributions · active in Angaros, relay</text><rect x="75.9" y="484.0" width="84.9" height="4.0" rx="10" fill="url(#mark)" fill-opacity=".18">
+    <text x="114" y="611" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="600" fill="#A9AEBA"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-weight="700" fill="#30D158" letter-spacing="1.6">THIS WEEK</tspan><tspan dx="18" fill="#F5F5F7" font-weight="800">206</tspan> contributions · active in Angaros, relay</text><rect x="75.9" y="484.0" width="84.9" height="4.0" rx="10" fill="url(#mark)" fill-opacity=".18">
       <animate attributeName="height" values="0;4.0" keyTimes="0;1" dur="1.2s" begin="0.00s" fill="freeze" calcMode="spline" keySplines=".2 .8 .2 1"/>
       <animate attributeName="y" values="488.0;484.0" keyTimes="0;1" dur="1.2s" begin="0.00s" fill="freeze" calcMode="spline" keySplines=".2 .8 .2 1"/>
     </rect>
