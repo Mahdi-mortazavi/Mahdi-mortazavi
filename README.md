@@ -49,7 +49,7 @@ On the side I build open-source tools across mobile, desktop, web and the edge, 
 versioned releases, installers, documentation, two languages.
 
 <!-- LIVE:PROOF -->
-<sub>**380** stars &nbsp;·&nbsp; **30** forks &nbsp;·&nbsp; **10,808+** downloads &nbsp;·&nbsp; **54** releases shipped &nbsp;·&nbsp; **1,658** contributions in the last year</sub>
+<sub>**380** stars &nbsp;·&nbsp; **30** forks &nbsp;·&nbsp; **10,818+** downloads &nbsp;·&nbsp; **54** releases shipped &nbsp;·&nbsp; **1,662** contributions in the last year</sub>
 <!-- /LIVE:PROOF -->
 
 > **Open to** remote roles, contract and freelance product builds, and technical co-founder / CTO work.
@@ -66,14 +66,14 @@ Each card is a live product you can install today. Stars, versions and release d
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-relay-w.svg" width="100%" alt="relay — Share your phone&apos;s internet with your PC over an encrypted WireGuard tunnel. No root, no server, no account." />
 </picture></a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 239 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 240 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
 
 <a href="https://github.com/Mahdi-mortazavi/angaros"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-angaros.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-angaros-w.svg" width="100%" alt="Angaros — Your phone, for your AI agents: SMS, OTP codes, contacts and call log for any MCP client. End-to-end encrypted, self-hosted." />
 </picture></a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/angaros">Angaros</a></b> &nbsp;·&nbsp; Python &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/angaros/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/angaros">Angaros</a></b> &nbsp;·&nbsp; Python &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/angaros/releases/latest"><code>v3.1.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/angaros/">Try it ↗</a></sub></p>
 
 <a href="https://github.com/Mahdi-mortazavi/flow"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-flow.svg" />
@@ -187,10 +187,11 @@ Each card is a live product you can install today. Stars, versions and release d
 **Latest releases**
 
 <!-- LIVE:SHIPPING -->
-- **[Angaros](https://github.com/Mahdi-mortazavi/angaros)** <sub>· updated today</sub>
-- **[relay](https://github.com/Mahdi-mortazavi/relay)** · `v2.12.0` <sub>· updated yesterday</sub>
-- **[Nava](https://github.com/Mahdi-mortazavi/app)** · `v3.1.0` <sub>· updated 6d ago</sub>
-- **[Flow](https://github.com/Mahdi-mortazavi/flow)** · `v0.6.1` <sub>· updated 6d ago</sub>
+- **[relay v2.12.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.12.0)** <sub>· released 10 Nov 2026</sub>
+- **[Angaros v3.1.0](https://github.com/Mahdi-mortazavi/angaros/releases/tag/v3.1.0)** <sub>· released 5 Nov 2026</sub>
+- **[Angaros v3.0.3](https://github.com/Mahdi-mortazavi/angaros/releases/tag/v3.0.3)** <sub>· released 2 Nov 2026</sub>
+- **[relay v2.11.1](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.11.1)** <sub>· released 21 Oct 2026</sub>
+- **[relay v2.11.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.11.0)** <sub>· released 21 Oct 2026</sub>
 <!-- /LIVE:SHIPPING -->
 
 ## The wall
@@ -276,7 +277,7 @@ All of them are free and open source. Each repository carries its own licence fi
 
 <p align="center">
 <!-- LIVE:UPDATED -->
-<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>12 Nov 2026, 12:57</b> Tehran time</sub>
+<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>12 Nov 2026, 13:08</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 </p>
 

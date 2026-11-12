@@ -170,7 +170,7 @@
     <rect x="808" y="504" width="232" height="112" rx="22" fill="none" stroke="rgba(255,255,255,.14)"/>
     <path d="M 830 504.75 H 1018" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
-        <text x="832" y="558" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="44" font-weight="800" letter-spacing="-1" fill="#F5F5F7">1,658</text>
+        <text x="832" y="558" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="44" font-weight="800" letter-spacing="-1" fill="#F5F5F7">1,662</text>
         <text x="832" y="594" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#A9AEBA">Contributions / yr</text><g>
     <rect x="1056" y="504" width="232" height="112" rx="22" fill="url(#glass)"/>
     <rect x="1056" y="504" width="232" height="112" rx="22" fill="none" stroke="rgba(255,255,255,.14)"/>
