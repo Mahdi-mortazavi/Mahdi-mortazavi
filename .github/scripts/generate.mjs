@@ -8,6 +8,7 @@
 import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import { esc, tehran, nf } from './lib-theme.mjs';
 import { hero, project, journey, button, stack, growth, heat, footer } from './lib-cards.mjs';
+import { tab, velocity, wall, diagram } from './lib-more.mjs';
 import CFG from './profile.config.mjs';
 
 const USER = CFG.user;
@@ -131,7 +132,7 @@ async function collect() {
   const byName = new Map(repos.map(r => [r.name.toLowerCase(), r]));
   const featured = [];
   let downloads = 0, releases = 0;
-  const shipped = [];
+  const shipped = [], relDates = [];
   for (const p of CFG.projects) {
     const r = byName.get(p.repo.toLowerCase());
     if (!r) { console.warn(`  ! project "${p.repo}" is not a public repo — skipped`); continue; }
@@ -144,6 +145,7 @@ async function collect() {
         if (rel.draft) continue;
         releases++;
         for (const a of rel.assets ?? []) downloads += a.download_count ?? 0;
+        if (rel.published_at) relDates.push(rel.published_at);
         if (rel.published_at) shipped.push({ name: p.name, tag: rel.tag_name, url: rel.html_url, at: rel.published_at });
       }
       if (rows.length < 100) break;
@@ -182,7 +184,36 @@ async function collect() {
   await writeFile(`${OUT}/history.json`, JSON.stringify(history, null, 2));
 
   const cal = await contributions();
-  return { user, repos, stars, forks, langs, featured, downloads, releases,
+
+  // This week: contributions from the calendar, activity from push times.
+  const days = (cal?.weeks ?? []).flatMap(w => w.contributionDays).filter(x => x?.date)
+    .sort((a, b) => a.date.localeCompare(b.date)).slice(-7);
+  const infra = new Set([USER.toLowerCase(), `${USER.toLowerCase()}.github.io`, '.github']);
+  const label = r => CFG.projects.find(p => p.repo.toLowerCase() === r.name.toLowerCase())?.name ?? r.name;
+  const week = {
+    count: cal?.levelsOnly ? 0 : days.reduce((n, x) => n + (x.contributionCount ?? 0), 0),
+    repos: repos.filter(r => !infra.has(r.name.toLowerCase()) && Date.now() - new Date(r.pushed_at) < 7 * 86400000)
+      .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at)).map(label),
+  };
+
+  // Follower wall. An SVG shown through <img> cannot load remote images, so
+  // each avatar is fetched here and embedded as a data URI.
+  const followers = [];
+  for (const f of (await gh(`/users/${USER}/followers?per_page=48`)) ?? []) {
+    let img = null;
+    try {
+      const r = await fetch(`${f.avatar_url}${f.avatar_url.includes('?') ? '&' : '?'}s=96`);
+      if (r.ok) {
+        const type = r.headers.get('content-type') ?? 'image/png';
+        const buf = Buffer.from(await r.arrayBuffer());
+        // Animated or oversized avatars would bloat the card; fall back to an initial.
+        if (buf.length < 60000) img = `data:${type};base64,${buf.toString('base64')}`;
+      }
+    } catch (e) { console.warn(`  ! avatar ${f.login} —`, e.message); }
+    followers.push({ login: f.login, img });
+  }
+
+  return { user, repos, stars, forks, langs, featured, downloads, releases, relDates, week, followers,
     shipped: shipped.slice(0, 5), issues, starEvents, history, cal };
 }
 
@@ -275,6 +306,9 @@ for (const [mode, sfx] of [['m', ''], ['w', '-w']]) {
   await writeFile(`${OUT}/stack${sfx}.svg`, stack(d, t, mode));
   await writeFile(`${OUT}/growth${sfx}.svg`, growth(d, t, mode));
   await writeFile(`${OUT}/footer${sfx}.svg`, footer(t, mode));
+  await writeFile(`${OUT}/velocity${sfx}.svg`, velocity(d, t, mode));
+  await writeFile(`${OUT}/wall${sfx}.svg`, wall(d, t, mode));
+  for (const st of CFG.studies) await writeFile(`${OUT}/d-${st.id}${sfx}.svg`, diagram(st, t, mode));
   for (const f of d.featured) {
     await writeFile(`${OUT}/p-${f.p.repo.toLowerCase()}${sfx}.svg`, project(f.p, f.r, f.release, t, mode));
   }
@@ -286,7 +320,13 @@ for (const [file, label, glyph, primary] of [
   ['btn-hub', 'Portfolio', 'globe', false],
   ['btn-hire', 'Start a project', 'brief', true],
   ['btn-ask', 'Ask me anything', 'chat', false],
+  ['btn-cv', 'Download CV', 'doc', true],
+  ['btn-follow', 'Follow on GitHub', 'plus', true],
 ]) await writeFile(`${OUT}/${file}.svg`, button(label, glyph, t, primary));
+for (const tb of CFG.tabs) {
+  await writeFile(`${OUT}/tab-${tb.id}.svg`, tab(tb.label, false, t, tb.rtl));
+  await writeFile(`${OUT}/tab-${tb.id}-on.svg`, tab(tb.label, true, t, tb.rtl));
+}
 
 if (d.cal) {
   await writeFile(`${OUT}/heat.svg`, heat(d.cal, t, 'm'));
@@ -300,7 +340,21 @@ if (d.cal) {
   }
 }
 
+// Every page carries the same tab bar with its own tab switched on.
+const REPO = `https://github.com/${USER}/${USER}`;
+const navMd = active => `<p align="center">\n${CFG.tabs.map(tb =>
+  `<a href="${tb.href ?? `${REPO}/tree/main/${tb.dir}#readme`}"><img src="${RAW}/tab-${tb.id}${tb.id === active ? '-on' : ''}.svg" height="42" alt="${esc(tb.label)}" /></a>`).join('\n')}\n</p>`;
+for (const tb of CFG.tabs.filter(x => x.dir)) {
+  const file = `${tb.dir}/README.md`;
+  try {
+    const page = await readFile(file, 'utf8');
+    const next = replaceSection(page, 'NAV', navMd(tb.id));
+    if (next !== page) await writeFile(file, next);
+  } catch { console.warn(`  ! ${file} is missing`); }
+}
+
 let md = await readFile('README.md', 'utf8');
+md = replaceSection(md, 'NAV', navMd('home'));
 md = replaceSection(md, 'PROOF', proofMd(d));
 md = replaceSection(md, 'PROJECTS', projectsMd(d));
 md = replaceSection(md, 'SHIPPING', shippingMd(d));

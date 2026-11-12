@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="510" viewBox="0 0 1600 510" role="img"
+  aria-label="59 people follow Mahdi Mortazavi on GitHub">
+  <title>59 followers — follow to join the wall</title>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07090E"/>
+      <stop offset="55%" stop-color="#0B0F18"/>
+      <stop offset="100%" stop-color="#10151F"/>
+    </linearGradient>
+    <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="coreglow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+  </defs><defs><clipPath id="c0"><circle cx="110.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c1"><circle cx="202.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c2"><circle cx="294.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c3"><circle cx="386.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c4"><circle cx="478.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c5"><circle cx="570.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c6"><circle cx="662.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c7"><circle cx="754.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c8"><circle cx="846.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c9"><circle cx="938.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c10"><circle cx="1030.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c11"><circle cx="1122.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c12"><circle cx="1214.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c13"><circle cx="1306.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c14"><circle cx="1398.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c15"><circle cx="1490.0" cy="236.0" r="34.0"/></clipPath><clipPath id="c16"><circle cx="110.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c17"><circle cx="202.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c18"><circle cx="294.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c19"><circle cx="386.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c20"><circle cx="478.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c21"><circle cx="570.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c22"><circle cx="662.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c23"><circle cx="754.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c24"><circle cx="846.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c25"><circle cx="938.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c26"><circle cx="1030.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c27"><circle cx="1122.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c28"><circle cx="1214.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c29"><circle cx="1306.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c30"><circle cx="1398.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c31"><circle cx="1490.0" cy="328.0" r="34.0"/></clipPath><clipPath id="c32"><circle cx="110.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c33"><circle cx="202.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c34"><circle cx="294.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c35"><circle cx="386.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c36"><circle cx="478.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c37"><circle cx="570.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c38"><circle cx="662.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c39"><circle cx="754.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c40"><circle cx="846.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c41"><circle cx="938.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c42"><circle cx="1030.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c43"><circle cx="1122.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c44"><circle cx="1214.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c45"><circle cx="1306.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c46"><circle cx="1398.0" cy="420.0" r="34.0"/></clipPath><clipPath id="c47"><circle cx="1490.0" cy="420.0" r="34.0"/></clipPath></defs>
+  <rect width="1600" height="510" rx="22" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".8">
+    <ellipse cx="1540" cy="40" rx="384" ry="255" fill="url(#aura1)"/>
+    <ellipse cx="60" cy="530" rx="416" ry="255" fill="url(#aura2)"/>
+  </g>
+  <rect width="1600" height="510" rx="22" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1600" height="3" fill="url(#hair)"/>
+  <text x="64" y="66" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="23" font-weight="700" letter-spacing="2.6" fill="#30D1D0">THE WALL</text>
+  <text x="61" y="140" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="-1.6" fill="#F5F5F7">59<tspan dx="14" font-size="30" font-weight="600" letter-spacing="0" fill="#A9AEBA">people follow this work</tspan></text>
+  <text x="1536" y="140" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="600" fill="#A9AEBA">Follow, and the next seat is yours</text>
+  <g><circle cx="110.0" cy="236.0" r="34.0" fill="#0A84FF" fill-opacity=".55"/>
+         <text x="110.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="110.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.00s" fill="freeze"/>
+    </g><g><circle cx="202.0" cy="236.0" r="34.0" fill="#5E5CE6" fill-opacity=".55"/>
+         <text x="202.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="202.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.03s" fill="freeze"/>
+    </g><g><circle cx="294.0" cy="236.0" r="34.0" fill="#30D158" fill-opacity=".55"/>
+         <text x="294.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="294.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.06s" fill="freeze"/>
+    </g><g><circle cx="386.0" cy="236.0" r="34.0" fill="#FF9F0A" fill-opacity=".55"/>
+         <text x="386.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="386.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.09s" fill="freeze"/>
+    </g><g><circle cx="478.0" cy="236.0" r="34.0" fill="#FF375F" fill-opacity=".55"/>
+         <text x="478.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="478.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.12s" fill="freeze"/>
+    </g><g><circle cx="570.0" cy="236.0" r="34.0" fill="#30D1D0" fill-opacity=".55"/>
+         <text x="570.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="570.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.15s" fill="freeze"/>
+    </g><g><circle cx="662.0" cy="236.0" r="34.0" fill="#0A84FF" fill-opacity=".55"/>
+         <text x="662.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="662.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.18s" fill="freeze"/>
+    </g><g><circle cx="754.0" cy="236.0" r="34.0" fill="#5E5CE6" fill-opacity=".55"/>
+         <text x="754.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="754.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.21s" fill="freeze"/>
+    </g><g><circle cx="846.0" cy="236.0" r="34.0" fill="#30D158" fill-opacity=".55"/>
+         <text x="846.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="846.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.24s" fill="freeze"/>
+    </g><g><circle cx="938.0" cy="236.0" r="34.0" fill="#FF9F0A" fill-opacity=".55"/>
+         <text x="938.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="938.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.27s" fill="freeze"/>
+    </g><g><circle cx="1030.0" cy="236.0" r="34.0" fill="#FF375F" fill-opacity=".55"/>
+         <text x="1030.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1030.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.30s" fill="freeze"/>
+    </g><g><circle cx="1122.0" cy="236.0" r="34.0" fill="#30D1D0" fill-opacity=".55"/>
+         <text x="1122.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1122.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.33s" fill="freeze"/>
+    </g><g><circle cx="1214.0" cy="236.0" r="34.0" fill="#0A84FF" fill-opacity=".55"/>
+         <text x="1214.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1214.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.36s" fill="freeze"/>
+    </g><g><circle cx="1306.0" cy="236.0" r="34.0" fill="#5E5CE6" fill-opacity=".55"/>
+         <text x="1306.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1306.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.39s" fill="freeze"/>
+    </g><g><circle cx="1398.0" cy="236.0" r="34.0" fill="#30D158" fill-opacity=".55"/>
+         <text x="1398.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1398.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.42s" fill="freeze"/>
+    </g><g><circle cx="1490.0" cy="236.0" r="34.0" fill="#FF9F0A" fill-opacity=".55"/>
+         <text x="1490.0" y="246.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1490.0" cy="236.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.45s" fill="freeze"/>
+    </g><g><circle cx="110.0" cy="328.0" r="34.0" fill="#FF375F" fill-opacity=".55"/>
+         <text x="110.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="110.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.48s" fill="freeze"/>
+    </g><g><circle cx="202.0" cy="328.0" r="34.0" fill="#30D1D0" fill-opacity=".55"/>
+         <text x="202.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="202.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.51s" fill="freeze"/>
+    </g><g><circle cx="294.0" cy="328.0" r="34.0" fill="#0A84FF" fill-opacity=".55"/>
+         <text x="294.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="294.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.54s" fill="freeze"/>
+    </g><g><circle cx="386.0" cy="328.0" r="34.0" fill="#5E5CE6" fill-opacity=".55"/>
+         <text x="386.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="386.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.57s" fill="freeze"/>
+    </g><g><circle cx="478.0" cy="328.0" r="34.0" fill="#30D158" fill-opacity=".55"/>
+         <text x="478.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="478.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.60s" fill="freeze"/>
+    </g><g><circle cx="570.0" cy="328.0" r="34.0" fill="#FF9F0A" fill-opacity=".55"/>
+         <text x="570.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="570.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.63s" fill="freeze"/>
+    </g><g><circle cx="662.0" cy="328.0" r="34.0" fill="#FF375F" fill-opacity=".55"/>
+         <text x="662.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="662.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.66s" fill="freeze"/>
+    </g><g><circle cx="754.0" cy="328.0" r="34.0" fill="#30D1D0" fill-opacity=".55"/>
+         <text x="754.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="754.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.69s" fill="freeze"/>
+    </g><g><circle cx="846.0" cy="328.0" r="34.0" fill="#0A84FF" fill-opacity=".55"/>
+         <text x="846.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="846.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.72s" fill="freeze"/>
+    </g><g><circle cx="938.0" cy="328.0" r="34.0" fill="#5E5CE6" fill-opacity=".55"/>
+         <text x="938.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="938.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.75s" fill="freeze"/>
+    </g><g><circle cx="1030.0" cy="328.0" r="34.0" fill="#30D158" fill-opacity=".55"/>
+         <text x="1030.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1030.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.78s" fill="freeze"/>
+    </g><g><circle cx="1122.0" cy="328.0" r="34.0" fill="#FF9F0A" fill-opacity=".55"/>
+         <text x="1122.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1122.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.81s" fill="freeze"/>
+    </g><g><circle cx="1214.0" cy="328.0" r="34.0" fill="#FF375F" fill-opacity=".55"/>
+         <text x="1214.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1214.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.84s" fill="freeze"/>
+    </g><g><circle cx="1306.0" cy="328.0" r="34.0" fill="#30D1D0" fill-opacity=".55"/>
+         <text x="1306.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1306.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.87s" fill="freeze"/>
+    </g><g><circle cx="1398.0" cy="328.0" r="34.0" fill="#0A84FF" fill-opacity=".55"/>
+         <text x="1398.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1398.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.90s" fill="freeze"/>
+    </g><g><circle cx="1490.0" cy="328.0" r="34.0" fill="#5E5CE6" fill-opacity=".55"/>
+         <text x="1490.0" y="338.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1490.0" cy="328.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.93s" fill="freeze"/>
+    </g><g><circle cx="110.0" cy="420.0" r="34.0" fill="#30D158" fill-opacity=".55"/>
+         <text x="110.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="110.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.96s" fill="freeze"/>
+    </g><g><circle cx="202.0" cy="420.0" r="34.0" fill="#FF9F0A" fill-opacity=".55"/>
+         <text x="202.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="202.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="0.99s" fill="freeze"/>
+    </g><g><circle cx="294.0" cy="420.0" r="34.0" fill="#FF375F" fill-opacity=".55"/>
+         <text x="294.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="294.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.02s" fill="freeze"/>
+    </g><g><circle cx="386.0" cy="420.0" r="34.0" fill="#30D1D0" fill-opacity=".55"/>
+         <text x="386.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="386.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.05s" fill="freeze"/>
+    </g><g><circle cx="478.0" cy="420.0" r="34.0" fill="#0A84FF" fill-opacity=".55"/>
+         <text x="478.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="478.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.08s" fill="freeze"/>
+    </g><g><circle cx="570.0" cy="420.0" r="34.0" fill="#5E5CE6" fill-opacity=".55"/>
+         <text x="570.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="570.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.11s" fill="freeze"/>
+    </g><g><circle cx="662.0" cy="420.0" r="34.0" fill="#30D158" fill-opacity=".55"/>
+         <text x="662.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="662.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.14s" fill="freeze"/>
+    </g><g><circle cx="754.0" cy="420.0" r="34.0" fill="#FF9F0A" fill-opacity=".55"/>
+         <text x="754.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="754.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.17s" fill="freeze"/>
+    </g><g><circle cx="846.0" cy="420.0" r="34.0" fill="#FF375F" fill-opacity=".55"/>
+         <text x="846.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="846.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.20s" fill="freeze"/>
+    </g><g><circle cx="938.0" cy="420.0" r="34.0" fill="#30D1D0" fill-opacity=".55"/>
+         <text x="938.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="938.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.23s" fill="freeze"/>
+    </g><g><circle cx="1030.0" cy="420.0" r="34.0" fill="#0A84FF" fill-opacity=".55"/>
+         <text x="1030.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1030.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.26s" fill="freeze"/>
+    </g><g><circle cx="1122.0" cy="420.0" r="34.0" fill="#5E5CE6" fill-opacity=".55"/>
+         <text x="1122.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1122.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.29s" fill="freeze"/>
+    </g><g><circle cx="1214.0" cy="420.0" r="34.0" fill="#30D158" fill-opacity=".55"/>
+         <text x="1214.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1214.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.32s" fill="freeze"/>
+    </g><g><circle cx="1306.0" cy="420.0" r="34.0" fill="#FF9F0A" fill-opacity=".55"/>
+         <text x="1306.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1306.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.35s" fill="freeze"/>
+    </g><g><circle cx="1398.0" cy="420.0" r="34.0" fill="#FF375F" fill-opacity=".55"/>
+         <text x="1398.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1398.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.38s" fill="freeze"/>
+    </g><g><circle cx="1490.0" cy="420.0" r="34.0" fill="#30D1D0" fill-opacity=".55"/>
+         <text x="1490.0" y="430.2" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="800" fill="#FFFFFF">·</text>
+      <circle cx="1490.0" cy="420.0" r="34.0" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur=".5s" begin="1.41s" fill="freeze"/>
+    </g>
+</svg>

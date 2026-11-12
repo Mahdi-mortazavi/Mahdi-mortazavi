@@ -213,5 +213,8 @@ export const GLYPH = {
   linkedin: `<rect x="4" y="4" width="24" height="24" rx="6" ${S} stroke-width="2.4"/><path d="M10.5 14 v8 M10.5 10 v.2 M15.5 22 v-8 M15.5 17.5 c0 -5 6.5 -5 6.5 0 v4.5" ${S} stroke-width="2.4"/>`,
   globe: `<circle cx="16" cy="16" r="12" ${S} stroke-width="2.4"/><path d="M4 16 h24 M16 4 c-7 7 -7 17 0 24 M16 4 c7 7 7 17 0 24" ${S} stroke-width="2"/>`,
   chat: `<path d="M6 7 h20 a3 3 0 0 1 3 3 v10 a3 3 0 0 1 -3 3 h-10 l-7 5 v-5 h-3 a3 3 0 0 1 -3 -3 v-10 a3 3 0 0 1 3 -3z" ${S} stroke-width="2.4"/>`,
+  doc: `<path d="M9 4 h10 l6 6 v18 h-16z M19 4 v6 h6 M13 16 h8 M13 21 h8" ${S} stroke-width="2.4"/>`,
+  card: `<rect x="3" y="7" width="26" height="18" rx="4" ${S} stroke-width="2.4"/><circle cx="11" cy="14.5" r="3" ${S} stroke-width="2.2"/><path d="M6.5 21 c1.5 -3.5 7.5 -3.5 9 0 M19 13 h6 M19 18 h6" ${S} stroke-width="2.2"/>`,
+  plus: `<circle cx="13" cy="11" r="5" ${S} stroke-width="2.4"/><path d="M4 27 c1.5 -8 16.5 -8 18 0 M25 9 v8 M21 13 h8" ${S} stroke-width="2.4"/>`,
   brief: `<rect x="4" y="10" width="24" height="16" rx="4" ${S} stroke-width="2.4"/><path d="M12 10 v-3 a2 2 0 0 1 2 -2 h4 a2 2 0 0 1 2 2 v3 M4 17 h24" ${S} stroke-width="2.4"/>`,
 };

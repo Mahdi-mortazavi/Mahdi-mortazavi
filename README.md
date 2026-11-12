@@ -25,15 +25,18 @@
 <a href="https://t.me/Mahdi_mortazavi1"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-telegram.svg" height="44" alt="Message Mahdi Mortazavi on Telegram" /></a>
 <a href="https://www.linkedin.com/in/mahdimortazavidev"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-linkedin.svg" height="44" alt="Mahdi Mortazavi on LinkedIn" /></a>
 <a href="https://mahdi-mortazavi.github.io"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-hub.svg" height="44" alt="Mahdi Mortazavi — portfolio" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/blob/main/assets/Mahdi-Mortazavi-CV.pdf"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-cv.svg" height="44" alt="Download Mahdi Mortazavi's CV" /></a>
 </p>
 
+<!-- LIVE:NAV -->
 <p align="center">
-<a href="#selected-work"><b>Work</b></a> &nbsp;·&nbsp;
-<a href="#experience"><b>Experience</b></a> &nbsp;·&nbsp;
-<a href="#stack"><b>Stack</b></a> &nbsp;·&nbsp;
-<a href="#work-with-me"><b>Hire me</b></a> &nbsp;·&nbsp;
-<a href="#فارسی"><b>فارسی</b></a>
+<a href="https://github.com/Mahdi-mortazavi"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-home-on.svg" height="42" alt="Overview" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/work#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-work.svg" height="42" alt="Case studies" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/hire#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-hire.svg" height="42" alt="Hire me" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/build#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-build.svg" height="42" alt="Build with me" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/fa#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-fa.svg" height="42" alt="فارسی" /></a>
 </p>
+<!-- /LIVE:NAV -->
 
 # Mahdi Mortazavi · مهدی مرتضوی
 
@@ -63,14 +66,14 @@ Each card is a live product you can install today. Stars, versions and release d
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-relay-w.svg" width="100%" alt="relay — Share your phone&apos;s internet with your PC over an encrypted WireGuard tunnel. No root, no server, no account." />
 </picture></a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 240 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 239 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
 
 <a href="https://github.com/Mahdi-mortazavi/angaros"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-angaros.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-angaros-w.svg" width="100%" alt="Angaros — Your phone, for your AI agents: SMS, OTP codes, contacts and call log for any MCP client. End-to-end encrypted, self-hosted." />
 </picture></a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/angaros">Angaros</a></b> &nbsp;·&nbsp; Python &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/angaros/releases/latest"><code>v3.1.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/angaros/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/angaros">Angaros</a></b> &nbsp;·&nbsp; Python &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/angaros/">Try it ↗</a></sub></p>
 
 <a href="https://github.com/Mahdi-mortazavi/flow"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-flow.svg" />
@@ -123,6 +126,8 @@ Each card is a live product you can install today. Stars, versions and release d
 **[Overrun](https://github.com/Mahdi-mortazavi/overrun)** is realtime multiplayer netcode on **Cloudflare Workers** and Durable Objects.
 **[Sooda](https://github.com/Mahdi-mortazavi/sooda)** is an offline-first **TypeScript PWA**, and **[purify](https://github.com/Mahdi-mortazavi/purify)** is a native Windows utility in **Rust** and **Tauri**.
 
+**How these were built:** the [case studies](https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/work#readme) walk through the problem, the first principle and the decisions behind relay, Angaros and Overrun.
+
 ## Experience
 
 <picture>
@@ -174,22 +179,39 @@ Each card is a live product you can install today. Stars, versions and release d
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/heat-w.svg" width="100%" alt="Mahdi Mortazavi's GitHub contribution heatmap for the last year" />
 </picture>
 
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/velocity.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/velocity-w.svg" width="100%" alt="Release cadence across Mahdi Mortazavi's open-source projects" />
+</picture>
+
 **Latest releases**
 
 <!-- LIVE:SHIPPING -->
-- **[relay v2.12.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.12.0)** <sub>· released 10 Nov 2026</sub>
-- **[Angaros v3.1.0](https://github.com/Mahdi-mortazavi/angaros/releases/tag/v3.1.0)** <sub>· released 5 Nov 2026</sub>
-- **[Angaros v3.0.3](https://github.com/Mahdi-mortazavi/angaros/releases/tag/v3.0.3)** <sub>· released 2 Nov 2026</sub>
-- **[relay v2.11.1](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.11.1)** <sub>· released 21 Oct 2026</sub>
-- **[relay v2.11.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.11.0)** <sub>· released 21 Oct 2026</sub>
+- **[Angaros](https://github.com/Mahdi-mortazavi/angaros)** <sub>· updated today</sub>
+- **[relay](https://github.com/Mahdi-mortazavi/relay)** · `v2.12.0` <sub>· updated yesterday</sub>
+- **[Nava](https://github.com/Mahdi-mortazavi/app)** · `v3.1.0` <sub>· updated 6d ago</sub>
+- **[Flow](https://github.com/Mahdi-mortazavi/flow)** · `v0.6.1` <sub>· updated 6d ago</sub>
 <!-- /LIVE:SHIPPING -->
+
+## The wall
+
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/wall.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/wall-w.svg" width="100%" alt="People who follow Mahdi Mortazavi on GitHub" />
+</picture>
+
+<p align="center">
+<a href="https://github.com/Mahdi-mortazavi"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-follow.svg" height="44" alt="Follow Mahdi Mortazavi on GitHub" /></a>
+</p>
+
+<sub>These are the people following my work. Follow, and your avatar takes the next seat when the page rebuilds, within six hours.</sub>
 
 ## Work with me
 
 I'm most useful where the problem is still messy and the shape of the answer is not decided yet.
 
-- **Hiring a remote engineer?** I work as a senior full-stack or product engineer, or as a technical lead. I'm used to owning a product from the first sketch to the release.
-- **Building a product?** I take contract and freelance builds: AI agents, mobile apps, desktop tools, web apps and the design that goes with them.
+- **Hiring a remote engineer?** I work as a senior full-stack or product engineer, or as a technical lead. [Evaluate me in ten minutes →](https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/hire#readme)
+- **Building a product?** I take contract and freelance builds: AI agents, mobile apps, desktop tools, web apps and the design that goes with them. [How an engagement runs →](https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/build#readme)
 - **Need a technical co-founder?** I'm already CTO of two products, so I know what the job takes. If the problem is real, let's talk.
 
 <p align="center">
@@ -254,7 +276,7 @@ All of them are free and open source. Each repository carries its own licence fi
 
 <p align="center">
 <!-- LIVE:UPDATED -->
-<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>12 Nov 2026, 12:14</b> Tehran time</sub>
+<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>12 Nov 2026, 12:57</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 </p>
 

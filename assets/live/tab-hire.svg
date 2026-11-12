@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="184" height="84" viewBox="0 0 184 84" role="img" aria-label="Hire me">
+  <title>Hire me</title>
+  <defs><linearGradient id="u" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0A84FF"/><stop offset="100%" stop-color="#30D1D0"/></linearGradient></defs>
+  <rect x="2" y="6" width="180" height="68" rx="18" fill="#FFFFFF" fill-opacity="0" stroke="#FFFFFF" stroke-opacity=".1" stroke-width="1.5"/>
+  <text x="92" y="49" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="600" fill="#9AA3B2">Hire me</text>
+  
+</svg>
