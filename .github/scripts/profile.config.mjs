@@ -83,6 +83,7 @@ export default {
   tabs: [
     { id: 'home', label: 'Overview', href: 'https://github.com/Mahdi-mortazavi' },
     { id: 'work', label: 'Case studies', dir: 'work' },
+    { id: 'log', label: 'Ship log', dir: 'log' },
     { id: 'hire', label: 'Hire me', dir: 'hire' },
     { id: 'build', label: 'Build with me', dir: 'build' },
     { id: 'fa', label: 'فارسی', dir: 'fa', rtl: true },

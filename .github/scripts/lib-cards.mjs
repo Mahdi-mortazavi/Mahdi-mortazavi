@@ -159,13 +159,14 @@ export function hero(d, t, mode = 'm') {
  * Project card. A short banner on desktop (art · copy · numbers), a portrait
  * card on a phone (art and numbers on top, copy underneath).
  */
-export function project(p, r, release, t, mode = 'm') {
+export function project(p, r, release, t, mode = 'm', dl = 0) {
   const { W, PAD, IW, T, wide } = geo(mode);
   const m = t.mood;
   const stars = r?.stargazers_count ?? 0, lang = r?.language ?? '';
   // A star count is proof only once it is one. Young projects lead with their
   // version and language instead of a lonely zero.
-  const facts = [release, lang].filter(Boolean);
+  // Downloads say more than the language, which the kicker already implies.
+  const facts = [release, dl >= 100 ? `${compact(dl)} downloads` : lang].filter(Boolean);
   const stat = (x, y, anchor) => stars >= 5 ? `
     <text x="${x}" y="${y}" text-anchor="${anchor}" font-family="${FONT}" font-size="${wide ? 58 : 60}" font-weight="800" letter-spacing="-1.5" fill="${C.txt}"><tspan fill="${m.b}" font-size="${wide ? 40 : 42}">★ </tspan>${nf(stars)}</text>
     ${facts.map((f, i) => `<text x="${x}" y="${y + 50 + i * 42}" text-anchor="${anchor}" font-family="${i === 0 && release ? MONO : FONT}" font-size="26" font-weight="600" fill="${i ? C.dim : C.muted}">${esc(f)}</text>`).join('')}` : `
@@ -560,5 +561,31 @@ export function footer(t, mode = 'm') {
   <rect width="${W}" height="${H}" fill="${C.bg}"/>
   ${layer(54, .16, 19, 32, 0)}${layer(74, .26, 13, 24, 150)}${layer(93, .46, 9, 16, 300)}
   <rect x="0" y="0" width="${W}" height="2.5" fill="url(#hair)"/>
+</svg>`;
+}
+
+/**
+ * Signature card for project READMEs: every repository points back to the
+ * profile and carries the current availability. One 900-wide canvas.
+ */
+export function signature(cfg, t) {
+  const m = t.mood, W = 900, H = 168;
+  const open = cfg.status.open;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
+  aria-label="Built by ${esc(cfg.name)} — ${esc(cfg.tagline)}">
+  <title>Built by ${esc(cfg.name)} · ${esc(cfg.nameFa)}</title>
+  ${defs(m)}${card(H, m, W, false)}
+  <g filter="url(#soft)" opacity=".6"><ellipse cx="90" cy="84" rx="200" ry="110" fill="url(#aura1)"/></g>
+  <circle cx="92" cy="84" r="34" fill="url(#mark)"/>
+  <circle cx="92" cy="84" r="34" fill="none" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="1.5"/>
+  <circle cx="92" cy="84" r="46" fill="none" stroke="#FFFFFF" stroke-opacity=".4" stroke-width="1.6" stroke-dasharray="4 10" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 92 84" to="360 92 84" dur="16s" repeatCount="indefinite"/></circle>
+  <text x="92" y="97" text-anchor="middle" font-family="${FONT}" font-size="34" font-weight="800" fill="#FFFFFF">M</text>
+  <text x="166" y="58" font-family="${MONO}" font-size="21" font-weight="700" letter-spacing="2.6" fill="${m.b}">BUILT BY</text>
+  <text x="164" y="104" font-family="${FONT}" font-size="42" font-weight="800" letter-spacing="-1" fill="${C.txt}">${esc(cfg.name)}</text>
+  <circle cx="174" cy="134" r="6.5" fill="${open ? C.green : C.dim}"/>
+  ${open ? `<circle cx="174" cy="134" r="6.5" fill="none" stroke="${C.green}"><animate attributeName="r" values="6.5;15;6.5" dur="2.4s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".8;0;.8" dur="2.4s" repeatCount="indefinite"/></circle>` : ''}
+  <text x="192" y="142" font-family="${FONT}" font-size="25" font-weight="600" fill="${C.muted}">${esc(open ? cfg.status.short : 'CTO & product engineer')} · see my other work</text>
+  <g transform="translate(${W - 84} 70)" stroke="${C.txt}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M0 28 L28 0 M6 0 H28 V22"/></g>
 </svg>`;
 }
