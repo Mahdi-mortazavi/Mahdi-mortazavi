@@ -12,8 +12,8 @@
       <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
@@ -21,12 +21,12 @@
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#FF375F"/>
+      <stop offset="100%" stop-color="#0A84FF"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
       <stop offset="50%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -44,13 +44,13 @@
     <ellipse cx="60" cy="718" rx="234" ry="349" fill="url(#aura2)"/>
   </g>
   <rect width="900" height="698" rx="22" fill="url(#grid)"/>
-  <rect x="0" y="0" width="900" height="3" fill="url(#hair)"/><text x="52" y="66" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="25" font-weight="700" letter-spacing="2.6" fill="#FF375F">OVERRUN · ONE SIMULATION, TWO CLOCKS</text><g>
+  <rect x="0" y="0" width="900" height="3" fill="url(#hair)"/><text x="52" y="66" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="25" font-weight="700" letter-spacing="2.6" fill="#0A84FF">OVERRUN · ONE SIMULATION, TWO CLOCKS</text><g>
     <rect x="52" y="104" width="796" height="176" rx="26" fill="url(#glass)"/>
     <rect x="52" y="104" width="796" height="176" rx="26" fill="none" stroke="rgba(255,255,255,.14)"/>
     <path d="M 78 104.75 H 822" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
     <text x="82" y="160" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="800" letter-spacing="-.5" fill="#F5F5F7">Browser · PWA · APK</text>
-    <text x="82" y="204" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="25" font-weight="700" fill="#FF375F">SIM @ 60 HZ</text><text x="82" y="242" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="500" fill="#A9AEBA">predicts you instantly</text><path d="M122 288 V368" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="2" stroke-dasharray="5 8" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="26;0" dur="1.2s" repeatCount="indefinite"/></path>
+    <text x="82" y="204" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="25" font-weight="700" fill="#0A84FF">SIM @ 60 HZ</text><text x="82" y="242" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="500" fill="#A9AEBA">predicts you instantly</text><path d="M122 288 V368" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="2" stroke-dasharray="5 8" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="26;0" dur="1.2s" repeatCount="indefinite"/></path>
           <circle r="5.5" fill="url(#mark)">
       <animateMotion dur="2s" begin="-0.00s" repeatCount="indefinite" path="M122 288 V368" />
     </circle><circle r="5.5" fill="url(#mark)">
@@ -64,5 +64,5 @@
     <path d="M 78 376.75 H 822" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
     <text x="82" y="432" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="800" letter-spacing="-.5" fill="#F5F5F7">Durable Object</text>
-    <text x="82" y="476" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="25" font-weight="700" fill="#FF375F">SAME SIM @ 20 HZ</text><text x="82" y="514" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="500" fill="#A9AEBA">sole authority per match</text><text x="52" y="612" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="600" fill="#A9AEBA">Client and server run the same file, so</text><text x="52" y="652" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="600" fill="#A9AEBA">prediction cannot drift from the authority.</text>
+    <text x="82" y="476" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="25" font-weight="700" fill="#0A84FF">SAME SIM @ 20 HZ</text><text x="82" y="514" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="500" fill="#A9AEBA">sole authority per match</text><text x="52" y="612" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="600" fill="#A9AEBA">Client and server run the same file, so</text><text x="52" y="652" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="600" fill="#A9AEBA">prediction cannot drift from the authority.</text>
 </svg>

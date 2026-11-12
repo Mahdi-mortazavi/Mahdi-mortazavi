@@ -50,7 +50,7 @@ On the side I build open-source tools across mobile, desktop, web and the edge, 
 versioned releases, installers, documentation, two languages.
 
 <!-- LIVE:PROOF -->
-<sub>**380** stars &nbsp;·&nbsp; **30** forks &nbsp;·&nbsp; **10,884+** downloads &nbsp;·&nbsp; **54** releases shipped &nbsp;·&nbsp; **1,671** contributions in the last year</sub>
+<sub>**380** stars &nbsp;·&nbsp; **30** forks &nbsp;·&nbsp; **10,960+** downloads &nbsp;·&nbsp; **54** releases shipped &nbsp;·&nbsp; **1,684** contributions in the last year</sub>
 <!-- /LIVE:PROOF -->
 
 > **Open to** remote roles, contract and freelance product builds, and technical co-founder / CTO work.
@@ -72,7 +72,7 @@ Each card is a live product you can install today. Stars, versions and release d
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-relay-w.svg" width="100%" alt="relay — Share your phone&apos;s internet with your PC over an encrypted WireGuard tunnel. No root, no server, no account." />
 </picture></a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 240 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; 9,925 downloads &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 240 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; 10,001 downloads &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
 
 <a href="https://github.com/Mahdi-mortazavi/angaros"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-angaros.svg" />
@@ -283,7 +283,7 @@ All of them are free and open source. Each repository carries its own licence fi
 
 <p align="center">
 <!-- LIVE:UPDATED -->
-<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>12 Nov 2026, 18:31</b> Tehran time</sub>
+<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>13 Nov 2026, 03:00</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 </p>
 

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="255" height="92" viewBox="0 0 255 92" role="img" aria-label="LinkedIn">
   <title>LinkedIn</title>
   <defs>
-    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5E5CE6"/><stop offset="100%" stop-color="#FF375F"/></linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5E5CE6"/><stop offset="100%" stop-color="#0A84FF"/></linearGradient>
     <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF" stop-opacity=".22"/><stop offset="60%" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
   </defs>
   <rect x="2" y="2" width="251" height="88" rx="44" fill="#141922"/>
