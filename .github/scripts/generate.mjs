@@ -7,7 +7,7 @@
  */
 import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import { esc, tehran, nf } from './lib-theme.mjs';
-import { hero, project, journey, button, stack, growth, heat, footer } from './lib-cards.mjs';
+import { hero, project, journey, button, stack, growth, heat, footer, signature } from './lib-cards.mjs';
 import { tab, velocity, wall, diagram } from './lib-more.mjs';
 import CFG from './profile.config.mjs';
 
@@ -50,6 +50,19 @@ async function gh(path, accept) {
   }
   if (retried) console.log(`  ↩ anonymous retry succeeded: ${path}`);
   return r.json();
+}
+
+// First real sentence of a release note, as plain text.
+function excerpt(body) {
+  for (const raw of String(body ?? '').split(/\r?\n/)) {
+    let l = raw.trim();
+    if (!l || /^(#|<|\||---|```|!\[|\*\*full changelog|full changelog)/i.test(l)) continue;
+    l = l.replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+      .replace(/<[^>]+>/g, '').replace(/[*_`>#]/g, '').replace(/^[-•\s]+/, '').replace(/\s+/g, ' ').trim();
+    if (l.length < 12) continue;
+    return esc(l.length > 170 ? `${l.slice(0, 167).replace(/\s\S*$/, '')}…` : l);
+  }
+  return '';
 }
 
 const ago = iso => {
@@ -137,6 +150,7 @@ async function collect() {
     const r = byName.get(p.repo.toLowerCase());
     if (!r) { console.warn(`  ! project "${p.repo}" is not a public repo — skipped`); continue; }
     const latest = await gh(`/repos/${USER}/${r.name}/releases/latest`);
+    let dl = 0;
     // Every release, for the shipped count, the download total and the log.
     for (let page = 1; page <= 3; page++) {
       const rows = await gh(`/repos/${USER}/${r.name}/releases?per_page=100&page=${page}`);
@@ -144,13 +158,13 @@ async function collect() {
       for (const rel of rows) {
         if (rel.draft) continue;
         releases++;
-        for (const a of rel.assets ?? []) downloads += a.download_count ?? 0;
+        for (const a of rel.assets ?? []) { downloads += a.download_count ?? 0; dl += a.download_count ?? 0; }
         if (rel.published_at) relDates.push(rel.published_at);
-        if (rel.published_at) shipped.push({ name: p.name, tag: rel.tag_name, url: rel.html_url, at: rel.published_at });
+        if (rel.published_at) shipped.push({ name: p.name, tag: rel.tag_name, url: rel.html_url, at: rel.published_at, note: excerpt(rel.body) });
       }
       if (rows.length < 100) break;
     }
-    featured.push({ p, r, release: latest?.tag_name ?? null });
+    featured.push({ p, r, release: latest?.tag_name ?? null, downloads: dl });
   }
   shipped.sort((a, b) => b.at.localeCompare(a.at));
 
@@ -214,7 +228,7 @@ async function collect() {
   }
 
   return { user, repos, stars, forks, langs, featured, downloads, releases, relDates, week, followers,
-    shipped: shipped.slice(0, 5), issues, starEvents, history, cal };
+    shipped: shipped.slice(0, 5), log: shipped.slice(0, 40), issues, starEvents, history, cal };
 }
 
 /* ────────────────────────────── README sections ────────────────────────────── */
@@ -245,6 +259,7 @@ function projectsMd(d) {
       r.language ? esc(r.language) : null,
       r.stargazers_count >= 5 ? `★ ${nf(r.stargazers_count)}` : null,
       f.release ? `<a href="${r.html_url}/releases/latest"><code>${esc(f.release)}</code></a>` : null,
+      f.downloads >= 100 ? `${nf(f.downloads)} downloads` : null,
       r.homepage ? `<a href="${r.homepage}">Try it ↗</a>` : null,
     ].filter(Boolean).join(' &nbsp;·&nbsp; ');
     return `<a href="${r.html_url}">${pic(`p-${p.repo.toLowerCase()}`, `${p.name} — ${p.tagline}`)}</a>
@@ -310,7 +325,7 @@ for (const [mode, sfx] of [['m', ''], ['w', '-w']]) {
   await writeFile(`${OUT}/wall${sfx}.svg`, wall(d, t, mode));
   for (const st of CFG.studies) await writeFile(`${OUT}/d-${st.id}${sfx}.svg`, diagram(st, t, mode));
   for (const f of d.featured) {
-    await writeFile(`${OUT}/p-${f.p.repo.toLowerCase()}${sfx}.svg`, project(f.p, f.r, f.release, t, mode));
+    await writeFile(`${OUT}/p-${f.p.repo.toLowerCase()}${sfx}.svg`, project(f.p, f.r, f.release, t, mode, f.downloads ?? 0));
   }
 }
 for (const [file, label, glyph, primary] of [
@@ -323,6 +338,7 @@ for (const [file, label, glyph, primary] of [
   ['btn-cv', 'Download CV', 'doc', true],
   ['btn-follow', 'Follow on GitHub', 'plus', true],
 ]) await writeFile(`${OUT}/${file}.svg`, button(label, glyph, t, primary));
+await writeFile(`${OUT}/sig.svg`, signature(CFG, t));
 for (const tb of CFG.tabs) {
   await writeFile(`${OUT}/tab-${tb.id}.svg`, tab(tb.label, false, t, tb.rtl));
   await writeFile(`${OUT}/tab-${tb.id}-on.svg`, tab(tb.label, true, t, tb.rtl));
@@ -344,6 +360,26 @@ if (d.cal) {
 const REPO = `https://github.com/${USER}/${USER}`;
 const navMd = active => `<p align="center">\n${CFG.tabs.map(tb =>
   `<a href="${tb.href ?? `${REPO}/tree/main/${tb.dir}#readme`}"><img src="${RAW}/tab-${tb.id}${tb.id === active ? '-on' : ''}.svg" height="42" alt="${esc(tb.label)}" /></a>`).join('\n')}\n</p>`;
+// The ship log is written whole: every release, newest first, grouped by month.
+if (d.log?.length) {
+  const month = iso => new Intl.DateTimeFormat('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(iso));
+  let body = '', cur = '';
+  for (const s of d.log) {
+    if (month(s.at) !== cur) { cur = month(s.at); body += `\n### ${cur}\n\n`; }
+    body += `- **[${esc(s.name)} ${esc(s.tag)}](${s.url})** <sub>· ${day(s.at)}</sub>${s.note ? `<br/>${s.note}` : ''}\n`;
+  }
+  await mkdir('log', { recursive: true });
+  await writeFile('log/README.md', `<!-- LIVE:NAV -->\n<!-- /LIVE:NAV -->\n
+# Ship log · ${CFG.name}
+
+Every release I have published, newest first. This page is written by a script from the GitHub releases API, so it cannot claim more than I shipped.
+
+${pic('velocity', `Release cadence across ${CFG.name}'s open-source projects`)}
+${body}
+<sub>Showing the latest ${d.log.length} releases. Each project keeps its full history on its own releases page.</sub>
+`);
+}
+
 for (const tb of CFG.tabs.filter(x => x.dir)) {
   const file = `${tb.dir}/README.md`;
   try {

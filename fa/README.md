@@ -2,6 +2,7 @@
 <p align="center">
 <a href="https://github.com/Mahdi-mortazavi"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-home.svg" height="42" alt="Overview" /></a>
 <a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/work#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-work.svg" height="42" alt="Case studies" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/log#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-log.svg" height="42" alt="Ship log" /></a>
 <a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/hire#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-hire.svg" height="42" alt="Hire me" /></a>
 <a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/build#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-build.svg" height="42" alt="Build with me" /></a>
 <a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/fa#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-fa-on.svg" height="42" alt="فارسی" /></a>
