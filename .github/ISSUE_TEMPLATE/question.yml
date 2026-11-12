@@ -1,0 +1,12 @@
+name: Ask me anything
+description: A question about my projects, my process, or building products. I answer in public, and it shows up on my profile.
+title: "Question: "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: English or Persian — هر دو خوب است.
+    validations:
+      required: true

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="320" viewBox="0 0 1600 320" role="img"
+  aria-label="Nava — The art of reduction: a minimal productivity app with squircle design, haptics and breathing motion.">
+  <title>Nava — The art of reduction: a minimal productivity app with squircle design, haptics and breathing motion.</title>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07090E"/>
+      <stop offset="55%" stop-color="#0B0F18"/>
+      <stop offset="100%" stop-color="#10151F"/>
+    </linearGradient>
+    <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="coreglow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="320" rx="22" fill="url(#bg)"/>
+  
+  <rect width="1600" height="320" rx="22" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1600" height="3" fill="url(#hair)"/>
+  <g filter="url(#soft)" opacity=".55"><ellipse cx="224" cy="160" rx="230" ry="150" fill="url(#aura1)"/></g>
+  <g>
+    <rect x="64" y="44" width="330" height="232" rx="28" fill="url(#glass)"/>
+    <rect x="64" y="44" width="330" height="232" rx="28" fill="none" stroke="rgba(255,255,255,.14)"/>
+    <path d="M 92 44.75 H 366" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+      <g transform="translate(79 60)">
+  <g>
+    <rect x="34" y="44" width="112" height="112" rx="38" fill="url(#mark)" fill-opacity=".9"/>
+    <rect x="34" y="44" width="112" height="112" rx="38" fill="none" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="1.6"/>
+    <path d="M70 102 l15 15 26 -32" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="7"/>
+    <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="4.5s" additive="sum" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-4.5 -5;0 0" dur="4.5s" additive="sum" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <rect x="176" y="58" width="20" height="20" rx="7" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-opacity=".7" stroke-width="2"/>
+    <rect x="208" y="64" width="62" height="8" rx="4" fill="#FFFFFF" fill-opacity=".5">
+      <animate attributeName="width" values="62;62;0;0;62" keyTimes="0;0.20;0.30;.92;1" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M180 68 l5 5 8 -9" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.20;0.30;.92;1" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g><g>
+    <rect x="176" y="92" width="20" height="20" rx="7" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-opacity=".7" stroke-width="2"/>
+    <rect x="208" y="98" width="46" height="8" rx="4" fill="#FFFFFF" fill-opacity=".5">
+      <animate attributeName="width" values="46;46;0;0;46" keyTimes="0;0.38;0.48;.92;1" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M180 102 l5 5 8 -9" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.38;0.48;.92;1" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g><g>
+    <rect x="176" y="126" width="20" height="20" rx="7" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-opacity=".7" stroke-width="2"/>
+    <rect x="208" y="132" width="56" height="8" rx="4" fill="#FFFFFF" fill-opacity=".5">
+      <animate attributeName="width" values="56;56;0;0;56" keyTimes="0;0.56;0.66;.92;1" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M180 136 l5 5 8 -9" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.56;0.66;.92;1" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g></g>
+      <text x="440" y="92" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="23" font-weight="700" letter-spacing="2.6" fill="#30D1D0">FLUTTER · INTERFACE DESIGN</text>
+      <text x="437" y="162" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="66" font-weight="800" letter-spacing="-2" fill="#F5F5F7">Nava</text>
+      <text x="440" y="212" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="500" fill="#A9AEBA">The art of reduction: a minimal productivity</text><text x="440" y="252" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="500" fill="#A9AEBA">app with squircle design, haptics and</text><text x="440" y="292" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="500" fill="#A9AEBA">breathing motion.</text>
+      <g transform="translate(1512 52)" stroke="#A9AEBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M0 22 L22 0 M4 0 H22 V18"/></g>
+      
+    <text x="1536" y="168" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#F5F5F7"><tspan fill="#30D1D0" font-size="40">★ </tspan>26</text>
+    <text x="1536" y="218" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="600" fill="#A9AEBA">v3.1.0</text><text x="1536" y="260" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#7F8898">Dart</text>
+</svg>
