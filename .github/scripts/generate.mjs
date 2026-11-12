@@ -1,32 +1,18 @@
 #!/usr/bin/env node
 /**
  * Living profile engine.
- * Pulls live data from the GitHub API, renders brand-consistent Liquid-Glass
- * SVG cards, and rewrites the marked sections of README.md.
+ * Pulls live data from the GitHub API, joins it with profile.config.mjs,
+ * renders the animated SVG cards and rewrites the marked sections of README.md.
  * Self-hosted on purpose: no third-party card service can break this profile.
  */
 import { writeFile, readFile, mkdir } from 'node:fs/promises';
-import { C, FONT, defs, glass, esc, tehran, nf } from './lib-theme.mjs';
-import { hero, stack, growth, heat, headline, footer } from './lib-cards.mjs';
+import { esc, tehran, nf } from './lib-theme.mjs';
+import { hero, project, journey, button, stack, growth, heat, footer } from './lib-cards.mjs';
+import CFG from './profile.config.mjs';
 
-const USER = 'Mahdi-mortazavi';
+const USER = CFG.user;
 const OUT = 'assets/live';
 const API = 'https://api.github.com';
-
-// Presentation hints for repos I've written a Persian line for. Anything not
-// listed still shows up automatically — selection is by stars, not by this map.
-const META = {
-  relay:  { name: 'relay',           icon: '📡', fa: 'ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز' },
-  flow:   { name: 'Flow — تک‌نقطه',   icon: '◉',  fa: 'تک‌نقطه — تمرکز، عادت و کارِ عمیق، مبتنی بر علم رفتار' },
-  app:    { name: 'Nava',            icon: '🍎', fa: 'نوا — اپ بهره‌وری مینیمال با الهام از طراحی اپل' },
-  purify: { name: 'purify',          icon: '🧹', fa: 'پیوریفای — پاک‌سازی هوشمند و فوق‌سریع دیسک ویندوز' },
-  mova:   { name: 'Mova',            icon: '🌀', fa: 'موا — در حرکت، نه در کمال' },
-  sooda:  { name: 'sooda',           icon: '💎', fa: 'سودا — ماشین‌حساب سود، قیمت فروش و تخفیف، آفلاین و دوزبانه' },
-  overrun:{ name: 'overrun',         icon: '🎮', fa: 'اورران — شوتر آرنای بلادرنگ روی لبه‌ی شبکه' },
-};
-// Repos that are infrastructure, not portfolio pieces.
-const HIDE = new Set(['mahdi-mortazavi', 'mahdi-mortazavi.github.io']);
-const MAX_FEATURED = 6;
 
 // STARS_TOKEN (optional) is a personal token with public-repo read. It is the
 // only credential GitHub accepts for cross-repo /stargazers: the built-in
@@ -139,42 +125,32 @@ async function collect() {
     for (const [k, v] of Object.entries(l ?? {})) langs[k] = (langs[k] ?? 0) + v;
   }
 
-  // Featured = the most-starred real projects. A new repo that earns stars
-  // appears here on its own; nothing to hand-edit.
-  const picks = repos
-    .filter(r => !HIDE.has(r.name.toLowerCase()))
-    .sort((a, b) => b.stargazers_count - a.stargazers_count || new Date(b.pushed_at) - new Date(a.pushed_at))
-    .slice(0, MAX_FEATURED);
+  // Featured = the curated list in profile.config.mjs, joined with live repo
+  // data. A project whose repo has gone private or been renamed is skipped
+  // rather than drawn with empty numbers.
+  const byName = new Map(repos.map(r => [r.name.toLowerCase(), r]));
   const featured = [];
-  for (const r of picks) {
-    const m = META[r.name.toLowerCase()] ?? {};
-    const rel = await gh(`/repos/${USER}/${r.name}/releases/latest`);
-    featured.push({ name: m.name ?? r.name, icon: m.icon ?? '◆', fa: m.fa ?? null, r, release: rel?.tag_name ?? null });
-  }
-
-  // Recent public activity → "what I'm building right now".
-  const events = (await gh(`/users/${USER}/events/public?per_page=100`)) ?? [];
-  const seen = new Set();
-  const activity = [];
-  for (const e of events) {
-    const name = e.repo?.name?.split('/')[1];
-    if (!name) continue;
-    let line = null;
-    if (e.type === 'PushEvent') {
-      const c = e.payload?.commits?.at(-1)?.message?.split('\n')[0];
-      if (c) line = { kind: 'commit', icon: '📝', repo: name, text: c };
-    } else if (e.type === 'ReleaseEvent') {
-      line = { kind: 'release', icon: '🚀', repo: name, text: `Released ${e.payload?.release?.tag_name ?? ''}`.trim() };
-    } else if (e.type === 'CreateEvent' && e.payload?.ref_type === 'repository') {
-      line = { kind: 'new', icon: '✨', repo: name, text: 'Started a new project' };
+  let downloads = 0, releases = 0;
+  const shipped = [];
+  for (const p of CFG.projects) {
+    const r = byName.get(p.repo.toLowerCase());
+    if (!r) { console.warn(`  ! project "${p.repo}" is not a public repo — skipped`); continue; }
+    const latest = await gh(`/repos/${USER}/${r.name}/releases/latest`);
+    // Every release, for the shipped count, the download total and the log.
+    for (let page = 1; page <= 3; page++) {
+      const rows = await gh(`/repos/${USER}/${r.name}/releases?per_page=100&page=${page}`);
+      if (!Array.isArray(rows) || !rows.length) break;
+      for (const rel of rows) {
+        if (rel.draft) continue;
+        releases++;
+        for (const a of rel.assets ?? []) downloads += a.download_count ?? 0;
+        if (rel.published_at) shipped.push({ name: p.name, tag: rel.tag_name, url: rel.html_url, at: rel.published_at });
+      }
+      if (rows.length < 100) break;
     }
-    if (!line) continue;
-    const key = line.repo + '|' + line.text;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    activity.push({ ...line, at: e.created_at });
-    if (activity.length >= 5) break;
+    featured.push({ p, r, release: latest?.tag_name ?? null });
   }
+  shipped.sort((a, b) => b.at.localeCompare(a.at));
 
   // Star timestamps would be ideal, but the repo-scoped GITHUB_TOKEN is
   // refused (403) on cross-repo /stargazers. Try anyway — it backfills real
@@ -191,12 +167,9 @@ async function collect() {
   }
   starEvents.sort();
 
-  // Open issues on the profile repo power the public Q&A ("Ask me anything").
+  // Open issues on the profile repo power the public Q&A.
   const issues = ((await gh(`/repos/${USER}/${USER}/issues?state=open&per_page=10`)) ?? [])
     .filter(i => !i.pull_request);
-
-  const role = (user?.bio ?? '').split('\n')[0].trim().replace(/\s*[×·|]\s*/g, ' · ')
-    || 'Problem Solver · Full-Stack Developer · Product Builder';
 
   // Daily snapshot history — always available, accumulates a real curve.
   const today = new Date().toISOString().slice(0, 10);
@@ -208,109 +181,116 @@ async function collect() {
   await mkdir(OUT, { recursive: true });
   await writeFile(`${OUT}/history.json`, JSON.stringify(history, null, 2));
 
-  return { user, repos, stars, forks, langs, featured, activity, issues, role, starEvents, history };
+  const cal = await contributions();
+  return { user, repos, stars, forks, langs, featured, downloads, releases,
+    shipped: shipped.slice(0, 5), issues, starEvents, history, cal };
 }
 
 /* ────────────────────────────── README sections ────────────────────────────── */
-const badge = (l, msg, color, extra = '') =>
-  `https://img.shields.io/badge/${encodeURIComponent(l)}-${encodeURIComponent(msg)}-${color}?style=flat-square&labelColor=0D1117${extra}`;
+const RAW = `https://raw.githubusercontent.com/${USER}/${USER}/main/${OUT}`;
+// Phone card by default, desktop banner above 700px.
+const pic = (name, alt) => `<picture>
+  <source media="(max-width: 699px)" srcset="${RAW}/${name}.svg" />
+  <img src="${RAW}/${name}-w.svg" width="100%" alt="${esc(alt)}" />
+</picture>`;
+const day = iso => new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(iso));
+
+function proofMd(d) {
+  const bits = [
+    `**${nf(d.stars)}** stars`,
+    `**${nf(d.forks)}** forks`,
+    d.downloads ? `**${nf(d.downloads)}+** downloads` : null,
+    d.releases ? `**${nf(d.releases)}** releases shipped` : null,
+    d.cal?.totalContributions ? `**${nf(d.cal.totalContributions)}** contributions in the last year` : null,
+  ].filter(Boolean);
+  return `<sub>${bits.join(' &nbsp;·&nbsp; ')}</sub>`;
+}
 
 function projectsMd(d) {
   const one = f => {
-    const r = f.r;
-    const topics = (r.topics ?? []).slice(0, 4).map(t => `\`${t}\``).join(' ');
-    const rel = f.release ? `🏷️ **${f.release}**` : '';
-    const meta = [topics, rel].filter(Boolean).join(' &nbsp;·&nbsp; ');
-    const desc = r.description
-      ? esc(r.description).replace(/&apos;/g, "'").replace(/&quot;/g, '"')
-      : '';
-    // A Persian line only exists for repos I have written one for.
-    const fa = f.fa ? `\n<br/><span dir="rtl">${f.fa}</span>` : '';
-    return `### ${f.icon} [${f.name}](${r.html_url})
+    const { p, r } = f;
+    const links = [
+      `<b><a href="${r.html_url}">${esc(p.name)}</a></b>`,
+      r.language ? esc(r.language) : null,
+      r.stargazers_count >= 5 ? `★ ${nf(r.stargazers_count)}` : null,
+      f.release ? `<a href="${r.html_url}/releases/latest"><code>${esc(f.release)}</code></a>` : null,
+      r.homepage ? `<a href="${r.homepage}">Try it ↗</a>` : null,
+    ].filter(Boolean).join(' &nbsp;·&nbsp; ');
+    return `<a href="${r.html_url}">${pic(`p-${p.repo.toLowerCase()}`, `${p.name} — ${p.tagline}`)}</a>
 
-<a href="${r.html_url}/stargazers"><img src="https://img.shields.io/github/stars/${USER}/${r.name}?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="${r.name} stars" /></a> \`${r.language ?? 'Multi-language'}\`
-
-${desc}${fa}
-${meta ? `\n${meta}\n` : ''}
-**[→ Repo](${r.html_url})**${r.homepage ? ` &nbsp;·&nbsp; **[⬇ Try it](${r.homepage})**` : ''} &nbsp;·&nbsp; <sub>updated ${ago(r.pushed_at)}</sub>
-
----
+<p align="center"><sub>${links}</sub></p>
 `;
   };
-
-  const head = d.featured.slice(0, 3).map(one).join('\n');
-  const rest = d.featured.slice(3);
+  const head = d.featured.slice(0, CFG.lead).map(one).join('\n');
+  const rest = d.featured.slice(CFG.lead);
   if (!rest.length) return head;
-
-  // The remaining projects live behind a disclosure so the README stays short
-  // on a phone; the text is still in the page, so it is still crawled.
+  // The fold keeps the page short on a phone; the text is still in the HTML.
   return `${head}
 <details>
-<summary><b>📦 ${rest.length} more projects</b> &nbsp;·&nbsp; <sub>${rest.map(f => f.name).join(' · ')}</sub></summary>
+<summary><b>${rest.length} more shipped projects</b> &nbsp;·&nbsp; <sub>${rest.map(f => esc(f.p.name)).join(' · ')}</sub></summary>
 
 <br/>
 
 ${rest.map(one).join('\n')}
-
 </details>
 `;
 }
 
-function activityMd(d) {
-  // The events feed only covers a few days, and it is often empty. Falling back
-  // to the newest releases keeps the section meaningful instead of announcing
-  // that there is nothing to see.
-  if (!d.activity.length) {
-    const recent = d.featured
-      .filter(f => f.release)
-      .sort((a, b) => new Date(b.r.pushed_at) - new Date(a.r.pushed_at))
-      .slice(0, 3);
-    if (!recent.length) return '<sub>Between releases right now — the projects below are the current work.</sub>';
-    return recent.map(f =>
-      `- 🏷️ **[${f.name}](${f.r.html_url})** · ${f.release} <sub>· updated ${ago(f.r.pushed_at)}</sub>`
-    ).join('\n');
+function shippingMd(d) {
+  if (d.shipped?.length) {
+    return d.shipped.map(s =>
+      `- **[${esc(s.name)} ${esc(s.tag)}](${s.url})** <sub>· released ${day(s.at)}</sub>`).join('\n');
   }
-  return d.activity.map(a =>
-    `- ${a.icon} **[${a.repo}](https://github.com/${USER}/${a.repo})** — ${esc(a.text).slice(0, 90)} <sub>· ${ago(a.at)}</sub>`
-  ).join('\n');
+  const recent = [...d.featured].sort((a, b) => new Date(b.r.pushed_at) - new Date(a.r.pushed_at)).slice(0, 4);
+  return recent.map(f =>
+    `- **[${esc(f.p.name)}](${f.r.html_url})**${f.release ? ` · \`${esc(f.release)}\`` : ''} <sub>· updated ${ago(f.r.pushed_at)}</sub>`).join('\n');
 }
 
 function amaMd(d) {
-  const ask = `\n\n<a href="https://github.com/${USER}/${USER}/issues/new?title=Question%3A%20&body=Ask%20me%20anything%20%E2%80%94%20%D9%87%D8%B1%20%D8%B3%D9%88%D8%A7%D9%84%DB%8C%20%D8%AF%D8%A7%D8%B1%DB%8C%D8%AF%20%D8%A8%D9%BE%D8%B1%D8%B3%DB%8C%D8%AF"><img src="${badge('💬 Ask me anything', 'open a question', '161B22', '')}" height="28" alt="Ask me anything" /></a>`;
-  if (!d.issues.length) {
-    return `<sub>No open questions yet — be the first. &nbsp;·&nbsp; <span dir="rtl">هنوز سوالی پرسیده نشده؛ اولین نفر باشید.</span></sub>${ask}`;
-  }
+  if (!d.issues.length) return '';
   return d.issues.slice(0, 5).map(i =>
-    `- 💬 **[${esc(i.title).slice(0, 80)}](${i.html_url})** <sub>· by @${i.user.login} · ${i.comments} 💭</sub>`
-  ).join('\n') + ask;
+    `- **[${esc(i.title).slice(0, 80)}](${i.html_url})** <sub>· @${i.user.login} · ${i.comments} replies</sub>`
+  ).join('\n');
 }
 
 function replaceSection(md, key, body) {
   const re = new RegExp(`(<!-- LIVE:${key} -->)[\\s\\S]*?(<!-- /LIVE:${key} -->)`, 'g');
   if (!re.test(md)) { console.warn(`  ! marker LIVE:${key} not found`); return md; }
-  return md.replace(re, `$1\n${body}\n$2`);
+  return md.replace(re, () => `<!-- LIVE:${key} -->\n${body}\n<!-- /LIVE:${key} -->`);
 }
 
 /* ────────────────────────────── main ────────────────────────────── */
 const t = tehran();
 console.log(`Tehran ${t.time} · mood=${t.mood.id}`);
 const d = await collect();
-console.log(`data: ${d.repos.length} repos · ${d.stars}★ · ${d.featured.length} featured · ${d.activity.length} activity · ${d.issues.length} issues`);
+d.cfg = CFG;
+console.log(`data: ${d.repos.length} repos · ${d.stars}★ · ${d.featured.length} featured · ${d.releases} releases · ${d.downloads} downloads · ${d.issues.length} issues`);
 
 await mkdir(OUT, { recursive: true });
 // Every card is drawn twice: a 900-wide portrait card for phones and a
 // 1600-wide banner for desktops, picked by a media query in the README.
 for (const [mode, sfx] of [['m', ''], ['w', '-w']]) {
   await writeFile(`${OUT}/hero${sfx}.svg`, hero(d, t, mode));
+  await writeFile(`${OUT}/journey${sfx}.svg`, journey(d, t, mode));
   await writeFile(`${OUT}/stack${sfx}.svg`, stack(d, t, mode));
   await writeFile(`${OUT}/growth${sfx}.svg`, growth(d, t, mode));
-  await writeFile(`${OUT}/headline${sfx}.svg`, headline(t, mode));
   await writeFile(`${OUT}/footer${sfx}.svg`, footer(t, mode));
+  for (const f of d.featured) {
+    await writeFile(`${OUT}/p-${f.p.repo.toLowerCase()}${sfx}.svg`, project(f.p, f.r, f.release, t, mode));
+  }
 }
-const cal = await contributions();
-if (cal) {
-  await writeFile(`${OUT}/heat.svg`, heat(cal, t, 'm'));
-  await writeFile(`${OUT}/heat-w.svg`, heat(cal, t, 'w'));
+for (const [file, label, glyph, primary] of [
+  ['btn-email', 'Email me', 'mail', true],
+  ['btn-telegram', 'Telegram', 'telegram', false],
+  ['btn-linkedin', 'LinkedIn', 'linkedin', false],
+  ['btn-hub', 'Portfolio', 'globe', false],
+  ['btn-hire', 'Start a project', 'brief', true],
+  ['btn-ask', 'Ask me anything', 'chat', false],
+]) await writeFile(`${OUT}/${file}.svg`, button(label, glyph, t, primary));
+
+if (d.cal) {
+  await writeFile(`${OUT}/heat.svg`, heat(d.cal, t, 'm'));
+  await writeFile(`${OUT}/heat-w.svg`, heat(d.cal, t, 'w'));
 } else {
   // A transient fetch failure must not wipe a heatmap that already works.
   try { await readFile(`${OUT}/heat.svg`, 'utf8'); console.warn('  ! keeping the existing heat.svg'); }
@@ -321,10 +301,11 @@ if (cal) {
 }
 
 let md = await readFile('README.md', 'utf8');
+md = replaceSection(md, 'PROOF', proofMd(d));
 md = replaceSection(md, 'PROJECTS', projectsMd(d));
-md = replaceSection(md, 'ACTIVITY', activityMd(d));
+md = replaceSection(md, 'SHIPPING', shippingMd(d));
 md = replaceSection(md, 'AMA', amaMd(d));
 md = replaceSection(md, 'UPDATED',
-  `<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>${t.date}, ${t.time}</b> Tehran time</sub>`);
+  `<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>${t.date}, ${t.time}</b> Tehran time</sub>`);
 await writeFile('README.md', md);
-console.log('✓ wrote hero, stack, growth, heat, headline, footer + README.md');
+console.log('✓ wrote cards, buttons + README.md');

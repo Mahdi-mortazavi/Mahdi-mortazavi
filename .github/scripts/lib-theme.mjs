@@ -1,8 +1,8 @@
 // Brand + time-aware theming (Tehran clock) for all generated SVGs.
 export const C = {
-  bg: '#0D1117', bg2: '#0F1420', panel: '#161B22',
-  txt: '#F5F5F7', muted: '#A1A1A6', dim: '#8A93A3',
-  stroke: 'rgba(255,255,255,.14)', accent: '#0A84FF',
+  bg: '#07090E', bg2: '#0B0F18', panel: '#141922',
+  txt: '#F5F5F7', muted: '#A9AEBA', dim: '#7F8898',
+  stroke: 'rgba(255,255,255,.14)', accent: '#0A84FF', green: '#30D158',
 };
 
 // Four moods, keyed to the hour in Tehran.
@@ -35,6 +35,8 @@ export const esc = s => String(s ?? '')
 
 export const nf = n => Intl.NumberFormat('en-US').format(n ?? 0);
 
+export const MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace";
+
 export const FONT = "system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif";
 
 // Shared <defs>: ambient light field, glass gradients, glow + grid pattern.
@@ -44,7 +46,7 @@ export function defs(mood) {
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="${C.bg}"/>
       <stop offset="55%" stop-color="${C.bg2}"/>
-      <stop offset="100%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#10151F"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="${mood.a}" stop-opacity=".55"/>

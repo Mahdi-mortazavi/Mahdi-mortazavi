@@ -1,6 +1,7 @@
 // Generated profile cards. Split out of generate.mjs so the rendering can be
 // exercised with fixtures without hitting the GitHub API.
-import { C, esc, FONT, defs, glass, nf } from './lib-theme.mjs';
+import { C, esc, FONT, MONO, defs, glass, nf } from './lib-theme.mjs';
+import { art, signal, GLYPH } from './lib-art.mjs';
 
 /* ────────────────────────────── SVG cards ──────────────────────────────
    Mobile first. GitHub renders a README in a ~355px column on a phone and
@@ -64,69 +65,210 @@ const card = (h, m, cw = W, aura = true) => `
   <rect width="${cw}" height="${h}" rx="22" fill="url(#grid)"/>
   <rect x="0" y="0" width="${cw}" height="3" fill="url(#hair)"/>`;
 
+const compact = n => n >= 10000 ? `${(n / 1000).toFixed(0)}k` : n >= 1000 ? `${(n / 1000).toFixed(1)}k` : nf(n);
+
+// A status pill with a breathing green light.
+function statusPill(x, y, label, size, open = true) {
+  const w = Math.round(textW(label, size) * 0.93 + 74), h = Math.round(size * 2.05);
+  const col = open ? C.green : C.dim;
+  return `<g>
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${h / 2}" fill="${col}" fill-opacity=".12" stroke="${col}" stroke-opacity=".45" stroke-width="1.4"/>
+    <circle cx="${x + 30}" cy="${y + h / 2}" r="7" fill="${col}"/>
+    ${open ? `<circle cx="${x + 30}" cy="${y + h / 2}" r="7" fill="none" stroke="${col}">
+      <animate attributeName="r" values="7;17;7" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".8;0;.8" dur="2.4s" repeatCount="indefinite"/>
+    </circle>` : ''}
+    <text x="${x + 52}" y="${y + h / 2 + size * 0.35}" font-family="${FONT}" font-size="${size}" font-weight="650" fill="${open ? '#D7FBE0' : C.muted}">${esc(label)}</text>
+  </g>`;
+}
+
+// One line at a time, cross-fading. SMIL keyTimes must span 0..1, so every
+// line carries the whole cycle and is transparent outside its own window.
+function rotator(lines, x, y, size, color) {
+  const N = lines.length, total = (N * 2.8).toFixed(1), fade = 0.03;
+  return lines.map((line, i) => {
+    const a = i / N, b = (i + 1) / N;
+    const kt = [0, a, Math.min(a + fade, b), Math.max(b - fade, a), b, 1].map(v => v.toFixed(4)).join(';');
+    return `<text x="${x}" y="${y}" font-family="${MONO}" font-size="${size}" font-weight="600" fill="${color}" opacity="0"><tspan fill="${C.dim}">&gt; </tspan>${esc(line)}
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="${kt}" dur="${total}s" repeatCount="indefinite"/></text>`;
+  }).join('');
+}
+
 export function hero(d, t, mode = 'm') {
   const { W, PAD, IW, T, wide } = geo(mode);
-  const m = t.mood;
-  const CX = wide ? 1400 : 790, CY = wide ? 168 : 144;
-  const RING = wide ? [92, 67, 42] : [62, 45, 28];
-  const CORE = wide ? 34 : 23;
-  const orbitRing = (r, o) =>
-    `<ellipse cx="${CX}" cy="${CY}" rx="${r}" ry="${(r * 0.62).toFixed(1)}" fill="none" stroke="#FFFFFF" stroke-opacity="${o}" stroke-width="1.6"/>`;
-  const body = (rx, size, dur, delay, op) => {
-    const ry = (rx * 0.62).toFixed(1);
-    const path = `M${CX - rx},${CY} a${rx},${ry} 0 1,0 ${rx * 2},0 a${rx},${ry} 0 1,0 ${-rx * 2},0`;
-    return `<g><circle r="${size}" fill="#FFFFFF" fill-opacity="${op}"/>
-      <animateMotion dur="${dur}s" repeatCount="indefinite" begin="-${delay}s" path="${path}"/></g>`;
-  };
-  const orbit = `<g>
-    ${orbitRing(RING[0], .13)}${orbitRing(RING[1], .2)}${orbitRing(RING[2], .3)}
-    <circle cx="${CX}" cy="${CY}" r="${CORE}" fill="url(#mark)" filter="url(#coreglow)"/>
-    <circle cx="${CX}" cy="${CY}" r="${CORE - 4}" fill="url(#mark)"/>
-    <circle cx="${CX}" cy="${CY}" r="${CORE - 4}" fill="none" stroke="#FFFFFF" stroke-opacity=".5"/>
-    <circle cx="${CX}" cy="${CY}" r="${CORE - 4}" fill="none" stroke="#FFFFFF" stroke-opacity=".35">
-      <animate attributeName="r" values="${CORE - 4};${CORE + 10};${CORE - 4}" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-opacity" values=".35;0;.35" dur="4s" repeatCount="indefinite"/>
-    </circle>
-    ${body(RING[0], wide ? 8 : 5.9, 18, 0, 1)}${body(RING[1], wide ? 6.8 : 5.0, 12, 4.6, .85)}${body(RING[2], wide ? 5.4 : 4.1, 8, 5.8, .7)}
-  </g>`;
+  const m = t.mood, P = d.cfg;
 
-  // Vertical cursor, so a long bio never collides with what follows.
-  let y = wide ? 78 : 70;
-  const greet = `${m.icon} ${m.en} · Tehran ${t.time}`;
-  let s = `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${T.small}" font-weight="700" letter-spacing=".6" fill="${m.a}">${esc(greet)}</text>`;
-  y += wide ? 112 : 92;
-  s += `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${T.name}" font-weight="800" letter-spacing="-1.6" fill="${C.txt}">Mahdi Mortazavi</text>`;
-  y += wide ? 62 : 56;
-  s += `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${wide ? 46 : 39}" font-weight="700" fill="${C.muted}">مهدی مرتضوی</text>`;
-  y += wide ? 56 : 48;
-  for (const ln of wrap(`${d.role} · Iran`, T.small, IW, 2)) {
-    s += `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${T.small}" font-weight="500" fill="${C.dim}">${esc(ln)}</text>`;
-    y += wide ? 44 : 39;
+  // Signature mark, top right.
+  const mark = wide
+    ? `<g transform="translate(1086 96)">${signal(true)}</g>`
+    : `<g transform="translate(596 30) scale(.56)">${signal(false)}</g>`;
+
+  let s = statusPill(PAD, wide ? 52 : 46, wide ? P.status.long : P.status.short, wide ? 27 : 28, P.status.open);
+  if (wide) s += `<text x="${W - PAD}" y="90" text-anchor="end" font-family="${MONO}" font-size="${wide ? 22 : 23}" font-weight="600" letter-spacing="2.2" fill="${C.dim}">${esc(P.zone)}</text>`;
+
+  let y = wide ? 232 : 252;
+  s += `<text x="${PAD - 4}" y="${y}" font-family="${FONT}" font-size="${T.name}" font-weight="800" letter-spacing="${wide ? -3.2 : -2}" fill="${C.txt}">${esc(P.name)}</text>`;
+  y += wide ? 66 : 58;
+  s += `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${wide ? 44 : 38}" font-weight="700" fill="${C.muted}">${esc(P.nameFa)}</text>`;
+  y += wide ? 62 : 58;
+  for (const ln of wrap(P.tagline, wide ? 36 : 33, wide ? 1010 : IW, 2)) {
+    s += `<text x="${PAD}" y="${y}" font-family="${FONT}" font-size="${wide ? 36 : 33}" font-weight="600" fill="${C.txt}" fill-opacity=".92">${esc(ln)}</text>`;
+    y += wide ? 46 : 43;
   }
+  y += wide ? 12 : 10;
+  s += rotator(P.focus, PAD, y, wide ? 27 : 26, m.b);
 
-  // Stats as a 2x2 grid — four pills in one row cannot hold a readable label
-  // at phone scale.
-  // Four pills in one row need ~350px each; that only fits on the wide canvas.
-  const COLS = wide ? 4 : 2, GAP = wide ? 24 : 36;
-  const PW = (IW - GAP * (COLS - 1)) / COLS, PH = wide ? 92 : 85;
-  const pill = (i, label, value) => {
+  // Proof, not adjectives: six live numbers.
+  const total = d.cal?.totalContributions;
+  const tiles = [
+    ['Stars', nf(d.stars)],
+    d.downloads ? ['Downloads', `${compact(d.downloads)}+`] : ['Public repos', nf(d.repos.length)],
+    d.releases ? ['Releases shipped', nf(d.releases)] : ['Projects', nf(P.projects.length)],
+    total ? ['Contributions / yr', nf(total)] : ['Public repos', nf(d.repos.length)],
+    ['Followers', nf(d.user?.followers)],
+    ['Forks', nf(d.forks)],
+  ];
+  y += wide ? 40 : 38;
+  const COLS = wide ? 6 : 2, GAP = wide ? 16 : 20;
+  const PW = (IW - GAP * (COLS - 1)) / COLS, PH = wide ? 112 : 96;
+  tiles.forEach(([label, value], i) => {
     const col = i % COLS, row = (i / COLS) | 0;
-    const x = PAD + col * (PW + GAP), py = y + 10 + row * (PH + 20);
-    return `${glass(x, py, PW, PH, 22)}
-      <text x="${x + 26}" y="${py + PH / 2 + 12}" font-family="${FONT}" font-size="${T.label}" font-weight="600" fill="${C.muted}">${esc(label)}</text>
-      <text x="${x + PW - 26}" y="${py + PH / 2 + 12}" text-anchor="end" font-family="${FONT}" font-size="${wide ? 40 : 36}" font-weight="800" fill="${C.txt}">${esc(value)}</text>`;
-  };
-  [['★ Stars', nf(d.stars)], ['Followers', nf(d.user?.followers)],
-   ['Repos', nf(d.repos.length)], ['Forks', nf(d.forks)]].forEach((p, i) => { s += pill(i, p[0], p[1]); });
-  y += 10 + PH * Math.ceil(4 / COLS) + 20 * (Math.ceil(4 / COLS) - 1);
+    const x = PAD + col * (PW + GAP), py = y + row * (PH + GAP);
+    s += wide
+      ? `${glass(x, py, PW, PH, 22)}
+        <text x="${x + 24}" y="${py + 54}" font-family="${FONT}" font-size="44" font-weight="800" letter-spacing="-1" fill="${C.txt}">${esc(value)}</text>
+        <text x="${x + 24}" y="${py + 90}" font-family="${FONT}" font-size="22" font-weight="600" fill="${C.muted}">${esc(label)}</text>`
+      : `${glass(x, py, PW, PH, 22)}
+        <text x="${x + 26}" y="${py + PH / 2 + 11}" font-family="${FONT}" font-size="${T.micro}" font-weight="600" fill="${C.muted}">${esc(label)}</text>
+        <text x="${x + PW - 26}" y="${py + PH / 2 + 13}" text-anchor="end" font-family="${FONT}" font-size="38" font-weight="800" fill="${C.txt}">${esc(value)}</text>`;
+  });
+  const rows = Math.ceil(tiles.length / COLS);
+  y += rows * PH + (rows - 1) * GAP;
 
-  const H = y + 66;
-  s += `<text x="${W - PAD}" y="${y + 38}" text-anchor="end" font-family="${FONT}" font-size="${T.micro}" font-weight="500" fill="${C.dim}">auto-updated ${esc(t.date)} · Tehran</text>`;
+  const H = y + (wide ? 62 : 64);
+  s += `<text x="${PAD}" y="${H - 24}" font-family="${MONO}" font-size="${wide ? 20 : 22}" font-weight="500" fill="${C.dim}">live from the GitHub API · rebuilt ${esc(t.date)}</text>`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
-  aria-label="Mahdi Mortazavi — live profile banner">
-  <title>Mahdi Mortazavi · مهدی مرتضوی — Full-Stack Developer, Product Builder and Problem Solver</title>
-  ${defs(m)}${card(H, m, W)}${orbit}${s}
+  aria-label="${esc(P.name)} — ${esc(P.tagline)}">
+  <title>${esc(P.name)} · ${esc(P.nameFa)} — ${esc(P.tagline)}</title>
+  ${defs(m)}${card(H, m, W)}${mark}${s}
+</svg>`;
+}
+
+/**
+ * Project card. A short banner on desktop (art · copy · numbers), a portrait
+ * card on a phone (art and numbers on top, copy underneath).
+ */
+export function project(p, r, release, t, mode = 'm') {
+  const { W, PAD, IW, T, wide } = geo(mode);
+  const m = t.mood;
+  const stars = r?.stargazers_count ?? 0, lang = r?.language ?? '';
+  // A star count is proof only once it is one. Young projects lead with their
+  // version and language instead of a lonely zero.
+  const facts = [release, lang].filter(Boolean);
+  const stat = (x, y, anchor) => stars >= 5 ? `
+    <text x="${x}" y="${y}" text-anchor="${anchor}" font-family="${FONT}" font-size="${wide ? 58 : 60}" font-weight="800" letter-spacing="-1.5" fill="${C.txt}"><tspan fill="${m.b}" font-size="${wide ? 40 : 42}">★ </tspan>${nf(stars)}</text>
+    ${facts.map((f, i) => `<text x="${x}" y="${y + 50 + i * 42}" text-anchor="${anchor}" font-family="${i === 0 && release ? MONO : FONT}" font-size="26" font-weight="600" fill="${i ? C.dim : C.muted}">${esc(f)}</text>`).join('')}` : `
+    <text x="${x}" y="${y + 6}" text-anchor="${anchor}" font-family="${FONT}" font-size="40" font-weight="800" letter-spacing="-.6" fill="${C.txt}">${esc(lang || 'Open source')}</text>
+    <text x="${x}" y="${y + 52}" text-anchor="${anchor}" font-family="${MONO}" font-size="24" font-weight="700" letter-spacing="2" fill="${m.b}">${esc(release ?? 'NEW')}</text>`;
+  const arrow = (x, y) => `<g transform="translate(${x} ${y})" stroke="${C.muted}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M0 22 L22 0 M4 0 H22 V18"/></g>`;
+
+  let body, H;
+  if (wide) {
+    const lines = wrap(p.tagline, 30, 800, 3);
+    H = 320;
+    const x0 = PAD + 330 + 46, base = lines.length === 3 ? 0 : 20;
+    body = `${glass(PAD, 44, 330, 232, 28)}
+      <g transform="translate(${PAD + 15} 60)">${art(p.art)}</g>
+      <text x="${x0}" y="${92 + base}" font-family="${MONO}" font-size="23" font-weight="700" letter-spacing="2.6" fill="${m.b}">${esc(p.kicker)}</text>
+      <text x="${x0 - 3}" y="${162 + base}" font-family="${FONT}" font-size="66" font-weight="800" letter-spacing="-2" fill="${C.txt}">${esc(p.name)}</text>
+      ${lines.map((ln, i) => `<text x="${x0}" y="${212 + base + i * 40}" font-family="${FONT}" font-size="30" font-weight="500" fill="${C.muted}">${esc(ln)}</text>`).join('')}
+      ${arrow(W - PAD - 24, 52)}
+      ${stat(W - PAD, 168, 'end')}`;
+  } else {
+    const lines = wrap(p.tagline, 32, IW, 4);
+    body = `${glass(PAD, 44, IW, 240, 30)}
+      <g transform="translate(${PAD + 34} 64)">${art(p.art)}</g>
+      ${arrow(W - PAD - 54, 70)}
+      ${stat(W - PAD - 34, 168, 'end')}
+      <text x="${PAD}" y="344" font-family="${MONO}" font-size="24" font-weight="700" letter-spacing="2.4" fill="${m.b}">${esc(p.kicker)}</text>
+      <text x="${PAD - 3}" y="414" font-family="${FONT}" font-size="64" font-weight="800" letter-spacing="-2" fill="${C.txt}">${esc(p.name)}</text>
+      ${lines.map((ln, i) => `<text x="${PAD}" y="${468 + i * 44}" font-family="${FONT}" font-size="32" font-weight="500" fill="${C.muted}">${esc(ln)}</text>`).join('')}`;
+    H = 468 + (lines.length - 1) * 44 + 48;
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
+  aria-label="${esc(p.name)} — ${esc(p.tagline)}">
+  <title>${esc(p.name)} — ${esc(p.tagline)}</title>
+  ${defs(m)}${card(H, m, W, false)}
+  <g filter="url(#soft)" opacity=".55"><ellipse cx="${PAD + 160}" cy="160" rx="230" ry="150" fill="url(#aura1)"/></g>
+  ${body}
+</svg>`;
+}
+
+/** Career timeline. The line draws itself; the current node keeps pulsing. */
+export function journey(d, t, mode = 'm') {
+  const { W, PAD, IW, T, wide } = geo(mode);
+  const m = t.mood;
+  // {stars:repo} is that repository's own live star count.
+  const fill = s => String(s).replace(/\{stars:([\w.-]+)\}/g, (_, name) =>
+    nf(d.featured.find(f => f.r.name.toLowerCase() === name.toLowerCase())?.r.stargazers_count ?? 0));
+  const J = d.cfg.journey, N = J.length;
+  const node = (x, y, last) => `<circle cx="${x}" cy="${y}" r="10" fill="${last ? C.green : C.bg}" stroke="${last ? C.green : m.b}" stroke-width="3.2"/>
+    ${last ? `<circle cx="${x}" cy="${y}" r="10" fill="none" stroke="${C.green}">
+      <animate attributeName="r" values="10;26;10" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".8;0;.8" dur="2.4s" repeatCount="indefinite"/></circle>` : ''}`;
+  let s = `<text x="${PAD}" y="66" font-family="${MONO}" font-size="${wide ? 23 : 25}" font-weight="700" letter-spacing="2.6" fill="${m.b}">JOURNEY</text>`;
+  let H;
+  if (wide) {
+    const LY = 150, CW = IW / N;
+    s += `<path d="M${PAD + 10} ${LY} H${W - PAD}" stroke="${m.b}" stroke-opacity=".55" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="${IW}" stroke-dashoffset="${IW}">
+      <animate attributeName="stroke-dashoffset" values="${IW};0" keyTimes="0;1" dur="2.4s" fill="freeze" calcMode="spline" keySplines=".3 0 .2 1"/></path>`;
+    J.forEach((e, i) => {
+      const x = PAD + 10 + i * CW;
+      s += node(x, LY, i === N - 1);
+      s += `<text x="${x - 10}" y="${LY - 30}" font-family="${MONO}" font-size="26" font-weight="700" fill="${i === N - 1 ? C.green : C.muted}">${esc(e.when)}</text>
+        <text x="${x - 10}" y="${LY + 62}" font-family="${FONT}" font-size="36" font-weight="800" letter-spacing="-.6" fill="${C.txt}">${esc(e.title)}</text>
+        <text x="${x - 10}" y="${LY + 102}" font-family="${FONT}" font-size="26" font-weight="650" fill="${m.b}">${esc(fill(e.role))}</text>
+        ${wrap(e.text, 24, CW - 30, 4).map((ln, k) => `<text x="${x - 10}" y="${LY + 142 + k * 33}" font-family="${FONT}" font-size="24" font-weight="500" fill="${C.dim}">${esc(ln)}</text>`).join('')}`;
+    });
+    H = LY + 142 + 3 * 33 + 40;
+  } else {
+    const LX = PAD + 12, Y0 = 130, STEP = 208;
+    const LEN = (N - 1) * STEP;
+    s += `<path d="M${LX} ${Y0} V${Y0 + LEN}" stroke="${m.b}" stroke-opacity=".55" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="${LEN}" stroke-dashoffset="${LEN}">
+      <animate attributeName="stroke-dashoffset" values="${LEN};0" keyTimes="0;1" dur="2.4s" fill="freeze" calcMode="spline" keySplines=".3 0 .2 1"/></path>`;
+    J.forEach((e, i) => {
+      const y = Y0 + i * STEP, x = LX + 44;
+      s += node(LX, y, i === N - 1);
+      s += `<text x="${x}" y="${y + 9}" font-family="${MONO}" font-size="27" font-weight="700" fill="${i === N - 1 ? C.green : C.muted}">${esc(e.when)}</text>
+        <text x="${x}" y="${y + 58}" font-family="${FONT}" font-size="40" font-weight="800" letter-spacing="-.6" fill="${C.txt}">${esc(e.title)}<tspan dx="16" font-size="28" font-weight="650" letter-spacing="0" fill="${m.b}">${esc(fill(e.role))}</tspan></text>
+        ${wrap(e.text, 28, IW - 60, 2).map((ln, k) => `<text x="${x}" y="${y + 100 + k * 38}" font-family="${FONT}" font-size="28" font-weight="500" fill="${C.dim}">${esc(ln)}</text>`).join('')}`;
+    });
+    H = Y0 + LEN + 100 + 38 + 44;
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
+  aria-label="Career timeline of ${esc(d.cfg.name)}">
+  <title>${esc(J.map(e => `${e.when}: ${e.title} — ${fill(e.role)}`).join(' · '))}</title>
+  ${defs(m)}${card(H, m, W)}${s}
+</svg>`;
+}
+
+/** Contact button. Drawn at 2x and shown at height 44 in the README. */
+export function button(label, glyph, t, primary = false) {
+  const m = t.mood, H = 92, size = 31;
+  const W = Math.round(textW(label, size) * 0.95 + 118);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">
+  <title>${esc(label)}</title>
+  <defs>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${m.a}"/><stop offset="100%" stop-color="${m.b}"/></linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF" stop-opacity=".22"/><stop offset="60%" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect x="2" y="2" width="${W - 4}" height="${H - 4}" rx="${(H - 4) / 2}" fill="${primary ? 'url(#mark)' : '#141922'}"/>
+  <rect x="2" y="2" width="${W - 4}" height="${H - 4}" rx="${(H - 4) / 2}" fill="url(#sheen)"/>
+  <rect x="2" y="2" width="${W - 4}" height="${H - 4}" rx="${(H - 4) / 2}" fill="none" stroke="#FFFFFF" stroke-opacity="${primary ? '.4' : '.22'}" stroke-width="1.6"/>
+  <g transform="translate(36 30)">${GLYPH[glyph] ?? ''}</g>
+  <text x="84" y="${H / 2 + 11}" font-family="${FONT}" font-size="${size}" font-weight="700" fill="#FFFFFF">${esc(label)}</text>
 </svg>`;
 }
 
@@ -174,7 +316,7 @@ export function stack(d, t, mode = 'm') {
   aria-label="Language distribution across Mahdi Mortazavi's public repositories">
   <title>Real language distribution across all public repositories</title>
   ${defs(m)}${card(H, m, W)}
-  <text x="${PAD}" y="62" font-family="${FONT}" font-size="${T.kicker}" font-weight="700" letter-spacing="2.5" fill="${m.a}">LANGUAGES · جعبه‌ابزار</text>
+  <text x="${PAD}" y="62" font-family="${MONO}" font-size="${T.kicker - 6}" font-weight="700" letter-spacing="2.6" fill="${m.b}">STACK</text>
   <clipPath id="barclip"><rect x="${PAD}" y="${BY}" width="${IW}" height="${BH}" rx="20"/></clipPath>
   <g clip-path="url(#barclip)">${bar}</g>
   <rect x="${PAD}" y="${BY}" width="${IW}" height="${BH}" rx="20" fill="none" stroke="${C.stroke}"/>
@@ -200,7 +342,7 @@ export function heat(cal, t, mode = 'm') {
   aria-label="Contribution heatmap for Mahdi Mortazavi — waiting for the first sync">
   <title>Contribution heatmap — syncing</title>
   ${defs(m)}${card(H, m, W)}
-  <text x="${PAD}" y="62" font-family="${FONT}" font-size="${T.kicker}" font-weight="700" letter-spacing="2.5" fill="${m.a}">CONTRIBUTIONS · فعالیت</text>
+  <text x="${PAD}" y="62" font-family="${MONO}" font-size="${T.kicker - 6}" font-weight="700" letter-spacing="2.6" fill="${m.b}">CONTRIBUTIONS</text>
   <text x="${PAD}" y="84" font-family="${FONT}" font-size="${T.small}" fill="${C.dim}">The heatmap fills in on the next scheduled sync.</text>
   ${Array.from({ length: 53 * 7 }, (_, i) => {
     const c = (i / 7) | 0, r = i % 7;
@@ -272,7 +414,7 @@ export function heat(cal, t, mode = 'm') {
   aria-label="${total ? `Mahdi Mortazavi made ${total} contributions in the last year` : `A year of GitHub contributions by Mahdi Mortazavi`}">
   <title>${total ? `${total} contributions in the last year` : `A year of contributions`}</title>
   ${defs(m)}${card(H, m, W)}
-  <text x="${PAD}" y="48" font-family="${FONT}" font-size="${T.kicker}" font-weight="700" letter-spacing="2" fill="${m.a}">CONTRIBUTIONS · فعالیت</text>
+  <text x="${PAD}" y="48" font-family="${MONO}" font-size="${T.kicker - 6}" font-weight="700" letter-spacing="2.6" fill="${m.b}">CONTRIBUTIONS</text>
   <text x="${PAD}" y="108" font-family="${FONT}" font-size="${T.body}" font-weight="700" fill="${C.txt}">${totalLine}</text>
   <text x="${W - PAD}" y="108" text-anchor="end" font-family="${FONT}" font-size="${T.small}" font-weight="700" fill="${m.a}">${current > 0 ? `🔥 ${current}-day streak` : `longest streak ${best}d`}</text>
   ${months}${cells}
@@ -298,7 +440,7 @@ export function growth(d, t, mode = 'm') {
   const series = ev.length >= 2 ? null : hist.map(h => ({ t: new Date(h.d).getTime(), v: h.stars }));
 
   const head = (sub, raw) => `
-  <text x="${PAD}" y="62" font-family="${FONT}" font-size="${T.kicker}" font-weight="700" letter-spacing="2.5" fill="${m.a}">GROWTH · رشد</text>
+  <text x="${PAD}" y="62" font-family="${MONO}" font-size="${T.kicker - 6}" font-weight="700" letter-spacing="2.6" fill="${m.b}">GROWTH</text>
   <text x="${PAD}" y="162" font-family="${FONT}" font-size="${T.huge}" font-weight="800" letter-spacing="-2" fill="${C.txt}">${d.stars}<tspan dx="18" font-size="${T.body}" font-weight="600" letter-spacing="0" fill="${C.muted}">total stars</tspan></text>
   ${(raw ? wrap(raw, T.micro, IW, 2) : [sub]).map((ln, i) =>
     `<text x="${PAD}" y="${203 + i * 35}" font-family="${FONT}" font-size="${T.micro}" font-weight="500" fill="${C.dim}">${ln}</text>`).join('')}`;
@@ -376,7 +518,7 @@ export function growth(d, t, mode = 'm') {
   <path d="${area}" fill="url(#gfill)"/>
   <path d="${line}" fill="none" stroke="${m.a}" stroke-width="3.8" stroke-linejoin="round" stroke-linecap="round"
     stroke-dasharray="4000" stroke-dashoffset="4000">
-    <animate attributeName="stroke-dashoffset" from="4000" to="0" dur="2.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+    <animate attributeName="stroke-dashoffset" values="4000;0" keyTimes="0;1" dur="2.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
   </path>
   <circle cx="${end.x.toFixed(1)}" cy="${Y(end.y).toFixed(1)}" r="8" fill="#FFFFFF"/>
   <circle cx="${end.x.toFixed(1)}" cy="${Y(end.y).toFixed(1)}" r="8" fill="none" stroke="#FFFFFF" stroke-opacity=".7">
@@ -384,47 +526,6 @@ export function growth(d, t, mode = 'm') {
     <animate attributeName="stroke-opacity" values=".7;0;.7" dur="2.6s" repeatCount="indefinite"/>
   </circle>
   ${ticks}${axis}
-</svg>`;
-}
-
-/**
- * Animated headline strip. Replaces readme-typing-svg.demolab.com so the
- * wordmark line is on-brand (same glass, same Tehran-time accent) and cannot
- * be taken down by a third party.
- */
-export function headline(t, mode = 'm') {
-  const { W, T } = geo(mode);
-  const m = t.mood, H = mode === 'w' ? 112 : 118;
-  const LINES = [
-    'Full-Stack Developer × Product Builder',
-    '🧩  First principles thinking',
-    '💡  Designing solutions',
-    '🚀  Building real products',
-    'Open-source builder from Iran',
-  ];
-  const N = LINES.length, total = (N * 2.6).toFixed(1), fade = 0.022;
-  // One full-cycle timeline per line. SMIL requires keyTimes to span 0..1, so
-  // each line carries the whole cycle and is simply transparent outside its
-  // own window — a sub-range timeline renders nothing at all.
-  const items = LINES.map((line, i) => {
-    const a = i / N, b = (i + 1) / N;
-    const kt = [0, a, Math.min(a + fade, b), Math.max(b - fade, a), b, 1]
-      .map(v => v.toFixed(4)).join(';');
-    return `<text x="${W / 2}" y="${H / 2 + 12}" text-anchor="middle" font-family="${FONT}"
-      font-size="${mode === 'w' ? 38 : 34}" font-weight="700" fill="${C.txt}" opacity="0">${esc(line)}
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="${kt}"
-        dur="${total}s" repeatCount="indefinite"/>
-    </text>`;
-  }).join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
-  aria-label="${esc(LINES.join(' · '))}">
-  <title>${esc(LINES.join(' · '))}</title>
-  ${defs(m)}
-  <rect width="${W}" height="${H}" rx="22" fill="url(#bg)"/>
-  <g filter="url(#soft)" opacity=".7"><ellipse cx="${W / 2}" cy="${H / 2}" rx="300" ry="80" fill="url(#aura1)"/></g>
-  <rect width="${W}" height="${H}" rx="22" fill="url(#grid)"/>
-  <rect x="0" y="0" width="${W}" height="3" fill="url(#hair)"/>
-  ${items}
 </svg>`;
 }
 

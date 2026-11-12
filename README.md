@@ -1,547 +1,265 @@
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!--  Mahdi Mortazavi · مهدی مرتضوی — GitHub Profile README                   -->
+<!--  Mahdi Mortazavi · مهدی مرتضوی — GitHub profile                          -->
 <!--                                                                         -->
-<!--  ⚠️  PARTS OF THIS FILE ARE GENERATED.                                   -->
-<!--  Everything between the LIVE:X marker pairs is rewritten              -->
-<!--  by .github/workflows/live-profile.yml. Edit the generator               -->
-<!--  (.github/scripts/generate.mjs), not the generated text.                 -->
+<!--  PARTS OF THIS FILE ARE GENERATED. Everything between LIVE:X markers    -->
+<!--  is rewritten by .github/workflows/live-profile.yml.                    -->
 <!--                                                                         -->
-<!--  DESIGN NOTES:                                                          -->
-<!--  • Liquid Glass / Apple aesthetic, one accent (#0A84FF).                -->
-<!--  • Contact sits ABOVE the fold — reaching me should take one tap.       -->
-<!--  • Long sections use disclosure blocks so mobile stays short.          -->
-<!--  • SEO: real crawlable text with the name in EN + FA. Images are NOT     -->
-<!--    crawled — keep the plain-text headings & paragraphs.                  -->
-<!--  • Cards are SELF-HOSTED animated SVGs; no third-party card service.     -->
-<!--  • MOBILE FIRST: GitHub renders this in a ~355px column on a phone and    -->
-<!--    the cards are width:100%, so the SVG canvas is 700 wide with a         -->
-<!--    minimum type size of 21. Never widen the canvas without re-checking.   -->
+<!--  • What the page SAYS (positioning, availability, links, the project    -->
+<!--    list, the timeline) lives in .github/scripts/profile.config.mjs.     -->
+<!--  • How it LOOKS lives in lib-cards.mjs and lib-art.mjs.                 -->
+<!--  • Every card is a self-hosted animated SVG: no third-party service.    -->
+<!--  • Two canvases per card: 900 wide for phones, 1600 wide for desktop.   -->
+<!--  • Images are not crawled. The headings and paragraphs below are the    -->
+<!--    SEO surface, so keep the name in English and Persian as real text.   -->
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
 
-<div align="center">
-
-<!-- ── LIVE HERO: real stats, Tehran-time palette, animated orbit mark ── -->
 <a href="https://mahdi-mortazavi.github.io">
-  <picture>
-  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/hero.svg" />
-  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/hero-w.svg" width="100%" alt="Mahdi Mortazavi — Full-Stack Developer, Product Builder and Problem Solver" />
-</picture>
-</a>
-
-<a href="https://github.com/Mahdi-mortazavi">
-  <picture>
-  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/headline.svg" />
-  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/headline-w.svg" width="100%" alt="Full-Stack Developer and Product Builder — first principles thinking, designing solutions, building real products" />
-</picture>
-</a>
-
-<br/>
-
-<!-- ═══ CONTACT FIRST — one tap, no scrolling ═══ -->
-
-### 💬 Let's talk<br/><sub>یک پیام تا شروع همکاری</sub>
-
-<a href="https://t.me/Mahdi_mortazavi1"><img src="https://img.shields.io/badge/Message_me-Telegram-161B22?style=for-the-badge&logo=telegram&logoColor=2AABEE&labelColor=0D1117" alt="Message Mahdi Mortazavi on Telegram" /></a>
-&nbsp;
-<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://img.shields.io/badge/Email-Reach_out-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0D1117" alt="Email Mahdi Mortazavi" /></a>
-&nbsp;
-<a href="https://t.me/Startup_legend"><img src="https://img.shields.io/badge/Community-Startup_Legend-161B22?style=for-the-badge&logo=telegram&logoColor=30D158&labelColor=0D1117" alt="Join the Startup Legend community" /></a>
-
-<sub>🟢 <b>Available for collaborations</b> &nbsp;·&nbsp; <span dir="rtl">آماده‌ی همکاری، پروژه‌ی فریلنس و هم‌بنیان‌گذاری</span></sub>
-
-<a href="https://mahdi-mortazavi.github.io"><img src="https://img.shields.io/badge/Personal_hub-mahdi--mortazavi.github.io-161B22?style=for-the-badge&logo=github&logoColor=0A84FF&labelColor=0D1117" alt="Mahdi Mortazavi — Personal Hub" /></a>
-
-<a href="https://github.com/Mahdi-mortazavi?tab=followers"><img src="https://img.shields.io/github/followers/Mahdi-mortazavi?style=flat-square&logo=github&logoColor=white&label=Followers&labelColor=0D1117&color=161B22" alt="Followers" /></a>
-<img src="https://komarev.com/ghpvc/?username=Mahdi-mortazavi&label=Profile%20views&color=161B22&style=flat-square&labelColor=0D1117" alt="Profile views" />
-<a href="https://github.com/Mahdi-mortazavi?tab=repositories"><img src="https://img.shields.io/badge/Open_Source-Projects-161B22?style=flat-square&logo=git&logoColor=0A84FF&labelColor=0D1117" alt="Open source projects" /></a>
-
-</div>
-
-<br/>
-
-<!-- ═══════════ CRAWLABLE INTRO — the SEO heart. Name in EN + FA. ═══════════ -->
-
-# 👋 Mahdi Mortazavi<br/>مهدی مرتضوی
-
-**Full-Stack Developer × Product Builder × Problem Solver** — based in Iran 🇮🇷
-
-I'm **Mahdi Mortazavi** (مهدی مرتضوی). My process is simple and I run it on everything:
-**🧩 first-principles thinking → 💡 designing solutions → 🚀 building real products.**
-I take hard, messy problems, break them down to fundamentals, and ship the answer as something
-people actually use. I build across the stack with **C#, Dart & Flutter, Rust, TypeScript,
-JavaScript and Python** — and most of it is **open source**.
-
-That turns into software you can actually download and run.
-**[relay](https://github.com/Mahdi-mortazavi/relay)** shares your phone's internet with your PC —
-Android to Windows **reverse tethering** over an encrypted **WireGuard** tunnel, with no root, no
-server and no account.
-**[purify](https://github.com/Mahdi-mortazavi/purify)** is a fast, private, reversible
-**Windows disk cleaner** written in **Rust** and **Tauri**.
-**[Flow](https://github.com/Mahdi-mortazavi/flow)** is an offline **focus and habit tracker** for
-**ADHD** brains, built in **Flutter**.
-**[sooda](https://github.com/Mahdi-mortazavi/sooda)** is an **offline-first PWA** that works out
-**profit, selling price and discount** for small shops.
-**[Nava](https://github.com/Mahdi-mortazavi/app)** is a minimal productivity app in the spirit of
-Apple's industrial design. Every one of them is free, bilingual (English / فارسی) and open source.
-
-<p dir="rtl" align="right">
-<b>سلام، من مهدی مرتضوی هستم</b> — توسعه‌دهنده‌ی فول‌استک، سازنده‌ی محصول و مسئله‌محور از ایران.
-روشِ کارم ساده است: <b>تفکر بر پایه‌ی اصول ← طراحی راه‌حل ← ساختِ محصول واقعی</b>.
-مسئله‌های سخت را تا مبانی پایه تجزیه می‌کنم و پاسخ را به محصولی تبدیل می‌کنم که واقعاً استفاده می‌شود.
-بیشتر کارهایم متن‌باز (اوپن‌سورس) است.
-</p>
-
-<p dir="rtl" align="right">
-حاصلِ این کار، نرم‌افزارهایی است که می‌توانید همین حالا دانلود کنید:
-<b><a href="https://github.com/Mahdi-mortazavi/relay">ریلی</a></b> برای
-<b>اشتراک اینترنت گوشی اندروید با کامپیوتر ویندوز</b> از راه تونل رمزنگاری‌شده‌ی وایرگارد — بدون روت،
-بدون سرور و بدون حساب کاربری؛
-<b><a href="https://github.com/Mahdi-mortazavi/purify">پیوریفای</a></b> برای
-<b>پاک‌سازی فایل‌های اضافی و خالی کردن فضای دیسک ویندوز</b> با زبان راست، سریع و برگشت‌پذیر؛
-<b><a href="https://github.com/Mahdi-mortazavi/flow">تک‌نقطه</a></b>،
-<b>اپلیکیشن تمرکز و ساخت عادت</b> برای ذهن‌های بیش‌فعال، کاملاً آفلاین؛
-<b><a href="https://github.com/Mahdi-mortazavi/sooda">سودا</a></b>،
-<b>ماشین‌حساب سود، قیمت فروش و تخفیف</b> برای کسب‌وکارهای کوچک؛ و
-<b><a href="https://github.com/Mahdi-mortazavi/app">نوا</a></b>،
-اپ بهره‌وری مینیمال با الهام از طراحی اپل.
-همه رایگان، دوزبانه (فارسی / English) و متن‌باز هستند.
-</p>
-
-<br/>
-
-<div align="center">
-
-## 📈 Growth<br/><sub>رشد</sub>
-
-<sub>Real star history across every repository — redrawn automatically.</sub>
-
 <picture>
-  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/growth.svg" />
-  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/growth-w.svg" width="100%" alt="Cumulative GitHub star growth across Mahdi Mortazavi's open-source repositories" />
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/hero.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/hero-w.svg" width="100%" alt="Mahdi Mortazavi — CTO and product engineer. From first principles to shipped products." />
 </picture>
+</a>
 
-</div>
+<p align="center">
+<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-email.svg" height="44" alt="Email Mahdi Mortazavi" /></a>
+<a href="https://t.me/Mahdi_mortazavi1"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-telegram.svg" height="44" alt="Message Mahdi Mortazavi on Telegram" /></a>
+<a href="https://www.linkedin.com/in/mahdimortazavidev"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-linkedin.svg" height="44" alt="Mahdi Mortazavi on LinkedIn" /></a>
+<a href="https://mahdi-mortazavi.github.io"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-hub.svg" height="44" alt="Mahdi Mortazavi — portfolio" /></a>
+</p>
+
+<p align="center">
+<a href="#selected-work"><b>Work</b></a> &nbsp;·&nbsp;
+<a href="#experience"><b>Experience</b></a> &nbsp;·&nbsp;
+<a href="#stack"><b>Stack</b></a> &nbsp;·&nbsp;
+<a href="#work-with-me"><b>Hire me</b></a> &nbsp;·&nbsp;
+<a href="#فارسی"><b>فارسی</b></a>
+</p>
+
+# Mahdi Mortazavi · مهدی مرتضوی
+
+**CTO and product engineer. I take a messy problem, reduce it to first principles, and ship the answer as software people actually use.**
+
+I'm **Mahdi Mortazavi** (مهدی مرتضوی), a full-stack developer and product builder from Iran.
+I lead engineering and product at **[Senagh](https://senagh.ir)**, an AI-agent assistant for real-estate
+agents, and I'm co-founder and CTO of **Zista Health**, an AI-powered remote patient monitoring platform.
+On the side I build open-source tools across mobile, desktop, web and the edge, and I finish them:
+versioned releases, installers, documentation, two languages.
+
+<!-- LIVE:PROOF -->
+<sub>**379** stars &nbsp;·&nbsp; **30** forks &nbsp;·&nbsp; **2,938+** downloads &nbsp;·&nbsp; **1,651** contributions in the last year</sub>
+<!-- /LIVE:PROOF -->
+
+> **Open to** remote roles, contract and freelance product builds, and technical co-founder / CTO work.
+> **Timezone** UTC+3:30, with a full working day of overlap with Europe.
+> **Fastest reply** on [Telegram](https://t.me/Mahdi_mortazavi1) or by [email](mailto:mahdi.mortazavi.135@gmail.com).
+
+## Selected work
+
+Each card is a live product you can install today. Stars, versions and release dates are read from the GitHub API.
+
+<!-- LIVE:PROJECTS -->
+<a href="https://github.com/Mahdi-mortazavi/relay"><picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-relay.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-relay-w.svg" width="100%" alt="relay — Share your phone&apos;s internet with your PC over an encrypted WireGuard tunnel. No root, no server, no account." />
+</picture></a>
+
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 239 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
+
+<a href="https://github.com/Mahdi-mortazavi/angaros"><picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-angaros.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-angaros-w.svg" width="100%" alt="Angaros — Your phone, for your AI agents: SMS, OTP codes, contacts and call log for any MCP client. End-to-end encrypted, self-hosted." />
+</picture></a>
+
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/angaros">Angaros</a></b> &nbsp;·&nbsp; Python &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/angaros/">Try it ↗</a></sub></p>
+
+<a href="https://github.com/Mahdi-mortazavi/flow"><picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-flow.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-flow-w.svg" width="100%" alt="Flow — One decision a day. An offline-first focus and habit app grounded in behavioural science." />
+</picture></a>
+
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/flow">Flow</a></b> &nbsp;·&nbsp; Dart &nbsp;·&nbsp; ★ 76 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/flow/releases/latest"><code>v0.6.1</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/flow/">Try it ↗</a></sub></p>
+
+<a href="https://github.com/Mahdi-mortazavi/overrun"><picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-overrun.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-overrun-w.svg" width="100%" alt="Overrun — A browser arena shooter that installs like an app, plays offline and takes eight players online. Zero asset files." />
+</picture></a>
+
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/overrun">Overrun</a></b> &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; <a href="https://overrun.mahdi-mortazavi-135.workers.dev/landing">Try it ↗</a></sub></p>
+
+<details>
+<summary><b>3 more shipped projects</b> &nbsp;·&nbsp; <sub>Sooda · purify · Nava</sub></summary>
 
 <br/>
 
----
+<a href="https://github.com/Mahdi-mortazavi/sooda"><picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-sooda.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-sooda-w.svg" width="100%" alt="Sooda — Profit, price and discount calculator for small shops. Offline-first, bilingual, no backend." />
+</picture></a>
 
-<div align="center">
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/sooda">Sooda</a></b> &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; ★ 30 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/sooda/releases/latest"><code>v1.5.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/sooda/">Try it ↗</a></sub></p>
 
-## 🎯 How I Work<br/><sub>روشِ کار من</sub>
+<a href="https://github.com/Mahdi-mortazavi/purify"><picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-purify.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-purify-w.svg" width="100%" alt="purify — Clean a Windows disk with confidence: fast, private and reversible. Built with Rust and Tauri." />
+</picture></a>
 
-</div>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/purify">purify</a></b> &nbsp;·&nbsp; Rust &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/purify/releases/latest"><code>v0.1.4</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/purify/">Try it ↗</a></sub></p>
 
-<details open>
-<summary><b>The three steps I run on every problem</b> &nbsp;·&nbsp; <sub>سه گامی که روی هر مسئله اجرا می‌کنم</sub></summary>
+<a href="https://github.com/Mahdi-mortazavi/app"><picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-app.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-app-w.svg" width="100%" alt="Nava — The art of reduction: a minimal productivity app with squircle design, haptics and breathing motion." />
+</picture></a>
 
-<br/>
-
-> ### 🧩 First-Principles Thinking<br/><sub>تفکر بر پایه‌ی اصول</sub>
-> I break a problem down to fundamentals instead of copying assumptions — that's where the real answer hides.
-> <br/><span dir="rtl">مسئله را تا مبانی پایه تجزیه می‌کنم، نه اینکه فرض‌های دیگران را تکرار کنم؛ پاسخ واقعی همان‌جاست.</span>
-
-> ### 💡 Designing Solutions<br/><sub>طراحی راه‌حل</sub>
-> A solution has to be designed, not just coded — clear, fast, and obvious to the person using it.
-> <br/><span dir="rtl">راه‌حل باید طراحی شود، نه فقط کد زده شود — روشن، سریع و بدیهی برای کسی که استفاده می‌کند.</span>
-
-> ### 🚀 Building Real Products<br/><sub>ساختِ محصول واقعی</sub>
-> Nothing counts until it ships. I take it all the way to something people can download and use.
-> <br/><span dir="rtl">تا وقتی منتشر نشده، به حساب نمی‌آید. کار را تا محصولی که قابل دانلود و استفاده باشد می‌برم.</span>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/app">Nava</a></b> &nbsp;·&nbsp; Dart &nbsp;·&nbsp; ★ 26 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/app/releases/latest"><code>v3.1.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/nava/">Try it ↗</a></sub></p>
 
 </details>
 
-<br/>
+<!-- /LIVE:PROJECTS -->
 
----
+**What these show.**
+**[relay](https://github.com/Mahdi-mortazavi/relay)** is systems and networking work: Android to Windows reverse tethering over **WireGuard**, in Kotlin, C# and Go, with no root, no server and no account.
+**[Angaros](https://github.com/Mahdi-mortazavi/angaros)** is AI infrastructure: an end-to-end encrypted **MCP server** that gives AI agents safe access to a phone's SMS, OTP codes, contacts and call log.
+**[Flow](https://github.com/Mahdi-mortazavi/flow)** and **[Nava](https://github.com/Mahdi-mortazavi/app)** are product and interface design in **Flutter**.
+**[Overrun](https://github.com/Mahdi-mortazavi/overrun)** is realtime multiplayer netcode on **Cloudflare Workers** and Durable Objects.
+**[Sooda](https://github.com/Mahdi-mortazavi/sooda)** is an offline-first **TypeScript PWA**, and **[purify](https://github.com/Mahdi-mortazavi/purify)** is a native Windows utility in **Rust** and **Tauri**.
 
-<div align="center">
+## Experience
 
-## ⚡ Now Building<br/><sub>الان روی چه کار می‌کنم</sub>
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/journey.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/journey-w.svg" width="100%" alt="Career timeline: CTO and Head of Product at Senagh since 2023, open-source releases since 2025, co-founder and CTO of Zista Health" />
+</picture>
 
-<sub>Pulled live from my public activity — never hand-written.</sub>
+- **[Senagh](https://senagh.ir) — CTO & Head of Product** · 2023 to now<br/>
+  An AI-agent assistant for real-estate agents. I own the architecture, the agent design and the product direction, and I lead the build from backend to client.
+- **Zista Health — Co-founder & CTO**<br/>
+  AI-powered remote patient monitoring, from the wearable to the apps. I lead engineering and product.
+- **[Startup Legend](https://t.me/Startup_legend) — Founder**<br/>
+  A community for people building startups and products.
+- **Open source — author and maintainer**<br/>
+  Seven shipped projects in six languages, all free, all bilingual (English / فارسی).
 
-</div>
+### How I work
 
-<!-- LIVE:ACTIVITY -->
-- 🏷️ **[relay](https://github.com/Mahdi-mortazavi/relay)** · v2.12.0 <sub>· updated yesterday</sub>
-- 🏷️ **[Nava](https://github.com/Mahdi-mortazavi/app)** · v3.1.0 <sub>· updated 6d ago</sub>
-- 🏷️ **[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** · v0.6.1 <sub>· updated 6d ago</sub>
-<!-- /LIVE:ACTIVITY -->
+1. **First principles.** I break the problem down to what is actually true instead of copying the usual solution. That is where the 10x answer tends to hide.
+2. **Design the solution.** A solution is designed, not just coded: clear, fast, and obvious to the person using it.
+3. **Ship it.** Nothing counts until someone can install it. I take work all the way to a release.
 
-<br/>
-
----
-
-<div align="center">
-
-## 🛠️ Tech Stack<br/><sub>جعبه‌ابزار</sub>
-
-<sub>Computed from my <b>actual public repositories</b>, not hand-written.</sub>
+## Stack
 
 <picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/stack.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/stack-w.svg" width="100%" alt="Language distribution across Mahdi Mortazavi's public repositories" />
 </picture>
 
+<sub>Measured from the bytes in my public repositories, not typed by hand.</sub>
 
----
+| Area | What I use |
+| :-- | :-- |
+| **AI & agents** | LLM agents, MCP servers, tool design, Python, TypeScript |
+| **Mobile** | Flutter & Dart, Kotlin, Jetpack Compose |
+| **Desktop** | Rust, Tauri, C# / .NET, WinUI 3 |
+| **Web & edge** | TypeScript, React, Astro, Node.js, NestJS, Cloudflare Workers, Supabase |
+| **Product** | Problem framing, interface design, bilingual RTL products, release engineering |
 
-## 🚀 Open-Source Projects<br/><sub>پروژه‌های متن‌باز</sub>
+## Activity
 
-<sub>Ranked by stars, straight from the GitHub API — a new project appears here on its own.</sub>
-
-</div>
-
-<br/>
-
-<!-- LIVE:PROJECTS -->
-### 📡 [relay](https://github.com/Mahdi-mortazavi/relay)
-
-<a href="https://github.com/Mahdi-mortazavi/relay/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/relay?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="relay stars" /></a> `Kotlin`
-
-📱 Share your phone's internet with your PC — Android → Windows reverse tethering over an encrypted WireGuard tunnel. No root, no server, no account.
-<br/><span dir="rtl">ریلی — اشتراک آنیِ اینترنت بین اندروید و ویندوز</span>
-
-`android` `connection-sharing` `dotnet` `golang` &nbsp;·&nbsp; 🏷️ **v2.12.0**
-
-**[→ Repo](https://github.com/Mahdi-mortazavi/relay)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/relay/)** &nbsp;·&nbsp; <sub>updated yesterday</sub>
-
----
-
-### ◉ [Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)
-
-<a href="https://github.com/Mahdi-mortazavi/flow/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/flow?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="flow stars" /></a> `Dart`
-
-🪨 One decision a day. ⏱ Focus. 🌱 Habits. 🔒 100% offline.
-<br/><span dir="rtl">تک‌نقطه — تمرکز، عادت و کارِ عمیق، مبتنی بر علم رفتار</span>
-
-`adhd` `android` `behavioral-science` `bilingual` &nbsp;·&nbsp; 🏷️ **v0.6.1**
-
-**[→ Repo](https://github.com/Mahdi-mortazavi/flow)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/flow/)** &nbsp;·&nbsp; <sub>updated 6d ago</sub>
-
----
-
-### 💎 [sooda](https://github.com/Mahdi-mortazavi/sooda)
-
-<a href="https://github.com/Mahdi-mortazavi/sooda/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/sooda?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="sooda stars" /></a> `TypeScript`
-
-💎 Sooda — Liquid-glass profit, price &amp; discount calculator. Offline-first PWA, bilingual (EN/FA), zero dependencies on servers.
-<br/><span dir="rtl">سودا — ماشین‌حساب سود، قیمت فروش و تخفیف، آفلاین و دوزبانه</span>
-
-`bilingual` `calculator` `discount-calculator` `farsi` &nbsp;·&nbsp; 🏷️ **v1.5.0**
-
-**[→ Repo](https://github.com/Mahdi-mortazavi/sooda)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/sooda/)** &nbsp;·&nbsp; <sub>updated 1mo ago</sub>
-
----
-
-<details>
-<summary><b>📦 3 more projects</b> &nbsp;·&nbsp; <sub>Nava · purify · Mova</sub></summary>
-
-<br/>
-
-### 🍎 [Nava](https://github.com/Mahdi-mortazavi/app)
-
-<a href="https://github.com/Mahdi-mortazavi/app/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/app?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="app stars" /></a> `Dart`
-
-🍎 Nava: The Art of Reduction. A Jony Ive inspired productivity app with Squircle design, Haptic feedback &amp; Breathing animations. | نوا: مینیمالیسم محض؛ هنرِ حذف اضافات.
-<br/><span dir="rtl">نوا — اپ بهره‌وری مینیمال با الهام از طراحی اپل</span>
-
-`android` `animation` `apple-design` `cross-platform` &nbsp;·&nbsp; 🏷️ **v3.1.0**
-
-**[→ Repo](https://github.com/Mahdi-mortazavi/app)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/nava/)** &nbsp;·&nbsp; <sub>updated 6d ago</sub>
-
----
-
-### 🧹 [purify](https://github.com/Mahdi-mortazavi/purify)
-
-<a href="https://github.com/Mahdi-mortazavi/purify/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/purify?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="purify stars" /></a> `Rust`
-
-🧹 Clean your Windows disk with confidence. Fast, private, reversible cleanup built with Rust and Tauri.
-<br/><span dir="rtl">پیوریفای — پاک‌سازی هوشمند و فوق‌سریع دیسک ویندوز</span>
-
-`cache-cleaner` `desktop-app` `disk-analyzer` `disk-cleaner` &nbsp;·&nbsp; 🏷️ **v0.1.4**
-
-**[→ Repo](https://github.com/Mahdi-mortazavi/purify)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/purify/)** &nbsp;·&nbsp; <sub>updated 2mo ago</sub>
-
----
-
-### 🌀 [Mova](https://github.com/Mahdi-mortazavi/Mova)
-
-<a href="https://github.com/Mahdi-mortazavi/Mova/stargazers"><img src="https://img.shields.io/github/stars/Mahdi-mortazavi/Mova?style=flat-square&logo=github&logoColor=0A84FF&labelColor=0D1117&color=161B22" alt="Mova stars" /></a> `TypeScript`
-
-Mova  in motion, not in perfection
-<br/><span dir="rtl">موا — در حرکت، نه در کمال</span>
-
-`experiment` `learning-project` `open-source` `side-project`
-
-**[→ Repo](https://github.com/Mahdi-mortazavi/Mova)** &nbsp;·&nbsp; **[⬇ Try it](https://mahdi-mortazavi.github.io/p/mova/)** &nbsp;·&nbsp; <sub>updated 4mo ago</sub>
-
----
-
-
-</details>
-
-<!-- /LIVE:PROJECTS -->
-
-<div align="center">
-<sub><a href="https://github.com/Mahdi-mortazavi?tab=repositories">→ See all repositories</a></sub>
-
-<br/><br/>
-
----
-
-## 📊 Activity<br/><sub>فعالیت</sub>
-
-<sub>A full year of real contributions — drawn here, from my own data.</sub>
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/growth.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/growth-w.svg" width="100%" alt="Cumulative GitHub star growth across Mahdi Mortazavi's open-source repositories" />
+</picture>
 
 <picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/heat.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/heat-w.svg" width="100%" alt="Mahdi Mortazavi's GitHub contribution heatmap for the last year" />
 </picture>
 
-</div>
+**Latest releases**
 
-<details align="center">
-<summary><b>🐍 Contribution snake</b> &nbsp;·&nbsp; <sub>آمار بیشتر</sub></summary>
+<!-- LIVE:SHIPPING -->
+- **[Angaros](https://github.com/Mahdi-mortazavi/angaros)** <sub>· updated today</sub>
+- **[relay](https://github.com/Mahdi-mortazavi/relay)** · `v2.12.0` <sub>· updated yesterday</sub>
+- **[Nava](https://github.com/Mahdi-mortazavi/app)** · `v3.1.0` <sub>· updated 6d ago</sub>
+- **[Flow](https://github.com/Mahdi-mortazavi/flow)** · `v0.6.1` <sub>· updated 6d ago</sub>
+<!-- /LIVE:SHIPPING -->
 
-<br/>
+## Work with me
 
-<div align="center">
+I'm most useful where the problem is still messy and the shape of the answer is not decided yet.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/output/github-contribution-grid-snake.svg" />
-  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/output/github-contribution-grid-snake-dark.svg" width="95%" alt="Mahdi Mortazavi's contribution snake animation" />
-</picture>
+- **Hiring a remote engineer?** I work as a senior full-stack or product engineer, or as a technical lead. I'm used to owning a product from the first sketch to the release.
+- **Building a product?** I take contract and freelance builds: AI agents, mobile apps, desktop tools, web apps and the design that goes with them.
+- **Need a technical co-founder?** I'm already CTO of two products, so I know what the job takes. If the problem is real, let's talk.
 
-<br/><br/>
-</div>
-
-</details>
-
-<br/>
-
-<div align="center">
-
----
-
-## ❓ Frequently Asked<br/><sub>پرسش‌های پرتکرار</sub>
-
-<sub>Real questions people arrive with — answered once, in the open.
-<br/><span dir="rtl">سوال‌هایی که واقعاً پرسیده می‌شوند — یک‌بار و برای همیشه، پاسخ داده شده.</span></sub>
-
-</div>
-
-<br/>
-
-<details>
-<summary><b>How can I share my phone's internet with my PC without root?</b><br/><span dir="rtl">چطور اینترنت گوشی را بدون روت با کامپیوتر به اشتراک بگذارم؟</span></summary>
-
-<br/>
-
-Use **[relay](https://github.com/Mahdi-mortazavi/relay)**. It does Android → Windows
-**reverse tethering** over an encrypted **WireGuard** tunnel, so your PC goes online through your
-phone's mobile data or Wi-Fi. There is **no root, no third-party server and no account** — the
-tunnel runs directly between your two devices, so your traffic never passes through anyone else.
-It's written in C# and Go, and the installer is on the
-[releases page](https://github.com/Mahdi-mortazavi/relay/releases/latest).
-
-<p dir="rtl" align="right">
-با <b><a href="https://github.com/Mahdi-mortazavi/relay">ریلی</a></b>.
-اینترنت گوشی اندروید را از راه یک تونل رمزنگاری‌شده‌ی وایرگارد به ویندوز می‌رساند؛
-<b>بدون روت، بدون سرور واسط و بدون حساب کاربری</b>. تونل مستقیم بین همان دو دستگاه برقرار می‌شود،
-پس ترافیک شما از هیچ سرور دیگری عبور نمی‌کند. نصب‌کننده در
-<a href="https://github.com/Mahdi-mortazavi/relay/releases/latest">صفحه‌ی انتشارها</a> است.
+<p align="center">
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/issues/new?template=project.yml"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-hire.svg" height="44" alt="Start a project with Mahdi Mortazavi" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/issues/new?template=question.yml"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-ask.svg" height="44" alt="Ask Mahdi Mortazavi a question" /></a>
+<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-email.svg" height="44" alt="Email Mahdi Mortazavi" /></a>
+<a href="https://t.me/Mahdi_mortazavi1"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-telegram.svg" height="44" alt="Message Mahdi Mortazavi on Telegram" /></a>
 </p>
 
-</details>
-
-<details>
-<summary><b>How do I safely free up disk space on Windows?</b><br/><span dir="rtl">چطور فضای دیسک ویندوز را بدون ریسک خالی کنم؟</span></summary>
-
-<br/>
-
-**[purify](https://github.com/Mahdi-mortazavi/purify)** scans for the junk Windows leaves behind —
-caches, temp files, leftover installers, update remnants — and shows you exactly what it found
-before deleting anything. Every clean is **reversible**, nothing is uploaded, and it's built with
-**Rust** and **Tauri** so it starts instantly and stays out of your way.
-
-<p dir="rtl" align="right">
-<b><a href="https://github.com/Mahdi-mortazavi/purify">پیوریفای</a></b> فایل‌های اضافی ویندوز را
-پیدا می‌کند — کش، فایل‌های موقت، نصب‌کننده‌های باقی‌مانده و ته‌مانده‌ی آپدیت‌ها — و <b>پیش از حذف</b>
-دقیقاً نشان می‌دهد چه چیزی پیدا شده. هر پاک‌سازی <b>برگشت‌پذیر</b> است، چیزی آپلود نمی‌شود، و چون با
-<b>Rust</b> و <b>Tauri</b> ساخته شده، فوری بالا می‌آید.
-</p>
-
-</details>
-
-<details>
-<summary><b>Is there a focus / habit app that works fully offline?</b><br/><span dir="rtl">اپ تمرکز و عادت که کاملاً آفلاین باشد هست؟</span></summary>
-
-<br/>
-
-**[Flow — تک‌نقطه](https://github.com/Mahdi-mortazavi/flow)** is built around one idea:
-**one decision a day**. Focus timer, habit streaks and deep-work sessions, designed with
-**ADHD** brains in mind and grounded in behavioural science. It's **100% offline** — no sign-up,
-no sync, no telemetry — and it's bilingual (English / فارسی). Written in **Dart & Flutter**.
-
-<p dir="rtl" align="right">
-<b><a href="https://github.com/Mahdi-mortazavi/flow">تک‌نقطه</a></b> روی یک ایده ساخته شده:
-<b>روزی یک تصمیم</b>. تایمر تمرکز، زنجیره‌ی عادت و جلسه‌های کار عمیق — طراحی‌شده برای ذهن‌های
-بیش‌فعال و بر پایه‌ی علم رفتار. <b>کاملاً آفلاین</b> است؛ بدون ثبت‌نام، بدون همگام‌سازی و بدون
-جمع‌آوری داده. دوزبانه، نوشته‌شده با دارت و فلاتر.
-</p>
-
-</details>
-
-<details>
-<summary><b>How do I calculate profit, selling price and discount for a small shop?</b><br/><span dir="rtl">سود، قیمت فروش و تخفیف را چطور حساب کنم؟</span></summary>
-
-<br/>
-
-**[sooda](https://github.com/Mahdi-mortazavi/sooda)** does exactly that — cost in, margin or
-selling price out, plus discount and markup in the other direction. It's an **offline-first PWA**,
-so you install it once and it keeps working with no connection and no server.
-Open it in the browser: **[mahdi-mortazavi.github.io/sooda](https://mahdi-mortazavi.github.io/sooda/)**.
-
-<p dir="rtl" align="right">
-<b><a href="https://github.com/Mahdi-mortazavi/sooda">سودا</a></b> دقیقاً همین کار را می‌کند:
-قیمت تمام‌شده را می‌دهید، سود یا قیمت فروش را می‌گیرید — و برعکس، تخفیف و درصد افزایش را هم حساب می‌کند.
-یک <b>وب‌اپ آفلاین‌محور (PWA)</b> است؛ یک‌بار نصب می‌کنید و بعد بدون اینترنت و بدون سرور کار می‌کند.
-<a href="https://mahdi-mortazavi.github.io/sooda/">همین‌جا بازش کنید</a>.
-</p>
-
-</details>
-
-<details>
-<summary><b>Are these apps free? What licence are they under?</b><br/><span dir="rtl">این برنامه‌ها رایگان‌اند؟ با چه مجوزی؟</span></summary>
-
-<br/>
-
-All of them are **free and open source**. The code lives on GitHub, the releases are public, and
-you can read every line before you run it. Each repository carries its own licence file — check the
-repo you're interested in. There is no paid tier, no ads and no account.
-
-<p dir="rtl" align="right">
-همه‌ی آن‌ها <b>رایگان و متن‌باز</b> هستند. کد روی گیت‌هاب است، نسخه‌ها عمومی‌اند و می‌توانید پیش از
-اجرا هر خط را بخوانید. فایل مجوز داخل هر مخزن قرار دارد. نه نسخه‌ی پولی، نه تبلیغات و نه حساب کاربری.
-</p>
-
-</details>
-
-<details>
-<summary><b>Do the apps support Persian and right-to-left layout?</b><br/><span dir="rtl">آیا از فارسی و چیدمان راست‌به‌چپ پشتیبانی می‌کنند؟</span></summary>
-
-<br/>
-
-Yes. They ship **bilingual (English / فارسی)** with proper **RTL** layout, Persian digits where they
-belong, and typography that was chosen for Persian rather than bolted on afterwards. I build in
-Iran, so Persian is a first-class language in everything I ship — not a translation layer.
-
-<p dir="rtl" align="right">
-بله. همه <b>دوزبانه</b> هستند، با چیدمان <b>راست‌به‌چپ</b> درست، ارقام فارسی در جای خودشان و
-تایپوگرافی‌ای که از ابتدا برای فارسی انتخاب شده — نه ترجمه‌ای که بعداً اضافه شده باشد.
-</p>
-
-</details>
-
-<details>
-<summary><b>Are you available for freelance work or co-founding?</b><br/><span dir="rtl">برای همکاری فریلنس یا هم‌بنیان‌گذاری در دسترس هستید؟</span></summary>
-
-<br/>
-
-Yes — I take on **full-stack product work**: desktop apps (**C#, Rust, Tauri**), mobile
-(**Dart & Flutter**), web (**TypeScript, React, Astro, Cloudflare Workers**) and the design that
-goes with them. I'm most useful on problems that are still messy, where the shape of the answer
-isn't decided yet. The fastest way to reach me is
-**[Telegram](https://t.me/Mahdi_mortazavi1)** or
-**[email](mailto:mahdi.mortazavi.135@gmail.com)**.
-
-<p dir="rtl" align="right">
-بله — <b>کارِ محصولِ فول‌استک</b> می‌پذیرم: نرم‌افزار دسکتاپ (سی‌شارپ، راست، Tauri)، موبایل
-(دارت و فلاتر)، وب (تایپ‌اسکریپت، ری‌اکت، Astro، Cloudflare Workers) و طراحیِ همراهش.
-بیشترین فایده را جایی دارم که مسئله هنوز آشفته است و شکلِ پاسخ مشخص نیست.
-سریع‌ترین راه ارتباط: <a href="https://t.me/Mahdi_mortazavi1">تلگرام</a> یا
-<a href="mailto:mahdi.mortazavi.135@gmail.com">ایمیل</a>.
-</p>
-
-</details>
-
-<br/>
-
-<div align="center">
-
----
-
-## 💬 Ask Me Anything<br/><sub>از من بپرسید</sub>
-
-<sub>Open a question as an issue — it appears here automatically, and I answer it in public.
-<br/><span dir="rtl">سوال‌تان را به‌صورت Issue بپرسید؛ خودکار همین‌جا نمایش داده می‌شود و عمومی جواب می‌دهم.</span></sub>
-
-</div>
+<sub>The first two buttons open a short public form in this repository. Questions I answer are listed here automatically. For anything confidential, use email or Telegram.</sub>
 
 <!-- LIVE:AMA -->
-<sub>No open questions yet — be the first. &nbsp;·&nbsp; <span dir="rtl">هنوز سوالی پرسیده نشده؛ اولین نفر باشید.</span></sub>
 
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/issues/new?title=Question%3A%20&body=Ask%20me%20anything%20%E2%80%94%20%D9%87%D8%B1%20%D8%B3%D9%88%D8%A7%D9%84%DB%8C%20%D8%AF%D8%A7%D8%B1%DB%8C%D8%AF%20%D8%A8%D9%BE%D8%B1%D8%B3%DB%8C%D8%AF"><img src="https://img.shields.io/badge/%F0%9F%92%AC%20Ask%20me%20anything-open%20a%20question-161B22?style=flat-square&labelColor=0D1117" height="28" alt="Ask me anything" /></a>
 <!-- /LIVE:AMA -->
 
-<br/>
-
-<div align="center">
-
----
-
-## 🤝 Work With Me<br/><sub>بیایید با هم کار کنیم</sub>
-
-Have a hard problem worth solving? I'm open to **collaborations, freelance work, co-founding ideas,
-and good technical conversations** — and I reply fast.
-
-<p dir="rtl" align="center"><sub>مسئله‌ی سختی دارید که ارزش حل‌کردن دارد؟ برای همکاری، پروژه‌ی فریلنس، هم‌بنیان‌گذاری یا هر گفت‌وگوی فنی خوب در دسترسم — و سریع جواب می‌دهم. 🌱</sub></p>
+<details>
+<summary><b>Questions people ask before we start</b></summary>
 
 <br/>
 
-<a href="https://t.me/Mahdi_mortazavi1"><img src="https://img.shields.io/badge/Message_me-Telegram-161B22?style=for-the-badge&logo=telegram&logoColor=2AABEE&labelColor=0D1117" alt="Message Mahdi Mortazavi on Telegram" /></a>
-&nbsp;
-<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://img.shields.io/badge/Email_me-Gmail-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0D1117" alt="Email Mahdi Mortazavi" /></a>
+**What kind of work do you take?**
+Full-stack product work: AI agents and MCP tooling, mobile (Flutter, Kotlin), desktop (Rust, Tauri, .NET), web and edge (TypeScript, React, Cloudflare Workers), plus the interface design that goes with it.
 
-<br/><br/>
+**Can I see how you actually work?**
+Yes. Every project above is open source, with its commit history, issues and releases in public. Read the code before we talk.
 
-<a href="https://t.me/Startup_legend"><img src="https://img.shields.io/badge/Startup_Legend-Join_the_community-161B22?style=for-the-badge&logo=telegram&logoColor=30D158&labelColor=0D1117" alt="Join the Startup Legend community" /></a>
+**Do you work with teams outside Iran?**
+Yes, remotely. I'm at UTC+3:30, which overlaps a full working day with Europe.
 
-<br/><br/>
+**Are your apps free?**
+All of them are free and open source. Each repository carries its own licence file.
 
+</details>
+
+## فارسی
+
+<p dir="rtl" align="right">
+<b>سلام، من مهدی مرتضوی هستم</b>؛ مدیر فنی (CTO)، توسعه‌دهنده‌ی فول‌استک و سازنده‌ی محصول از ایران.
+روش کارم ساده است: <b>تفکر بر پایه‌ی اصول اولیه ← طراحی راه‌حل ← ساخت محصول واقعی</b>.
+مدیر فنی و مدیر محصول <a href="https://senagh.ir">ثناق</a> (دستیار هوش مصنوعی مشاوران املاک) و
+هم‌بنیان‌گذار و مدیر فنی <b>Zista Health</b> (پایش از راه دور بیماران با هوش مصنوعی) هستم.
+</p>
+
+<p dir="rtl" align="right">
+پروژه‌های متن‌باز من رایگان و دوزبانه‌اند:
+<b><a href="https://github.com/Mahdi-mortazavi/relay">ریلی</a></b> برای اشتراک اینترنت گوشی اندروید با کامپیوتر ویندوز از راه تونل وایرگارد، بدون روت و بدون سرور؛
+<b><a href="https://github.com/Mahdi-mortazavi/angaros">Angaros</a></b>، پل امن میان گوشی و ایجنت‌های هوش مصنوعی برای پیامک، کد تأیید و مخاطبان؛
+<b><a href="https://github.com/Mahdi-mortazavi/flow">تک‌نقطه</a></b>، اپلیکیشن آفلاین تمرکز و ساخت عادت؛
+<b><a href="https://github.com/Mahdi-mortazavi/sooda">سودا</a></b>، ماشین‌حساب سود، قیمت فروش و تخفیف؛
+<b><a href="https://github.com/Mahdi-mortazavi/purify">پیوریفای</a></b> برای پاک‌سازی دیسک ویندوز؛ و
+<b><a href="https://github.com/Mahdi-mortazavi/app">نوا</a></b>، اپ بهره‌وری مینیمال.
+</p>
+
+<p dir="rtl" align="right">
+برای همکاری، پروژه‌ی فریلنس، استخدام دورکار یا هم‌بنیان‌گذاری در دسترسم.
+سریع‌ترین راه ارتباط <a href="https://t.me/Mahdi_mortazavi1">تلگرام</a> یا
+<a href="mailto:mahdi.mortazavi.135@gmail.com">ایمیل</a> است.
+جامعه‌ی <a href="https://t.me/Startup_legend">استارتاپ لجند</a> را هم برای سازندگان محصول و استارتاپ راه انداخته‌ام.
+</p>
+
+<br/>
+
+<p align="center">
 <!-- LIVE:UPDATED -->
-<sub>🔄 This profile rebuilds itself every 6 hours · last updated <b>12 Nov 2026, 04:01</b> Tehran time</sub>
+<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>12 Nov 2026, 11:51</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
+</p>
 
-</div>
+<p align="center"><sub><b>Mahdi Mortazavi</b> &nbsp;·&nbsp; <b>مهدی مرتضوی</b> &nbsp;·&nbsp; CTO &nbsp;·&nbsp; Product Engineer &nbsp;·&nbsp; Full-Stack Developer &nbsp;·&nbsp; Iran</sub></p>
 
-<br/>
-
-<div align="center">
-
-<sub><b>Mahdi Mortazavi</b> &nbsp;·&nbsp; <b>مهدی مرتضوی</b></sub>
-
-<sub>Full-Stack Developer &nbsp;·&nbsp; Product Builder &nbsp;·&nbsp; Problem Solver &nbsp;·&nbsp; Iran 🇮🇷</sub>
-
-<sub><i>First principles → solutions → real products.</i></sub>
-
-<sub>
-  <a href="https://mahdi-mortazavi.github.io/p/relay/">relay</a> &nbsp;·&nbsp;
-  <a href="https://mahdi-mortazavi.github.io/p/flow/">Flow — تک‌نقطه</a> &nbsp;·&nbsp;
-  <a href="https://mahdi-mortazavi.github.io/p/sooda/">sooda</a> &nbsp;·&nbsp;
-  <a href="https://mahdi-mortazavi.github.io/p/nava/">Nava</a> &nbsp;·&nbsp;
-  <a href="https://mahdi-mortazavi.github.io/p/purify/">purify</a> &nbsp;·&nbsp;
-  <a href="https://mahdi-mortazavi.github.io/p/overrun/">overrun</a>
-</sub>
-
-</div>
-
-<div align="center">
 <picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/footer.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/footer-w.svg" width="100%" alt="" />
 </picture>
-</div>

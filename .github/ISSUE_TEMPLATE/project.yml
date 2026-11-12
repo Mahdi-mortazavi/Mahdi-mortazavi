@@ -1,0 +1,35 @@
+name: Start a project or discuss a role
+description: Tell me what you are building or hiring for. This form is public — use Telegram or email for anything confidential.
+title: "Project: "
+labels: ["work"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is this about?
+      options:
+        - Remote role (full-time)
+        - Contract or freelance build
+        - Technical co-founder / CTO
+        - Open-source collaboration
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to solve, and for whom? A few honest sentences beat a polished brief.
+    validations:
+      required: true
+  - type: input
+    id: timeline
+    attributes:
+      label: Timeline
+      placeholder: e.g. start in two weeks, MVP in two months
+  - type: input
+    id: contact
+    attributes:
+      label: Where can I reply?
+      description: Optional. Leave empty and I will answer right here.
+      placeholder: email, Telegram or LinkedIn

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="431" viewBox="0 0 1600 431" role="img"
+  aria-label="Career timeline of Mahdi Mortazavi">
+  <title>2023: Senagh — CTO &amp; Head of Product · 2025: Open source — First public release · 2026: relay — 239 stars · NOW: Zista Health — Co-founder &amp; CTO</title>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07090E"/>
+      <stop offset="55%" stop-color="#0B0F18"/>
+      <stop offset="100%" stop-color="#10151F"/>
+    </linearGradient>
+    <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="coreglow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="431" rx="22" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity=".85">
+    <ellipse cx="1540" cy="40" rx="384" ry="216" fill="url(#aura1)"/>
+    <ellipse cx="60" cy="451" rx="416" ry="216" fill="url(#aura2)"/>
+  </g>
+  <rect width="1600" height="431" rx="22" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1600" height="3" fill="url(#hair)"/><text x="64" y="66" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="23" font-weight="700" letter-spacing="2.6" fill="#30D1D0">JOURNEY</text><path d="M74 150 H1536" stroke="#30D1D0" stroke-opacity=".55" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="1472" stroke-dashoffset="1472">
+      <animate attributeName="stroke-dashoffset" values="1472;0" keyTimes="0;1" dur="2.4s" fill="freeze" calcMode="spline" keySplines=".3 0 .2 1"/></path><circle cx="74" cy="150" r="10" fill="#07090E" stroke="#30D1D0" stroke-width="3.2"/>
+    <text x="64" y="120" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="700" fill="#A9AEBA">2023</text>
+        <text x="64" y="212" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="800" letter-spacing="-.6" fill="#F5F5F7">Senagh</text>
+        <text x="64" y="252" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="650" fill="#30D1D0">CTO &amp; Head of Product</text>
+        <text x="64" y="292" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">AI-agent assistant for</text><text x="64" y="325" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">real-estate agents. I</text><text x="64" y="358" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">own architecture and</text><text x="64" y="391" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">product.</text><circle cx="442" cy="150" r="10" fill="#07090E" stroke="#30D1D0" stroke-width="3.2"/>
+    <text x="432" y="120" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="700" fill="#A9AEBA">2025</text>
+        <text x="432" y="212" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="800" letter-spacing="-.6" fill="#F5F5F7">Open source</text>
+        <text x="432" y="252" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="650" fill="#30D1D0">First public release</text>
+        <text x="432" y="292" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">Started shipping my</text><text x="432" y="325" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">tools in the open,</text><text x="432" y="358" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">bilingual and free.</text><circle cx="810" cy="150" r="10" fill="#07090E" stroke="#30D1D0" stroke-width="3.2"/>
+    <text x="800" y="120" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="700" fill="#A9AEBA">2026</text>
+        <text x="800" y="212" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="800" letter-spacing="-.6" fill="#F5F5F7">relay</text>
+        <text x="800" y="252" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="650" fill="#30D1D0">239 stars</text>
+        <text x="800" y="292" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">Reverse tethering over</text><text x="800" y="325" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">WireGuard, used on real</text><text x="800" y="358" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">devices every day.</text><circle cx="1178" cy="150" r="10" fill="#30D158" stroke="#30D158" stroke-width="3.2"/>
+    <circle cx="1178" cy="150" r="10" fill="none" stroke="#30D158">
+      <animate attributeName="r" values="10;26;10" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".8;0;.8" dur="2.4s" repeatCount="indefinite"/></circle><text x="1168" y="120" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="700" fill="#30D158">NOW</text>
+        <text x="1168" y="212" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="800" letter-spacing="-.6" fill="#F5F5F7">Zista Health</text>
+        <text x="1168" y="252" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="650" fill="#30D1D0">Co-founder &amp; CTO</text>
+        <text x="1168" y="292" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">AI-powered remote</text><text x="1168" y="325" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">patient monitoring, from</text><text x="1168" y="358" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">the wearable to the</text><text x="1168" y="391" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#7F8898">apps.</text>
+</svg>
