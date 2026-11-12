@@ -89,5 +89,5 @@
     <path d="M0 22 L22 0 M4 0 H22 V18"/></g>
       
     <text x="1536" y="174" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" letter-spacing="-.6" fill="#F5F5F7">Python</text>
-    <text x="1536" y="220" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#30D1D0">NEW</text>
+    <text x="1536" y="220" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#30D1D0">v3.1.0</text>
 </svg>
