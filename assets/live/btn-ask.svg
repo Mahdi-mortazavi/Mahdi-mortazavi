@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="374" height="92" viewBox="0 0 374 92" role="img" aria-label="Ask me anything">
   <title>Ask me anything</title>
   <defs>
-    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A84FF"/><stop offset="100%" stop-color="#30D1D0"/></linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5E5CE6"/><stop offset="100%" stop-color="#0A84FF"/></linearGradient>
     <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF" stop-opacity=".22"/><stop offset="60%" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
   </defs>
   <rect x="2" y="2" width="370" height="88" rx="44" fill="#141922"/>
