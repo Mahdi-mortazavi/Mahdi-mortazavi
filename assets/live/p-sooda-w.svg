@@ -9,25 +9,25 @@
       <stop offset="100%" stop-color="#10151F"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#0A84FF"/>
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -73,12 +73,12 @@
     <path d="M8 -9 L-8 9" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="2.4"/>
     <animateTransform attributeName="transform" type="translate" values="240 60;240 52;240 60" dur="5s" repeatCount="indefinite"/>
   </g></g>
-      <text x="440" y="92" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="23" font-weight="700" letter-spacing="2.6" fill="#0A84FF">PWA · SMALL BUSINESS</text>
+      <text x="440" y="92" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="23" font-weight="700" letter-spacing="2.6" fill="#30D1D0">PWA · SMALL BUSINESS</text>
       <text x="437" y="162" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="66" font-weight="800" letter-spacing="-2" fill="#F5F5F7">Sooda</text>
       <text x="440" y="212" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="500" fill="#A9AEBA">Profit, price and discount calculator for</text><text x="440" y="252" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="500" fill="#A9AEBA">small shops. Offline-first, bilingual, no</text><text x="440" y="292" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="500" fill="#A9AEBA">backend.</text>
       <g transform="translate(1512 52)" stroke="#A9AEBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <path d="M0 22 L22 0 M4 0 H22 V18"/></g>
       
-    <text x="1536" y="168" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#F5F5F7"><tspan fill="#0A84FF" font-size="40">★ </tspan>30</text>
+    <text x="1536" y="168" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#F5F5F7"><tspan fill="#30D1D0" font-size="40">★ </tspan>30</text>
     <text x="1536" y="218" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="600" fill="#A9AEBA">v1.5.0</text><text x="1536" y="260" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#7F8898">TypeScript</text>
 </svg>
