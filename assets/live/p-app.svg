@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="604" viewBox="0 0 900 604" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="604" viewBox="0 0 780 604" role="img"
   aria-label="Nava — The art of reduction: a minimal productivity app with squircle design, haptics and breathing motion.">
   <title>Nava — The art of reduction: a minimal productivity app with squircle design, haptics and breathing motion.</title>
   
@@ -39,17 +39,17 @@
       <circle cx="1.2" cy="1.2" r="1.2" fill="#FFFFFF" fill-opacity=".05"/>
     </pattern>
   </defs>
-  <rect width="900" height="604" rx="22" fill="url(#bg)"/>
+  <rect width="780" height="604" rx="22" fill="url(#bg)"/>
   
-  <rect width="900" height="604" rx="22" fill="url(#grid)"/>
-  <rect x="0" y="0" width="900" height="3" fill="url(#hair)"/>
-  <g filter="url(#soft)" opacity=".55"><ellipse cx="212" cy="160" rx="230" ry="150" fill="url(#aura1)"/></g>
+  <rect width="780" height="604" rx="22" fill="url(#grid)"/>
+  <rect x="0" y="0" width="780" height="3" fill="url(#hair)"/>
+  <g filter="url(#soft)" opacity=".55"><ellipse cx="200" cy="160" rx="230" ry="150" fill="url(#aura1)"/></g>
   <g>
-    <rect x="52" y="44" width="796" height="240" rx="30" fill="url(#glass)"/>
-    <rect x="52" y="44" width="796" height="240" rx="30" fill="none" stroke="rgba(255,255,255,.14)"/>
-    <path d="M 82 44.75 H 818" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <rect x="40" y="44" width="700" height="240" rx="30" fill="url(#glass)"/>
+    <rect x="40" y="44" width="700" height="240" rx="30" fill="none" stroke="rgba(255,255,255,.14)"/>
+    <path d="M 70 44.75 H 710" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
-      <g transform="translate(86 64)">
+      <g transform="translate(74 64)">
   <g>
     <rect x="34" y="44" width="112" height="112" rx="38" fill="url(#mark)" fill-opacity=".9"/>
     <rect x="34" y="44" width="112" height="112" rx="38" fill="none" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="1.6"/>
@@ -82,12 +82,12 @@
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.56;0.66;.92;1" dur="7s" repeatCount="indefinite"/>
     </path>
   </g></g>
-      <g transform="translate(794 70)" stroke="#A9AEBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <g transform="translate(686 70)" stroke="#A9AEBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <path d="M0 22 L22 0 M4 0 H22 V18"/></g>
       
-    <text x="814" y="168" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="-1.5" fill="#F5F5F7"><tspan fill="#FF375F" font-size="42">★ </tspan>26</text>
-    <text x="814" y="218" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="600" fill="#A9AEBA">v3.1.0</text><text x="814" y="260" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#7F8898">111 downloads</text>
-      <text x="52" y="344" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="24" font-weight="700" letter-spacing="2.4" fill="#FF375F">FLUTTER · INTERFACE DESIGN</text>
-      <text x="49" y="414" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="64" font-weight="800" letter-spacing="-2" fill="#F5F5F7">Nava</text>
-      <text x="52" y="468" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="500" fill="#A9AEBA">The art of reduction: a minimal</text><text x="52" y="512" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="500" fill="#A9AEBA">productivity app with squircle design,</text><text x="52" y="556" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="500" fill="#A9AEBA">haptics and breathing motion.</text>
+    <text x="706" y="168" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="-1.5" fill="#F5F5F7"><tspan fill="#FF375F" font-size="42">★ </tspan>26</text>
+    <text x="706" y="218" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="600" fill="#A9AEBA">v3.1.0</text><text x="706" y="260" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#7F8898">111 downloads</text>
+      <text x="40" y="344" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="24" font-weight="700" letter-spacing="2.4" fill="#FF375F">FLUTTER · INTERFACE DESIGN</text>
+      <text x="37" y="414" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="64" font-weight="800" letter-spacing="-2" fill="#F5F5F7">Nava</text>
+      <text x="40" y="468" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="500" fill="#A9AEBA">The art of reduction: a minimal</text><text x="40" y="512" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="500" fill="#A9AEBA">productivity app with squircle</text><text x="40" y="556" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="500" fill="#A9AEBA">design, haptics and breathing motion.</text>
 </svg>

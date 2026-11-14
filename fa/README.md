@@ -1,12 +1,12 @@
 <!-- LIVE:NAV -->
 <p align="center">
-<a href="https://github.com/Mahdi-mortazavi"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-home.svg" height="36" alt="Overview" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/work#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-work.svg" height="36" alt="Case studies" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/log#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-log.svg" height="36" alt="Ship log" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/radar#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-radar.svg" height="36" alt="Radar" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/hire#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-hire.svg" height="36" alt="Hire me" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/build#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-build.svg" height="36" alt="Build with me" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/fa#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-fa-on.svg" height="36" alt="فارسی" /></a>
+<a href="https://github.com/Mahdi-mortazavi"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-home.svg" height="31" alt="Overview" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/work#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-work.svg" height="31" alt="Case studies" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/log#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-log.svg" height="31" alt="Ship log" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/radar#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-radar.svg" height="31" alt="Radar" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/hire#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-hire.svg" height="31" alt="Hire me" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/build#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-build.svg" height="31" alt="Build with me" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/fa#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-fa-on.svg" height="31" alt="فارسی" /></a>
 </p>
 <!-- /LIVE:NAV -->
 
