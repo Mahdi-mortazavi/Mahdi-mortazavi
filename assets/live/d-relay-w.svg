@@ -12,8 +12,8 @@
       <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FF375F" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
@@ -21,12 +21,12 @@
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#FF375F"/>
+      <stop offset="100%" stop-color="#0A84FF"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
       <stop offset="50%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#FF375F" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -44,13 +44,13 @@
     <ellipse cx="60" cy="420" rx="416" ry="200" fill="url(#aura2)"/>
   </g>
   <rect width="1600" height="400" rx="22" fill="url(#grid)"/>
-  <rect x="0" y="0" width="1600" height="3" fill="url(#hair)"/><text x="64" y="66" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="23" font-weight="700" letter-spacing="2.6" fill="#FF375F">RELAY · DATA PATH</text><g>
+  <rect x="0" y="0" width="1600" height="3" fill="url(#hair)"/><text x="64" y="66" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="23" font-weight="700" letter-spacing="2.6" fill="#0A84FF">RELAY · DATA PATH</text><g>
     <rect x="64" y="112" width="377.3333333333333" height="196" rx="26" fill="url(#glass)"/>
     <rect x="64" y="112" width="377.3333333333333" height="196" rx="26" fill="none" stroke="rgba(255,255,255,.14)"/>
     <path d="M 90 112.75 H 415.3333333333333" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
     <text x="94" y="170" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="-.5" fill="#F5F5F7">Android phone</text>
-    <text x="94" y="212" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" fill="#FF375F">WIREGUARD ENDPOINT</text><text x="94" y="246" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#A9AEBA">Kotlin · Compose · Go</text><path d="M451.3333333333333 210 H601.3333333333333" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="2" stroke-dasharray="5 8" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="26;0" dur="1.2s" repeatCount="indefinite"/></path>
+    <text x="94" y="212" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" fill="#0A84FF">WIREGUARD ENDPOINT</text><text x="94" y="246" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#A9AEBA">Kotlin · Compose · Go</text><path d="M451.3333333333333 210 H601.3333333333333" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="2" stroke-dasharray="5 8" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="26;0" dur="1.2s" repeatCount="indefinite"/></path>
           <circle r="5.5" fill="url(#mark)">
       <animateMotion dur="2.4s" begin="-0.00s" repeatCount="indefinite" path="M451.3333333333333 210 H601.3333333333333" />
     </circle><circle r="5.5" fill="url(#mark)">
@@ -64,7 +64,7 @@
     <path d="M 637.3333333333333 112.75 H 962.6666666666665" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
     <text x="641.3333333333333" y="170" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="-.5" fill="#F5F5F7">Windows PC</text>
-    <text x="641.3333333333333" y="212" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" fill="#FF375F">WIREGUARD CLIENT</text><text x="641.3333333333333" y="246" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#A9AEBA">.NET 8 · WinUI 3 · Go</text><path d="M998.6666666666665 210 H1148.6666666666665" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="2" stroke-dasharray="5 8" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="26;0" dur="1.2s" repeatCount="indefinite"/></path>
+    <text x="641.3333333333333" y="212" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" fill="#0A84FF">WIREGUARD CLIENT</text><text x="641.3333333333333" y="246" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#A9AEBA">.NET 8 · WinUI 3 · Go</text><path d="M998.6666666666665 210 H1148.6666666666665" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="2" stroke-dasharray="5 8" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="26;0" dur="1.2s" repeatCount="indefinite"/></path>
           <circle r="5.5" fill="url(#mark)">
       <animateMotion dur="2.4s" begin="-0.00s" repeatCount="indefinite" path="M998.6666666666665 210 H1148.6666666666665" />
     </circle><circle r="5.5" fill="url(#mark)">
@@ -78,5 +78,5 @@
     <path d="M 1184.6666666666665 112.75 H 1509.9999999999998" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
     <text x="1188.6666666666665" y="170" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="-.5" fill="#F5F5F7">Every app</text>
-    <text x="1188.6666666666665" y="212" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" fill="#FF375F">WHOLE SYSTEM</text><text x="1188.6666666666665" y="246" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#A9AEBA">TCP and UDP, no leaks</text><text x="64" y="362" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="600" fill="#A9AEBA">No server in the middle. Keys are made at pairing and destroyed when sharing stops.</text>
+    <text x="1188.6666666666665" y="212" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" fill="#0A84FF">WHOLE SYSTEM</text><text x="1188.6666666666665" y="246" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" fill="#A9AEBA">TCP and UDP, no leaks</text><text x="64" y="362" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="600" fill="#A9AEBA">No server in the middle. Keys are made at pairing and destroyed when sharing stops.</text>
 </svg>

@@ -23,39 +23,39 @@ The GitHub repositories worth knowing about right now, rebuilt every six hours: 
 
 <sub>Straight from GitHub Trending, filtered for readable, on-topic projects.</sub>
 
-- **[backnotprop/plannotator](https://github.com/backnotprop/plannotator)** <sub>· ★ 10,816 · +412 today · TypeScript</sub><br/>The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback…
-- **[GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)** <sub>· ★ 5,565 · +1,225 today · TypeScript</sub><br/>Keep your coding agent up to date with the latest web best practices
-- **[tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)** <sub>· ★ 4,547 · +556 today · Python</sub><br/>Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strat…
-- **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** <sub>· ★ 56,087 · +673 today · TypeScript</sub><br/>Chrome DevTools for coding agents
-- **[alibaba/open-code-review](https://github.com/alibaba/open-code-review)** <sub>· ★ 51,187 · +897 today · Go</sub><br/>Secure, fast, efficient, battle-tested at Alibaba&apos;s scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, …
-- **[QwenLM/qwen-code](https://github.com/QwenLM/qwen-code)** <sub>· ★ 30,201 · +462 today · TypeScript</sub><br/>An open-source AI coding agent that lives in your terminal.
-- **[dream-num/univer](https://github.com/dream-num/univer)** <sub>· ★ 24,306 · +495 today · TypeScript</sub><br/>Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for peopl…
-- **[ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui)** <sub>· ★ 17,239 · +9 today · TypeScript</sub><br/>AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.
+- **[backnotprop/plannotator](https://github.com/backnotprop/plannotator)** <sub>· ★ 10,894 · +412 today · TypeScript</sub><br/>The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback…
+- **[GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)** <sub>· ★ 5,683 · +1,225 today · TypeScript</sub><br/>Keep your coding agent up to date with the latest web best practices
+- **[tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)** <sub>· ★ 4,621 · +556 today · Python</sub><br/>Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strat…
+- **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** <sub>· ★ 56,149 · +673 today · TypeScript</sub><br/>Chrome DevTools for coding agents
+- **[alibaba/open-code-review](https://github.com/alibaba/open-code-review)** <sub>· ★ 51,253 · +897 today · Go</sub><br/>Secure, fast, efficient, battle-tested at Alibaba&apos;s scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, …
+- **[QwenLM/qwen-code](https://github.com/QwenLM/qwen-code)** <sub>· ★ 30,235 · +116 today · TypeScript</sub><br/>An open-source AI coding agent that lives in your terminal.
+- **[dream-num/univer](https://github.com/dream-num/univer)** <sub>· ★ 24,354 · +495 today · TypeScript</sub><br/>Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for peopl…
+- **[ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui)** <sub>· ★ 17,258 · +9 today · TypeScript</sub><br/>AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.
 
 ## Breakout on GitHub this month
 
 <sub>The most-starred repositories created in the last 30 days, in any field.</sub>
 
-- **[Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv)** <sub>· ★ 57,738 · Python</sub><br/>Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.
-- **[storytold/craft-anything](https://github.com/storytold/craft-anything)** <sub>· ★ 32,452 · Rust</sub><br/>Craft Anything: understand how any software works, and craft your own.
-- **[deepseek-ai/DeepInfer](https://github.com/deepseek-ai/DeepInfer)** <sub>· ★ 26,009 · Python</sub><br/>DeepInfer: High-performance, large-scale inference framework for DeepSeek models
-- **[deepseek-ai/dsh-superagent-prototype](https://github.com/deepseek-ai/dsh-superagent-prototype)** <sub>· ★ 23,115 · TypeScript</sub><br/>Towards a More Autonomous Agent System
-- **[Zagitta/gpu-unlock](https://github.com/Zagitta/gpu-unlock)** <sub>· ★ 19,404 · C</sub><br/>Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughput
-- **[heydamir/unslop](https://github.com/heydamir/unslop)** <sub>· ★ 15,895 · JavaScript</sub><br/>A Claude skill that turns vibecoded, AI-looking UI into a designed interface
-- **[anefzaoui/misterdownloadmanager](https://github.com/anefzaoui/misterdownloadmanager)** <sub>· ★ 9,403 · Rust</sub><br/>misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux
-- **[amosblomqvist/learnharness](https://github.com/amosblomqvist/learnharness)** <sub>· ★ 9,368 · TypeScript</sub><br/>Agent harness for learning difficult things.
+- **[Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv)** <sub>· ★ 57,781 · Python</sub><br/>Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.
+- **[storytold/craft-anything](https://github.com/storytold/craft-anything)** <sub>· ★ 32,579 · Rust</sub><br/>Craft Anything: understand how any software works, and craft your own.
+- **[deepseek-ai/DeepInfer](https://github.com/deepseek-ai/DeepInfer)** <sub>· ★ 26,013 · Python</sub><br/>DeepInfer: High-performance, large-scale inference framework for DeepSeek models
+- **[deepseek-ai/dsh-superagent-prototype](https://github.com/deepseek-ai/dsh-superagent-prototype)** <sub>· ★ 23,124 · TypeScript</sub><br/>Towards a More Autonomous Agent System
+- **[Zagitta/gpu-unlock](https://github.com/Zagitta/gpu-unlock)** <sub>· ★ 19,433 · C</sub><br/>Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughput
+- **[heydamir/unslop](https://github.com/heydamir/unslop)** <sub>· ★ 15,926 · JavaScript</sub><br/>A Claude skill that turns vibecoded, AI-looking UI into a designed interface
+- **[anefzaoui/misterdownloadmanager](https://github.com/anefzaoui/misterdownloadmanager)** <sub>· ★ 9,448 · Rust</sub><br/>misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux
+- **[amosblomqvist/learnharness](https://github.com/amosblomqvist/learnharness)** <sub>· ★ 9,387 · TypeScript</sub><br/>Agent harness for learning difficult things.
 
 ## Rising in my fields
 
 <sub>New repositories from the last 45 days, by stars, in the topics I work in.</sub>
 
-- **[tangency-labs/solidcraft](https://github.com/tangency-labs/solidcraft)** <sub>· ★ 16,258 · mcp · Rust</sub><br/>SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.
-- **[qybaihe/bla](https://github.com/qybaihe/bla)** <sub>· ★ 5,649 · mcp · TypeScript</sub><br/>🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server &amp; CLI protecting JS/TS, Electron ASAR, WASM, Python, Nati…
-- **[Leonxlnx/earshot](https://github.com/Leonxlnx/earshot)** <sub>· ★ 4,794 · ai-agents · Python</sub><br/>Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.
-- **[expo/exact](https://github.com/expo/exact)** <sub>· ★ 4,136 · ai-agents · Rust</sub><br/>Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every o…
+- **[tangency-labs/solidcraft](https://github.com/tangency-labs/solidcraft)** <sub>· ★ 16,277 · mcp · Rust</sub><br/>SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.
+- **[qybaihe/bla](https://github.com/qybaihe/bla)** <sub>· ★ 5,661 · mcp · TypeScript</sub><br/>🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server &amp; CLI protecting JS/TS, Electron ASAR, WASM, Python, Nati…
+- **[Leonxlnx/earshot](https://github.com/Leonxlnx/earshot)** <sub>· ★ 4,803 · ai-agents · Python</sub><br/>Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.
+- **[expo/exact](https://github.com/expo/exact)** <sub>· ★ 4,146 · ai-agents · Rust</sub><br/>Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every o…
 - **[rociiu/talorys](https://github.com/rociiu/talorys)** <sub>· ★ 1,468 · cloudflare-workers · TypeScript</sub><br/>Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with one command: npx c…
-- **[harshsinghsv/swiftdl](https://github.com/harshsinghsv/swiftdl)** <sub>· ★ 718 · tauri · Rust</sub><br/>Fast, resumable download manager with a browser extension. Many connections per file, instant resume, IDM-style download windows. Rust + Ta…
-- **[rivet-dev/open-orange](https://github.com/rivet-dev/open-orange)** <sub>· ★ 515 · cloudflare-workers · TypeScript</sub><br/>Run Cloudflare Workers and Durable Objects unchanged on AWS, GCP, Azure or your own servers.
+- **[harshsinghsv/swiftdl](https://github.com/harshsinghsv/swiftdl)** <sub>· ★ 721 · tauri · Rust</sub><br/>Fast, resumable download manager with a browser extension. Many connections per file, instant resume, IDM-style download windows. Rust + Ta…
+- **[rivet-dev/open-orange](https://github.com/rivet-dev/open-orange)** <sub>· ★ 524 · cloudflare-workers · TypeScript</sub><br/>Run Cloudflare Workers and Durable Objects unchanged on AWS, GCP, Azure or your own servers.
 - **[ralco98/pia-vpn-privacy-suite](https://github.com/ralco98/pia-vpn-privacy-suite)** <sub>· ★ 382 · wireguard · HTML</sub><br/>Private Internet Access VPN: WireGuard and OpenVPN client with global nodes and privacy controls for
 
 ## Essentials in my stack
@@ -64,18 +64,18 @@ The GitHub repositories worth knowing about right now, rebuilt every six hours: 
 
 - **[flutter/flutter](https://github.com/flutter/flutter)** <sub>· ★ 181,263 · flutter</sub><br/>Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 - **[JetBrains/kotlin](https://github.com/JetBrains/kotlin)** <sub>· ★ 53,575 · kotlin</sub><br/>The Kotlin Programming Language.
-- **[morluto/rea](https://github.com/morluto/rea)** <sub>· ★ 459,150 · rust</sub><br/>Reverse engineer anything with agents, from app behavior down to native binaries.
-- **[farion1231/cc-switch](https://github.com/farion1231/cc-switch)** <sub>· ★ 154,404 · tauri</sub><br/>A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io
-- **[affaan-m/ECC](https://github.com/affaan-m/ECC)** <sub>· ★ 302,744 · mcp</sub><br/>The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Cod…
-- **[MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)** <sub>· ★ 49,901 · wireguard</sub><br/>Supporting multi-protocol multi-user(Vmess, Vless, Trojan, ShadowSocks, Wireguard, Hysteria, Tunnel, Mixed, HTTP, Tun, MTProto، AmneziaWG)
+- **[morluto/rea](https://github.com/morluto/rea)** <sub>· ★ 459,351 · rust</sub><br/>Reverse engineer anything with agents, from app behavior down to native binaries.
+- **[farion1231/cc-switch](https://github.com/farion1231/cc-switch)** <sub>· ★ 154,415 · tauri</sub><br/>A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io
+- **[affaan-m/ECC](https://github.com/affaan-m/ECC)** <sub>· ★ 302,816 · mcp</sub><br/>The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Cod…
+- **[MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)** <sub>· ★ 49,906 · wireguard</sub><br/>Supporting multi-protocol multi-user(Vmess, Vless, Trojan, ShadowSocks, Wireguard, Hysteria, Tunnel, Mixed, HTTP, Tun, MTProto، AmneziaWG)
 - **[honojs/hono](https://github.com/honojs/hono)** <sub>· ★ 32,950 · cloudflare-workers</sub><br/>Web framework built on Web Standards
 
 ## Recently starred
 
 <sub>Projects I found worth a star.</sub>
 
-- **[tinyhumansai/openhuman](https://github.com/tinyhumansai/openhuman)** <sub>· ★ 42,699 · Rust · 7 Oct 2026</sub><br/>The fastest, cheapest, most efficient open-source agent harness. Run more than 500 agents on a $10 VPS.
-- **[MetrolistGroup/Metrolist](https://github.com/MetrolistGroup/Metrolist)** <sub>· ★ 14,274 · Kotlin · 16 Aug 2026</sub><br/>YouTube Music client for Android
+- **[tinyhumansai/openhuman](https://github.com/tinyhumansai/openhuman)** <sub>· ★ 42,703 · Rust · 7 Oct 2026</sub><br/>The fastest, cheapest, most efficient open-source agent harness. Run more than 500 agents on a $10 VPS.
+- **[MetrolistGroup/Metrolist](https://github.com/MetrolistGroup/Metrolist)** <sub>· ★ 14,289 · Kotlin · 16 Aug 2026</sub><br/>YouTube Music client for Android
 - **[WireGuard/wireguard-go](https://github.com/WireGuard/wireguard-go)** <sub>· ★ 4,523 · Go · 15 Aug 2026</sub><br/>Mirror only. Official repository is at https://git.zx2c4.com/wireguard-go
 - **[UnboundTechCo/defyxVPN](https://github.com/UnboundTechCo/defyxVPN)** <sub>· ★ 928 · Dart · 7 Jul 2026</sub><br/>A modern, secure VPN application built with Flutter that provides internet freedom and privacy protection.
 
@@ -91,9 +91,9 @@ The GitHub repositories worth knowing about right now, rebuilt every six hours: 
 
 - **[aws/aws-emulator](https://github.com/aws/aws-emulator)** <sub>· 987 points · <a href="https://news.ycombinator.com/item?id=50456631">266 comments</a></sub><br/>AWS emulator
 - **[thisisme6598/gemini_files](https://github.com/thisisme6598/gemini_files)** <sub>· 737 points · <a href="https://news.ycombinator.com/item?id=50429426">148 comments</a></sub><br/>Google Gemini routes personal Drive files and emails to human annotators
-- **[simpsoka/zigzag](https://github.com/simpsoka/zigzag)** <sub>· 731 points · <a href="https://news.ycombinator.com/item?id=50470488">249 comments</a></sub><br/>My $300 embroidery machine needed a subscription, so I built my own app
-- **[janestreet/agent_skills](https://github.com/janestreet/agent_skills)** <sub>· 705 points · <a href="https://news.ycombinator.com/item?id=50438261">167 comments</a></sub><br/>Socratic Tutor
+- **[simpsoka/zigzag](https://github.com/simpsoka/zigzag)** <sub>· 733 points · <a href="https://news.ycombinator.com/item?id=50470488">252 comments</a></sub><br/>My $300 embroidery machine needed a subscription, so I built my own app
+- **[janestreet/agent_skills](https://github.com/janestreet/agent_skills)** <sub>· 707 points · <a href="https://news.ycombinator.com/item?id=50438261">167 comments</a></sub><br/>Socratic Tutor
 - **[synchopate/llama-modchip](https://github.com/synchopate/llama-modchip)** <sub>· 485 points · <a href="https://news.ycombinator.com/item?id=50411961">210 comments</a></sub><br/>Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU
-- **[hyperionaidev/smolmaxxing](https://github.com/hyperionaidev/smolmaxxing)** <sub>· 477 points · <a href="https://news.ycombinator.com/item?id=50468888">180 comments</a></sub><br/>I&apos;m making LLMs work on small and old devices
+- **[hyperionaidev/smolmaxxing](https://github.com/hyperionaidev/smolmaxxing)** <sub>· 478 points · <a href="https://news.ycombinator.com/item?id=50468888">180 comments</a></sub><br/>I&apos;m making LLMs work on small and old devices
 
 <sub>Topics and keywords are set in <code>.github/scripts/profile.config.mjs</code>. The links are picked by a script, not endorsed one by one.</sub>
