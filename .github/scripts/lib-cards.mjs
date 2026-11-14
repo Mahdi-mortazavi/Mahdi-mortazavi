@@ -25,7 +25,7 @@ import { art, signal, GLYPH } from './lib-art.mjs';
 //       at 9px, which is why it is desktop-only and served behind a media
 //       query with the 900 card as the fallback.
 const GEO = {
-  m: { W: 900,  PAD: 52, T: { micro: 27, small: 30, label: 31, body: 32, kicker: 31, name: 68,  huge: 86  } },
+  m: { W: 780,  PAD: 40, T: { micro: 27, small: 30, label: 31, body: 32, kicker: 31, name: 68,  huge: 86  } },
   w: { W: 1600, PAD: 64, T: { micro: 26, small: 30, label: 32, body: 34, kicker: 30, name: 104, huge: 104 } },
 };
 const geo = (mode = 'm') => {
@@ -101,7 +101,7 @@ export function hero(d, t, mode = 'm') {
   // Signature mark, top right.
   const mark = wide
     ? `<g transform="translate(1086 96)">${signal(true)}</g>`
-    : `<g transform="translate(548 14) scale(.66)">${signal(false)}</g>`;
+    : `<g transform="translate(${W - PAD - 290} 14) scale(.62)">${signal(false)}</g>`;
 
   let s = statusPill(PAD, wide ? 52 : 46, wide ? P.status.long : P.status.short, wide ? 27 : 28, P.status.open);
   if (wide) s += `<text x="${W - PAD}" y="90" text-anchor="end" font-family="${MONO}" font-size="${wide ? 22 : 23}" font-weight="600" letter-spacing="2.2" fill="${C.dim}">${esc(P.zone)}</text>`;
@@ -123,7 +123,7 @@ export function hero(d, t, mode = 'm') {
   const tiles = [
     ['Stars', nf(d.stars)],
     d.downloads ? ['Downloads', `${compact(d.downloads)}+`] : ['Public repos', nf(d.repos.length)],
-    d.releases ? ['Releases shipped', nf(d.releases)] : ['Projects', nf(P.projects.length)],
+    d.releases ? [wide ? 'Releases shipped' : 'Releases', nf(d.releases)] : ['Projects', nf(P.projects.length)],
     total ? [wide ? 'Contributions / yr' : 'Contributions', nf(total)] : ['Public repos', nf(d.repos.length)],
     ['Followers', nf(d.user?.followers)],
     ['Forks', nf(d.forks)],
@@ -140,7 +140,7 @@ export function hero(d, t, mode = 'm') {
         <text x="${x + 24}" y="${py + 90}" font-family="${FONT}" font-size="22" font-weight="600" fill="${C.muted}">${esc(label)}</text>`
       : `${glass(x, py, PW, PH, 22)}
         <text x="${x + 26}" y="${py + PH / 2 + 11}" font-family="${FONT}" font-size="${T.micro}" font-weight="600" fill="${C.muted}">${esc(label)}</text>
-        <text x="${x + PW - 26}" y="${py + PH / 2 + 13}" text-anchor="end" font-family="${FONT}" font-size="38" font-weight="800" fill="${C.txt}">${esc(value)}</text>`;
+        <text x="${x + PW - 26}" y="${py + PH / 2 + 13}" text-anchor="end" font-family="${FONT}" font-size="35" font-weight="800" fill="${C.txt}">${esc(value)}</text>`;
   });
   const rows = Math.ceil(tiles.length / COLS);
   y += rows * PH + (rows - 1) * GAP;

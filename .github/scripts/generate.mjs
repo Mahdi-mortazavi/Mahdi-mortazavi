@@ -386,7 +386,9 @@ ${p.points.map(x => `- ${esc(x)}`).join('\n')}
 
 </details>
 ` : '';
-    return `<a href="${r.html_url}">${pic(`p-${p.repo.toLowerCase()}`, `${p.name} — ${p.tagline}`)}</a>
+    return `<a href="${r.html_url}">
+${pic(`p-${p.repo.toLowerCase()}`, `${p.name} — ${p.tagline}`)}
+</a>
 
 <p align="center"><sub>${links}</sub></p>
 ${inside}`;
@@ -485,7 +487,7 @@ if (d.cal) {
 // Every page carries the same tab bar with its own tab switched on.
 const REPO = `https://github.com/${USER}/${USER}`;
 const navMd = active => `<p align="center">\n${CFG.tabs.map(tb =>
-  `<a href="${tb.href ?? `${REPO}/tree/main/${tb.dir}#readme`}"><img src="${RAW}/tab-${tb.id}${tb.id === active ? '-on' : ''}.svg" height="36" alt="${esc(tb.label)}" /></a>`).join('\n')}\n</p>`;
+  `<a href="${tb.href ?? `${REPO}/tree/main/${tb.dir}#readme`}"><img src="${RAW}/tab-${tb.id}${tb.id === active ? '-on' : ''}.svg" height="31" alt="${esc(tb.label)}" /></a>`).join('\n')}\n</p>`;
 // The ship log is written whole: every release, newest first, grouped by month.
 if (d.log?.length) {
   const month = iso => new Intl.DateTimeFormat('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(iso));

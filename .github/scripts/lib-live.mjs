@@ -44,11 +44,11 @@ export function headlines(d) {
 
 /** The ticker: one headline at a time, sliding up, with a progress rail. */
 export function ticker(d, t, mode = 'm') {
-  const wide = mode === 'w', W = wide ? 1600 : 900, PAD = wide ? 64 : 52, H = wide ? 132 : 248;
+  const wide = mode === 'w', W = wide ? 1600 : 780, PAD = wide ? 64 : 40, H = wide ? 132 : 248;
   const m = t.mood, items = headlines(d), N = items.length;
   const tone = { hot: '#FF9F0A', go: C.green, up: m.b, calm: C.muted };
   const SLOT = 3.4, total = (N * SLOT).toFixed(1), f = 0.035;
-  const TX = wide ? 250 : PAD, TY = wide ? 78 : 132, max = wide ? 58 : 44;
+  const TX = wide ? 250 : PAD, TY = wide ? 78 : 132, max = wide ? 58 : 38;
   const rows = items.map((it, i) => {
     const a = i / N, b = (i + 1) / N;
     const kt = [0, a, Math.min(a + f, b), Math.max(b - f, a), b, 1].map(v => v.toFixed(4)).join(';');
@@ -80,7 +80,7 @@ export function ticker(d, t, mode = 'm') {
 
 /** Radar card: a sweeping scope and the three strongest signals right now. */
 export function radarCard(d, t, mode = 'm') {
-  const wide = mode === 'w', W = wide ? 1600 : 900, PAD = wide ? 64 : 52, IW = W - PAD * 2;
+  const wide = mode === 'w', W = wide ? 1600 : 780, PAD = wide ? 64 : 40, IW = W - PAD * 2;
   const m = t.mood, r = d.radar ?? {};
   const rows = [
     r.trending?.[0] && { tag: 'TRENDING', title: r.trending[0].repo, meta: r.trending[0].today ? `+${nf(r.trending[0].today)} today` : `★ ${nf(r.trending[0].stars)}` },
@@ -103,7 +103,7 @@ export function radarCard(d, t, mode = 'm') {
     <g><path d="M${CXc} ${CYc} L${CXc} ${CYc - R} A${R} ${R} 0 0 1 ${(CXc + R * 0.866).toFixed(1)} ${(CYc - R * 0.5).toFixed(1)} Z" fill="url(#mark)" fill-opacity=".32"/>
       <animateTransform attributeName="transform" type="rotate" from="0 ${CXc} ${CYc}" to="360 ${CXc} ${CYc}" dur="4s" ${loop}/></g>
     ${blips}<circle cx="${CXc}" cy="${CYc}" r="5" fill="#FFFFFF"/>`;
-  const X0 = wide ? PAD + 340 : PAD, Y0 = wide ? 118 : 300, STEP = wide ? 66 : 112, maxT = wide ? 52 : 40;
+  const X0 = wide ? PAD + 340 : PAD, Y0 = wide ? 118 : 300, STEP = wide ? 66 : 112, maxT = wide ? 52 : 32;
   let s = `<text x="${PAD}" y="66" font-family="${MONO}" font-size="${wide ? 23 : 25}" font-weight="700" letter-spacing="2.6" fill="${m.b}">RADAR</text>`;
   if (!wide) s += `<text x="${PAD - 2}" y="150" font-family="${FONT}" font-size="46" font-weight="800" letter-spacing="-1.2" fill="${C.txt}">What I'm</text><text x="${PAD - 2}" y="204" font-family="${FONT}" font-size="46" font-weight="800" letter-spacing="-1.2" fill="${C.txt}">watching now</text>`;
   rows.forEach((it, i) => {
