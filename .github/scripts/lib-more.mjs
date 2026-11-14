@@ -3,7 +3,7 @@
 // diagrams used by the case studies.
 import { C, esc, FONT, MONO, defs, glass, nf } from './lib-theme.mjs';
 
-const GEO = { m: { W: 900, PAD: 52 }, w: { W: 1600, PAD: 64 } };
+const GEO = { m: { W: 780, PAD: 40 }, w: { W: 1600, PAD: 64 } };
 const geo = mode => { const g = GEO[mode] ?? GEO.m; return { ...g, IW: g.W - g.PAD * 2, wide: mode === 'w' }; };
 const textW = (s, size) => String(s).length * size * 0.58;
 const loop = 'repeatCount="indefinite"';
@@ -91,7 +91,7 @@ export function velocity(d, t, mode = 'm') {
 
   // This week, as a live strip.
   const SY = wide ? CY + CH + 78 : CY + CH + 74, SH = wide ? 72 : 78;
-  const active = wk.repos?.length ? `active in ${wk.repos.slice(0, wide ? 4 : 2).join(', ')}` : 'between releases';
+  const active = wk.repos?.length ? (wide ? `active in ${wk.repos.slice(0, 4).join(', ')}` : wk.repos[0]) : 'between releases';
   s += `${glass(PAD, SY, IW, SH, SH / 2)}
     <circle cx="${PAD + 36}" cy="${SY + SH / 2}" r="7" fill="${C.green}"/>
     <circle cx="${PAD + 36}" cy="${SY + SH / 2}" r="7" fill="none" stroke="${C.green}"><animate attributeName="r" values="7;17;7" dur="2.4s" ${loop}/><animate attributeName="stroke-opacity" values=".8;0;.8" dur="2.4s" ${loop}/></circle>
