@@ -57,7 +57,7 @@ On the side I build open-source tools across mobile, desktop, web and the edge, 
 versioned releases, installers, documentation, two languages.
 
 <!-- LIVE:PROOF -->
-<sub>**381** stars &nbsp;·&nbsp; **30** forks &nbsp;·&nbsp; **11,381+** downloads &nbsp;·&nbsp; **54** releases shipped &nbsp;·&nbsp; **1,699** contributions in the last year</sub>
+<sub>**381** stars &nbsp;·&nbsp; **30** forks &nbsp;·&nbsp; **11,381+** downloads &nbsp;·&nbsp; **54** releases shipped &nbsp;·&nbsp; **1,701** contributions in the last year</sub>
 <!-- /LIVE:PROOF -->
 
 > **Open to** remote roles, contract and freelance product builds, and technical co-founder / CTO work.
@@ -362,7 +362,7 @@ All of them are free and open source. Each repository carries its own licence fi
 
 <p align="center">
 <!-- LIVE:UPDATED -->
-<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>14 Nov 2026, 18:54</b> Tehran time</sub>
+<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>14 Nov 2026, 19:00</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 </p>
 
