@@ -37,7 +37,7 @@ const kicker = (x, y, s, m, size = 24) =>
  */
 export function tab(label, on, t, rtl = false) {
   const m = t.mood, H = 84, size = 30;
-  const W = Math.round(textW(label, size) * (rtl ? 1.05 : 0.95) + 68);
+  const W = Math.round(textW(label, size) * (rtl ? 1.05 : 0.95) + 52);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">
   <title>${esc(label)}</title>
   <defs><linearGradient id="u" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="${m.a}"/><stop offset="100%" stop-color="${m.b}"/></linearGradient></defs>

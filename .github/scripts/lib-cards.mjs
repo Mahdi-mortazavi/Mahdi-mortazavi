@@ -101,7 +101,7 @@ export function hero(d, t, mode = 'm') {
   // Signature mark, top right.
   const mark = wide
     ? `<g transform="translate(1086 96)">${signal(true)}</g>`
-    : `<g transform="translate(596 30) scale(.56)">${signal(false)}</g>`;
+    : `<g transform="translate(548 14) scale(.66)">${signal(false)}</g>`;
 
   let s = statusPill(PAD, wide ? 52 : 46, wide ? P.status.long : P.status.short, wide ? 27 : 28, P.status.open);
   if (wide) s += `<text x="${W - PAD}" y="90" text-anchor="end" font-family="${MONO}" font-size="${wide ? 22 : 23}" font-weight="600" letter-spacing="2.2" fill="${C.dim}">${esc(P.zone)}</text>`;
@@ -124,7 +124,7 @@ export function hero(d, t, mode = 'm') {
     ['Stars', nf(d.stars)],
     d.downloads ? ['Downloads', `${compact(d.downloads)}+`] : ['Public repos', nf(d.repos.length)],
     d.releases ? ['Releases shipped', nf(d.releases)] : ['Projects', nf(P.projects.length)],
-    total ? ['Contributions / yr', nf(total)] : ['Public repos', nf(d.repos.length)],
+    total ? [wide ? 'Contributions / yr' : 'Contributions', nf(total)] : ['Public repos', nf(d.repos.length)],
     ['Followers', nf(d.user?.followers)],
     ['Forks', nf(d.forks)],
   ];
@@ -258,7 +258,7 @@ export function journey(d, t, mode = 'm') {
 /** Contact button. Drawn at 2x and shown at height 44 in the README. */
 export function button(label, glyph, t, primary = false) {
   const m = t.mood, H = 92, size = 31;
-  const W = Math.round(textW(label, size) * 0.95 + 118);
+  const W = Math.round(textW(label, size) * 0.95 + 104);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}">
   <title>${esc(label)}</title>
   <defs>
@@ -268,8 +268,8 @@ export function button(label, glyph, t, primary = false) {
   <rect x="2" y="2" width="${W - 4}" height="${H - 4}" rx="${(H - 4) / 2}" fill="${primary ? 'url(#mark)' : '#141922'}"/>
   <rect x="2" y="2" width="${W - 4}" height="${H - 4}" rx="${(H - 4) / 2}" fill="url(#sheen)"/>
   <rect x="2" y="2" width="${W - 4}" height="${H - 4}" rx="${(H - 4) / 2}" fill="none" stroke="#FFFFFF" stroke-opacity="${primary ? '.4' : '.22'}" stroke-width="1.6"/>
-  <g transform="translate(36 30)">${GLYPH[glyph] ?? ''}</g>
-  <text x="84" y="${H / 2 + 11}" font-family="${FONT}" font-size="${size}" font-weight="700" fill="#FFFFFF">${esc(label)}</text>
+  <g transform="translate(30 30)">${GLYPH[glyph] ?? ''}</g>
+  <text x="76" y="${H / 2 + 11}" font-family="${FONT}" font-size="${size}" font-weight="700" fill="#FFFFFF">${esc(label)}</text>
 </svg>`;
 }
 

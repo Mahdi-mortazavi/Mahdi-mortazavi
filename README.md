@@ -20,22 +20,29 @@
 </picture>
 </a>
 
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/radar#readme">
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/ticker.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/ticker-w.svg" width="100%" alt="Live headlines from Mahdi Mortazavi's GitHub activity" />
+</picture>
+</a>
+
 <p align="center">
-<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-email.svg" height="44" alt="Email Mahdi Mortazavi" /></a>
-<a href="https://t.me/Mahdi_mortazavi1"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-telegram.svg" height="44" alt="Message Mahdi Mortazavi on Telegram" /></a>
-<a href="https://www.linkedin.com/in/mahdimortazavidev"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-linkedin.svg" height="44" alt="Mahdi Mortazavi on LinkedIn" /></a>
-<a href="https://mahdi-mortazavi.github.io"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-hub.svg" height="44" alt="Mahdi Mortazavi — portfolio" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/blob/main/assets/Mahdi-Mortazavi-CV.pdf"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-cv.svg" height="44" alt="Download Mahdi Mortazavi's CV" /></a>
+<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-email.svg" height="40" alt="Email Mahdi Mortazavi" /></a>
+<a href="https://t.me/Mahdi_mortazavi1"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-telegram.svg" height="40" alt="Message Mahdi Mortazavi on Telegram" /></a>
+<a href="https://www.linkedin.com/in/mahdimortazavidev"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-linkedin.svg" height="40" alt="Mahdi Mortazavi on LinkedIn" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/blob/main/assets/Mahdi-Mortazavi-CV.pdf"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-cv.svg" height="40" alt="Download Mahdi Mortazavi's CV" /></a>
 </p>
 
 <!-- LIVE:NAV -->
 <p align="center">
-<a href="https://github.com/Mahdi-mortazavi"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-home-on.svg" height="42" alt="Overview" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/work#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-work.svg" height="42" alt="Case studies" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/log#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-log.svg" height="42" alt="Ship log" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/hire#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-hire.svg" height="42" alt="Hire me" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/build#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-build.svg" height="42" alt="Build with me" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/fa#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-fa.svg" height="42" alt="فارسی" /></a>
+<a href="https://github.com/Mahdi-mortazavi"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-home-on.svg" height="36" alt="Overview" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/work#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-work.svg" height="36" alt="Case studies" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/log#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-log.svg" height="36" alt="Ship log" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/radar#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-radar.svg" height="36" alt="Radar" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/hire#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-hire.svg" height="36" alt="Hire me" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/build#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-build.svg" height="36" alt="Build with me" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/fa#readme"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/tab-fa.svg" height="36" alt="فارسی" /></a>
 </p>
 <!-- /LIVE:NAV -->
 
@@ -72,21 +79,48 @@ Each card is a live product you can install today. Stars, versions and release d
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-relay-w.svg" width="100%" alt="relay — Share your phone&apos;s internet with your PC over an encrypted WireGuard tunnel. No root, no server, no account." />
 </picture></a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 241 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; 10,305 downloads &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 239 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
+
+<details>
+<summary><b>What is inside relay</b></summary>
+
+- One WireGuard tunnel carries the whole PC, TCP and UDP, so games, calls and installers all work.
+- No server and no account: keys are created at pairing and destroyed when sharing stops.
+- Kotlin and Compose on Android, .NET 8 and WinUI 3 on Windows, Go for the tunnel.
+
+</details>
 
 <a href="https://github.com/Mahdi-mortazavi/angaros"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-angaros.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-angaros-w.svg" width="100%" alt="Angaros — Your phone, for your AI agents: SMS, OTP codes, contacts and call log for any MCP client. End-to-end encrypted, self-hosted." />
 </picture></a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/angaros">Angaros</a></b> &nbsp;·&nbsp; Python &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/angaros/releases/latest"><code>v3.1.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/angaros/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/angaros">Angaros</a></b> &nbsp;·&nbsp; Python &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/angaros/">Try it ↗</a></sub></p>
+
+<details>
+<summary><b>What is inside Angaros</b></summary>
+
+- The relay only ever stores ciphertext (AES-256-GCM); the key travels by QR code and never touches it.
+- 22 typed MCP tools, a CLI, a Python SDK and a local REST API.
+- SMS text is treated as untrusted input, and every send lands in a hash-chained audit log.
+
+</details>
 
 <a href="https://github.com/Mahdi-mortazavi/flow"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-flow.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-flow-w.svg" width="100%" alt="Flow — One decision a day. An offline-first focus and habit app grounded in behavioural science." />
 </picture></a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/flow">Flow</a></b> &nbsp;·&nbsp; Dart &nbsp;·&nbsp; ★ 76 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/flow/releases/latest"><code>v0.6.1</code></a> &nbsp;·&nbsp; 788 downloads &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/flow/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/flow">Flow</a></b> &nbsp;·&nbsp; Dart &nbsp;·&nbsp; ★ 76 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/flow/releases/latest"><code>v0.6.1</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/flow/">Try it ↗</a></sub></p>
+
+<details>
+<summary><b>What is inside Flow</b></summary>
+
+- Built around one decision a day, with a focus timer and habit tracking grounded in behavioural science.
+- Fully offline: no account, no sync, no telemetry.
+- Flutter and Riverpod, with a Persian-first right-to-left interface.
+
+</details>
 
 <a href="https://github.com/Mahdi-mortazavi/overrun"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-overrun.svg" />
@@ -94,6 +128,15 @@ Each card is a live product you can install today. Stars, versions and release d
 </picture></a>
 
 <p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/overrun">Overrun</a></b> &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; <a href="https://overrun.mahdi-mortazavi-135.workers.dev/landing">Try it ↗</a></sub></p>
+
+<details>
+<summary><b>What is inside Overrun</b></summary>
+
+- Client and server run the same simulation file: 60 Hz prediction in the browser, 20 Hz authority in a Durable Object.
+- Client-side prediction with input replay, entity interpolation and a quantised binary protocol.
+- Every mesh, texture and sound is generated in code. There are no asset files.
+
+</details>
 
 <details>
 <summary><b>3 more shipped projects</b> &nbsp;·&nbsp; <sub>Sooda · purify · Nava</sub></summary>
@@ -107,6 +150,15 @@ Each card is a live product you can install today. Stars, versions and release d
 
 <p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/sooda">Sooda</a></b> &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; ★ 30 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/sooda/releases/latest"><code>v1.5.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/sooda/">Try it ↗</a></sub></p>
 
+<details>
+<summary><b>What is inside Sooda</b></summary>
+
+- Profit, selling price and discount in both directions, for people who run a small shop.
+- Offline-first PWA with no backend: install once and it keeps working.
+- TypeScript and Vite, bilingual with full right-to-left support.
+
+</details>
+
 <a href="https://github.com/Mahdi-mortazavi/purify"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-purify.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-purify-w.svg" width="100%" alt="purify — Clean a Windows disk with confidence: fast, private and reversible. Built with Rust and Tauri." />
@@ -114,12 +166,30 @@ Each card is a live product you can install today. Stars, versions and release d
 
 <p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/purify">purify</a></b> &nbsp;·&nbsp; Rust &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/purify/releases/latest"><code>v0.1.4</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/purify/">Try it ↗</a></sub></p>
 
+<details>
+<summary><b>What is inside purify</b></summary>
+
+- Shows exactly what it found before it deletes anything, and every clean is reversible.
+- Nothing is uploaded: the scan and the cleanup stay on the machine.
+- Rust core with a Tauri interface, so it starts instantly.
+
+</details>
+
 <a href="https://github.com/Mahdi-mortazavi/app"><picture>
   <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-app.svg" />
   <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/p-app-w.svg" width="100%" alt="Nava — The art of reduction: a minimal productivity app with squircle design, haptics and breathing motion." />
 </picture></a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/app">Nava</a></b> &nbsp;·&nbsp; Dart &nbsp;·&nbsp; ★ 26 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/app/releases/latest"><code>v3.1.0</code></a> &nbsp;·&nbsp; 111 downloads &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/nava/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/app">Nava</a></b> &nbsp;·&nbsp; Dart &nbsp;·&nbsp; ★ 26 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/app/releases/latest"><code>v3.1.0</code></a> &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/nava/">Try it ↗</a></sub></p>
+
+<details>
+<summary><b>What is inside Nava</b></summary>
+
+- A task manager reduced to the essentials: squircle shapes, haptic feedback and breathing motion.
+- Flutter and Dart, for Android and iOS.
+- Bilingual, with a Persian right-to-left interface.
+
+</details>
 
 </details>
 
@@ -165,13 +235,11 @@ Each card is a live product you can install today. Stars, versions and release d
 
 <sub>Measured from the bytes in my public repositories, not typed by hand.</sub>
 
-| Area | What I use |
-| :-- | :-- |
-| **AI & agents** | LLM agents, MCP servers, tool design, Python, TypeScript |
-| **Mobile** | Flutter & Dart, Kotlin, Jetpack Compose |
-| **Desktop** | Rust, Tauri, C# / .NET, WinUI 3 |
-| **Web & edge** | TypeScript, React, Astro, Node.js, NestJS, Cloudflare Workers, Supabase |
-| **Product** | Problem framing, interface design, bilingual RTL products, release engineering |
+- **AI and agents:** LLM agents, MCP servers, tool design, Python, TypeScript
+- **Mobile:** Flutter and Dart, Kotlin, Jetpack Compose
+- **Desktop:** Rust, Tauri, C# and .NET, WinUI 3
+- **Web and edge:** TypeScript, React, Astro, Node.js, NestJS, Cloudflare Workers, Supabase
+- **Product:** problem framing, interface design, bilingual right-to-left products, release engineering
 
 ## Activity
 
@@ -193,12 +261,22 @@ Each card is a live product you can install today. Stars, versions and release d
 **Latest releases**
 
 <!-- LIVE:SHIPPING -->
-- **[relay v2.12.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.12.0)** <sub>· released 10 Nov 2026</sub>
-- **[Angaros v3.1.0](https://github.com/Mahdi-mortazavi/angaros/releases/tag/v3.1.0)** <sub>· released 5 Nov 2026</sub>
-- **[Angaros v3.0.3](https://github.com/Mahdi-mortazavi/angaros/releases/tag/v3.0.3)** <sub>· released 2 Nov 2026</sub>
-- **[relay v2.11.1](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.11.1)** <sub>· released 21 Oct 2026</sub>
-- **[relay v2.11.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.11.0)** <sub>· released 21 Oct 2026</sub>
+- **[Angaros](https://github.com/Mahdi-mortazavi/angaros)** <sub>· updated 2d ago</sub>
+- **[relay](https://github.com/Mahdi-mortazavi/relay)** · `v2.12.0` <sub>· updated 4d ago</sub>
+- **[Nava](https://github.com/Mahdi-mortazavi/app)** · `v3.1.0` <sub>· updated 9d ago</sub>
+- **[Flow](https://github.com/Mahdi-mortazavi/flow)** · `v0.6.1` <sub>· updated 9d ago</sub>
 <!-- /LIVE:SHIPPING -->
+
+## Radar
+
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/radar#readme">
+<picture>
+  <source media="(max-width: 699px)" srcset="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/radar.svg" />
+  <img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/radar-w.svg" width="100%" alt="Radar — what Mahdi Mortazavi is watching now" />
+</picture>
+</a>
+
+<sub>What I starred, where I contributed, what is rising in my fields and what Hacker News says about them. [Open the full radar →](https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/radar#readme)</sub>
 
 ## The wall
 
@@ -208,7 +286,7 @@ Each card is a live product you can install today. Stars, versions and release d
 </picture>
 
 <p align="center">
-<a href="https://github.com/Mahdi-mortazavi"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-follow.svg" height="44" alt="Follow Mahdi Mortazavi on GitHub" /></a>
+<a href="https://github.com/Mahdi-mortazavi"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-follow.svg" height="40" alt="Follow Mahdi Mortazavi on GitHub" /></a>
 </p>
 
 <sub>These are the people following my work. Follow, and your avatar takes the next seat when the page rebuilds, within six hours.</sub>
@@ -222,10 +300,10 @@ I'm most useful where the problem is still messy and the shape of the answer is 
 - **Need a technical co-founder?** I'm already CTO of two products, so I know what the job takes. If the problem is real, let's talk.
 
 <p align="center">
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/issues/new?template=project.yml"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-hire.svg" height="44" alt="Start a project with Mahdi Mortazavi" /></a>
-<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/issues/new?template=question.yml"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-ask.svg" height="44" alt="Ask Mahdi Mortazavi a question" /></a>
-<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-email.svg" height="44" alt="Email Mahdi Mortazavi" /></a>
-<a href="https://t.me/Mahdi_mortazavi1"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-telegram.svg" height="44" alt="Message Mahdi Mortazavi on Telegram" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/issues/new?template=project.yml"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-hire.svg" height="40" alt="Start a project with Mahdi Mortazavi" /></a>
+<a href="https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/issues/new?template=question.yml"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-ask.svg" height="40" alt="Ask Mahdi Mortazavi a question" /></a>
+<a href="mailto:mahdi.mortazavi.135@gmail.com"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-email.svg" height="40" alt="Email Mahdi Mortazavi" /></a>
+<a href="https://t.me/Mahdi_mortazavi1"><img src="https://raw.githubusercontent.com/Mahdi-mortazavi/Mahdi-mortazavi/main/assets/live/btn-telegram.svg" height="40" alt="Message Mahdi Mortazavi on Telegram" /></a>
 </p>
 
 <sub>The first two buttons open a short public form in this repository. Questions I answer are listed here automatically. For anything confidential, use email or Telegram.</sub>
@@ -283,7 +361,7 @@ All of them are free and open source. Each repository carries its own licence fi
 
 <p align="center">
 <!-- LIVE:UPDATED -->
-<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>14 Nov 2026, 09:37</b> Tehran time</sub>
+<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>14 Nov 2026, 18:26</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 </p>
 
