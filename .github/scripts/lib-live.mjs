@@ -84,6 +84,7 @@ export function radarCard(d, t, mode = 'm') {
   const m = t.mood, r = d.radar ?? {};
   const rows = [
     r.hn?.[0] && { tag: 'HACKER NEWS', title: r.hn[0].title, meta: `${nf(r.hn[0].points)} points` },
+    r.best?.[0] && { tag: 'BREAKOUT', title: r.best[0].repo, meta: `★ ${nf(r.best[0].stars)} this month` },
     r.hot?.[0] && { tag: 'RISING', title: r.hot[0].repo, meta: `★ ${nf(r.hot[0].stars)} · ${r.hot[0].topic}` },
     r.starred?.[0] && { tag: 'I STARRED', title: r.starred[0].repo, meta: since(r.starred[0].at) },
     r.merged?.[0] && { tag: 'I CONTRIBUTED', title: r.merged[0].repo, meta: since(r.merged[0].at) },
