@@ -125,15 +125,38 @@ export default {
     { id: 'fa', label: 'فارسی', dir: 'fa', rtl: true },
   ],
 
-  // Radar: what the page watches for on my behalf.
-  // `topics` are GitHub topics searched for fast-rising new repositories;
-  // `keywords` pick matching stories off the Hacker News front page.
+  // Radar: what the page watches for on my behalf. Everything here is a
+  // filter, so tightening a line makes the page quieter, never noisier.
   radar: {
     window: 45,          // days: how new a repository must be to count as rising
-    minStars: 40,
-    topics: ['mcp', 'ai-agents', 'wireguard', 'flutter', 'tauri', 'cloudflare-workers'],
-    keywords: ['MCP', 'AI agent', 'AI agents', 'agentic', 'LLM', 'WireGuard', 'Flutter', 'Tauri', 'Rust', 'Kotlin',
-      'Android', 'Cloudflare', 'Durable Objects', 'WebSocket', 'open source', 'open-source', 'self-hosted', 'PWA', 'TypeScript'],
+    minStars: 200,       // floor for "rising in my fields"
+    // A topic alone is not enough (people tag anything): the name or the
+    // description must also match.
+    topics: [
+      { topic: 'mcp', match: 'mcp|model context protocol' },
+      { topic: 'ai-agents', match: 'agent' },
+      { topic: 'wireguard', match: 'wireguard' },
+      { topic: 'flutter', match: 'flutter' },
+      { topic: 'tauri', match: 'tauri' },
+      { topic: 'cloudflare-workers', match: 'cloudflare|worker' },
+    ],
+    // Best of GitHub: the breakout repositories of the last `breakoutDays`
+    // days, and the most-starred active projects in my own stack.
+    breakoutDays: 30,
+    breakoutStars: 1500,
+    essentials: ['flutter', 'kotlin', 'rust', 'tauri', 'mcp', 'wireguard', 'cloudflare-workers'],
+    // Never shown, wherever they come from.
+    block: 'crypto|usdc|airdrop|token sale|casino|betting|nsfw|porn|cheat|crack|jailbreak',
+    // Stars I gave: only established projects in the languages I work in.
+    starred: {
+      minStars: 100,
+      langs: ['Kotlin', 'Dart', 'Rust', 'TypeScript', 'JavaScript', 'Python', 'Go', 'C#', 'Swift'],
+      hide: ['thecynetx/CyDrive', 'caamer20/Telegram-Drive'],
+    },
+    // Hacker News: specific terms only, and only stories that got traction.
+    hnPoints: 100,
+    keywords: ['MCP', 'Model Context Protocol', 'AI agent', 'AI agents', 'agentic', 'LLM', 'LLMs', 'WireGuard', 'Flutter', 'Tauri',
+      'Cloudflare Workers', 'Durable Objects', 'self-hosted', 'local-first', 'offline-first', 'PWA', 'Jetpack Compose'],
   },
 
   // Architecture diagrams for the case studies in work/README.md.

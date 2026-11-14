@@ -132,11 +132,19 @@ async function ext(url) {
 // is rising in my fields, and what Hacker News is saying about them or me.
 async function scan() {
   const R = CFG.radar, me = USER.toLowerCase();
-  const out = { starred: [], merged: [], hot: [], hn: [], mentions: [] };
+  const out = { starred: [], merged: [], hot: [], best: [], core: [], hn: [], mentions: [] };
+  const block = new RegExp(R.block, 'i');
+  // Readable by an English-speaking visitor: a real description, mostly Latin.
+  const readable = s => { s = String(s ?? '').trim(); return s.length >= 12 && (s.match(/[^\x00-\x7F]/g)?.length ?? 0) / s.length < 0.08; };
+  const ok = x => readable(x.description) && !block.test(`${x.full_name} ${x.description}`) && x.owner?.login?.toLowerCase() !== me && !x.archived && !x.fork;
+  const row = (x, extra = {}) => ({ repo: x.full_name, url: x.html_url, desc: x.description ?? '', stars: x.stargazers_count, lang: x.language, ...extra });
+  const hidden = new Set((R.starred.hide ?? []).map(s => s.toLowerCase()));
 
-  const st = await gh(`/users/${USER}/starred?per_page=12`, 'application/vnd.github.star+json');
+  const st = await gh(`/users/${USER}/starred?per_page=40`, 'application/vnd.github.star+json');
   for (const s of Array.isArray(st) ? st : []) {
-    if (!s?.repo || s.repo.owner?.login?.toLowerCase() === me || s.repo.private) continue;
+    if (!s?.repo || s.repo.private || !ok(s.repo) || hidden.has(s.repo.full_name.toLowerCase())) continue;
+    if (s.repo.stargazers_count < R.starred.minStars || !R.starred.langs.includes(s.repo.language)) continue;
+    if (out.starred.length === 8) break;
     out.starred.push({ repo: s.repo.full_name, url: s.repo.html_url, desc: s.repo.description ?? '', stars: s.repo.stargazers_count, lang: s.repo.language, at: s.starred_at });
   }
 
@@ -148,12 +156,30 @@ async function scan() {
 
   const from = new Date(Date.now() - R.window * 864e5).toISOString().slice(0, 10);
   const seen = new Set();
-  for (const topic of R.topics) {
-    const res = await gh(`/search/repositories?q=${encodeURIComponent(`topic:${topic} created:>${from} stars:>=${R.minStars}`)}&sort=stars&order=desc&per_page=3`);
-    for (const x of res?.items ?? []) {
-      if (x.owner?.login?.toLowerCase() === me || seen.has(x.full_name)) continue;
-      seen.add(x.full_name);
-      out.hot.push({ repo: x.full_name, url: x.html_url, desc: x.description ?? '', stars: x.stargazers_count, lang: x.language, topic });
+  const search = async (q, n) => (await gh(`/search/repositories?q=${encodeURIComponent(q)}&sort=stars&order=desc&per_page=${n}`))?.items ?? [];
+
+  // Best of GitHub, part one: what broke out this month, whatever the field.
+  const since30 = new Date(Date.now() - R.breakoutDays * 864e5).toISOString().slice(0, 10);
+  for (const x of await search(`created:>${since30} stars:>=${R.breakoutStars}`, 30)) {
+    if (!ok(x) || seen.has(x.full_name) || out.best.length === 8) continue;
+    seen.add(x.full_name); out.best.push(row(x));
+  }
+
+  for (const { topic, match } of R.topics) {
+    const re = new RegExp(match, 'i');
+    let n = 0;
+    for (const x of await search(`topic:${topic} created:>${from} stars:>=${R.minStars}`, 10)) {
+      if (!ok(x) || seen.has(x.full_name) || !re.test(`${x.name} ${x.description}`) || n === 2) continue;
+      seen.add(x.full_name); n++; out.hot.push(row(x, { topic }));
+    }
+  }
+
+  // Part two: the most-starred projects in my stack that are still being worked on.
+  const active = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 10);
+  for (const topic of R.essentials) {
+    for (const x of await search(`topic:${topic} pushed:>${active} stars:>=3000`, 5)) {
+      if (!ok(x) || seen.has(x.full_name)) continue;
+      seen.add(x.full_name); out.core.push(row(x, { topic })); break;
     }
   }
   out.hot.sort((a, b) => b.stars - a.stars);
@@ -163,7 +189,7 @@ async function scan() {
   const re = new RegExp(`(^|[^a-z0-9])(${words})([^a-z0-9]|$)`, 'i');
   const fp = await ext('https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=90');
   for (const h of fp?.hits ?? []) {
-    if (!h?.title || !re.test(h.title)) continue;
+    if (!h?.title || !re.test(h.title) || (h.points ?? 0) < R.hnPoints || block.test(h.title)) continue;
     out.hn.push({ title: h.title, url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`, hn: `https://news.ycombinator.com/item?id=${h.objectID}`, points: h.points ?? 0, comments: h.num_comments ?? 0 });
   }
   out.hn.sort((a, b) => b.points - a.points);
@@ -465,10 +491,10 @@ ${body}
   await writeFile('radar/README.md', `<!-- LIVE:NAV -->\n<!-- /LIVE:NAV -->\n
 # Radar · ${CFG.name}
 
-What I am paying attention to, rebuilt every six hours: what I starred, where I contributed, what is rising in the fields I work in, and what Hacker News is discussing about them.
+What I am paying attention to, rebuilt every six hours: the breakout repositories on GitHub, what is rising in the fields I work in, the essentials of my stack, what I starred, where I contributed, and what Hacker News is discussing.
 
 ${pic('radar', `Radar — what ${CFG.name} is watching now`)}
-${sec('Mentioned on Hacker News', 'Stories that link to my work.', r.mentions, x => `- **[${short(x.title, 110)}](${x.hn})** <sub>· ${nf(x.points)} points · ${day(x.at)}</sub>`)}${sec('Recently starred', 'Projects I found worth a star.', r.starred, x => `- **[${esc(x.repo)}](${x.url})** <sub>· ★ ${nf(x.stars)}${x.lang ? ` · ${esc(x.lang)}` : ''} · ${day(x.at)}</sub>${x.desc ? `<br/>${short(x.desc)}` : ''}`)}${sec('Contributions to other projects', 'Pull requests of mine that were merged outside my own repositories.', r.merged, x => `- **[${short(x.title, 110)}](${x.url})** <sub>· ${esc(x.repo)} · ${day(x.at)}</sub>`)}${sec('Rising in my fields', `New repositories from the last ${CFG.radar.window} days, by stars, in the topics I work in.`, r.hot, x => `- **[${esc(x.repo)}](${x.url})** <sub>· ★ ${nf(x.stars)} · ${esc(x.topic)}${x.lang ? ` · ${esc(x.lang)}` : ''}</sub>${x.desc ? `<br/>${short(x.desc)}` : ''}`)}${sec('On Hacker News now', 'Front-page stories that match my fields.', r.hn, x => `- **[${short(x.title, 110)}](${x.url})** <sub>· ${nf(x.points)} points · <a href="${x.hn}">${nf(x.comments)} comments</a></sub>`)}
+${sec('Mentioned on Hacker News', 'Stories that link to my work.', r.mentions, x => `- **[${short(x.title, 110)}](${x.hn})** <sub>· ${nf(x.points)} points · ${day(x.at)}</sub>`)}${sec('Breakout on GitHub this month', `The most-starred repositories created in the last ${CFG.radar.breakoutDays} days, in any field.`, r.best, x => `- **[${esc(x.repo)}](${x.url})** <sub>· ★ ${nf(x.stars)}${x.lang ? ` · ${esc(x.lang)}` : ''}</sub><br/>${short(x.desc)}`)}${sec('Rising in my fields', `New repositories from the last ${CFG.radar.window} days, by stars, in the topics I work in.`, r.hot, x => `- **[${esc(x.repo)}](${x.url})** <sub>· ★ ${nf(x.stars)} · ${esc(x.topic)}${x.lang ? ` · ${esc(x.lang)}` : ''}</sub>${x.desc ? `<br/>${short(x.desc)}` : ''}`)}${sec('Essentials in my stack', 'The most-starred projects in the technologies I use that shipped changes in the last month.', r.core, x => `- **[${esc(x.repo)}](${x.url})** <sub>· ★ ${nf(x.stars)} · ${esc(x.topic)}</sub><br/>${short(x.desc)}`)}${sec('Recently starred', 'Projects I found worth a star.', r.starred, x => `- **[${esc(x.repo)}](${x.url})** <sub>· ★ ${nf(x.stars)}${x.lang ? ` · ${esc(x.lang)}` : ''} · ${day(x.at)}</sub>${x.desc ? `<br/>${short(x.desc)}` : ''}`)}${sec('Contributions to other projects', 'Pull requests of mine that were merged outside my own repositories.', r.merged, x => `- **[${short(x.title, 110)}](${x.url})** <sub>· ${esc(x.repo)} · ${day(x.at)}</sub>`)}${sec('On Hacker News now', 'Front-page stories that match my fields.', r.hn, x => `- **[${short(x.title, 110)}](${x.url})** <sub>· ${nf(x.points)} points · <a href="${x.hn}">${nf(x.comments)} comments</a></sub>`)}
 <sub>Topics and keywords are set in <code>.github/scripts/profile.config.mjs</code>. The links are picked by a script, not endorsed one by one.</sub>
 `);
 }
