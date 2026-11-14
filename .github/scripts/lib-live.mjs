@@ -83,13 +83,13 @@ export function radarCard(d, t, mode = 'm') {
   const wide = mode === 'w', W = wide ? 1600 : 900, PAD = wide ? 64 : 52, IW = W - PAD * 2;
   const m = t.mood, r = d.radar ?? {};
   const rows = [
-    r.hn?.[0] && { tag: 'HACKER NEWS', title: r.hn[0].title, meta: `${nf(r.hn[0].points)} points` },
+    r.trending?.[0] && { tag: 'TRENDING', title: r.trending[0].repo, meta: r.trending[0].today ? `+${nf(r.trending[0].today)} today` : `★ ${nf(r.trending[0].stars)}` },
     r.best?.[0] && { tag: 'BREAKOUT', title: r.best[0].repo, meta: `★ ${nf(r.best[0].stars)} this month` },
     r.hot?.[0] && { tag: 'RISING', title: r.hot[0].repo, meta: `★ ${nf(r.hot[0].stars)} · ${r.hot[0].topic}` },
     r.starred?.[0] && { tag: 'I STARRED', title: r.starred[0].repo, meta: since(r.starred[0].at) },
     r.merged?.[0] && { tag: 'I CONTRIBUTED', title: r.merged[0].repo, meta: since(r.merged[0].at) },
     r.hot?.[1] && { tag: 'RISING', title: r.hot[1].repo, meta: `★ ${nf(r.hot[1].stars)} · ${r.hot[1].topic}` },
-    r.hn?.[1] && { tag: 'HACKER NEWS', title: r.hn[1].title, meta: `${nf(r.hn[1].points)} points` },
+    r.hn?.[0] && { tag: 'ON HN', title: r.hn[0].repo, meta: `${nf(r.hn[0].points)} points` },
   ].filter(Boolean).slice(0, 3);
   const CXc = wide ? PAD + 150 : W - PAD - 110, CYc = wide ? 190 : 150, R = wide ? 118 : 96;
   const blips = [[40, 0.5], [150, 0.78], [235, 0.4], [310, 0.66]].map(([a, k], i) => {
@@ -109,11 +109,11 @@ export function radarCard(d, t, mode = 'm') {
   rows.forEach((it, i) => {
     const y = Y0 + i * STEP;
     s += wide
-      ? `<text x="${X0}" y="${y}" font-family="${MONO}" font-size="21" font-weight="700" letter-spacing="2.2" fill="${it.tag === 'HACKER NEWS' ? '#FF9F0A' : m.b}">${esc(it.tag)}</text>
+      ? `<text x="${X0}" y="${y}" font-family="${MONO}" font-size="21" font-weight="700" letter-spacing="2.2" fill="${it.tag === 'TRENDING' ? '#FF9F0A' : m.b}">${esc(it.tag)}</text>
          <text x="${X0 + 250}" y="${y + 2}" font-family="${FONT}" font-size="31" font-weight="700" fill="${C.txt}">${esc(clip(it.title, maxT))}</text>
          <text x="${W - PAD}" y="${y + 1}" text-anchor="end" font-family="${FONT}" font-size="24" font-weight="600" fill="${C.dim}">${esc(it.meta)}</text>`
       : `${glass(PAD, y - 44, IW, 96, 22)}
-         <text x="${PAD + 26}" y="${y - 6}" font-family="${MONO}" font-size="22" font-weight="700" letter-spacing="2.2" fill="${it.tag === 'HACKER NEWS' ? '#FF9F0A' : m.b}">${esc(it.tag)}<tspan dx="14" font-family="${FONT}" letter-spacing="0" font-weight="600" fill="${C.dim}">${esc(it.meta)}</tspan></text>
+         <text x="${PAD + 26}" y="${y - 6}" font-family="${MONO}" font-size="22" font-weight="700" letter-spacing="2.2" fill="${it.tag === 'TRENDING' ? '#FF9F0A' : m.b}">${esc(it.tag)}<tspan dx="14" font-family="${FONT}" letter-spacing="0" font-weight="600" fill="${C.dim}">${esc(it.meta)}</tspan></text>
          <text x="${PAD + 26}" y="${y + 34}" font-family="${FONT}" font-size="31" font-weight="700" fill="${C.txt}">${esc(clip(it.title, maxT))}</text>`;
     s += `<animate href="#none"/>`;
   });

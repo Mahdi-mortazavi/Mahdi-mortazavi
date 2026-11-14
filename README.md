@@ -277,7 +277,7 @@ Each card is a live product you can install today. Stars, versions and release d
 </picture>
 </a>
 
-<sub>The breakout repositories on GitHub this month, what is rising in my fields, the essentials of my stack, and what I starred and contributed to. [Open the full radar →](https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/radar#readme)</sub>
+<sub>The GitHub repositories worth knowing about right now: trending today, breakout this month, rising in my fields, and the essentials of my stack. [Open the full radar →](https://github.com/Mahdi-mortazavi/Mahdi-mortazavi/tree/main/radar#readme)</sub>
 
 ## The wall
 

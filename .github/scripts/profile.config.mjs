@@ -151,12 +151,13 @@ export default {
     starred: {
       minStars: 100,
       langs: ['Kotlin', 'Dart', 'Rust', 'TypeScript', 'JavaScript', 'Python', 'Go', 'C#', 'Swift'],
+      days: 180,           // "recently" has to mean recently
       hide: ['thecynetx/CyDrive', 'caamer20/Telegram-Drive'],
     },
-    // Hacker News: specific terms only, and only stories that got traction.
-    hnPoints: 100,
-    keywords: ['MCP', 'Model Context Protocol', 'AI agent', 'AI agents', 'agentic', 'LLM', 'LLMs', 'WireGuard', 'Flutter', 'Tauri',
-      'Cloudflare Workers', 'Durable Objects', 'self-hosted', 'local-first', 'offline-first', 'PWA', 'Jetpack Compose'],
+    // Hacker News is used only as a source of repositories: stories from the
+    // last `hnDays` days that link straight to a GitHub repo and got traction.
+    hnPoints: 80,
+    hnDays: 7,
   },
 
   // Architecture diagrams for the case studies in work/README.md.
