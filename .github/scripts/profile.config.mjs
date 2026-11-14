@@ -45,36 +45,71 @@ export default {
       repo: 'relay', name: 'relay', art: 'relay',
       kicker: 'NETWORKING · ANDROID → WINDOWS',
       tagline: "Share your phone's internet with your PC over an encrypted WireGuard tunnel. No root, no server, no account.",
+      points: [
+        'One WireGuard tunnel carries the whole PC, TCP and UDP, so games, calls and installers all work.',
+        'No server and no account: keys are created at pairing and destroyed when sharing stops.',
+        'Kotlin and Compose on Android, .NET 8 and WinUI 3 on Windows, Go for the tunnel.',
+      ],
     },
     {
       repo: 'angaros', name: 'Angaros', art: 'angaros',
       kicker: 'AI AGENTS · MCP SERVER',
       tagline: 'Your phone, for your AI agents: SMS, OTP codes, contacts and call log for any MCP client. End-to-end encrypted, self-hosted.',
+      points: [
+        'The relay only ever stores ciphertext (AES-256-GCM); the key travels by QR code and never touches it.',
+        '22 typed MCP tools, a CLI, a Python SDK and a local REST API.',
+        'SMS text is treated as untrusted input, and every send lands in a hash-chained audit log.',
+      ],
     },
     {
       repo: 'flow', name: 'Flow', art: 'flow',
       kicker: 'FLUTTER · FOCUS & HABITS',
       tagline: 'One decision a day. An offline-first focus and habit app grounded in behavioural science.',
+      points: [
+        'Built around one decision a day, with a focus timer and habit tracking grounded in behavioural science.',
+        'Fully offline: no account, no sync, no telemetry.',
+        'Flutter and Riverpod, with a Persian-first right-to-left interface.',
+      ],
     },
     {
       repo: 'overrun', name: 'Overrun', art: 'overrun',
       kicker: 'REALTIME MULTIPLAYER · EDGE',
       tagline: 'A browser arena shooter that installs like an app, plays offline and takes eight players online. Zero asset files.',
+      points: [
+        'Client and server run the same simulation file: 60 Hz prediction in the browser, 20 Hz authority in a Durable Object.',
+        'Client-side prediction with input replay, entity interpolation and a quantised binary protocol.',
+        'Every mesh, texture and sound is generated in code. There are no asset files.',
+      ],
     },
     {
       repo: 'sooda', name: 'Sooda', art: 'sooda',
       kicker: 'PWA · SMALL BUSINESS',
       tagline: 'Profit, price and discount calculator for small shops. Offline-first, bilingual, no backend.',
+      points: [
+        'Profit, selling price and discount in both directions, for people who run a small shop.',
+        'Offline-first PWA with no backend: install once and it keeps working.',
+        'TypeScript and Vite, bilingual with full right-to-left support.',
+      ],
     },
     {
       repo: 'purify', name: 'purify', art: 'purify',
       kicker: 'RUST · WINDOWS DESKTOP',
       tagline: 'Clean a Windows disk with confidence: fast, private and reversible. Built with Rust and Tauri.',
+      points: [
+        'Shows exactly what it found before it deletes anything, and every clean is reversible.',
+        'Nothing is uploaded: the scan and the cleanup stay on the machine.',
+        'Rust core with a Tauri interface, so it starts instantly.',
+      ],
     },
     {
       repo: 'app', name: 'Nava', art: 'nava',
       kicker: 'FLUTTER · INTERFACE DESIGN',
       tagline: 'The art of reduction: a minimal productivity app with squircle design, haptics and breathing motion.',
+      points: [
+        'A task manager reduced to the essentials: squircle shapes, haptic feedback and breathing motion.',
+        'Flutter and Dart, for Android and iOS.',
+        'Bilingual, with a Persian right-to-left interface.',
+      ],
     },
   ],
 
@@ -84,10 +119,22 @@ export default {
     { id: 'home', label: 'Overview', href: 'https://github.com/Mahdi-mortazavi' },
     { id: 'work', label: 'Case studies', dir: 'work' },
     { id: 'log', label: 'Ship log', dir: 'log' },
+    { id: 'radar', label: 'Radar', dir: 'radar' },
     { id: 'hire', label: 'Hire me', dir: 'hire' },
     { id: 'build', label: 'Build with me', dir: 'build' },
     { id: 'fa', label: 'فارسی', dir: 'fa', rtl: true },
   ],
+
+  // Radar: what the page watches for on my behalf.
+  // `topics` are GitHub topics searched for fast-rising new repositories;
+  // `keywords` pick matching stories off the Hacker News front page.
+  radar: {
+    window: 45,          // days: how new a repository must be to count as rising
+    minStars: 40,
+    topics: ['mcp', 'ai-agents', 'wireguard', 'flutter', 'tauri', 'cloudflare-workers'],
+    keywords: ['MCP', 'AI agent', 'AI agents', 'agentic', 'LLM', 'WireGuard', 'Flutter', 'Tauri', 'Rust', 'Kotlin',
+      'Android', 'Cloudflare', 'Durable Objects', 'WebSocket', 'open source', 'open-source', 'self-hosted', 'PWA', 'TypeScript'],
+  },
 
   // Architecture diagrams for the case studies in work/README.md.
   studies: [

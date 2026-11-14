@@ -9,6 +9,7 @@ import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import { esc, tehran, nf } from './lib-theme.mjs';
 import { hero, project, journey, button, stack, growth, heat, footer, signature } from './lib-cards.mjs';
 import { tab, velocity, wall, diagram } from './lib-more.mjs';
+import { ticker, radarCard } from './lib-live.mjs';
 import CFG from './profile.config.mjs';
 
 const USER = CFG.user;
@@ -53,16 +54,18 @@ async function gh(path, accept) {
 }
 
 // First real sentence of a release note, as plain text.
-function excerpt(body) {
+function excerpts(body) {
+  const out = [];
   for (const raw of String(body ?? '').split(/\r?\n/)) {
     let l = raw.trim();
     if (!l || /^(#|<|\||---|```|!\[|\*\*full changelog|full changelog)/i.test(l)) continue;
     l = l.replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
       .replace(/<[^>]+>/g, '').replace(/[*_`>#]/g, '').replace(/^[-•\s]+/, '').replace(/\s+/g, ' ').trim();
     if (l.length < 12) continue;
-    return esc(l.length > 170 ? `${l.slice(0, 167).replace(/\s\S*$/, '')}…` : l);
+    out.push(esc(l.length > 170 ? `${l.slice(0, 167).replace(/\s\S*$/, '')}…` : l));
+    if (out.length === 8) break;
   }
-  return '';
+  return out;
 }
 
 const ago = iso => {
@@ -119,6 +122,63 @@ async function contributions() {
   } catch (e) { console.warn('  ! contributions html —', e.message); return null; }
 }
 
+/* ────────────────────────────── radar ────────────────────────────── */
+async function ext(url) {
+  try { const r = await fetch(url, { headers: { 'User-Agent': `${USER}-live-profile` } }); return r.ok ? await r.json() : null; }
+  catch (e) { console.warn(`  ! ${url.slice(0, 60)} —`, e.message); return null; }
+}
+
+// Everything the page watches for: what I starred, where I contributed, what
+// is rising in my fields, and what Hacker News is saying about them or me.
+async function scan() {
+  const R = CFG.radar, me = USER.toLowerCase();
+  const out = { starred: [], merged: [], hot: [], hn: [], mentions: [] };
+
+  const st = await gh(`/users/${USER}/starred?per_page=12`, 'application/vnd.github.star+json');
+  for (const s of Array.isArray(st) ? st : []) {
+    if (!s?.repo || s.repo.owner?.login?.toLowerCase() === me || s.repo.private) continue;
+    out.starred.push({ repo: s.repo.full_name, url: s.repo.html_url, desc: s.repo.description ?? '', stars: s.repo.stargazers_count, lang: s.repo.language, at: s.starred_at });
+  }
+
+  const pr = await gh(`/search/issues?q=${encodeURIComponent(`author:${USER} type:pr is:merged is:public -user:${USER}`)}&sort=updated&order=desc&per_page=10`);
+  for (const i of pr?.items ?? []) {
+    out.merged.push({ repo: i.repository_url?.split('/repos/')[1] ?? '', title: i.title, url: i.html_url, at: i.pull_request?.merged_at ?? i.closed_at });
+  }
+  out.merged = out.merged.filter(x => x.repo && x.at).sort((a, b) => b.at.localeCompare(a.at));
+
+  const from = new Date(Date.now() - R.window * 864e5).toISOString().slice(0, 10);
+  const seen = new Set();
+  for (const topic of R.topics) {
+    const res = await gh(`/search/repositories?q=${encodeURIComponent(`topic:${topic} created:>${from} stars:>=${R.minStars}`)}&sort=stars&order=desc&per_page=3`);
+    for (const x of res?.items ?? []) {
+      if (x.owner?.login?.toLowerCase() === me || seen.has(x.full_name)) continue;
+      seen.add(x.full_name);
+      out.hot.push({ repo: x.full_name, url: x.html_url, desc: x.description ?? '', stars: x.stargazers_count, lang: x.language, topic });
+    }
+  }
+  out.hot.sort((a, b) => b.stars - a.stars);
+  out.hot = out.hot.slice(0, 8);
+
+  const words = R.keywords.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+  const re = new RegExp(`(^|[^a-z0-9])(${words})([^a-z0-9]|$)`, 'i');
+  const fp = await ext('https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=90');
+  for (const h of fp?.hits ?? []) {
+    if (!h?.title || !re.test(h.title)) continue;
+    out.hn.push({ title: h.title, url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`, hn: `https://news.ycombinator.com/item?id=${h.objectID}`, points: h.points ?? 0, comments: h.num_comments ?? 0 });
+  }
+  out.hn.sort((a, b) => b.points - a.points);
+  out.hn = out.hn.slice(0, 6);
+
+  // Has anything of mine been posted? Only stories that link to my GitHub.
+  const mn = await ext(`https://hn.algolia.com/api/v1/search?query=${encodeURIComponent(`github.com/${USER}`)}&tags=story&restrictSearchableAttributes=url&hitsPerPage=10`);
+  for (const h of mn?.hits ?? []) {
+    if (!String(h?.url ?? '').toLowerCase().includes(`github.com/${me}`) && !String(h?.url ?? '').toLowerCase().includes(`${me}.github.io`)) continue;
+    if (Date.now() - new Date(h.created_at) > 45 * 864e5 || (h.points ?? 0) < 3) continue;
+    out.mentions.push({ title: h.title, hn: `https://news.ycombinator.com/item?id=${h.objectID}`, points: h.points ?? 0, at: h.created_at });
+  }
+  return out;
+}
+
 /* ────────────────────────────── data ────────────────────────────── */
 async function collect() {
   if (process.env.FIXTURE) {
@@ -160,13 +220,18 @@ async function collect() {
         releases++;
         for (const a of rel.assets ?? []) { downloads += a.download_count ?? 0; dl += a.download_count ?? 0; }
         if (rel.published_at) relDates.push(rel.published_at);
-        if (rel.published_at) shipped.push({ name: p.name, tag: rel.tag_name, url: rel.html_url, at: rel.published_at, note: excerpt(rel.body) });
+        if (rel.published_at) shipped.push({ name: p.name, tag: rel.tag_name, url: rel.html_url, at: rel.published_at, cand: excerpts(rel.body) });
       }
       if (rows.length < 100) break;
     }
     featured.push({ p, r, release: latest?.tag_name ?? null, downloads: dl });
   }
   shipped.sort((a, b) => b.at.localeCompare(a.at));
+  // A release note often opens with the same boilerplate every time. Keep the
+  // first line that is unique to its release, so the log says what changed.
+  const seen = new Map();
+  for (const s of shipped) for (const c of new Set(s.cand)) seen.set(`${s.name}|${c}`, (seen.get(`${s.name}|${c}`) ?? 0) + 1);
+  for (const s of shipped) { s.note = s.cand.find(c => seen.get(`${s.name}|${c}`) === 1) ?? ''; delete s.cand; }
 
   // Star timestamps would be ideal, but the repo-scoped GITHUB_TOKEN is
   // refused (403) on cross-repo /stargazers. Try anyway — it backfills real
@@ -198,6 +263,7 @@ async function collect() {
   await writeFile(`${OUT}/history.json`, JSON.stringify(history, null, 2));
 
   const cal = await contributions();
+  const radar = await scan();
 
   // This week: contributions from the calendar, activity from push times.
   const days = (cal?.weeks ?? []).flatMap(w => w.contributionDays).filter(x => x?.date)
@@ -227,7 +293,7 @@ async function collect() {
     followers.push({ login: f.login, img });
   }
 
-  return { user, repos, stars, forks, langs, featured, downloads, releases, relDates, week, followers,
+  return { user, repos, stars, forks, langs, featured, downloads, releases, relDates, week, followers, radar,
     shipped: shipped.slice(0, 5), log: shipped.slice(0, 40), issues, starEvents, history, cal };
 }
 
@@ -262,10 +328,18 @@ function projectsMd(d) {
       f.downloads >= 100 ? `${nf(f.downloads)} downloads` : null,
       r.homepage ? `<a href="${r.homepage}">Try it ↗</a>` : null,
     ].filter(Boolean).join(' &nbsp;·&nbsp; ');
+    const inside = p.points?.length ? `
+<details>
+<summary><b>What is inside ${esc(p.name)}</b></summary>
+
+${p.points.map(x => `- ${esc(x)}`).join('\n')}
+
+</details>
+` : '';
     return `<a href="${r.html_url}">${pic(`p-${p.repo.toLowerCase()}`, `${p.name} — ${p.tagline}`)}</a>
 
 <p align="center"><sub>${links}</sub></p>
-`;
+${inside}`;
   };
   const head = d.featured.slice(0, CFG.lead).map(one).join('\n');
   const rest = d.featured.slice(CFG.lead);
@@ -322,6 +396,8 @@ for (const [mode, sfx] of [['m', ''], ['w', '-w']]) {
   await writeFile(`${OUT}/growth${sfx}.svg`, growth(d, t, mode));
   await writeFile(`${OUT}/footer${sfx}.svg`, footer(t, mode));
   await writeFile(`${OUT}/velocity${sfx}.svg`, velocity(d, t, mode));
+  await writeFile(`${OUT}/ticker${sfx}.svg`, ticker(d, t, mode));
+  await writeFile(`${OUT}/radar${sfx}.svg`, radarCard(d, t, mode));
   await writeFile(`${OUT}/wall${sfx}.svg`, wall(d, t, mode));
   for (const st of CFG.studies) await writeFile(`${OUT}/d-${st.id}${sfx}.svg`, diagram(st, t, mode));
   for (const f of d.featured) {
@@ -359,7 +435,7 @@ if (d.cal) {
 // Every page carries the same tab bar with its own tab switched on.
 const REPO = `https://github.com/${USER}/${USER}`;
 const navMd = active => `<p align="center">\n${CFG.tabs.map(tb =>
-  `<a href="${tb.href ?? `${REPO}/tree/main/${tb.dir}#readme`}"><img src="${RAW}/tab-${tb.id}${tb.id === active ? '-on' : ''}.svg" height="42" alt="${esc(tb.label)}" /></a>`).join('\n')}\n</p>`;
+  `<a href="${tb.href ?? `${REPO}/tree/main/${tb.dir}#readme`}"><img src="${RAW}/tab-${tb.id}${tb.id === active ? '-on' : ''}.svg" height="36" alt="${esc(tb.label)}" /></a>`).join('\n')}\n</p>`;
 // The ship log is written whole: every release, newest first, grouped by month.
 if (d.log?.length) {
   const month = iso => new Intl.DateTimeFormat('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(iso));
@@ -377,6 +453,23 @@ Every release I have published, newest first. This page is written by a script f
 ${pic('velocity', `Release cadence across ${CFG.name}'s open-source projects`)}
 ${body}
 <sub>Showing the latest ${d.log.length} releases. Each project keeps its full history on its own releases page.</sub>
+`);
+}
+
+// The radar page is written whole from whatever the scan found this run.
+{
+  const r = d.radar ?? {}, li = (rows, f) => rows.map(f).join('\n');
+  const short = (s, n = 140) => { s = esc(String(s ?? '').replace(/\s+/g, ' ').trim()); return s.length > n ? `${s.slice(0, n - 1)}…` : s; };
+  const sec = (title, lead, rows, f) => rows?.length ? `\n## ${title}\n\n<sub>${lead}</sub>\n\n${li(rows, f)}\n` : '';
+  await mkdir('radar', { recursive: true });
+  await writeFile('radar/README.md', `<!-- LIVE:NAV -->\n<!-- /LIVE:NAV -->\n
+# Radar · ${CFG.name}
+
+What I am paying attention to, rebuilt every six hours: what I starred, where I contributed, what is rising in the fields I work in, and what Hacker News is discussing about them.
+
+${pic('radar', `Radar — what ${CFG.name} is watching now`)}
+${sec('Mentioned on Hacker News', 'Stories that link to my work.', r.mentions, x => `- **[${short(x.title, 110)}](${x.hn})** <sub>· ${nf(x.points)} points · ${day(x.at)}</sub>`)}${sec('Recently starred', 'Projects I found worth a star.', r.starred, x => `- **[${esc(x.repo)}](${x.url})** <sub>· ★ ${nf(x.stars)}${x.lang ? ` · ${esc(x.lang)}` : ''} · ${day(x.at)}</sub>${x.desc ? `<br/>${short(x.desc)}` : ''}`)}${sec('Contributions to other projects', 'Pull requests of mine that were merged outside my own repositories.', r.merged, x => `- **[${short(x.title, 110)}](${x.url})** <sub>· ${esc(x.repo)} · ${day(x.at)}</sub>`)}${sec('Rising in my fields', `New repositories from the last ${CFG.radar.window} days, by stars, in the topics I work in.`, r.hot, x => `- **[${esc(x.repo)}](${x.url})** <sub>· ★ ${nf(x.stars)} · ${esc(x.topic)}${x.lang ? ` · ${esc(x.lang)}` : ''}</sub>${x.desc ? `<br/>${short(x.desc)}` : ''}`)}${sec('On Hacker News now', 'Front-page stories that match my fields.', r.hn, x => `- **[${short(x.title, 110)}](${x.url})** <sub>· ${nf(x.points)} points · <a href="${x.hn}">${nf(x.comments)} comments</a></sub>`)}
+<sub>Topics and keywords are set in <code>.github/scripts/profile.config.mjs</code>. The links are picked by a script, not endorsed one by one.</sub>
 `);
 }
 
