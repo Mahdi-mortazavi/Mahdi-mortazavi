@@ -22,7 +22,7 @@ Every release I have published, newest first. This page is written by a script f
 ### November 2026
 
 - **[relay v2.12.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.12.0)** <sub>· 10 Nov 2026</sub>
-- **[Angaros v3.1.0](https://github.com/Mahdi-mortazavi/angaros/releases/tag/v3.1.0)** <sub>· 5 Nov 2026</sub>
+- **[Angaros v3.1.0](https://github.com/Mahdi-mortazavi/angaros/releases/tag/v3.1.0)** <sub>· 5 Nov 2026</sub><br/>official Claude Code plugin + marketplace, accurate install instructions (no PyPI yet) (75cd808)
 - **[Angaros v3.0.3](https://github.com/Mahdi-mortazavi/angaros/releases/tag/v3.0.3)** <sub>· 2 Nov 2026</sub>
 
 ### October 2026
@@ -39,39 +39,39 @@ Every release I have published, newest first. This page is written by a script f
 - **[relay v2.8.7](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.8.7)** <sub>· 16 Sept 2026</sub>
 - **[relay v2.8.6](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.8.6)** <sub>· 16 Sept 2026</sub>
 - **[relay v2.8.5](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.8.5)** <sub>· 16 Sept 2026</sub>
-- **[Sooda v1.5.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.5.0)** <sub>· 16 Sept 2026</sub>
-- **[Sooda v1.4.1](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.4.1)** <sub>· 15 Sept 2026</sub>
-- **[Sooda v1.4.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.4.0)** <sub>· 15 Sept 2026</sub>
-- **[Sooda v1.3.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.3.0)** <sub>· 15 Sept 2026</sub>
+- **[Sooda v1.5.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.5.0)** <sub>· 16 Sept 2026</sub><br/>آموزش سودا — an interactive tutorial you do rather than watch. Eight lessons, each 50–90 seconds, performed on the real screens with real buttons inside a practice…
+- **[Sooda v1.4.1](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.4.1)** <sub>· 15 Sept 2026</sub><br/>A browser that refuses to store data no longer costs you the whole app. v1.4.0 wrapped everything in a single error boundary, so one database failure inside one…
+- **[Sooda v1.4.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.4.0)** <sub>· 15 Sept 2026</sub><br/>Smart price growth (نرخ گرانی هوشمند): inflation is not one number, so Sooda no longer treats it as one. It estimates a monthly price-growth rate for each product…
+- **[Sooda v1.3.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.3.0)** <sub>· 15 Sept 2026</sub><br/>Real-profit lens (سود واقعی): a &quot;when does the money come back?&quot; row on the profit and sell calculators. Pick a delay and Sooda shows nominal profit beside real…
 - **[relay v2.8.4](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.8.4)** <sub>· 12 Sept 2026</sub>
 - **[relay v2.8.3](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.8.3)** <sub>· 12 Sept 2026</sub>
 - **[relay v2.8.2](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.8.2)** <sub>· 12 Sept 2026</sub>
 - **[relay v2.8.1](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.8.1)** <sub>· 10 Sept 2026</sub>
-- **[relay v2.8.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.8.0)** <sub>· 7 Sept 2026</sub>
+- **[relay v2.8.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.8.0)** <sub>· 7 Sept 2026</sub><br/>Plug the phone into your laptop. Relay notices, and takes you to the one switch you have to flip.
 
 ### August 2026
 
-- **[relay v2.7.1](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.7.1)** <sub>· 27 Aug 2026</sub>
-- **[purify v0.1.4](https://github.com/Mahdi-mortazavi/purify/releases/tag/v0.1.4)** <sub>· 27 Aug 2026</sub>
-- **[relay v2.7.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.7.0)** <sub>· 25 Aug 2026</sub>
-- **[relay v2.6.1](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.6.1)** <sub>· 25 Aug 2026</sub>
-- **[relay v2.6.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.6.0)** <sub>· 24 Aug 2026</sub>
-- **[relay v2.5.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.5.0)** <sub>· 24 Aug 2026</sub>
-- **[Flow v0.6.1](https://github.com/Mahdi-mortazavi/flow/releases/tag/v0.6.1)** <sub>· 20 Aug 2026</sub>
-- **[Overrun v1.0.4](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.4)** <sub>· 21 Aug 2026</sub>
-- **[Overrun v1.0.3](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.3)** <sub>· 21 Aug 2026</sub>
-- **[Flow v0.6.0](https://github.com/Mahdi-mortazavi/flow/releases/tag/v0.6.0)** <sub>· 16 Aug 2026</sub>
-- **[Overrun v1.0.2](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.2)** <sub>· 1 Aug 2026</sub>
-- **[Overrun v1.0.0](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.0)** <sub>· 1 Aug 2026</sub>
-- **[Overrun v1.0.1](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.1)** <sub>· 1 Aug 2026</sub>
+- **[relay v2.7.1](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.7.1)** <sub>· 27 Aug 2026</sub><br/>یک باگ که به‌عنوان مشکل فیلترشکن گزارش شد، و فیلترشکن اصلاً مقصرش نبود.
+- **[purify v0.1.4](https://github.com/Mahdi-mortazavi/purify/releases/tag/v0.1.4)** <sub>· 27 Aug 2026</sub><br/>fix(desktop): keep cleanup content scrollable by @Mahdi-mortazavi in https://github.com/Mahdi-mortazavi/purify/pull/9
+- **[relay v2.7.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.7.0)** <sub>· 25 Aug 2026</sub><br/>Four defects on the path every byte takes, found by reading it end to end and
+- **[relay v2.6.1](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.6.1)** <sub>· 25 Aug 2026</sub><br/>2.6.0 connected Relay&apos;s updater for the first time. Testing it on real hardware
+- **[relay v2.6.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.6.0)** <sub>· 24 Aug 2026</sub><br/>Relay could not update itself. That is fixed.
+- **[relay v2.5.0](https://github.com/Mahdi-mortazavi/relay/releases/tag/v2.5.0)** <sub>· 24 Aug 2026</sub><br/>1. Install both apps.
+- **[Overrun v1.0.4](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.4)** <sub>· 21 Aug 2026</sub><br/>OVERRUN 1.0.4 for Android — signed with a
+- **[Overrun v1.0.3](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.3)** <sub>· 21 Aug 2026</sub><br/>OVERRUN 1.0.3 for Android — signed with a
+- **[Flow v0.6.1](https://github.com/Mahdi-mortazavi/flow/releases/tag/v0.6.1)** <sub>· 20 Aug 2026</sub><br/>accurate deep-work pause accounting &amp; bottom nav opacity polish (14) — 4f994e7
+- **[Flow v0.6.0](https://github.com/Mahdi-mortazavi/flow/releases/tag/v0.6.0)** <sub>· 16 Aug 2026</sub><br/>complete bilingual support, scheduled task alarms, fluid UI, and focus workflows (v0.0.10) (12) — 818fcb2
+- **[Overrun v1.0.2](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.2)** <sub>· 1 Aug 2026</sub><br/>OVERRUN 1.0.2 for Android — signed with a
+- **[Overrun v1.0.1](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.1)** <sub>· 1 Aug 2026</sub><br/>OVERRUN 1.0.1 for Android — signed with a
+- **[Overrun v1.0.0](https://github.com/Mahdi-mortazavi/overrun/releases/tag/v1.0.0)** <sub>· 1 Aug 2026</sub><br/>OVERRUN 1.0.0 for Android — signed with a
 
 ### July 2026
 
-- **[Nava v3.1.0](https://github.com/Mahdi-mortazavi/app/releases/tag/v3.1.0)** <sub>· 22 Jul 2026</sub>
-- **[Nava v3.0.0](https://github.com/Mahdi-mortazavi/app/releases/tag/v3.0.0)** <sub>· 20 Jul 2026</sub>
-- **[Flow v0.5.2](https://github.com/Mahdi-mortazavi/flow/releases/tag/v0.5.2)** <sub>· 20 Jul 2026</sub>
-- **[Sooda v1.2.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.2.0)** <sub>· 14 Jul 2026</sub>
-- **[Sooda v1.1.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.1.0)** <sub>· 14 Jul 2026</sub>
-- **[Sooda v1.0.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.0.0)** <sub>· 14 Jul 2026</sub>
+- **[Nava v3.1.0](https://github.com/Mahdi-mortazavi/app/releases/tag/v3.1.0)** <sub>· 22 Jul 2026</sub><br/>chore: release 3.0.0 (version bump + changelog) by @Mahdi-mortazavi in https://github.com/Mahdi-mortazavi/app/pull/89
+- **[Nava v3.0.0](https://github.com/Mahdi-mortazavi/app/releases/tag/v3.0.0)** <sub>· 20 Jul 2026</sub><br/>chore(main): release 2.1.0 by @Mahdi-mortazavi in https://github.com/Mahdi-mortazavi/app/pull/85
+- **[Flow v0.5.2](https://github.com/Mahdi-mortazavi/flow/releases/tag/v0.5.2)** <sub>· 20 Jul 2026</sub><br/>نصب روی همه‌ی گوشی‌ها · Installs on every Android phone
+- **[Sooda v1.2.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.2.0)** <sub>· 14 Jul 2026</sub><br/>Basket mode (سبد محاسبه): add any result to a basket and see live totals — total cost, revenue, profit and overall margin for sales; total original/pay/saved for…
+- **[Sooda v1.1.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.1.0)** <sub>· 14 Jul 2026</sub><br/>Currency/unit presets: Toman (تومان), Rial (ریال), $ and € — selectable in Settings, applied across results, history and CSV export, with locale-aware placement…
+- **[Sooda v1.0.0](https://github.com/Mahdi-mortazavi/sooda/releases/tag/v1.0.0)** <sub>· 14 Jul 2026</sub><br/>Three calculators: profit % (purchase + profit % → selling price), sell price (purchase + selling → profit %/amount, with clear loss display), and discount (original…
 
 <sub>Showing the latest 40 releases. Each project keeps its full history on its own releases page.</sub>
