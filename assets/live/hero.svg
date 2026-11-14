@@ -183,5 +183,5 @@
     <path d="M 422 734.75 H 718" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
         <text x="426" y="793" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="600" fill="#A9AEBA">Forks</text>
-        <text x="714" y="795" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="35" font-weight="800" fill="#F5F5F7">30</text><text x="40" y="870" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="500" fill="#7F8898">live from the GitHub API · rebuilt 14 Nov 2026</text>
+        <text x="714" y="795" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="35" font-weight="800" fill="#F5F5F7">30</text><text x="40" y="870" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="500" fill="#7F8898">live from the GitHub API · rebuilt 15 Nov 2026</text>
 </svg>

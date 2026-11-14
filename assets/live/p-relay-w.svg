@@ -86,5 +86,5 @@
     <path d="M0 22 L22 0 M4 0 H22 V18"/></g>
       
     <text x="1536" y="168" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#F5F5F7"><tspan fill="#0A84FF" font-size="40">★ </tspan>241</text>
-    <text x="1536" y="218" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="600" fill="#A9AEBA">v2.12.0</text><text x="1536" y="260" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#7F8898">10k downloads</text>
+    <text x="1536" y="218" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="26" font-weight="600" fill="#A9AEBA">v2.12.0</text><text x="1536" y="260" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#7F8898">11k downloads</text>
 </svg>
