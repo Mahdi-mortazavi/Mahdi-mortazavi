@@ -57,7 +57,7 @@ On the side I build open-source tools across mobile, desktop, web and the edge, 
 versioned releases, installers, documentation, two languages.
 
 <!-- LIVE:PROOF -->
-<sub>**381** stars &nbsp;·&nbsp; **30** forks &nbsp;·&nbsp; **11,467+** downloads &nbsp;·&nbsp; **54** releases shipped &nbsp;·&nbsp; **1,706** contributions in the last year</sub>
+<sub>**382** stars &nbsp;·&nbsp; **30** forks &nbsp;·&nbsp; **11,497+** downloads &nbsp;·&nbsp; **54** releases shipped &nbsp;·&nbsp; **1,710** contributions in the last year</sub>
 <!-- /LIVE:PROOF -->
 
 > **Open to** remote roles, contract and freelance product builds, and technical co-founder / CTO work.
@@ -81,7 +81,7 @@ Each card is a live product you can install today. Stars, versions and release d
 </picture>
 </a>
 
-<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 241 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; 10,502 downloads &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
+<p align="center"><sub><b><a href="https://github.com/Mahdi-mortazavi/relay">relay</a></b> &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; ★ 242 &nbsp;·&nbsp; <a href="https://github.com/Mahdi-mortazavi/relay/releases/latest"><code>v2.12.0</code></a> &nbsp;·&nbsp; 10,532 downloads &nbsp;·&nbsp; <a href="https://mahdi-mortazavi.github.io/p/relay/">Try it ↗</a></sub></p>
 
 <details>
 <summary><b>What is inside relay</b></summary>
@@ -376,7 +376,7 @@ All of them are free and open source. Each repository carries its own licence fi
 
 <p align="center">
 <!-- LIVE:UPDATED -->
-<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>15 Nov 2026, 01:46</b> Tehran time</sub>
+<sub>This page rebuilds itself every 6 hours from the GitHub API · last run <b>15 Nov 2026, 09:43</b> Tehran time</sub>
 <!-- /LIVE:UPDATED -->
 </p>
 
