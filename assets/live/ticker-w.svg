@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="132" viewBox="0 0 1600 132" role="img" aria-label="Latest: SHIPPED relay v2.12.0 · 6 days ago. STARS +4 stars this week · 384 in total. THIS WEEK 129 contributions · relay and Angaros. STARRED CluvexStudio/Aether · 8h ago. DOWNLOADS 11,781 installs of my releases so far. RELEASES 54 versions shipped across 7 projects">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="132" viewBox="0 0 1600 132" role="img" aria-label="Latest: SHIPPED relay v2.12.0 · 6 days ago. STARS +4 stars this week · 384 in total. THIS WEEK 150 contributions · relay and Angaros. STARRED CluvexStudio/Aether · 18h ago. DOWNLOADS 11,828 installs of my releases so far. RELEASES 54 versions shipped across 7 projects">
   <title>Live headlines from Mahdi Mortazavi's GitHub activity</title>
   
   <defs>
@@ -8,25 +8,25 @@
       <stop offset="100%" stop-color="#10151F"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#0A84FF"/>
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#5E5CE6"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -53,19 +53,19 @@
     </g><g opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1667;0.2017;0.2983;0.3333;1.0000" dur="20.4s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0 26;0 26;0 0;0 0;0 -26;0 -26" keyTimes="0.0000;0.1667;0.2017;0.2983;0.3333;1.0000" dur="20.4s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.2 .8 .2 1;0 0 1 1;.6 0 .8 .2;0 0 1 1"/>
-      <text x="250" y="78" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="#F5F5F7"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#0A84FF">STARS</tspan><tspan dx="20">+4 stars this week · 384 in total</tspan></text>
+      <text x="250" y="78" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="#F5F5F7"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#30D1D0">STARS</tspan><tspan dx="20">+4 stars this week · 384 in total</tspan></text>
     </g><g opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3333;0.3683;0.4650;0.5000;1.0000" dur="20.4s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0 26;0 26;0 0;0 0;0 -26;0 -26" keyTimes="0.0000;0.3333;0.3683;0.4650;0.5000;1.0000" dur="20.4s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.2 .8 .2 1;0 0 1 1;.6 0 .8 .2;0 0 1 1"/>
-      <text x="250" y="78" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="#F5F5F7"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#30D158">THIS WEEK</tspan><tspan dx="20">129 contributions · relay and Angaros</tspan></text>
+      <text x="250" y="78" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="#F5F5F7"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#30D158">THIS WEEK</tspan><tspan dx="20">150 contributions · relay and Angaros</tspan></text>
     </g><g opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5000;0.5350;0.6317;0.6667;1.0000" dur="20.4s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0 26;0 26;0 0;0 0;0 -26;0 -26" keyTimes="0.0000;0.5000;0.5350;0.6317;0.6667;1.0000" dur="20.4s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.2 .8 .2 1;0 0 1 1;.6 0 .8 .2;0 0 1 1"/>
-      <text x="250" y="78" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="#F5F5F7"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#A9AEBA">STARRED</tspan><tspan dx="20">CluvexStudio/Aether · 8h ago</tspan></text>
+      <text x="250" y="78" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="#F5F5F7"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#A9AEBA">STARRED</tspan><tspan dx="20">CluvexStudio/Aether · 18h ago</tspan></text>
     </g><g opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6667;0.7017;0.7983;0.8333;1.0000" dur="20.4s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0 26;0 26;0 0;0 0;0 -26;0 -26" keyTimes="0.0000;0.6667;0.7017;0.7983;0.8333;1.0000" dur="20.4s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.2 .8 .2 1;0 0 1 1;.6 0 .8 .2;0 0 1 1"/>
-      <text x="250" y="78" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="#F5F5F7"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#A9AEBA">DOWNLOADS</tspan><tspan dx="20">11,781 installs of my releases so far</tspan></text>
+      <text x="250" y="78" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="#F5F5F7"><tspan font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#A9AEBA">DOWNLOADS</tspan><tspan dx="20">11,828 installs of my releases so far</tspan></text>
     </g><g opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.8333;0.8683;0.9650;1.0000;1.0000" dur="20.4s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0 26;0 26;0 0;0 0;0 -26;0 -26" keyTimes="0.0000;0.8333;0.8683;0.9650;1.0000;1.0000" dur="20.4s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.2 .8 .2 1;0 0 1 1;.6 0 .8 .2;0 0 1 1"/>
