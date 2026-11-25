@@ -8,25 +8,25 @@
       <stop offset="100%" stop-color="#10151F"/>
     </linearGradient>
     <radialGradient id="aura1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#5E5CE6" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#5E5CE6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aura2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#30D1D0" stop-opacity=".38"/>
-      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".045"/>
     </linearGradient>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0A84FF"/>
-      <stop offset="100%" stop-color="#30D1D0"/>
+      <stop offset="0%" stop-color="#5E5CE6"/>
+      <stop offset="100%" stop-color="#0A84FF"/>
     </linearGradient>
     <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#0A84FF"/>
-      <stop offset="100%" stop-color="#30D1D0" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#5E5CE6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5E5CE6"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
     </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="26"/>
@@ -47,26 +47,26 @@
     <g><path d="M630 150 L630 54 A96 96 0 0 1 713.1 102.0 Z" fill="url(#mark)" fill-opacity=".32"/>
       <animateTransform attributeName="transform" type="rotate" from="0 630 150" to="360 630 150" dur="4s" repeatCount="indefinite"/></g>
     <circle cx="666.8" cy="180.9" r="6" fill="#FF9F0A">
-      <animate attributeName="opacity" values=".15;1;.15" dur="4s" begin="-3.56s" repeatCount="indefinite"/></circle><circle cx="565.2" cy="187.4" r="6" fill="#30D1D0">
-      <animate attributeName="opacity" values=".15;1;.15" dur="4s" begin="-2.33s" repeatCount="indefinite"/></circle><circle cx="608.0" cy="118.5" r="6" fill="#30D1D0">
-      <animate attributeName="opacity" values=".15;1;.15" dur="4s" begin="-1.39s" repeatCount="indefinite"/></circle><circle cx="670.7" cy="101.5" r="6" fill="#30D1D0">
-      <animate attributeName="opacity" values=".15;1;.15" dur="4s" begin="-0.56s" repeatCount="indefinite"/></circle><circle cx="630" cy="150" r="5" fill="#FFFFFF"/><text x="40" y="66" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="25" font-weight="700" letter-spacing="2.6" fill="#30D1D0">RADAR</text><text x="38" y="150" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#F5F5F7">What I'm</text><text x="38" y="204" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#F5F5F7">watching now</text><g>
+      <animate attributeName="opacity" values=".15;1;.15" dur="4s" begin="-3.56s" repeatCount="indefinite"/></circle><circle cx="565.2" cy="187.4" r="6" fill="#0A84FF">
+      <animate attributeName="opacity" values=".15;1;.15" dur="4s" begin="-2.33s" repeatCount="indefinite"/></circle><circle cx="608.0" cy="118.5" r="6" fill="#0A84FF">
+      <animate attributeName="opacity" values=".15;1;.15" dur="4s" begin="-1.39s" repeatCount="indefinite"/></circle><circle cx="670.7" cy="101.5" r="6" fill="#0A84FF">
+      <animate attributeName="opacity" values=".15;1;.15" dur="4s" begin="-0.56s" repeatCount="indefinite"/></circle><circle cx="630" cy="150" r="5" fill="#FFFFFF"/><text x="40" y="66" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="25" font-weight="700" letter-spacing="2.6" fill="#0A84FF">RADAR</text><text x="38" y="150" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#F5F5F7">What I'm</text><text x="38" y="204" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#F5F5F7">watching now</text><g>
     <rect x="40" y="256" width="700" height="96" rx="22" fill="url(#glass)"/>
     <rect x="40" y="256" width="700" height="96" rx="22" fill="none" stroke="rgba(255,255,255,.14)"/>
     <path d="M 62 256.75 H 718" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
-         <text x="66" y="294" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#FF9F0A">TRENDING<tspan dx="14" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0" font-weight="600" fill="#7F8898">+1,826 today</tspan></text>
+         <text x="66" y="294" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#FF9F0A">TRENDING<tspan dx="14" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0" font-weight="600" fill="#7F8898">+1,644 today</tspan></text>
          <text x="66" y="334" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="700" fill="#F5F5F7">elementalsouls/Claude-BugHunter</text><g>
     <rect x="40" y="368" width="700" height="96" rx="22" fill="url(#glass)"/>
     <rect x="40" y="368" width="700" height="96" rx="22" fill="none" stroke="rgba(255,255,255,.14)"/>
     <path d="M 62 368.75 H 718" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
-         <text x="66" y="406" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#30D1D0">BREAKOUT<tspan dx="14" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0" font-weight="600" fill="#7F8898">★ 43,075 this month</tspan></text>
+         <text x="66" y="406" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#0A84FF">BREAKOUT<tspan dx="14" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0" font-weight="600" fill="#7F8898">★ 43,443 this month</tspan></text>
          <text x="66" y="446" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="700" fill="#F5F5F7">storytold/craft-anything</text><g>
     <rect x="40" y="480" width="700" height="96" rx="22" fill="url(#glass)"/>
     <rect x="40" y="480" width="700" height="96" rx="22" fill="none" stroke="rgba(255,255,255,.14)"/>
     <path d="M 62 480.75 H 718" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   </g>
-         <text x="66" y="518" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#30D1D0">RISING<tspan dx="14" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0" font-weight="600" fill="#7F8898">★ 7,849 · ai-agents</tspan></text>
+         <text x="66" y="518" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="22" font-weight="700" letter-spacing="2.2" fill="#0A84FF">RISING<tspan dx="14" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0" font-weight="600" fill="#7F8898">★ 8,112 · ai-agents</tspan></text>
          <text x="66" y="558" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="31" font-weight="700" fill="#F5F5F7">mdiri-ai/SoduWork</text>
 </svg>
